@@ -1,6 +1,11 @@
 #define PREFIX TAC
 #define COMPONENT Olympus
 
+// Version
+#define MAJOR 1
+#define MINOR 0
+#define PATCHLVL 0
+
 //#define DEBUG_MODE_FULL
 
 #include "\x\cba\addons\main\script_macros_mission.hpp"

@@ -1,19 +1,23 @@
 import os
 import shutil
-import argparse
-
-parser = argparse.ArgumentParser(description="Package mission")
-parser.add_argument("version", type=str, default="1.0.0", help="Specifiy version number")
-args = parser.parse_args()
+import re
 
 name = "Olympus"
-version = args.version
-print(version)
+version_file = "script_component.hpp"
 ignore_files = [".git", "extras", "release", "tools", ".editorconfig", ".gitignore"]
 release_dir = "release"
 
 release_dir_copy = "{}/{}".format(release_dir, name)
 os.chdir("..")
+
+version_file_read = ""
+with open(version_file, "r") as version_file:
+    version_file_read = version_file.read()
+
+major_text = re.search(r"#define MAJOR (.*\b)", version_file_read).group(1)
+minor_text = re.search(r"#define MINOR (.*\b)", version_file_read).group(1)
+patchlvl_text = re.search(r"#define PATCHLVL (.*\b)", version_file_read).group(1)
+version = "{}.{}.{}".format(major_text, minor_text, patchlvl_text)
 
 if os.path.exists(release_dir):
     shutil.rmtree(release_dir)
