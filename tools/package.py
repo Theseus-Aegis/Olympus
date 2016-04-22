@@ -1,23 +1,30 @@
 import os
 import shutil
 import re
+import zipfile
 
 name = "Olympus"
 version_file = "script_component.hpp"
 ignore_files = [".git", "extras", "release", "tools", ".editorconfig", ".gitignore"]
 release_dir = "release"
 
-release_dir_copy = "{}/{}".format(release_dir, name)
 os.chdir("..")
 
-version_file_read = ""
+# Read info
+info_file_read = ""
 with open(version_file, "r") as version_file:
-    version_file_read = version_file.read()
+    info_file_read = version_file.read()
 
-major_text = re.search(r"#define MAJOR (.*\b)", version_file_read).group(1)
-minor_text = re.search(r"#define MINOR (.*\b)", version_file_read).group(1)
-patchlvl_text = re.search(r"#define PATCHLVL (.*\b)", version_file_read).group(1)
-version = "{}.{}.{}".format(major_text, minor_text, patchlvl_text)
+# Get version
+major = re.search(r"#define MAJOR (.*\b)", info_file_read).group(1)
+minor = re.search(r"#define MINOR (.*\b)", info_file_read).group(1)
+patchlvl = re.search(r"#define PATCHLVL (.*\b)", info_file_read).group(1)
+version = "{}.{}.{}".format(major, minor, patchlvl)
+
+# Get map name
+map_name = re.search(r"#define MAP (.*\b)", info_file_read).group(1)
+
+release_dir_copy = "{}/{}.{}".format(release_dir, name, map_name)
 
 if os.path.exists(release_dir):
     shutil.rmtree(release_dir)
@@ -34,4 +41,5 @@ for item in os.listdir(os.path.abspath("")):
         else:
             shutil.copy2(item, release_dir_copy)
 
-release_package = shutil.make_archive("{}_v{}".format(release_dir_copy, version), "zip", release_dir_copy)
+release_archive = shutil.make_archive("TAC_{}_v{}".format(name, version), "zip", release_dir)
+shutil.move(release_archive, release_dir)

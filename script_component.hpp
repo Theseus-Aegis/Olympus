@@ -6,6 +6,9 @@
 #define MINOR 0
 #define PATCHLVL 0
 
+// Map
+#define MAP Stratis
+
 //#define DEBUG_MODE_FULL
 
 #include "\x\cba\addons\main\script_macros_mission.hpp"
