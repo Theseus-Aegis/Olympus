@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/Theseus-Aegis/Olympus/blob/extras/logo/Olympus-Logo.png">
+    <img src="https://github.com/Theseus-Aegis/Olympus/blob/master/extras/logo/Olympus-Logo.png">
 </p>
 <p align="center">
     <a href="https://github.com/Theseus-Aegis/Olympus/releases/latest">
