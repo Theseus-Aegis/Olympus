@@ -6,7 +6,7 @@
         <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" alt="Olympus Version">
     </a>
     <a href="https://github.com/Theseus-Aegis/Olympus/issues">
-        <img src="https://img.shields.io/github/issues-raw/Theseus-Aegis/tac-a3-mods.svg?label=Issues" alt="Olympus Issues">
+        <img src="https://img.shields.io/github/issues-raw/Theseus-Aegis/Olympus.svg?label=Issues" alt="Olympus Issues">
     </a>
     <a href="https://github.com/Theseus-Aegis/Olympus/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-GPLv2-red.svg" alt="Olympus License">
