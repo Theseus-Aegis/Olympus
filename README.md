@@ -12,7 +12,7 @@
         <img src="https://img.shields.io/badge/License-GPLv2-red.svg" alt="Olympus License">
     </a>
 </p>
-<p align="center"><sup><strong>Requires the latest version of <a href="https://github.com/Theseus-Aegis/tac-a3-mods/releases/latest">TAC Mods</a> and Theseus Inc. Modpack.</strong></sup></p>
+<p align="center"><sup><strong>Requires the latest version of Theseus Inc. Modpack.</strong></sup></p>
 
 **Olympus** is a training facility of <a href="http://www.theseus-aegis.com/">Theseus Inc.</a>, created by its members.
 
