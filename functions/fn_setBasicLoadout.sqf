@@ -35,6 +35,7 @@ if (isServer) then {
     _unit addItem "ItemCompass";
     _unit addItem "ItemWatch";
     _unit addItem "ACRE_PRC343";
+    _unit addVest "V_Rangemaster_belt";
 
     //assigns items to player
     _unit assignItem "ItemMap";

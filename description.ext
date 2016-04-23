@@ -16,8 +16,9 @@ onLoadMission = "Olympus Training Facilities"; // on load screen
 
 respawn = "BASE"; // BASE (3) Respawn on markers "respawn_guerilla". Multiple markers possible. If no marker present, player respawns where he started the mission.
 respawnButton = 1; // Respawn button enabled
-respawnDelay = 0; // Delay in seconds before playable unit respawns.
+respawnDelay = 4; // Delay in seconds before playable unit respawns.
 respawnDialog = 0; // 0/1 to disable the scoreboard from showing automatically
+
 
 disabledAI = 1; // Disables AI for Playable Units
 enableDebugConsole = 1; // Enables Debug Console in Pause menu (1 = Hosts and Admins)
