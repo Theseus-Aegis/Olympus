@@ -17,3 +17,27 @@
 **Olympus** is a training facility of <a href="http://www.theseus-aegis.com/">Theseus Inc.</a>, created by its members.
 
 The mod is using the CBA mission framework for macros. It is entirely **open-source** and licensed under the GNU General Public License ([GPLv2](https://github.com/Theseus-Aegis/Olympus/blob/master/LICENSE)).
+
+###Installation   
+
+**Instructions**  
+Download some files, put them in a place with game things.  
+**Required Mods**  
+There's a bunch. Download those.  
+###Overview  
+It's an island with guns and targets and stuff. Is pretty cool.  
+###Current Courses and Facilities  
+ 
+**Mobility** 
+
+**Bounding Cover** 
+
+**Handgun and SMG Range** 
+
+**Pistol Dueling Range** 
+
+**Rifle Range** 
+
+**Marksman Tower and Range** 
+
+**Machinegun Range** 
