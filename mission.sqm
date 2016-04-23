@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2909;
+		nextID=2910;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6491.0742,22.556141,5362.833};
-		dir[]={-0.73082656,-0.63150787,0.25947171};
-		up[]={-0.5951308,0.77532679,0.21129416};
-		aside[]={0.33462176,-6.7136716e-007,0.94249022};
+		pos[]={6477.0493,31.520317,5346.373};
+		dir[]={-0.13139796,-0.62770844,0.76743513};
+		up[]={-0.10593617,0.77840292,0.61872512};
+		aside[]={0.98578691,-7.7433651e-007,0.16878182};
 	};
 };
 binarizationWanted=0;
@@ -117,7 +117,8 @@ addons[]=
 	"ace_explosives",
 	"A3_Structures_F_Heli_Items_Sport",
 	"A3_Structures_F_EPB_Items_Documents",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"ace_common"
 };
 randomSeed=5049233;
 class ScenarioData
@@ -146,7 +147,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1551;
+		items=1552;
 		class Item0
 		{
 			dataType="Object";
@@ -33454,7 +33455,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6481.2524,7.7737603,5374.0762};
+						position[]={6481.252,7.773807,5374.0757};
 						angles[]={0,2.309001,0};
 					};
 					side="Independent";
@@ -33463,11 +33464,12 @@ class Mission
 					{
 						init="[this] call TAC_Olympus_fnc_setBasicLoadout;";
 						description="Medic Trainee";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=2480;
 					type="tacs_Unit_I_Medic";
-					atlOffset=-4.7683716e-007;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36383,7 +36385,6 @@ class Mission
 						rank="SERGEANT";
 						init="[this] call TAC_Olympus_fnc_setBasicLoadout;";
 						description="Instructor";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=2801;
@@ -38657,6 +38658,22 @@ class Mission
 			name="respawn_guerilla";
 			type="respawn_unknown";
 			id=2908;
+		};
+		class Item1551
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6515.3564,28.260319,5363.5464};
+				angles[]={0,2.169955,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2909;
+			type="ACE_Box_Misc";
 		};
 	};
 };
