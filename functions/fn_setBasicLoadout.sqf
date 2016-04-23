@@ -32,6 +32,8 @@ removeGoggles _unit;
 // Add basic gear
 _unit forceAddUniform _randomUniform;
 _unit addHeadgear _randomHeadgear;
+_unit addVest "V_Rangemaster_belt";
+
 _unit addItem "ItemMap";
 _unit assignItem "ItemMap";
 _unit addItem "ItemCompass";
