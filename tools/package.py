@@ -5,7 +5,7 @@ import zipfile
 
 name = "Olympus"
 version_file = "script_component.hpp"
-ignore_files = [".git", "extras", "release", "tools", ".editorconfig", ".gitignore"]
+ignore_files = [".git", ".github", "extras", "release", "tools", ".editorconfig", ".gitignore"]
 release_dir = "release"
 
 os.chdir("..")
