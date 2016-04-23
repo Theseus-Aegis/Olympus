@@ -17,3 +17,5 @@
 **Olympus** is a training facility of <a href="http://www.theseus-aegis.com/">Theseus Inc.</a>, created by its members.
 
 The mod is using the CBA mission framework for macros. It is entirely **open-source** and licensed under the GNU General Public License ([GPLv2](https://github.com/Theseus-Aegis/Olympus/blob/master/LICENSE)).
+
+Reference the [contributing guide](https://github.com/Theseus-Aegis/Olympus/blob/master/.github/CONTRIBUTING.md) if you would like to learn more about contributing to Olympus project.
