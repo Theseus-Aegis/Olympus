@@ -26,4 +26,5 @@ enableDebugConsole = 1; // Enables Debug Console in Pause menu (1 = Hosts and Ad
 forceRotorLibSimulation = 1;
 
 
+#include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
