@@ -225,6 +225,14 @@
     "RH_TD_ACB_g"\
 ]
 
+#define AVAILABLE_BACKPACKS [\
+    "tacs_Backpack_AssaultExpanded_Black",\
+    "tacs_Backpack_AssaultExpanded_Green",\
+    "tacs_Backpack_AssaultExpanded_Tan",\
+    "tacs_Backpack_Carryall_DarkBlack",\
+    "tacs_Backpack_Kitbag_DarkBlack"\
+]
+
 //Init stuff
 params ["_crate"];
 
@@ -234,3 +242,4 @@ params ["_crate"];
 [_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call BIS_fnc_addVirtualItemCargo;
 [_crate, (magazineCargo _crate) + AVAILABLE_MG_MAGAZINES] call BIS_fnc_addVirtualMagazineCargo;
 [_crate, (weaponCargo _crate) + AVAILABLE_MG] call BIS_fnc_addVirtualWeaponCargo;
+[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call BIS_fnc_addVirtualBackpackCargo;

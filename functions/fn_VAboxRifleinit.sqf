@@ -33,7 +33,6 @@
     "hlc_rifle_LAR",\
     "hlc_rifle_falosw",\
     "hlc_rifle_g3sg1",\
-    "hlc_rifle_psg1",\
     "hlc_rifle_g3a3",\
     "hlc_rifle_g3ka4",\
     "hlc_rifle_hk53",\

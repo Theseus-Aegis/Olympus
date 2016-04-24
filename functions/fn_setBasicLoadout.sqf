@@ -33,6 +33,7 @@ removeGoggles _unit;
 _unit forceAddUniform _randomUniform;
 _unit addHeadgear _randomHeadgear;
 _unit addVest "V_Rangemaster_belt";
+_unit addItem "ACE_EarPlugs";
 
 _unit addItem "ItemMap";
 _unit assignItem "ItemMap";
