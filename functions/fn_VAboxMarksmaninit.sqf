@@ -124,7 +124,10 @@
     "RH_shortdot",\
     "RH_m3lr",\
     "RH_accupoint",\
-    "RH_leu_mk4"\
+    "RH_leu_mk4",\
+    "bipod_01_F_snd",\
+    "bipod_01_F_blk",\
+    "bipod_01_F_mtp"\
 ]
 
 //Init stuff
