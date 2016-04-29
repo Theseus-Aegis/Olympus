@@ -3,6 +3,7 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class functions {
             file = "functions";
+            class closeInventoryOnShowcase;
             class constantShoot;
             class prepareMedicalExercise;
             class resetMedicalExercise;

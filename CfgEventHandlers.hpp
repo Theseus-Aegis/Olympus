@@ -5,3 +5,11 @@ class Extended_Respawn_EventHandlers {
         };
     };
 };
+
+class Extended_InventoryOpened_EventHandlers {
+    class CAManBase {
+        class ADDON {
+            clientInventoryOpened = QUOTE(_this call FUNC(closeInventoryOnShowcase));
+        };
+    };
+};
