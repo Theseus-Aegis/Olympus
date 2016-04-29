@@ -3,6 +3,7 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class functions {
             file = "functions";
+            class ArmoryBoxGrenadesInit;
             class ArmoryBoxLockersInit;
             class ArmoryBoxMarksmanInit;
             class ArmoryBoxMGInit;
