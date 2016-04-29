@@ -9,6 +9,7 @@ class CfgFunctions {
             class ArmoryBoxPistolSMGInit;
             class ArmoryBoxRifleInit;
             class ArmoryBoxStagingInit;
+            class closeInventoryOnShowcase;
             class constantShoot;
             class prepareMedicalExercise;
             class resetMedicalExercise;
