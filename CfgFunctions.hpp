@@ -3,6 +3,12 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class functions {
             file = "functions";
+            class ArmoryBoxLockersInit;
+            class ArmoryBoxMarksmanInit;
+            class ArmoryBoxMGInit;
+            class ArmoryBoxPistolSMGInit;
+            class ArmoryBoxRifleInit;
+            class ArmoryBoxStagingInit;
             class closeInventoryOnShowcase;
             class constantShoot;
             class prepareMedicalExercise;
@@ -10,12 +16,6 @@ class CfgFunctions {
             class setBasicLoadout;
             class setBillboard;
             class startMedicalExercise;
-            class VAboxLockersInit;
-            class VAboxMarksmanInit;
-            class VAboxMGInit;
-            class VAboxPistolSMGInit;
-            class VAboxRifleInit;
-            class VAboxStagingInit;
         };
     };
 };
