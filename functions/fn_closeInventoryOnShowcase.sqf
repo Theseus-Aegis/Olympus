@@ -35,4 +35,4 @@ if !(_container getVariable [QGVAR(isShowcase), false]) exitWith {};
         ["You may not touch items on a showcase!", 2] call ace_common_fnc_displayTextStructured;
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-}, 0, [diag_tickTime]] call CBA_fnc_addPerFrameHandler
+}, 0, [diag_tickTime]] call CBA_fnc_addPerFrameHandler;
