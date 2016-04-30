@@ -1,6 +1,6 @@
 /*
  * Author: Rory
- * Initializes Virtual Arsenal on an object with specific items only.
+ * Initializes Armory on an object with specific items only.
  *
  * Arguments:
  * 0: Crate <OBJECT>

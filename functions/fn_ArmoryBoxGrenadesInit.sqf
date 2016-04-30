@@ -1,6 +1,6 @@
 /*
  * Author: Rory
- * Initializes Virtual Arsenal on an object with specific items only.
+ * Initializes Armory on an object with specific items only.
  *
  * Arguments:
  * 0: Crate <OBJECT>
@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [crate] call TAC_Olympus_fnc_ArmoryBoxStagingInit
+ * [crate] call TAC_Olympus_fnc_ArmoryBoxGrenadesInit
  */
 #include "..\script_component.hpp"
 
@@ -23,6 +23,6 @@ params ["_crate"];
     ["item", "SmokeShellGreen", "Throwable", "", 100],
     ["item", "SmokeShellYellow", "Throwable", "", 100],
     ["item", "SmokeShellOrange", "Throwable", "", 100],
-    ["item", "smokeshellblue", "Throwable", "", 100],
-    ["item", "smokeshellpurple", "Throwable", "", 100]
+    ["item", "SmokeShellBlue", "Throwable", "", 100],
+    ["item", "SmokeShellPurple", "Throwable", "", 100]
 ]] call TACFUNC(armory,addItems);
