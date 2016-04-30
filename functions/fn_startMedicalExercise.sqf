@@ -54,9 +54,10 @@ if (isNull _mine) then {
 
     // Apply damage to all victims
     {
-        [_x, 0.3, "leg_r", "bullet"] call ace_medical_fnc_addDamageToUnit;
-        [_x, 0.1, "head", "bullet"] call ace_medical_fnc_addDamageToUnit;
-        [_x, 0.3] call ace_medical_fnc_adjustPainLevel;
+        [_x, 0.05, "hand_r", "stab"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.05, "leg_r", "bullet"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.05, "head", "bullet"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.4] call ace_medical_fnc_adjustPainLevel;
     } forEach _victims;
 
     // Apply damage to specific victims
