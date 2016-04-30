@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3147;
+		nextID=3148;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6256.2993,36.957691,5458.7778};
-		dir[]={0.3977671,-0.74165136,0.54034871};
-		up[]={0.43966764,0.67062777,0.59726775};
-		aside[]={0.80547315,-8.0559403e-007,-0.59293234};
+		pos[]={6410.4307,16.209055,5426.0605};
+		dir[]={-0.56412947,-0.49386695,0.66188544};
+		up[]={-0.32042125,0.86934769,0.37594911};
+		aside[]={0.76120847,3.509922e-007,0.648785};
 	};
 };
 binarizationWanted=0;
@@ -147,7 +147,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1711;
+		items=1712;
 		class Item0
 		{
 			dataType="Object";
@@ -39637,6 +39637,7 @@ class Mission
 			};
 			id=2981;
 			type="TargetP_Inf_F";
+			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41976,6 +41977,7 @@ class Mission
 			};
 			id=3127;
 			type="TargetP_Inf_F";
+			atlOffset=-2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -42016,6 +42018,7 @@ class Mission
 			};
 			id=3128;
 			type="TargetP_Inf_F";
+			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -42056,6 +42059,7 @@ class Mission
 			};
 			id=3129;
 			type="Land_MapBoard_F";
+			atlOffset=2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -42183,6 +42187,7 @@ class Mission
 			};
 			id=3135;
 			type="ArrowDesk_L_F";
+			atlOffset=-0.034072876;
 		};
 		class Item1703
 		{
@@ -42215,6 +42220,7 @@ class Mission
 			};
 			id=3137;
 			type="ArrowDesk_R_F";
+			atlOffset=-0.00022506714;
 		};
 		class Item1705
 		{
@@ -42231,6 +42237,7 @@ class Mission
 			};
 			id=3139;
 			type="ArrowDesk_L_F";
+			atlOffset=-0.00037002563;
 		};
 		class Item1706
 		{
@@ -42263,6 +42270,7 @@ class Mission
 			};
 			id=3140;
 			type="CUP_A2_grav_10_25";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item1708
 		{
@@ -42312,6 +42320,46 @@ class Mission
 			id=3146;
 			type="ArrowDesk_R_F";
 			atlOffset=-0.01335144;
+		};
+		class Item1711
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6320.7202,5.0304193,5455.5552};
+				angles[]={0.017488198,5.2490077,6.2157807};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\courseMovementRequirements.paa""];";
+			};
+			id=3147;
+			type="Land_MapBoard_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
