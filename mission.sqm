@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6393.376,11.476476,5381.1904};
-		dir[]={-0.74236578,-0.33632725,0.57967359};
-		up[]={-0.26517355,0.94165444,0.20705724};
-		aside[]={0.6155138,3.0183e-006,0.78829211};
+		pos[]={6441.0532,21.803665,5411.8364};
+		dir[]={-0.68549198,-0.35171273,0.63768625};
+		up[]={-0.25759518,0.93601847,0.23962793};
+		aside[]={0.68119466,3.0733645e-006,0.73228449};
 	};
 };
 binarizationWanted=0;
@@ -163,6 +163,7 @@ class Mission
 			};
 			id=5;
 			type="MapBoard_stratis_F";
+			atlOffset=0.00094032288;
 		};
 		class Item1
 		{
@@ -180,7 +181,7 @@ class Mission
 			};
 			id=8;
 			type="Land_MapBoard_F";
-			atlOffset=0.00043773651;
+			atlOffset=0.0061531067;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -220,7 +221,7 @@ class Mission
 			};
 			id=20;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=0.043816566;
+			atlOffset=1.7166138e-005;
 		};
 		class Item3
 		{
@@ -254,6 +255,7 @@ class Mission
 			};
 			id=28;
 			type="Land_CampingChair_V2_F";
+			atlOffset=1.1444092e-005;
 		};
 		class Item5
 		{
@@ -270,7 +272,7 @@ class Mission
 			};
 			id=31;
 			type="Land_CampingChair_V2_F";
-			atlOffset=0.039876461;
+			atlOffset=1.1444092e-005;
 		};
 		class Item6
 		{
@@ -287,7 +289,7 @@ class Mission
 			};
 			id=32;
 			type="Land_CampingChair_V2_F";
-			atlOffset=0.043394089;
+			atlOffset=1.1444092e-005;
 		};
 		class Item7
 		{
@@ -304,6 +306,7 @@ class Mission
 			};
 			id=33;
 			type="Land_CampingChair_V2_F";
+			atlOffset=1.1444092e-005;
 		};
 		class Item8
 		{
@@ -320,7 +323,7 @@ class Mission
 			};
 			id=34;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.047999859;
+			atlOffset=0.047992706;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19194,18 +19197,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6401.1255,8.9664993,5429.5083};
+				position[]={6401.1255,8.5210533,5429.5083};
 				angles[]={0,5.4892349,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\RifleRangeBoardLeft.paa""];";
 			};
 			id=1652;
 			type="SignAd_Sponsor_F";
-			atlOffset=0.44544601;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19235,7 +19237,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6418.8809,9.0085821,5447.7729};
+				position[]={6418.8809,8.5107231,5447.7729};
 				angles[]={0,5.3407598,0};
 			};
 			side="Empty";
@@ -19246,7 +19248,7 @@ class Mission
 			};
 			id=1653;
 			type="SignAd_Sponsor_F";
-			atlOffset=0.77799988;
+			atlOffset=0.2801404;
 			class CustomAttributes
 			{
 				class Attribute0
