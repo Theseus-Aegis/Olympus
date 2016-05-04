@@ -8,7 +8,7 @@ class EditorData
 	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=3531;
+		nextID=3533;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2189.2024,10.903669,5380.7588};
-		dir[]={0.023826748,-0.21403639,0.9766537};
-		up[]={0.0052229939,0.97679478,0.2140605};
-		aside[]={0.99981117,2.2238521e-006,-0.024390643};
+		pos[]={6479.3169,22.109961,5382.6929};
+		dir[]={-0.7327888,-0.40528628,0.54680908};
+		up[]={-0.32487014,0.91414529,0.24241962};
+		aside[]={0.59811687,2.4350593e-006,0.80154836};
 	};
 };
 binarizationWanted=0;
@@ -11557,7 +11557,7 @@ class Mission
 			};
 			id=1138;
 			type="Land_MapBoard_F";
-			atlOffset=0.025826454;
+			atlOffset=0.028074265;
 		};
 		class Item603
 		{
@@ -17679,7 +17679,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=1573;
 			type="Land_PlasticCase_01_large_F";
@@ -17797,7 +17797,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=1584;
 			type="Land_PlasticCase_01_small_F";
@@ -18141,7 +18141,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=1599;
 			type="Land_PlasticCase_01_small_F";
@@ -18435,7 +18435,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=1611;
 			type="Land_PlasticCase_01_small_F";
@@ -18513,7 +18513,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=1612;
 			type="Land_PlasticCase_01_small_F";
@@ -18608,7 +18608,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=1614;
 			type="Land_PlasticCase_01_small_F";
@@ -18687,7 +18687,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=1615;
 			type="Land_PlasticCase_01_small_F";
@@ -18766,7 +18766,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=1616;
 			type="Land_PlasticCase_01_large_F";
@@ -22156,7 +22156,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxRifleInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
 			};
 			id=1856;
 			type="Land_PlasticCase_01_large_F";
@@ -22216,7 +22216,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxRifleInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
 			};
 			id=1857;
 			type="Land_PlasticCase_01_large_F";
@@ -22275,7 +22275,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxRifleInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
 			};
 			id=1858;
 			type="Land_PlasticCase_01_large_F";
@@ -22334,7 +22334,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxRifleInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
 			};
 			id=1859;
 			type="Land_PlasticCase_01_large_F";
@@ -22647,7 +22647,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxMarksmanInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxMarksmanInit;";
 			};
 			id=1883;
 			type="Land_PlasticCase_01_large_F";
@@ -22706,7 +22706,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxMarksmanInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxMarksmanInit;";
 			};
 			id=1884;
 			type="Land_PlasticCase_01_large_F";
@@ -32882,7 +32882,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxMGInit;";
 			};
 			id=2413;
 			type="Land_PlasticCase_01_large_F";
@@ -32941,7 +32941,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxMGInit;";
 			};
 			id=2414;
 			type="Land_PlasticCase_01_large_F";
@@ -34130,7 +34130,7 @@ class Mission
 			};
 			id=2577;
 			type="PortableHelipadLight_01_green_F";
-			atlOffset=0.89007139;
+			atlOffset=0.89007115;
 		};
 		class Item1362
 		{
@@ -34239,7 +34239,7 @@ class Mission
 			};
 			id=2584;
 			type="PortableHelipadLight_01_green_F";
-			atlOffset=4.7658386;
+			atlOffset=4.7658381;
 		};
 		class Item1369
 		{
@@ -34255,7 +34255,7 @@ class Mission
 			};
 			id=2585;
 			type="PortableHelipadLight_01_green_F";
-			atlOffset=4.8811059;
+			atlOffset=4.8811054;
 		};
 		class Item1370
 		{
@@ -34287,7 +34287,7 @@ class Mission
 			};
 			id=2587;
 			type="PortableHelipadLight_01_green_F";
-			atlOffset=4.5334644;
+			atlOffset=4.533464;
 		};
 		class Item1372
 		{
@@ -34304,7 +34304,7 @@ class Mission
 			};
 			id=2588;
 			type="PortableHelipadLight_01_green_F";
-			atlOffset=0.0067939758;
+			atlOffset=0.0067937374;
 		};
 		class Item1373
 		{
@@ -34320,7 +34320,7 @@ class Mission
 			};
 			id=2591;
 			type="MELB_MH6M";
-			atlOffset=4.953033;
+			atlOffset=4.9502397;
 		};
 		class Item1374
 		{
@@ -34336,7 +34336,7 @@ class Mission
 			};
 			id=2592;
 			type="MELB_H6M";
-			atlOffset=4.5488982;
+			atlOffset=4.5429168;
 		};
 		class Item1375
 		{
@@ -34352,7 +34352,7 @@ class Mission
 			};
 			id=2594;
 			type="MU_CIV_Orca";
-			atlOffset=4.5727854;
+			atlOffset=4.5722761;
 		};
 		class Item1376
 		{
@@ -41172,7 +41172,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxLockersInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxLockersInit;";
 			};
 			id=3092;
 			type="Land_PlasticCase_01_large_F";
@@ -41232,7 +41232,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxLockersInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxLockersInit;";
 			};
 			id=3093;
 			type="Land_PlasticCase_01_large_F";
@@ -41292,7 +41292,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxLockersInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxLockersInit;";
 			};
 			id=3094;
 			type="Land_PlasticCase_01_large_F";
@@ -41384,7 +41384,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxGrenadesInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxGrenadesInit;";
 			};
 			id=3095;
 			type="Land_PlasticCase_01_large_F";
@@ -41444,7 +41444,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxGrenadesInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxGrenadesInit;";
 			};
 			id=3096;
 			type="Land_PlasticCase_01_large_F";
@@ -45455,6 +45455,7 @@ class Mission
 			};
 			id=3382;
 			type="Land_TableDesk_F";
+			atlOffset=0.00046825409;
 		};
 		class Item1878
 		{
@@ -45503,6 +45504,7 @@ class Mission
 			};
 			id=3393;
 			type="Land_Table_EP1";
+			atlOffset=0.00029468536;
 		};
 		class Item1881
 		{
@@ -45743,6 +45745,7 @@ class Mission
 			};
 			id=3412;
 			type="OfficeTable_01_old_F";
+			atlOffset=2.1934509e-005;
 		};
 		class Item1896
 		{
@@ -45808,6 +45811,7 @@ class Mission
 			};
 			id=3429;
 			type="Land_Fire_barrel_burning";
+			atlOffset=3.6239624e-005;
 		};
 		class Item1900
 		{
@@ -45818,12 +45822,13 @@ class Mission
 				angles[]={0,4.7996559,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3430;
 			type="Land_MetalBarrel_F";
-			atlOffset=1.7118392;
+			atlOffset=0.00053215027;
 		};
 		class Item1901
 		{
@@ -45840,6 +45845,7 @@ class Mission
 			};
 			id=3431;
 			type="Land_BarrelEmpty_F";
+			atlOffset=0.00051021576;
 		};
 		class Item1902
 		{
@@ -45856,6 +45862,7 @@ class Mission
 			};
 			id=3432;
 			type="Barrel1";
+			atlOffset=0.00093650818;
 		};
 		class Item1903
 		{
@@ -46008,7 +46015,7 @@ class Mission
 			};
 			id=3445;
 			type="Land_WoodenTable_large_F";
-			atlOffset=9.5367432e-007;
+			atlOffset=0.00053596497;
 		};
 		class Item1911
 		{
@@ -46063,6 +46070,7 @@ class Mission
 			};
 			id=3449;
 			type="Barrel5";
+			atlOffset=3.6239624e-005;
 		};
 		class Item1913
 		{
@@ -46078,6 +46086,7 @@ class Mission
 			};
 			id=3450;
 			type="Land_Barrel_sand";
+			atlOffset=2.4795532e-005;
 		};
 		class Item1914
 		{
@@ -46093,6 +46102,7 @@ class Mission
 			};
 			id=3451;
 			type="Land_Barrel_empty";
+			atlOffset=2.4795532e-005;
 		};
 		class Item1915
 		{
@@ -46125,6 +46135,7 @@ class Mission
 			};
 			id=3458;
 			type="ArrowMarker_L_F";
+			atlOffset=9.5367432e-006;
 		};
 		class Item1917
 		{
@@ -46135,12 +46146,13 @@ class Mission
 				angles[]={0,3.1939528,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3459;
 			type="ArrowMarker_L_F";
-			atlOffset=1.7108569;
+			atlOffset=8.5830688e-006;
 		};
 		class Item1918
 		{
@@ -46151,12 +46163,13 @@ class Mission
 				angles[]={0,3.1939528,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3460;
 			type="ArrowMarker_L_F";
-			atlOffset=1.7088938;
+			atlOffset=8.5830688e-006;
 		};
 		class Item1919
 		{
@@ -46173,6 +46186,7 @@ class Mission
 			};
 			id=3461;
 			type="ArrowMarker_L_F";
+			atlOffset=2.4795532e-005;
 		};
 		class Item1920
 		{
@@ -46642,6 +46656,7 @@ class Mission
 			};
 			id=3500;
 			type="Land_WoodenTable_large_F";
+			atlOffset=0.0004234314;
 		};
 		class Item1942
 		{
@@ -46683,12 +46698,13 @@ class Mission
 				position[]={2213.5034,9.7925348,5400.103};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3504;
 			type="Land_MapBoard_F";
-			atlOffset=1.8836498;
+			atlOffset=0.0012197495;
 		};
 		class Item1945
 		{
@@ -46720,7 +46736,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=3513;
 			type="AmmoCrate_NoInteractive_";
@@ -46760,7 +46776,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxPistolSMGInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
 			};
 			id=3514;
 			type="AmmoCrate_NoInteractive_";
@@ -46800,7 +46816,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_ArmoryBoxRifleInit;";
+				init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
 			};
 			id=3515;
 			type="AmmoCrates_NoInteractive_Large";
@@ -46844,6 +46860,7 @@ class Mission
 			};
 			id=3516;
 			type="Land_CampingTable_F";
+			atlOffset=0.0023899078;
 		};
 		class Item1951
 		{
