@@ -8,7 +8,7 @@ class EditorData
 	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=3533;
+		nextID=3543;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6479.3169,22.109961,5382.6929};
-		dir[]={-0.7327888,-0.40528628,0.54680908};
-		up[]={-0.32487014,0.91414529,0.24241962};
-		aside[]={0.59811687,2.4350593e-006,0.80154836};
+		pos[]={6397.1284,40.910732,5214.5005};
+		dir[]={-0.74517006,-0.38192749,-0.5468868};
+		up[]={-0.30796528,0.92413104,-0.22601718};
+		aside[]={-0.59173834,1.8418068e-006,0.80628198};
 	};
 };
 binarizationWanted=0;
@@ -128,7 +128,8 @@ addons[]=
 	"A3_Structures_F_EPA_Civ_Camping",
 	"cup_castructures_e_misc_misc_market",
 	"cup_camisc",
-	"mbg_killhouses_a3"
+	"mbg_killhouses_a3",
+	"A3_Structures_F_Ind_WindPowerPlant"
 };
 randomSeed=5049233;
 class ScenarioData
@@ -150,14 +151,14 @@ class Mission
 		year=2035;
 		month=7;
 		day=6;
-		hour=19;
-		minute=-12;
+		hour=22;
+		minute=8;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
 	class Entities
 	{
-		items=1962;
+		items=1971;
 		class Item0
 		{
 			dataType="Object";
@@ -38330,8 +38331,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6402.0459,8.066824,5397.3999};
-				angles[]={0.024993783,4.3335629,0.0025135824};
+				position[]={6402.0454,8.066823,5397.3999};
+				angles[]={0.024993116,4.3335652,0.0025132741};
 			};
 			side="Empty";
 			flags=4;
@@ -38341,7 +38342,6 @@ class Mission
 			};
 			id=2899;
 			type="Land_PlasticCase_01_small_F";
-			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40747,7 +40747,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""tempImages\grenadesAircraftBoardLeft.paa""];";
+				init="this setObjectTexture [0,""tempImages\grenadesBoardLeft.paa""];";
 			};
 			id=3050;
 			type="SignAd_Sponsor_F";
@@ -40787,7 +40787,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""tempImages\grenadesAircraftBoardRight.paa""];";
+				init="this setObjectTexture [0,""tempImages\grenadesBoardRight.paa""];";
 			};
 			id=3051;
 			type="SignAd_Sponsor_F";
@@ -47123,6 +47123,178 @@ class Mission
 			};
 			id=3530;
 			type="RoadBarrier_F";
+		};
+		class Item1962
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6018.2236,88.156219,4942.3506};
+				angles[]={0,3.926991,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3533;
+			type="Land_PortableLight_double_F";
+			atlOffset=-0.0099639893;
+		};
+		class Item1963
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6038.5776,87.084999,4948.3242};
+				angles[]={0,2.3561947,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3534;
+			type="Land_PortableLight_double_F";
+		};
+		class Item1964
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6016.5596,88.113792,4965.3145};
+				angles[]={0,4.625123,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3535;
+			type="Land_PortableLight_single_F";
+			atlOffset=-0.001701355;
+		};
+		class Item1965
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6019.4995,88.017418,4947.0112};
+				angles[]={6.223258,3.5779252,0.057435457};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3537;
+			type="Land_PowerGenerator_F";
+		};
+		class Item1966
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5245.3418,156.56154,5806.1489};
+				angles[]={0,2.9670601,6.2058411};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3538;
+			type="Land_PowerGenerator_F";
+		};
+		class Item1967
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5231.5142,157.33498,5819.335};
+				angles[]={0,3.7524581,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3539;
+			type="Land_PortableLight_single_F";
+			atlOffset=-0.0050811768;
+		};
+		class Item1968
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5247.4209,156.68991,5803.7568};
+				angles[]={0,3.3161259,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3540;
+			type="Land_PortableLight_double_F";
+		};
+		class Item1969
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5256.7852,155.6703,5826.522};
+				angles[]={0,0.95993108,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3541;
+			type="Land_PortableLight_double_F";
+			atlOffset=4.5776367e-005;
+		};
+		class Item1970
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6447.8818,8.1901293,5432.7241};
+				angles[]={0,0.69863784,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this setObjectTexture [0,""tempImages\AircraftsBoardLeft.paa""];";
+			};
+			id=3542;
+			type="SignAd_Sponsor_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
