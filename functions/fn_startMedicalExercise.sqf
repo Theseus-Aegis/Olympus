@@ -64,6 +64,9 @@ if (isNull _mine) then {
     } forEach _victims;
 
     // Apply damage to specific victims
+      //victim 1 (select 0)
         [_victims select 0] call ace_medical_fnc_setCardiacArrest;
+      //victim 2 (select 1)
         [_victims select 1, true, 160, true] call ace_medical_fnc_setUnconscious;
+
 }, [_victims, _runWaypoint, _controller]] call ace_common_fnc_waitUntilAndExecute;
