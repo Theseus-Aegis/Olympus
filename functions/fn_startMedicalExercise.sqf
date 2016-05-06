@@ -54,13 +54,16 @@ if (isNull _mine) then {
 
     // Apply damage to all victims
     {
-        [_x, 0.05, "hand_r", "stab"] call ace_medical_fnc_addDamageToUnit;
-        [_x, 0.05, "leg_r", "bullet"] call ace_medical_fnc_addDamageToUnit;
-        [_x, 0.05, "head", "bullet"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.1, "hand_r", "stab"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.1, "leg_r", "grenade"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.1, "head", "explosive"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.1, "head", "shell"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.1, "head", "vehiclecrash"] call ace_medical_fnc_addDamageToUnit;
+        [_x, 0.1, "head", "backblast"] call ace_medical_fnc_addDamageToUnit;
         [_x, 0.4] call ace_medical_fnc_adjustPainLevel;
     } forEach _victims;
 
     // Apply damage to specific victims
-    [_victims select 0] call ace_medical_fnc_setCardiacArrest;
-    [_victims select 1, true, 2, true] call ace_medical_fnc_setUnconscious;
+        [_victims select 0] call ace_medical_fnc_setCardiacArrest;
+        [_victims select 1, true, 160, true] call ace_medical_fnc_setUnconscious;
 }, [_victims, _runWaypoint, _controller]] call ace_common_fnc_waitUntilAndExecute;
