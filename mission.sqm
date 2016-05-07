@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=10;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3994;
+		nextID=4007;
 	};
 	class MarkerIDProvider
 	{
-		nextID=82;
+		nextID=87;
 	};
 	class Camera
 	{
-		pos[]={6393.1694,20.923532,5458.1377};
-		dir[]={-0.82653242,-0.34460649,0.44534922};
-		up[]={-0.30373961,0.9382903,0.16366747};
-		aside[]={0.47441247,5.2188989e-006,0.88050818};
+		pos[]={5195.7603,231.7767,5022.3438};
+		dir[]={0.33439174,-0.64822912,-0.68425763};
+		up[]={0.28468981,0.76089746,-0.58257353};
+		aside[]={-0.89859962,-2.2348249e-006,-0.43915772};
 	};
 };
 binarizationWanted=0;
@@ -373,7 +373,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2259;
+		items=2265;
 		class Item0
 		{
 			dataType="Object";
@@ -389,7 +389,6 @@ class Mission
 			};
 			id=5;
 			type="MapBoard_stratis_F";
-			atlOffset=0.00094032288;
 		};
 		class Item1
 		{
@@ -407,7 +406,7 @@ class Mission
 			};
 			id=8;
 			type="Land_MapBoard_F";
-			atlOffset=0.0061531067;
+			atlOffset=0.00043773651;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -447,7 +446,7 @@ class Mission
 			};
 			id=20;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=1.7166138e-005;
+			atlOffset=0.043816566;
 		};
 		class Item3
 		{
@@ -481,7 +480,6 @@ class Mission
 			};
 			id=28;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
 		};
 		class Item5
 		{
@@ -498,7 +496,7 @@ class Mission
 			};
 			id=31;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
+			atlOffset=0.039876461;
 		};
 		class Item6
 		{
@@ -515,7 +513,7 @@ class Mission
 			};
 			id=32;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
+			atlOffset=0.043394089;
 		};
 		class Item7
 		{
@@ -532,7 +530,6 @@ class Mission
 			};
 			id=33;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
 		};
 		class Item8
 		{
@@ -549,7 +546,7 @@ class Mission
 			};
 			id=34;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.047992706;
+			atlOffset=0.047999859;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7749,7 +7746,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6332.1831,6.0992594,5495.9429};
+				position[]={6332.1831,6.0697012,5495.9429};
 				angles[]={6.255693,0.6166712,6.1760964};
 			};
 			side="Empty";
@@ -7759,6 +7756,7 @@ class Mission
 			};
 			id=686;
 			type="Land_HBarrier_5_F";
+			atlOffset=-0.029558182;
 		};
 		class Item369
 		{
@@ -9008,17 +9006,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6355.9609,4.7919235,5509.3013};
-				angles[]={0,5.2766714,0};
+				position[]={6355.9609,4.4648113,5509.3013};
+				angles[]={0.01749678,5.2766714,0.012496647};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="rifle_right_lane_target_7";
 			};
 			id=792;
 			type="TargetP_Inf_F";
-			atlOffset=0.32711244;
+			atlOffset=2.3841858e-007;
 		};
 		class Item440
 		{
@@ -33921,6 +33920,7 @@ class Mission
 					{
 						init="[this] call TAC_Olympus_fnc_setBasicLoadout;";
 						description="Medic Trainee";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=2481;
@@ -43032,32 +43032,80 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5191.3936,223.83807,4995.8926};
-				angles[]={0,2.9986062,0};
+				position[]={5191.394,223.83807,4995.8931};
+				angles[]={0,2.9985979,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="advRifleTarget2";
 			};
 			id=3200;
 			type="TargetP_Inf_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1737
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5188.0195,223.83807,4992.873};
-				angles[]={0,3.3167772,0};
+				position[]={5188.02,223.83807,4992.873};
+				angles[]={0,3.3167713,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="advRifleTarget3";
 			};
 			id=3201;
 			type="TargetP_Inf2_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1738
 		{
@@ -43096,15 +43144,39 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5190.355,223.83807,4995.624};
-				angles[]={0,3.0327132,0};
+				angles[]={0,3.0327189,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="advRifleTarget1";
 			};
 			id=3210;
 			type="TargetP_Inf4_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1741
 		{
@@ -53040,6 +53112,441 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item2259
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5201.689,223.00093,5011.9282};
+				angles[]={6.2806892,0,0.012496558};
+			};
+			id=3998;
+			type="tac_shootingrange_Module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="tac_shootingrange_Module_Mode";
+					expression="_this setVariable ['Mode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tac_shootingrange_Module_DefaultCountdownTime";
+					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=9;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tac_shootingrange_Module_DefaultTargetAmount";
+					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="tac_shootingrange_Module_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tac_shootingrange_Module_PauseDuration";
+					expression="_this setVariable ['PauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultPauseDuration";
+					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="tac_shootingrange_Module_TriggerMarkers";
+					expression="_this setVariable ['TriggerMarkers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="advrifleTrigger1,advrifleTrigger1,advrifleTrigger1";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="advRifleTarget1,advRifleTarget2,advRifleTarget3";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="tac_shootingrange_Module_Durations";
+					expression="_this setVariable ['Durations',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="tac_shootingrange_Module_CountdownTimes";
+					expression="_this setVariable ['CountdownTimes',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="tac_shootingrange_Module_TargetAmounts";
+					expression="_this setVariable ['TargetAmounts',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="tac_shootingrange_Module_Controllers";
+					expression="_this setVariable ['Controllers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="advRifleController,advRifleController2";
+						};
+					};
+				};
+				nAttributes=13;
+			};
+		};
+		class Item2260
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5201.1226,223.96031,5010.8569};
+				angles[]={6.2806892,5.8198175,0.012496558};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="advRifleController2";
+			};
+			id=4000;
+			type="Land_Laptop_device_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item2261
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5198.1172,223.1687,5011.8188};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4002;
+			type="HLC_MP5_ammobox";
+			atlOffset=-1.5258789e-005;
+		};
+		class Item2262
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5201.3496,223.40071,5010.9341};
+				angles[]={6.2806959,5.9140639,0.012496647};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4003;
+			type="Land_CampingTable_F";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item2263
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5202.8926,223.59293,5012.269};
+				angles[]={6.2781763,2.6653795,0.012496558};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="advRifleController";
+			};
+			id=4004;
+			type="Land_InfoStand_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2264
+		{
+			dataType="Marker";
+			position[]={5190.4775,222.98,5002.6177};
+			name="advRifleTrigger1";
+			markerType="RECTANGLE";
+			type="rectangle";
+			angle=358.35495;
+			id=4006;
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=2;
+		};
+		class Links
+		{
+			items=2;
+			class Item0
+			{
+				linkID=0;
+				item0=3201;
+				item1=3210;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=3200;
+				item1=3210;
+				class CustomData
+				{
+					type="Sync";
+				};
 			};
 		};
 	};
