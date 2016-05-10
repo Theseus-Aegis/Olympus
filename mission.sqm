@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4135;
+		nextID=4180;
 	};
 	class MarkerIDProvider
 	{
-		nextID=87;
+		nextID=125;
 	};
 	class Camera
 	{
-		pos[]={5198.0083,247.55074,5045.0742};
-		dir[]={0.19561188,-0.69446379,-0.69258147};
-		up[]={0.18876687,0.71947342,-0.66834939};
-		aside[]={-0.96246719,-1.2674136e-006,-0.27184117};
+		pos[]={5468.6436,342.63507,5174.2271};
+		dir[]={-0.72393125,-0.60870862,-0.32502273};
+		up[]={-0.55538177,0.79329878,-0.2493521};
+		aside[]={-0.40964174,-1.5845289e-006,0.91238731};
 	};
 };
 binarizationWanted=0;
@@ -135,7 +135,8 @@ addons[]=
 	"cup_camisc_acr_sign_mines",
 	"mbg_killhouses_a3",
 	"cup_camp_armory_misc_red_light",
-	"A3_Structures_F_Mil_Shelters"
+	"A3_Structures_F_Mil_Shelters",
+	"A3_Structures_F_Civ_Accessories"
 };
 randomSeed=5049233;
 class ScenarioData
@@ -375,7 +376,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2316;
+		items=2359;
 		class Item0
 		{
 			dataType="Object";
@@ -31273,44 +31274,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="tac_shootingrange_Module_Mode";
-					expression="_this setVariable ['Mode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tac_shootingrange_Module_DefaultCountdownTime";
-					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=15;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="tac_shootingrange_Module_DefaultTargetAmount";
 					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
 					class Value
@@ -31328,10 +31291,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute1
 				{
-					property="tac_shootingrange_Module_Name";
-					expression="_this setVariable ['Name',_value,true];";
+					property="tac_shootingrange_Module_PopOnTriggerExit";
+					expression="_this setVariable ['PopOnTriggerExit',_value,true];";
 					class Value
 					{
 						class data
@@ -31340,36 +31303,17 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"BOOL"
 								};
 							};
-							value="LMG Firing Range";
+							value=1;
 						};
 					};
 				};
-				class Attribute4
+				class Attribute2
 				{
-					property="tac_shootingrange_Module_DefaultDuration";
-					expression="_this setVariable ['DefaultDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=60;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="tac_shootingrange_Module_PauseDuration";
-					expression="_this setVariable ['PauseDuration',_value,true];";
+					property="tac_shootingrange_Module_TriggerMarkers";
+					expression="_this setVariable ['TriggerMarkers',_value,true];";
 					class Value
 					{
 						class data
@@ -31385,7 +31329,26 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
+				class Attribute3
+				{
+					property="tac_shootingrange_Module_CountdownTimes";
+					expression="_this setVariable ['CountdownTimes',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
 				{
 					property="tac_shootingrange_Module_DefaultPauseDuration";
 					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
@@ -31404,10 +31367,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute7
+				class Attribute5
 				{
-					property="tac_shootingrange_Module_TriggerMarkers";
-					expression="_this setVariable ['TriggerMarkers',_value,true];";
+					property="tac_shootingrange_Module_SoundSources";
+					expression="_this setVariable ['SoundSources',_value,true];";
 					class Value
 					{
 						class data
@@ -31420,13 +31383,51 @@ class Mission
 								};
 							};
 							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="tac_shootingrange_Module_Mode";
+					expression="_this setVariable ['Mode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
 						};
 					};
 				};
 				class Attribute8
 				{
-					property="tac_shootingrange_Module_Targets";
-					expression="_this setVariable ['Targets',_value,true];";
+					property="tac_shootingrange_Module_TargetsInvalid";
+					expression="_this setVariable ['TargetsInvalid',_value,true];";
 					class Value
 					{
 						class data
@@ -31438,49 +31439,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="machinegun_range_target_1,machinegun_range_target_2,machinegun_range_target_3,machinegun_range_target_4,machinegun_range_target_5,machinegun_range_target_6,machinegun_range_target_7,machinegun_range_target_8,machinegun_range_target_9,machinegun_range_target_10,machinegun_range_target_11,machinegun_range_target_12,machinegun_range_target_13,machinegun_range_target_14,machinegun_range_target_15,machinegun_range_target_16,machinegun_range_target_17,machinegun_range_target_18,machinegun_range_target_19,machinegun_range_target_20";
+							value="";
 						};
 					};
 				};
 				class Attribute9
-				{
-					property="tac_shootingrange_Module_Durations";
-					expression="_this setVariable ['Durations',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="tac_shootingrange_Module_CountdownTimes";
-					expression="_this setVariable ['CountdownTimes',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute11
 				{
 					property="tac_shootingrange_Module_TargetAmounts";
 					expression="_this setVariable ['TargetAmounts',_value,true];";
@@ -31499,7 +31462,83 @@ class Mission
 						};
 					};
 				};
+				class Attribute10
+				{
+					property="tac_shootingrange_Module_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="LMG Firing Range";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="tac_shootingrange_Module_DefaultCountdownTime";
+					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
 				class Attribute12
+				{
+					property="tac_shootingrange_Module_PauseDuration";
+					expression="_this setVariable ['PauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="tac_shootingrange_Module_Durations";
+					expression="_this setVariable ['Durations',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute14
 				{
 					property="tac_shootingrange_Module_Controllers";
 					expression="_this setVariable ['Controllers',_value,true];";
@@ -31518,7 +31557,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=13;
+				class Attribute15
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="machinegun_range_target_1,machinegun_range_target_2,machinegun_range_target_3,machinegun_range_target_4,machinegun_range_target_5,machinegun_range_target_6,machinegun_range_target_7,machinegun_range_target_8,machinegun_range_target_9,machinegun_range_target_10,machinegun_range_target_11,machinegun_range_target_12,machinegun_range_target_13,machinegun_range_target_14,machinegun_range_target_15,machinegun_range_target_16,machinegun_range_target_17,machinegun_range_target_18,machinegun_range_target_19,machinegun_range_target_20";
+						};
+					};
+				};
+				nAttributes=16;
 			};
 		};
 		class Item1315
@@ -31534,44 +31592,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="tac_shootingrange_Module_Mode";
-					expression="_this setVariable ['Mode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tac_shootingrange_Module_DefaultCountdownTime";
-					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=9;
-						};
-					};
-				};
-				class Attribute2
 				{
 					property="tac_shootingrange_Module_DefaultTargetAmount";
 					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
@@ -31590,7 +31610,178 @@ class Mission
 						};
 					};
 				};
+				class Attribute1
+				{
+					property="tac_shootingrange_Module_PopOnTriggerExit";
+					expression="_this setVariable ['PopOnTriggerExit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tac_shootingrange_Module_TriggerMarkers";
+					expression="_this setVariable ['TriggerMarkers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
 				class Attribute3
+				{
+					property="tac_shootingrange_Module_CountdownTimes";
+					expression="_this setVariable ['CountdownTimes',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tac_shootingrange_Module_DefaultPauseDuration";
+					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tac_shootingrange_Module_SoundSources";
+					expression="_this setVariable ['SoundSources',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="tac_shootingrange_Module_Mode";
+					expression="_this setVariable ['Mode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="tac_shootingrange_Module_TargetsInvalid";
+					expression="_this setVariable ['TargetsInvalid',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="tac_shootingrange_Module_TargetAmounts";
+					expression="_this setVariable ['TargetAmounts',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute10
 				{
 					property="tac_shootingrange_Module_Name";
 					expression="_this setVariable ['Name',_value,true];";
@@ -31609,10 +31800,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute11
 				{
-					property="tac_shootingrange_Module_DefaultDuration";
-					expression="_this setVariable ['DefaultDuration',_value,true];";
+					property="tac_shootingrange_Module_DefaultCountdownTime";
+					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
 					class Value
 					{
 						class data
@@ -31624,11 +31815,11 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=60;
+							value=9;
 						};
 					};
 				};
-				class Attribute5
+				class Attribute12
 				{
 					property="tac_shootingrange_Module_PauseDuration";
 					expression="_this setVariable ['PauseDuration',_value,true];";
@@ -31647,64 +31838,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
-				{
-					property="tac_shootingrange_Module_DefaultPauseDuration";
-					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="tac_shootingrange_Module_TriggerMarkers";
-					expression="_this setVariable ['TriggerMarkers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="tac_shootingrange_Module_Targets";
-					expression="_this setVariable ['Targets',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="marksman_range_target_1,marksman_range_target_2,marksman_range_target_3,marksman_range_target_4,marksman_range_target_5,marksman_range_target_6,marksman_range_target_7,marksman_range_target_8,marksman_range_target_9,marksman_range_target_10,marksman_range_target_11,marksman_range_target_12,marksman_range_target_13,marksman_range_target_14,marksman_range_target_15,marksman_range_target_16,marksman_range_target_17,marksman_range_target_18,marksman_range_target_19,marksman_range_target_20";
-						};
-					};
-				};
-				class Attribute9
+				class Attribute13
 				{
 					property="tac_shootingrange_Module_Durations";
 					expression="_this setVariable ['Durations',_value,true];";
@@ -31723,45 +31857,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute10
-				{
-					property="tac_shootingrange_Module_CountdownTimes";
-					expression="_this setVariable ['CountdownTimes',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="tac_shootingrange_Module_TargetAmounts";
-					expression="_this setVariable ['TargetAmounts',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute12
+				class Attribute14
 				{
 					property="tac_shootingrange_Module_Controllers";
 					expression="_this setVariable ['Controllers',_value,true];";
@@ -31780,7 +31876,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=13;
+				class Attribute15
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="marksman_range_target_1,marksman_range_target_2,marksman_range_target_3,marksman_range_target_4,marksman_range_target_5,marksman_range_target_6,marksman_range_target_7,marksman_range_target_8,marksman_range_target_9,marksman_range_target_10,marksman_range_target_11,marksman_range_target_12,marksman_range_target_13,marksman_range_target_14,marksman_range_target_15,marksman_range_target_16,marksman_range_target_17,marksman_range_target_18,marksman_range_target_19,marksman_range_target_20";
+						};
+					};
+				};
+				nAttributes=16;
 			};
 		};
 		class Item1316
@@ -31795,44 +31910,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="tac_shootingrange_Module_Mode";
-					expression="_this setVariable ['Mode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tac_shootingrange_Module_DefaultCountdownTime";
-					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=9;
-						};
-					};
-				};
-				class Attribute2
 				{
 					property="tac_shootingrange_Module_DefaultTargetAmount";
 					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
@@ -31851,7 +31928,178 @@ class Mission
 						};
 					};
 				};
+				class Attribute1
+				{
+					property="tac_shootingrange_Module_PopOnTriggerExit";
+					expression="_this setVariable ['PopOnTriggerExit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tac_shootingrange_Module_TriggerMarkers";
+					expression="_this setVariable ['TriggerMarkers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
 				class Attribute3
+				{
+					property="tac_shootingrange_Module_CountdownTimes";
+					expression="_this setVariable ['CountdownTimes',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tac_shootingrange_Module_DefaultPauseDuration";
+					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tac_shootingrange_Module_SoundSources";
+					expression="_this setVariable ['SoundSources',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="tac_shootingrange_Module_Mode";
+					expression="_this setVariable ['Mode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="tac_shootingrange_Module_TargetsInvalid";
+					expression="_this setVariable ['TargetsInvalid',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="tac_shootingrange_Module_TargetAmounts";
+					expression="_this setVariable ['TargetAmounts',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute10
 				{
 					property="tac_shootingrange_Module_Name";
 					expression="_this setVariable ['Name',_value,true];";
@@ -31870,10 +32118,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute11
 				{
-					property="tac_shootingrange_Module_DefaultDuration";
-					expression="_this setVariable ['DefaultDuration',_value,true];";
+					property="tac_shootingrange_Module_DefaultCountdownTime";
+					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
 					class Value
 					{
 						class data
@@ -31885,11 +32133,11 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=60;
+							value=9;
 						};
 					};
 				};
-				class Attribute5
+				class Attribute12
 				{
 					property="tac_shootingrange_Module_PauseDuration";
 					expression="_this setVariable ['PauseDuration',_value,true];";
@@ -31908,64 +32156,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
-				{
-					property="tac_shootingrange_Module_DefaultPauseDuration";
-					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="tac_shootingrange_Module_TriggerMarkers";
-					expression="_this setVariable ['TriggerMarkers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="tac_shootingrange_Module_Targets";
-					expression="_this setVariable ['Targets',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="pistol_left_lane_target_1,pistol_left_lane_target_2,pistol_left_lane_target_3,pistol_left_lane_target_4,pistol_left_lane_target_5,pistol_left_lane_target_6,pistol_left_lane_target_7,pistol_left_lane_target_8,pistol_left_lane_target_9,pistol_left_lane_target_10,pistol_left_lane_target_11,pistol_left_lane_target_12,pistol_left_lane_target_13,pistol_left_lane_target_14,pistol_left_lane_target_15,pistol_left_lane_target_16,pistol_left_lane_target_17,pistol_left_lane_target_18,pistol_left_lane_target_19,pistol_left_lane_target_20,pistol_left_lane_target_21,pistol_left_lane_target_22,pistol_left_lane_target_23,pistol_left_lane_target_24,pistol_left_lane_target_25,pistol_left_lane_target_26,pistol_left_lane_target_27,pistol_left_lane_target_28";
-						};
-					};
-				};
-				class Attribute9
+				class Attribute13
 				{
 					property="tac_shootingrange_Module_Durations";
 					expression="_this setVariable ['Durations',_value,true];";
@@ -31984,45 +32175,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute10
-				{
-					property="tac_shootingrange_Module_CountdownTimes";
-					expression="_this setVariable ['CountdownTimes',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="tac_shootingrange_Module_TargetAmounts";
-					expression="_this setVariable ['TargetAmounts',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute12
+				class Attribute14
 				{
 					property="tac_shootingrange_Module_Controllers";
 					expression="_this setVariable ['Controllers',_value,true];";
@@ -32041,7 +32194,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=13;
+				class Attribute15
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="pistol_left_lane_target_1,pistol_left_lane_target_2,pistol_left_lane_target_3,pistol_left_lane_target_4,pistol_left_lane_target_5,pistol_left_lane_target_6,pistol_left_lane_target_7,pistol_left_lane_target_8,pistol_left_lane_target_9,pistol_left_lane_target_10,pistol_left_lane_target_11,pistol_left_lane_target_12,pistol_left_lane_target_13,pistol_left_lane_target_14,pistol_left_lane_target_15,pistol_left_lane_target_16,pistol_left_lane_target_17,pistol_left_lane_target_18,pistol_left_lane_target_19,pistol_left_lane_target_20,pistol_left_lane_target_21,pistol_left_lane_target_22,pistol_left_lane_target_23,pistol_left_lane_target_24,pistol_left_lane_target_25,pistol_left_lane_target_26,pistol_left_lane_target_27,pistol_left_lane_target_28";
+						};
+					};
+				};
+				nAttributes=16;
 			};
 		};
 		class Item1317
@@ -32056,44 +32228,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="tac_shootingrange_Module_Mode";
-					expression="_this setVariable ['Mode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tac_shootingrange_Module_DefaultCountdownTime";
-					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=9;
-						};
-					};
-				};
-				class Attribute2
 				{
 					property="tac_shootingrange_Module_DefaultTargetAmount";
 					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
@@ -32112,7 +32246,178 @@ class Mission
 						};
 					};
 				};
+				class Attribute1
+				{
+					property="tac_shootingrange_Module_PopOnTriggerExit";
+					expression="_this setVariable ['PopOnTriggerExit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tac_shootingrange_Module_TriggerMarkers";
+					expression="_this setVariable ['TriggerMarkers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
 				class Attribute3
+				{
+					property="tac_shootingrange_Module_CountdownTimes";
+					expression="_this setVariable ['CountdownTimes',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tac_shootingrange_Module_DefaultPauseDuration";
+					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tac_shootingrange_Module_SoundSources";
+					expression="_this setVariable ['SoundSources',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="tac_shootingrange_Module_Mode";
+					expression="_this setVariable ['Mode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="tac_shootingrange_Module_TargetsInvalid";
+					expression="_this setVariable ['TargetsInvalid',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="tac_shootingrange_Module_TargetAmounts";
+					expression="_this setVariable ['TargetAmounts',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute10
 				{
 					property="tac_shootingrange_Module_Name";
 					expression="_this setVariable ['Name',_value,true];";
@@ -32131,10 +32436,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute11
 				{
-					property="tac_shootingrange_Module_DefaultDuration";
-					expression="_this setVariable ['DefaultDuration',_value,true];";
+					property="tac_shootingrange_Module_DefaultCountdownTime";
+					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
 					class Value
 					{
 						class data
@@ -32146,11 +32451,11 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=60;
+							value=9;
 						};
 					};
 				};
-				class Attribute5
+				class Attribute12
 				{
 					property="tac_shootingrange_Module_PauseDuration";
 					expression="_this setVariable ['PauseDuration',_value,true];";
@@ -32169,64 +32474,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
-				{
-					property="tac_shootingrange_Module_DefaultPauseDuration";
-					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="tac_shootingrange_Module_TriggerMarkers";
-					expression="_this setVariable ['TriggerMarkers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="tac_shootingrange_Module_Targets";
-					expression="_this setVariable ['Targets',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="pistol_right_lane_target_1,pistol_right_lane_target_2,pistol_right_lane_target_3,pistol_right_lane_target_4,pistol_right_lane_target_5,pistol_right_lane_target_6,pistol_right_lane_target_7,pistol_right_lane_target_8,pistol_right_lane_target_9,pistol_right_lane_target_10,pistol_right_lane_target_11,pistol_right_lane_target_12,pistol_right_lane_target_13,pistol_right_lane_target_14,pistol_right_lane_target_15,pistol_right_lane_target_16,pistol_right_lane_target_17,pistol_right_lane_target_18,pistol_right_lane_target_19,pistol_right_lane_target_20,pistol_right_lane_target_21,pistol_right_lane_target_22,pistol_right_lane_target_23,pistol_right_lane_target_24,pistol_right_lane_target_25,pistol_right_lane_target_26,pistol_right_lane_target_27,pistol_right_lane_target_28";
-						};
-					};
-				};
-				class Attribute9
+				class Attribute13
 				{
 					property="tac_shootingrange_Module_Durations";
 					expression="_this setVariable ['Durations',_value,true];";
@@ -32245,45 +32493,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute10
-				{
-					property="tac_shootingrange_Module_CountdownTimes";
-					expression="_this setVariable ['CountdownTimes',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="tac_shootingrange_Module_TargetAmounts";
-					expression="_this setVariable ['TargetAmounts',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute12
+				class Attribute14
 				{
 					property="tac_shootingrange_Module_Controllers";
 					expression="_this setVariable ['Controllers',_value,true];";
@@ -32302,7 +32512,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=13;
+				class Attribute15
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="pistol_right_lane_target_1,pistol_right_lane_target_2,pistol_right_lane_target_3,pistol_right_lane_target_4,pistol_right_lane_target_5,pistol_right_lane_target_6,pistol_right_lane_target_7,pistol_right_lane_target_8,pistol_right_lane_target_9,pistol_right_lane_target_10,pistol_right_lane_target_11,pistol_right_lane_target_12,pistol_right_lane_target_13,pistol_right_lane_target_14,pistol_right_lane_target_15,pistol_right_lane_target_16,pistol_right_lane_target_17,pistol_right_lane_target_18,pistol_right_lane_target_19,pistol_right_lane_target_20,pistol_right_lane_target_21,pistol_right_lane_target_22,pistol_right_lane_target_23,pistol_right_lane_target_24,pistol_right_lane_target_25,pistol_right_lane_target_26,pistol_right_lane_target_27,pistol_right_lane_target_28";
+						};
+					};
+				};
+				nAttributes=16;
 			};
 		};
 		class Item1318
@@ -32317,6 +32546,139 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="tac_shootingrange_Module_DefaultTargetAmount";
+					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tac_shootingrange_Module_PopOnTriggerExit";
+					expression="_this setVariable ['PopOnTriggerExit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tac_shootingrange_Module_TriggerMarkers";
+					expression="_this setVariable ['TriggerMarkers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="tac_shootingrange_Module_CountdownTimes";
+					expression="_this setVariable ['CountdownTimes',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tac_shootingrange_Module_DefaultPauseDuration";
+					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tac_shootingrange_Module_SoundSources";
+					expression="_this setVariable ['SoundSources',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute7
 				{
 					property="tac_shootingrange_Module_Mode";
 					expression="_this setVariable ['Mode',_value,true];";
@@ -32335,10 +32697,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute8
 				{
-					property="tac_shootingrange_Module_DefaultCountdownTime";
-					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
+					property="tac_shootingrange_Module_TargetsInvalid";
+					expression="_this setVariable ['TargetsInvalid',_value,true];";
 					class Value
 					{
 						class data
@@ -32347,17 +32709,17 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"STRING"
 								};
 							};
-							value=9;
+							value="";
 						};
 					};
 				};
-				class Attribute2
+				class Attribute9
 				{
-					property="tac_shootingrange_Module_DefaultTargetAmount";
-					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
+					property="tac_shootingrange_Module_TargetAmounts";
+					expression="_this setVariable ['TargetAmounts',_value,true];";
 					class Value
 					{
 						class data
@@ -32366,14 +32728,14 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"STRING"
 								};
 							};
-							value=15;
+							value="50,55,60,70";
 						};
 					};
 				};
-				class Attribute3
+				class Attribute10
 				{
 					property="tac_shootingrange_Module_Name";
 					expression="_this setVariable ['Name',_value,true];";
@@ -32392,211 +32754,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
-				{
-					property="tac_shootingrange_Module_DefaultDuration";
-					expression="_this setVariable ['DefaultDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=60;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="tac_shootingrange_Module_PauseDuration";
-					expression="_this setVariable ['PauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="tac_shootingrange_Module_DefaultPauseDuration";
-					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="tac_shootingrange_Module_TriggerMarkers";
-					expression="_this setVariable ['TriggerMarkers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="tac_shootingrange_Module_Targets";
-					expression="_this setVariable ['Targets',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="rifle_left_lane_target_1,rifle_left_lane_target_2,rifle_left_lane_target_3,rifle_left_lane_target_4,rifle_left_lane_target_5,rifle_left_lane_target_6,rifle_left_lane_target_7,rifle_left_lane_target_8,rifle_left_lane_target_9,rifle_left_lane_target_10,rifle_left_lane_target_11,rifle_left_lane_target_12,rifle_left_lane_target_13,rifle_left_lane_target_14,rifle_left_lane_target_15,rifle_left_lane_target_16,rifle_left_lane_target_17,rifle_left_lane_target_18,rifle_left_lane_target_19,rifle_left_lane_target_20,rifle_left_lane_target_21,rifle_left_lane_target_22,rifle_left_lane_target_23,rifle_left_lane_target_24,rifle_left_lane_target_25,rifle_left_lane_target_26,rifle_left_lane_target_27";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="tac_shootingrange_Module_Durations";
-					expression="_this setVariable ['Durations',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="tac_shootingrange_Module_CountdownTimes";
-					expression="_this setVariable ['CountdownTimes',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
 				class Attribute11
-				{
-					property="tac_shootingrange_Module_TargetAmounts";
-					expression="_this setVariable ['TargetAmounts',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="50,55,60,70";
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="tac_shootingrange_Module_Controllers";
-					expression="_this setVariable ['Controllers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="LaptopRifleRangeLeft";
-						};
-					};
-				};
-				nAttributes=13;
-			};
-		};
-		class Item1319
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={6397.5049,5.7183065,5464.4858};
-			};
-			id=2389;
-			type="tac_shootingrange_Module";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="tac_shootingrange_Module_Mode";
-					expression="_this setVariable ['Mode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="tac_shootingrange_Module_DefaultCountdownTime";
 					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
@@ -32615,64 +32773,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="tac_shootingrange_Module_DefaultTargetAmount";
-					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=15;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="tac_shootingrange_Module_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Rifle Firing Range - Right";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="tac_shootingrange_Module_DefaultDuration";
-					expression="_this setVariable ['DefaultDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=60;
-						};
-					};
-				};
-				class Attribute5
+				class Attribute12
 				{
 					property="tac_shootingrange_Module_PauseDuration";
 					expression="_this setVariable ['PauseDuration',_value,true];";
@@ -32691,64 +32792,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
-				{
-					property="tac_shootingrange_Module_DefaultPauseDuration";
-					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="tac_shootingrange_Module_TriggerMarkers";
-					expression="_this setVariable ['TriggerMarkers',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="tac_shootingrange_Module_Targets";
-					expression="_this setVariable ['Targets',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="rifle_right_lane_target_1,rifle_right_lane_target_2,rifle_right_lane_target_3,rifle_right_lane_target_4,rifle_right_lane_target_5,rifle_right_lane_target_6,rifle_right_lane_target_7,rifle_right_lane_target_8,rifle_right_lane_target_9,rifle_right_lane_target_10,rifle_right_lane_target_11,rifle_right_lane_target_12,rifle_right_lane_target_13,rifle_right_lane_target_14,rifle_right_lane_target_15,rifle_right_lane_target_16,rifle_right_lane_target_17,rifle_right_lane_target_18,rifle_right_lane_target_19,rifle_right_lane_target_20,rifle_right_lane_target_21,rifle_right_lane_target_22,rifle_right_lane_target_23";
-						};
-					};
-				};
-				class Attribute9
+				class Attribute13
 				{
 					property="tac_shootingrange_Module_Durations";
 					expression="_this setVariable ['Durations',_value,true];";
@@ -32767,7 +32811,116 @@ class Mission
 						};
 					};
 				};
-				class Attribute10
+				class Attribute14
+				{
+					property="tac_shootingrange_Module_Controllers";
+					expression="_this setVariable ['Controllers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="LaptopRifleRangeLeft";
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="rifle_left_lane_target_1,rifle_left_lane_target_2,rifle_left_lane_target_3,rifle_left_lane_target_4,rifle_left_lane_target_5,rifle_left_lane_target_6,rifle_left_lane_target_7,rifle_left_lane_target_8,rifle_left_lane_target_9,rifle_left_lane_target_10,rifle_left_lane_target_11,rifle_left_lane_target_12,rifle_left_lane_target_13,rifle_left_lane_target_14,rifle_left_lane_target_15,rifle_left_lane_target_16,rifle_left_lane_target_17,rifle_left_lane_target_18,rifle_left_lane_target_19,rifle_left_lane_target_20,rifle_left_lane_target_21,rifle_left_lane_target_22,rifle_left_lane_target_23,rifle_left_lane_target_24,rifle_left_lane_target_25,rifle_left_lane_target_26,rifle_left_lane_target_27";
+						};
+					};
+				};
+				nAttributes=16;
+			};
+		};
+		class Item1319
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6397.5049,5.7183065,5464.4858};
+			};
+			id=2389;
+			type="tac_shootingrange_Module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="tac_shootingrange_Module_DefaultTargetAmount";
+					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tac_shootingrange_Module_PopOnTriggerExit";
+					expression="_this setVariable ['PopOnTriggerExit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tac_shootingrange_Module_TriggerMarkers";
+					expression="_this setVariable ['TriggerMarkers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
 				{
 					property="tac_shootingrange_Module_CountdownTimes";
 					expression="_this setVariable ['CountdownTimes',_value,true];";
@@ -32786,7 +32939,102 @@ class Mission
 						};
 					};
 				};
-				class Attribute11
+				class Attribute4
+				{
+					property="tac_shootingrange_Module_DefaultPauseDuration";
+					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tac_shootingrange_Module_SoundSources";
+					expression="_this setVariable ['SoundSources',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="tac_shootingrange_Module_Mode";
+					expression="_this setVariable ['Mode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="tac_shootingrange_Module_TargetsInvalid";
+					expression="_this setVariable ['TargetsInvalid',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute9
 				{
 					property="tac_shootingrange_Module_TargetAmounts";
 					expression="_this setVariable ['TargetAmounts',_value,true];";
@@ -32805,7 +33053,83 @@ class Mission
 						};
 					};
 				};
+				class Attribute10
+				{
+					property="tac_shootingrange_Module_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Rifle Firing Range - Right";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="tac_shootingrange_Module_DefaultCountdownTime";
+					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=9;
+						};
+					};
+				};
 				class Attribute12
+				{
+					property="tac_shootingrange_Module_PauseDuration";
+					expression="_this setVariable ['PauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="tac_shootingrange_Module_Durations";
+					expression="_this setVariable ['Durations',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute14
 				{
 					property="tac_shootingrange_Module_Controllers";
 					expression="_this setVariable ['Controllers',_value,true];";
@@ -32824,7 +33148,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=13;
+				class Attribute15
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="rifle_right_lane_target_1,rifle_right_lane_target_2,rifle_right_lane_target_3,rifle_right_lane_target_4,rifle_right_lane_target_5,rifle_right_lane_target_6,rifle_right_lane_target_7,rifle_right_lane_target_8,rifle_right_lane_target_9,rifle_right_lane_target_10,rifle_right_lane_target_11,rifle_right_lane_target_12,rifle_right_lane_target_13,rifle_right_lane_target_14,rifle_right_lane_target_15,rifle_right_lane_target_16,rifle_right_lane_target_17,rifle_right_lane_target_18,rifle_right_lane_target_19,rifle_right_lane_target_20,rifle_right_lane_target_21,rifle_right_lane_target_22,rifle_right_lane_target_23";
+						};
+					};
+				};
+				nAttributes=16;
 			};
 		};
 		class Item1320
@@ -53767,44 +54110,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="tac_shootingrange_Module_Mode";
-					expression="_this setVariable ['Mode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=4;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tac_shootingrange_Module_DefaultCountdownTime";
-					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=9;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="tac_shootingrange_Module_DefaultTargetAmount";
 					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
 					class Value
@@ -53822,10 +54127,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute1
 				{
-					property="tac_shootingrange_Module_Name";
-					expression="_this setVariable ['Name',_value,true];";
+					property="tac_shootingrange_Module_PopOnTriggerExit";
+					expression="_this setVariable ['PopOnTriggerExit',_value,true];";
 					class Value
 					{
 						class data
@@ -53834,71 +54139,14 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"BOOL"
 								};
 							};
-							value="Advanced Rifle Course";
+							value=1;
 						};
 					};
 				};
-				class Attribute4
-				{
-					property="tac_shootingrange_Module_DefaultDuration";
-					expression="_this setVariable ['DefaultDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=60;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="tac_shootingrange_Module_PauseDuration";
-					expression="_this setVariable ['PauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="tac_shootingrange_Module_DefaultPauseDuration";
-					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute7
+				class Attribute2
 				{
 					property="tac_shootingrange_Module_TriggerMarkers";
 					expression="_this setVariable ['TriggerMarkers',_value,true];";
@@ -53917,45 +54165,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute8
-				{
-					property="tac_shootingrange_Module_Targets";
-					expression="_this setVariable ['Targets',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="advRifleTarget1,advRifleTarget2,advRifleTarget3,advRifleTarget4,advRifleTarget5,advRifleTarget6,advRifleTarget7,advRifleTarget8,advRifleTarget9,advRifleTarget10,advRifleTarget11,advRifleTarget12,advRifleTarget13,advRifleTarget14,advRifleTarget15,advRifleTarget16,advRifleTarget17,advRifleTarget18,advRifleTarget19,advRifleTarget20,advRifleTarget21,advRifleTarget22,advRifleTarget23,advRifleTarget24,advRifleTarget25,advRifleTarget26,advRifleTarget27,advRifleTarget28,advRifleTarget29,advRifleTarget30,advRifleTarget31,advRifleTarget32,advRifleTarget33,advRifleTarget34,advRifleTarget35,advRifleTarget36,advRifleTarget37,advRifleTarget38,advRifleTarget39,advRifleTarget40,advRifleTarget41,advRifleTarget42,advRifleTarget43,advRifleTarget44,advRifleTarget45";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="tac_shootingrange_Module_Durations";
-					expression="_this setVariable ['Durations',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute10
+				class Attribute3
 				{
 					property="tac_shootingrange_Module_CountdownTimes";
 					expression="_this setVariable ['CountdownTimes',_value,true];";
@@ -53974,7 +54184,102 @@ class Mission
 						};
 					};
 				};
-				class Attribute11
+				class Attribute4
+				{
+					property="tac_shootingrange_Module_DefaultPauseDuration";
+					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tac_shootingrange_Module_SoundSources";
+					expression="_this setVariable ['SoundSources',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="tac_shootingrange_Module_Mode";
+					expression="_this setVariable ['Mode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="tac_shootingrange_Module_TargetsInvalid";
+					expression="_this setVariable ['TargetsInvalid',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute9
 				{
 					property="tac_shootingrange_Module_TargetAmounts";
 					expression="_this setVariable ['TargetAmounts',_value,true];";
@@ -53993,7 +54298,83 @@ class Mission
 						};
 					};
 				};
+				class Attribute10
+				{
+					property="tac_shootingrange_Module_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Advanced Rifle Course";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="tac_shootingrange_Module_DefaultCountdownTime";
+					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=9;
+						};
+					};
+				};
 				class Attribute12
+				{
+					property="tac_shootingrange_Module_PauseDuration";
+					expression="_this setVariable ['PauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="tac_shootingrange_Module_Durations";
+					expression="_this setVariable ['Durations',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute14
 				{
 					property="tac_shootingrange_Module_Controllers";
 					expression="_this setVariable ['Controllers',_value,true];";
@@ -54012,7 +54393,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=13;
+				class Attribute15
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="advRifleTarget1,advRifleTarget2,advRifleTarget3,advRifleTarget4,advRifleTarget5,advRifleTarget6,advRifleTarget7,advRifleTarget8,advRifleTarget9,advRifleTarget10,advRifleTarget11,advRifleTarget12,advRifleTarget13,advRifleTarget14,advRifleTarget15,advRifleTarget16,advRifleTarget17,advRifleTarget18,advRifleTarget19,advRifleTarget20,advRifleTarget21,advRifleTarget22,advRifleTarget23,advRifleTarget24,advRifleTarget25,advRifleTarget26,advRifleTarget27,advRifleTarget28,advRifleTarget29,advRifleTarget30,advRifleTarget31,advRifleTarget32,advRifleTarget33,advRifleTarget34,advRifleTarget35,advRifleTarget36,advRifleTarget37,advRifleTarget38,advRifleTarget39,advRifleTarget40,advRifleTarget41,advRifleTarget42,advRifleTarget43,advRifleTarget44,advRifleTarget45";
+						};
+					};
+				};
+				nAttributes=16;
 			};
 		};
 		class Item2235
@@ -54020,17 +54420,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5204.8477,224.06494,5017.3887};
-				angles[]={6.2631836,5.8198175,0.020004973};
+				position[]={5204.8481,224.06488,5017.3892};
+				angles[]={6.2631841,5.8198175,0.020001473};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="this setObjectTexture [0,""tempImages\advRifleController.paa""];";
 				name="advRifleController";
 			};
 			id=4000;
 			type="Land_Laptop_device_F";
-			atlOffset=0.82409668;
+			atlOffset=0.82400513;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54105,44 +54506,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="tac_shootingrange_Module_Mode";
-					expression="_this setVariable ['Mode',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=5;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tac_shootingrange_Module_DefaultCountdownTime";
-					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="tac_shootingrange_Module_DefaultTargetAmount";
 					expression="_this setVariable ['DefaultTargetAmount',_value,true];";
 					class Value
@@ -54160,10 +54523,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute1
 				{
-					property="tac_shootingrange_Module_Name";
-					expression="_this setVariable ['Name',_value,true];";
+					property="tac_shootingrange_Module_PopOnTriggerExit";
+					expression="_this setVariable ['PopOnTriggerExit',_value,true];";
 					class Value
 					{
 						class data
@@ -54172,71 +54535,14 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"BOOL"
 								};
 							};
-							value="Killhouse Firing Range  1";
+							value=1;
 						};
 					};
 				};
-				class Attribute4
-				{
-					property="tac_shootingrange_Module_DefaultDuration";
-					expression="_this setVariable ['DefaultDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=60;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="tac_shootingrange_Module_PauseDuration";
-					expression="_this setVariable ['PauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="tac_shootingrange_Module_DefaultPauseDuration";
-					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute7
+				class Attribute2
 				{
 					property="tac_shootingrange_Module_TriggerMarkers";
 					expression="_this setVariable ['TriggerMarkers',_value,true];";
@@ -54255,45 +54561,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute8
-				{
-					property="tac_shootingrange_Module_Targets";
-					expression="_this setVariable ['Targets',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="khtarget1, khtarget2, khtarget3, khtarget4, khtarget5, khtarget6, khtarget7, khtarget8, khtarget9, khtarget10, khtarget11, khtarget12, khtarget13, khtarget14, khtarget15, khtarget16, khtarget17, khtarget18, khtarget19, khtarget20, khtarget21, khtarget22, khtarget23, khtarget24, khtarget25";
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="tac_shootingrange_Module_Durations";
-					expression="_this setVariable ['Durations',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="50, 60, 75, 90, 120";
-						};
-					};
-				};
-				class Attribute10
+				class Attribute3
 				{
 					property="tac_shootingrange_Module_CountdownTimes";
 					expression="_this setVariable ['CountdownTimes',_value,true];";
@@ -54312,7 +54580,102 @@ class Mission
 						};
 					};
 				};
-				class Attribute11
+				class Attribute4
+				{
+					property="tac_shootingrange_Module_DefaultPauseDuration";
+					expression="_this setVariable ['DefaultPauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tac_shootingrange_Module_SoundSources";
+					expression="_this setVariable ['SoundSources',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tac_shootingrange_Module_DefaultDuration";
+					expression="_this setVariable ['DefaultDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="tac_shootingrange_Module_Mode";
+					expression="_this setVariable ['Mode',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=5;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="tac_shootingrange_Module_TargetsInvalid";
+					expression="_this setVariable ['TargetsInvalid',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute9
 				{
 					property="tac_shootingrange_Module_TargetAmounts";
 					expression="_this setVariable ['TargetAmounts',_value,true];";
@@ -54331,7 +54694,83 @@ class Mission
 						};
 					};
 				};
+				class Attribute10
+				{
+					property="tac_shootingrange_Module_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Killhouse Firing Range  1";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="tac_shootingrange_Module_DefaultCountdownTime";
+					expression="_this setVariable ['DefaultCountdownTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
 				class Attribute12
+				{
+					property="tac_shootingrange_Module_PauseDuration";
+					expression="_this setVariable ['PauseDuration',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="tac_shootingrange_Module_Durations";
+					expression="_this setVariable ['Durations',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="50, 60, 75, 90, 120";
+						};
+					};
+				};
+				class Attribute14
 				{
 					property="tac_shootingrange_Module_Controllers";
 					expression="_this setVariable ['Controllers',_value,true];";
@@ -54350,7 +54789,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=13;
+				class Attribute15
+				{
+					property="tac_shootingrange_Module_Targets";
+					expression="_this setVariable ['Targets',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="khtarget1, khtarget2, khtarget3, khtarget4, khtarget5, khtarget6, khtarget7, khtarget8, khtarget9, khtarget10, khtarget11, khtarget12, khtarget13, khtarget14, khtarget15, khtarget16, khtarget17, khtarget18, khtarget19, khtarget20, khtarget21, khtarget22, khtarget23, khtarget24, khtarget25";
+						};
+					};
+				};
+				nAttributes=16;
 			};
 		};
 		class Item2238
@@ -55133,25 +55591,25 @@ class Mission
 		class Item2261
 		{
 			dataType="Marker";
-			position[]={5181.0459,222.97154,4977.7871};
+			position[]={5181.9604,222.96425,4975.7393};
 			name="advRifleTrigger4";
 			markerType="RECTANGLE";
 			type="rectangle";
 			a=3;
 			b=4;
-			angle=333.56995;
+			angle=333.56992;
 			id=4057;
 		};
 		class Item2262
 		{
 			dataType="Marker";
-			position[]={5188.0098,222.98,4980.6255};
+			position[]={5188.1401,222.98,4980.146};
 			name="advRifleTrigger5";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=2;
+			a=2.5;
 			b=4;
-			angle=333.56985;
+			angle=333.56998;
 			id=4058;
 		};
 		class Item2263
@@ -55163,17 +55621,18 @@ class Mission
 			type="rectangle";
 			a=5;
 			b=3;
-			angle=333.56995;
+			angle=333.56992;
 			id=4059;
 		};
 		class Item2264
 		{
 			dataType="Marker";
-			position[]={5183.7227,222.98,5001.2368};
+			position[]={5178.4795,222.98,4997.6377};
 			name="advRifleTrigger2";
 			markerType="RECTANGLE";
 			type="rectangle";
-			b=2;
+			a=2;
+			b=8;
 			angle=62.605;
 			id=4060;
 		};
@@ -55258,7 +55717,7 @@ class Mission
 			type="rectangle";
 			a=2;
 			b=8;
-			angle=58.720989;
+			angle=58.720985;
 			id=4067;
 		};
 		class Item2272
@@ -56596,6 +57055,588 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item2316
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5195.8691,226.48318,5009.667};
+				angles[]={0,5.8819866,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="advRifleSpeakers1";
+			};
+			id=4135;
+			type="Land_Loudspeakers_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2317
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5176.438,226.48318,4991.665};
+				angles[]={0,5.8819866,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="advRifleSpeakers2";
+			};
+			id=4136;
+			type="Land_Loudspeakers_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2318
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5194.3091,226.48318,4986.647};
+				angles[]={0,5.8819866,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="advRifleSpeakers3";
+			};
+			id=4137;
+			type="Land_Loudspeakers_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2319
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5202.1279,226.48318,4994.4482};
+				angles[]={0,0.49782026,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="advRifleSpeakers4";
+			};
+			id=4138;
+			type="Land_Loudspeakers_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2320
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5232.1631,229.76601,5000.335};
+				angles[]={0,5.8819866,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				name="advRifleSpeakers5";
+			};
+			id=4139;
+			type="Land_Loudspeakers_F";
+			atlOffset=1.0345459;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2321
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5241.3018,230.87003,5021.6621};
+				angles[]={0,5.8819866,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="advRifleSpeakers6";
+			};
+			id=4140;
+			type="Land_Loudspeakers_F";
+			atlOffset=0.00035095215;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2322
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5224.147,226.75838,5013.7808};
+				angles[]={0,5.8819866,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="advRifleSpeakers7";
+			};
+			id=4141;
+			type="Land_Loudspeakers_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2323
+		{
+			dataType="Marker";
+			position[]={6365.9214,26.006353,5189.6611};
+			name="marker_87";
+			type="mil_dot";
+			id=4142;
+		};
+		class Item2324
+		{
+			dataType="Marker";
+			position[]={6362.9707,25.898396,5194.1528};
+			name="marker_88";
+			type="mil_dot";
+			id=4143;
+		};
+		class Item2325
+		{
+			dataType="Marker";
+			position[]={6359.6357,25.308622,5199.6709};
+			name="marker_89";
+			type="mil_dot";
+			id=4144;
+			atlOffset=-1.9073486e-006;
+		};
+		class Item2326
+		{
+			dataType="Marker";
+			position[]={6356.9419,24.759232,5204.4194};
+			name="marker_90";
+			type="mil_dot";
+			id=4145;
+		};
+		class Item2327
+		{
+			dataType="Marker";
+			position[]={6354.8896,24.128607,5209.9375};
+			name="marker_91";
+			type="mil_dot";
+			id=4146;
+			atlOffset=-1.9073486e-006;
+		};
+		class Item2328
+		{
+			dataType="Marker";
+			position[]={6354.1196,23.434679,5216.3545};
+			name="marker_92";
+			type="mil_dot";
+			id=4147;
+		};
+		class Item2329
+		{
+			dataType="Marker";
+			position[]={6353.6069,22.661104,5222.8994};
+			name="marker_93";
+			type="mil_dot";
+			id=4148;
+		};
+		class Item2330
+		{
+			dataType="Marker";
+			position[]={6354.1196,22.001375,5228.6738};
+			name="marker_94";
+			type="mil_dot";
+			id=4149;
+		};
+		class Item2331
+		{
+			dataType="Marker";
+			position[]={6354.8896,20.996983,5236.2456};
+			name="marker_95";
+			type="mil_dot";
+			id=4150;
+		};
+		class Item2332
+		{
+			dataType="Marker";
+			position[]={6354.248,19.974306,5242.2773};
+			name="marker_96";
+			type="mil_dot";
+			id=4151;
+		};
+		class Item2333
+		{
+			dataType="Marker";
+			position[]={6353.3154,18.558903,5249.856};
+			name="marker_98";
+			type="mil_dot";
+			id=4153;
+		};
+		class Item2334
+		{
+			dataType="Marker";
+			position[]={6352.417,17.320604,5255.8877};
+			name="marker_99";
+			type="mil_dot";
+			id=4154;
+			atlOffset=1.9073486e-006;
+		};
+		class Item2335
+		{
+			dataType="Marker";
+			position[]={6351.0063,15.488763,5263.9727};
+			name="marker_100";
+			type="mil_dot";
+			id=4155;
+		};
+		class Item2336
+		{
+			dataType="Marker";
+			position[]={6349.3389,14.127365,5271.416};
+			name="marker_101";
+			type="mil_dot";
+			id=4156;
+		};
+		class Item2337
+		{
+			dataType="Marker";
+			position[]={6347.9277,13.489295,5277.8325};
+			name="marker_102";
+			type="mil_dot";
+			id=4157;
+			atlOffset=9.5367432e-007;
+		};
+		class Item2338
+		{
+			dataType="Marker";
+			position[]={6345.2339,13.15573,5284.377};
+			name="marker_103";
+			type="mil_dot";
+			id=4158;
+		};
+		class Item2339
+		{
+			dataType="Marker";
+			position[]={6341.7705,13.069931,5288.7402};
+			name="marker_104";
+			type="mil_dot";
+			id=4159;
+		};
+		class Item2340
+		{
+			dataType="Marker";
+			position[]={6338.2959,13.040385,5292.9375};
+			name="marker_105";
+			type="mil_dot";
+			id=4160;
+		};
+		class Item2341
+		{
+			dataType="Marker";
+			position[]={6331.9385,12.952675,5299.5996};
+			name="marker_106";
+			type="mil_dot";
+			id=4161;
+			atlOffset=-9.5367432e-007;
+		};
+		class Item2342
+		{
+			dataType="Marker";
+			position[]={6324.0679,13.089754,5306.8682};
+			name="marker_107";
+			type="mil_dot";
+			id=4162;
+		};
+		class Item2343
+		{
+			dataType="Marker";
+			position[]={6318.2153,13.367029,5310.8057};
+			name="marker_108";
+			type="mil_dot";
+			id=4163;
+		};
+		class Item2344
+		{
+			dataType="Marker";
+			position[]={6311.4546,12.960365,5315.6509};
+			name="marker_109";
+			type="mil_dot";
+			id=4164;
+		};
+		class Item2345
+		{
+			dataType="Marker";
+			position[]={6303.1123,12.873071,5320.2539};
+			name="marker_110";
+			type="mil_dot";
+			id=4165;
+		};
+		class Item2346
+		{
+			dataType="Marker";
+			position[]={6294.3066,12.319332,5326.127};
+			name="marker_111";
+			type="mil_dot";
+			id=4166;
+			atlOffset=9.5367432e-007;
+		};
+		class Item2347
+		{
+			dataType="Marker";
+			position[]={6284.6855,12.309949,5333.958};
+			name="marker_112";
+			type="mil_dot";
+			id=4167;
+		};
+		class Item2348
+		{
+			dataType="Marker";
+			position[]={6275.2271,13.400856,5342.1152};
+			name="marker_113";
+			type="mil_dot";
+			id=4168;
+		};
+		class Item2349
+		{
+			dataType="Marker";
+			position[]={6269.1929,14.193498,5351.7402};
+			name="marker_114";
+			type="mil_dot";
+			id=4169;
+		};
+		class Item2350
+		{
+			dataType="Marker";
+			position[]={6264.4644,14.639008,5363.8125};
+			name="marker_115";
+			type="mil_dot";
+			id=4170;
+			atlOffset=9.5367432e-007;
+		};
+		class Item2351
+		{
+			dataType="Marker";
+			position[]={6262.1816,14.324238,5376.7012};
+			name="marker_116";
+			type="mil_dot";
+			id=4171;
+		};
+		class Item2352
+		{
+			dataType="Marker";
+			position[]={6261.8555,13.850969,5389.4268};
+			name="marker_117";
+			type="mil_dot";
+			id=4172;
+		};
+		class Item2353
+		{
+			dataType="Marker";
+			position[]={6263.3232,13.139715,5398.3994};
+			name="marker_118";
+			type="mil_dot";
+			id=4173;
+			atlOffset=-9.5367432e-007;
+		};
+		class Item2354
+		{
+			dataType="Marker";
+			position[]={6264.791,12.344444,5407.3721};
+			name="marker_119";
+			type="mil_dot";
+			id=4174;
+			atlOffset=-9.5367432e-007;
+		};
+		class Item2355
+		{
+			dataType="Marker";
+			position[]={6266.2583,11.647263,5414.7139};
+			name="marker_120";
+			type="mil_dot";
+			id=4175;
+			atlOffset=9.5367432e-007;
+		};
+		class Item2356
+		{
+			dataType="Marker";
+			position[]={6267.563,10.866462,5423.5234};
+			name="marker_121";
+			type="mil_dot";
+			id=4176;
+		};
+		class Item2357
+		{
+			dataType="Marker";
+			position[]={6267.3999,10.1324,5430.8647};
+			name="marker_122";
+			type="mil_dot";
+			id=4177;
+			atlOffset=9.5367432e-007;
+		};
+		class Item2358
+		{
+			dataType="Marker";
+			position[]={6267.2373,9.6461153,5435.2695};
+			name="marker_123";
+			type="mil_dot";
+			id=4178;
+			atlOffset=9.5367432e-007;
 		};
 	};
 };
