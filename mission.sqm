@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3926.3499,196.04611,6324.5894};
-		dir[]={-0.93366808,-0.27871045,-0.22543631};
-		up[]={-0.27106747,0.96028763,-0.065449007};
-		aside[]={-0.23473963,3.5183039e-006,0.97219723};
+		pos[]={5014.7173,323.53745,5051.52};
+		dir[]={-0.81075114,-0.53922319,0.22829898};
+		up[]={-0.51905948,0.84212369,0.14616351};
+		aside[]={0.27107799,8.8673551e-007,0.96265858};
 	};
 };
 binarizationWanted=0;
@@ -404,7 +404,6 @@ class Mission
 			};
 			id=5;
 			type="MapBoard_stratis_F";
-			atlOffset=0.00094032288;
 		};
 		class Item1
 		{
@@ -422,7 +421,7 @@ class Mission
 			};
 			id=8;
 			type="Land_MapBoard_F";
-			atlOffset=0.0061531067;
+			atlOffset=0.00043773651;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -462,7 +461,7 @@ class Mission
 			};
 			id=20;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=1.7166138e-005;
+			atlOffset=0.043816566;
 		};
 		class Item3
 		{
@@ -496,7 +495,6 @@ class Mission
 			};
 			id=28;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
 		};
 		class Item5
 		{
@@ -513,7 +511,7 @@ class Mission
 			};
 			id=31;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
+			atlOffset=0.039876461;
 		};
 		class Item6
 		{
@@ -530,7 +528,7 @@ class Mission
 			};
 			id=32;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
+			atlOffset=0.043394089;
 		};
 		class Item7
 		{
@@ -547,7 +545,6 @@ class Mission
 			};
 			id=33;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
 		};
 		class Item8
 		{
@@ -564,7 +561,7 @@ class Mission
 			};
 			id=34;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.047992706;
+			atlOffset=0.047999859;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -36664,8 +36661,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6468.6763,8.6072445,5353.5933};
-						angles[]={0,5.6194296,0};
+						position[]={6468.6758,8.6072788,5353.5928};
+						angles[]={0,5.6194367,0};
 					};
 					side="Independent";
 					flags=5;
@@ -36674,6 +36671,7 @@ class Mission
 						skill=0.40000001;
 						init="[this] call TAC_Olympus_fnc_setBasicLoadout;";
 						description="Trainee";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=2808;
@@ -60528,7 +60526,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2289.854,7.1171699,5780.8999};
-			angle=1.5818093;
+			angle=1.5818089;
 			class Attributes
 			{
 				onActivation="bargate3 animate [""Door_1_rot"",1]; guard3_1 playAction ""Salute""; guard3_2 playAction ""Salute"";";
@@ -60536,7 +60534,7 @@ class Mission
 				sizeA=3.5;
 				sizeB=15;
 				repeatable=1;
-				activationBy="ANY";
+				activationBy="GUER";
 				isRectangle=1;
 			};
 			id=4373;
@@ -60559,6 +60557,7 @@ class Mission
 			};
 			id=4376;
 			type="Land_Billboard_F";
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -60623,6 +60622,7 @@ class Mission
 					};
 					id=4384;
 					type="B_Soldier_F";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -60672,6 +60672,7 @@ class Mission
 				combatMode="BLUE";
 			};
 			id=4382;
+			atlOffset=4.7683716e-007;
 		};
 		class Item2478
 		{
@@ -60695,6 +60696,7 @@ class Mission
 					};
 					id=4434;
 					type="B_Soldier_lite_F";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -60768,6 +60770,7 @@ class Mission
 				speedMode="LIMITED";
 			};
 			id=4433;
+			atlOffset=4.7683716e-007;
 		};
 		class Item2479
 		{
@@ -63125,6 +63128,7 @@ class Mission
 					};
 					id=4383;
 					type="B_Soldier_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -63173,6 +63177,7 @@ class Mission
 			{
 			};
 			id=4558;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item2528
 		{
