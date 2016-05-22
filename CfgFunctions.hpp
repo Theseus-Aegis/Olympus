@@ -12,6 +12,7 @@ class CfgFunctions {
             class VAboxStagingInit;
             class closeInventoryOnShowcase;
             class combatMobilityCourse;
+            class combatMobilityCourse2;
             class constantShoot;
             class prepareMedicalExercise;
             class resetMedicalExercise;

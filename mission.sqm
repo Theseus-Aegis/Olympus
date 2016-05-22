@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4606.4404,334.08575,4097.8711};
-		dir[]={-0.69643039,-0.45838428,-0.55227309};
-		up[]={-0.35919672,0.88872194,-0.28484219};
-		aside[]={-0.62139237,-1.4191028e-007,0.78358769};
+		pos[]={6343.7251,22.594978,5464.1191};
+		dir[]={-0.66485572,-0.54440594,-0.51161915};
+		up[]={-0.43148413,0.83878064,-0.33203253};
+		aside[]={-0.60990924,9.0920366e-008,0.7925815};
 	};
 };
 binarizationWanted=0;
@@ -404,6 +404,7 @@ class Mission
 			};
 			id=5;
 			type="MapBoard_stratis_F";
+			atlOffset=0.00094032288;
 		};
 		class Item1
 		{
@@ -421,7 +422,7 @@ class Mission
 			};
 			id=8;
 			type="Land_MapBoard_F";
-			atlOffset=0.00043773651;
+			atlOffset=0.0061531067;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -461,7 +462,7 @@ class Mission
 			};
 			id=20;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=0.043816566;
+			atlOffset=1.7166138e-005;
 		};
 		class Item3
 		{
@@ -495,6 +496,7 @@ class Mission
 			};
 			id=28;
 			type="Land_CampingChair_V2_F";
+			atlOffset=1.1444092e-005;
 		};
 		class Item5
 		{
@@ -511,7 +513,7 @@ class Mission
 			};
 			id=31;
 			type="Land_CampingChair_V2_F";
-			atlOffset=0.039876461;
+			atlOffset=1.1444092e-005;
 		};
 		class Item6
 		{
@@ -528,7 +530,7 @@ class Mission
 			};
 			id=32;
 			type="Land_CampingChair_V2_F";
-			atlOffset=0.043394089;
+			atlOffset=1.1444092e-005;
 		};
 		class Item7
 		{
@@ -545,6 +547,7 @@ class Mission
 			};
 			id=33;
 			type="Land_CampingChair_V2_F";
+			atlOffset=1.1444092e-005;
 		};
 		class Item8
 		{
@@ -561,7 +564,7 @@ class Mission
 			};
 			id=34;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.047999859;
+			atlOffset=0.047992706;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -63783,11 +63786,11 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="move_startObj";
+				init="[startObject] call TAC_Olympus_fnc_combatMobilityCourse2;";
 			};
 			id=4561;
 			type="Sign_Arrow_F";
-			atlOffset=-0.047999382;
+			atlOffset=-0.04799962;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -63843,7 +63846,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="move_endObj";
+				init="[endObject] call TAC_Olympus_fnc_combatMobilityCourse2;";
 			};
 			id=4562;
 			type="Sign_Arrow_F";
@@ -63903,7 +63906,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addAction [""Start Course"", {[""start""] call TAC_Olympus_fnc_combatMobilityCourse}];";
+				init="[controller] call TAC_Olympus_fnc_combatMobilityCourse2;";
 			};
 			id=4563;
 			type="Land_InfoStand_V1_F";
