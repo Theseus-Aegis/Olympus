@@ -11,7 +11,6 @@ Arguments:
 
 time before the course resets automatically: 80 seconds
 */
-params ["_controller","_startobject","_endobject"];
 
 _controller = combatMobilityController;
 _startObject = combatMobilityStart;
@@ -19,43 +18,56 @@ _endObject = combatMobilityEnd;
 _resetTime = 100; // Auto reset course after this time.
 
 _controller addAction ["Start Course", {
-
+    _controller = combatMobilityController;
+    _startObject = combatMobilityStart;
+    _endObject = combatMobilityEnd;
+    _resetTime = 100;
     _controller addAction ["Stop Course",{
           //Stops the course, when its running
-          if ({!isNil{player getVariable "courseTimer"}}) then {
+          if (!isNil{player getVariable "courseTimer"}) then {
             hint format ["%1 stopped the course!", name player];
             player setVariable ["courseTimer", nil];
           };
-    }]; 
+    }];
 
-    if ({isNil{player getVariable "courseTimer"}}) then {
+    if (isNil{player getVariable "courseTimer"}) then {
       player switchMove "HubSpectator_stand";
-      player setPosASL (getPosASL _startMarker);
+      player setPosASL (getPosASL _startObject);
       hint "Get ready!";
+
       [
-      {hint "3"},
+      {hint "3";},
         [],
         3
       ] call ace_common_fnc_waitAndExecute;
+
       [
-        {hint "2"},
+        {hint "2";},
         [],
-        1
+        4
       ] call ace_common_fnc_waitAndExecute;
+
       [
-        {hint "1"},
+        {hint "1";},
         [],
-        1
+        5
       ] call ace_common_fnc_waitAndExecute;
+
       [
-        {hint "Go!"},
+        {
+          hint "Go!";
+          player switchMove "AmovPercMstpSrasWrflDnon";
+          player setVariable ["courseTimer", time];
+        },
         [],
-        1
+        6
       ] call ace_common_fnc_waitAndExecute;
-      player switchMove "AmovPercMstpSrasWrflDnon";
-      player setVariable ["courseTimer", time];
 
       if (isNil{player getVariable "courseTimer"}) exitWith {};   //Exit if start timed out
+
+      waitUntil {isNil{player getVariable "courseTimer"}
+      || {time > (player getVariable "courseTimer") + _resetTime}
+      || {player distance _endObject < 0.4}};
 
       //exit after resetTime is reached
       if (time > (player getVariable "courseTimer") + _resetTime) exitWith {
