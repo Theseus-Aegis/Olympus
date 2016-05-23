@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4594;
+		nextID=4606;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4608.959,138.63184,5300.915};
-		dir[]={-0.39937583,-0.50061178,-0.76820296};
-		up[]={-0.23094003,0.86558437,-0.44421065};
-		aside[]={-0.88733536,6.1241735e-007,0.46131185};
+		pos[]={2205.9717,10.422962,5347.7803};
+		dir[]={0.95555735,-0.28755012,0.066883162};
+		up[]={0.28705338,0.95758379,0.020090841};
+		aside[]={0.069821171,-3.8817088e-006,-0.99764597};
 	};
 };
 binarizationWanted=0;
@@ -390,7 +390,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2543;
+		items=2555;
 		class Item0
 		{
 			dataType="Object";
@@ -59208,8 +59208,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2221.571,6.9206457,5346.5425};
-				angles[]={6.2806959,0,6.2731848};
+				position[]={2221.6111,6.9205689,5346.6719};
+				angles[]={6.2806892,0,6.2731848};
 			};
 			id=4247;
 			type="tac_shootingrange_Module";
@@ -64000,7 +64000,7 @@ class Mission
 			};
 			id=4580;
 			type="O_Truck_02_fuel_F";
-			atlOffset=-0.00018310547;
+			atlOffset=-0.00017547607;
 		};
 		class Item2536
 		{
@@ -64085,7 +64085,7 @@ class Mission
 			};
 			id=4591;
 			type="O_Truck_02_box_F";
-			atlOffset=-0.0002746582;
+			atlOffset=-0.005859375;
 		};
 		class Item2541
 		{
@@ -64102,6 +64102,7 @@ class Mission
 			};
 			id=4592;
 			type="C_Van_01_transport_F";
+			atlOffset=-0.010375977;
 		};
 		class Item2542
 		{
@@ -64118,7 +64119,186 @@ class Mission
 			};
 			id=4593;
 			type="C_Offroad_01_F";
-			atlOffset=-9.9182129e-005;
+			atlOffset=-0.00010681152;
+		};
+		class Item2543
+		{
+			dataType="Trigger";
+			position[]={2200.655,8.8239594,5393.9829};
+			angle=1.5960338;
+			class Attributes
+			{
+				sizeA=3;
+				sizeB=4;
+				isRectangle=1;
+			};
+			id=4594;
+			type="EmptyDetector";
+		};
+		class Item2544
+		{
+			dataType="Trigger";
+			position[]={2209.2156,9.550375,5389.9175};
+			angle=1.6179054;
+			class Attributes
+			{
+				sizeA=4;
+				sizeB=2;
+				isRectangle=1;
+			};
+			id=4595;
+			type="EmptyDetector";
+			atlOffset=0.72641563;
+		};
+		class Item2545
+		{
+			dataType="Trigger";
+			position[]={2201.8772,9.5077143,5387.4209};
+			angle=4.7427659;
+			class Attributes
+			{
+				sizeA=2.5;
+				sizeB=3;
+				isRectangle=1;
+			};
+			id=4596;
+			type="EmptyDetector";
+			atlOffset=0.68375492;
+		};
+		class Item2546
+		{
+			dataType="Trigger";
+			position[]={2198.2961,9.5070324,5382.1167};
+			angle=4.7427564;
+			class Attributes
+			{
+				sizeA=2;
+				sizeB=2;
+				isRectangle=1;
+			};
+			id=4597;
+			type="EmptyDetector";
+			atlOffset=0.68307304;
+		};
+		class Item2547
+		{
+			dataType="Trigger";
+			position[]={2204.2163,9.5318632,5381.271};
+			angle=4.7427564;
+			class Attributes
+			{
+				sizeA=2;
+				sizeB=2;
+				isRectangle=1;
+			};
+			id=4598;
+			type="EmptyDetector";
+			atlOffset=0.70790386;
+		};
+		class Item2548
+		{
+			dataType="Trigger";
+			position[]={2203.9949,9.5114803,5375.3711};
+			angle=1.6389536;
+			class Attributes
+			{
+				sizeA=2;
+				sizeB=2;
+				isRectangle=1;
+			};
+			id=4599;
+			type="EmptyDetector";
+			atlOffset=0.68752098;
+		};
+		class Item2549
+		{
+			dataType="Trigger";
+			position[]={2200.7131,9.5079098,5375.1548};
+			angle=0.036115956;
+			class Attributes
+			{
+				sizeA=0.5;
+				sizeB=2;
+				isRectangle=1;
+			};
+			id=4600;
+			type="EmptyDetector";
+			atlOffset=0.68395042;
+		};
+		class Item2550
+		{
+			dataType="Trigger";
+			position[]={2197.4763,9.5168076,5371.5308};
+			angle=4.7497883;
+			class Attributes
+			{
+				sizeA=0.5;
+				sizeB=2;
+				isRectangle=1;
+			};
+			id=4601;
+			type="EmptyDetector";
+			atlOffset=0.69284821;
+		};
+		class Item2551
+		{
+			dataType="Trigger";
+			position[]={2206.8269,7.7686963,5370.0127};
+			angle=4.7807875;
+			class Attributes
+			{
+				sizeA=2;
+				sizeB=2;
+				isRectangle=1;
+			};
+			id=4602;
+			type="EmptyDetector";
+			atlOffset=0.67900085;
+		};
+		class Item2552
+		{
+			dataType="Trigger";
+			position[]={2211.9504,9.4893379,5363.2354};
+			angle=4.7807875;
+			class Attributes
+			{
+				sizeA=2;
+				sizeB=4;
+				isRectangle=1;
+			};
+			id=4603;
+			type="EmptyDetector";
+			atlOffset=0.66537857;
+		};
+		class Item2553
+		{
+			dataType="Trigger";
+			position[]={2212.8423,9.5042009,5372.7163};
+			angle=3.2172904;
+			class Attributes
+			{
+				sizeA=1.5;
+				sizeB=2;
+				isRectangle=1;
+			};
+			id=4604;
+			type="EmptyDetector";
+			atlOffset=0.68024158;
+		};
+		class Item2554
+		{
+			dataType="Trigger";
+			position[]={2217.3303,9.4956751,5382.646};
+			angle=0.045779977;
+			class Attributes
+			{
+				sizeA=3;
+				sizeB=4;
+				isRectangle=1;
+			};
+			id=4605;
+			type="EmptyDetector";
+			atlOffset=0.67171574;
 		};
 	};
 	class Connections
