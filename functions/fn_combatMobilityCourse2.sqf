@@ -11,22 +11,24 @@ Arguments:
 
 time before the course resets automatically: 80 seconds
 */
+params ["_controller","_startobject","_endobject"];
 
-params ["_controller","_startObject","_endObject"];
+_controller = combatMobilityController;
+_startObject = combatMobilityStart;
+_endObject = combatMobilityEnd;
 _resetTime = 100; // Auto reset course after this time.
 
 _controller addAction ["Start Course", {
 
     _controller addAction ["Stop Course",{
           //Stops the course, when its running
-          if (_timer == "end" && {!isNil{player getVariable "courseTimer"}}) then {
+          if ({!isNil{player getVariable "courseTimer"}}) then {
             hint format ["%1 stopped the course!", name player];
             player setVariable ["courseTimer", nil];
           };
+    }]; 
 
-}];
-
-    if (_timer == "start" && {isNil{player getVariable "courseTimer"}}) then {
+    if ({isNil{player getVariable "courseTimer"}}) then {
       player switchMove "HubSpectator_stand";
       player setPosASL (getPosASL _startMarker);
       hint "Get ready!";
