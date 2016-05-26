@@ -78,4 +78,4 @@ _controller addAction ["Start Course", {
           hint format["%1 completed the course in \n%2 seconds.", name player, _completedTime];
       };
    };
-}];
+},[],1,false,true];

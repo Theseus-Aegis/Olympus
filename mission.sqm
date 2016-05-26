@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4608.959,138.63184,5300.915};
-		dir[]={-0.39937583,-0.50061178,-0.76820296};
-		up[]={-0.23094003,0.86558437,-0.44421065};
-		aside[]={-0.88733536,6.1241735e-007,0.46131185};
+		pos[]={6333.4414,8.3742161,5458.7344};
+		dir[]={-0.43300715,-0.34753591,-0.83184946};
+		up[]={-0.16050833,0.93757778,-0.30834866};
+		aside[]={-0.88710117,1.1427328e-006,0.46176919};
 	};
 };
 binarizationWanted=0;
@@ -64000,7 +64000,7 @@ class Mission
 			};
 			id=4580;
 			type="O_Truck_02_fuel_F";
-			atlOffset=-0.00018310547;
+			atlOffset=-0.00017547607;
 		};
 		class Item2536
 		{
@@ -64085,7 +64085,7 @@ class Mission
 			};
 			id=4591;
 			type="O_Truck_02_box_F";
-			atlOffset=-0.0002746582;
+			atlOffset=-0.005859375;
 		};
 		class Item2541
 		{
@@ -64102,6 +64102,7 @@ class Mission
 			};
 			id=4592;
 			type="C_Van_01_transport_F";
+			atlOffset=-0.010375977;
 		};
 		class Item2542
 		{
@@ -64118,7 +64119,7 @@ class Mission
 			};
 			id=4593;
 			type="C_Offroad_01_F";
-			atlOffset=-9.9182129e-005;
+			atlOffset=-0.00010681152;
 		};
 	};
 	class Connections
