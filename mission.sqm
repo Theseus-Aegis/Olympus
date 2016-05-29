@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2197.9377,17.815071,5346.8052};
-		dir[]={-0.39087805,-0.44049919,0.80832678};
-		up[]={-0.19178607,0.89770794,0.39660811};
-		aside[]={0.90036947,-3.0046795e-007,0.43538624};
+		pos[]={2197.3708,15.400883,5351.0713};
+		dir[]={-0.72842836,-0.5434854,0.41725406};
+		up[]={-0.47159186,0.83941144,0.27013487};
+		aside[]={0.49706256,-9.565847e-007,0.86776239};
 	};
 };
 binarizationWanted=0;
@@ -54510,7 +54510,6 @@ class Mission
 				position[]={2202.926,7.981226,5382.1172};
 				angles[]={6.2682104,0,6.2790313};
 			};
-			name="killhouse1";
 			id=4007;
 			type="tac_shootingrange_Module";
 			atlOffset=0.53600025;
@@ -54683,7 +54682,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil ";
+							value="nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil";
 						};
 					};
 				};
