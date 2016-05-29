@@ -18,7 +18,7 @@ params ["_controller", "_killhouse"];
 
 private _action = [
     QGVAR(OpenAction),
-    QGVAR(closeDoors),
+    "Close Doors",
     "",
     {
         (_this select 2) animate ["Door1", 0];
