@@ -3,14 +3,13 @@
  * Closes all open doors in the killhouse.
  *
  * Arguments:
- * 0: Name of the controller
- * 1: Name of the killhouse
- *
+ * none
+
  * Return Value:
  * None
  *
  * Example:
- * [killHouseController1,smallKillhouse1] call TAC_Olympus_fnc_closeKillhouseDoors
+ * [controller,] call TAC_Olympus_fnc_closeKillhouseDoors
  */
 
 #include "..\script_component.hpp"
@@ -18,7 +17,7 @@
 params ["_controller", "_killhouse"];
 
 private _action = [
-    QGVAR(CloseDoors),
+    QGVAR(OpenAction),
     "Close Doors",
     "",
     {
