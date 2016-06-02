@@ -89,6 +89,8 @@
     "hlc_rifle_amt",\
     "hlc_rifle_M4",\
     "hlc_rifle_CQBR",\
+    "hlc_rifle_ak74m_MTK",\
+    "hlc_rifle_slr107u_MTK",\
     "tacs_MX_BlackCamo"\
 ]
 
