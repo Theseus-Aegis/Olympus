@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4677;
+		nextID=4679;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4619.8042,138.511,5302.3008};
-		dir[]={-0.40619233,-0.41770828,0.81287467};
-		up[]={-0.18674594,0.908526,0.37372142};
-		aside[]={0.89464116,2.1310407e-006,0.44703919};
+		pos[]={6330.4258,11.868572,5457.3149};
+		dir[]={-0.6775167,-0.59846318,-0.42785287};
+		up[]={-0.50603724,0.80109566,-0.31956106};
+		aside[]={-0.53399336,4.3755863e-006,0.84562027};
 	};
 };
 binarizationWanted=0;
@@ -12624,21 +12624,22 @@ class Mission
 		class Item618
 		{
 			dataType="Trigger";
-			position[]={6024.3086,87.001907,4955.2554};
-			angle=-1.3264499;
+			position[]={6024.3091,89.617157,4955.2549};
+			angle=4.9567351;
 			class Attributes
 			{
 				onActivation="bargate1 animate [""Door_1_rot"",1]; guard1 playAction ""Salute""; guard2 playAction ""Salute"";";
 				onDeactivation="bargate1 animate [""Door_1_rot"", 0];guard1 playAction ""saluteOff""; guard2 playAction ""saluteOff"";";
 				sizeA=3.5;
 				sizeB=15;
+				sizeC=3;
 				repeatable=1;
 				activationBy="GUER";
 				isRectangle=1;
 			};
 			id=1173;
 			type="EmptyDetector";
-			atlOffset=6.1035156e-005;
+			atlOffset=2.6153488;
 		};
 		class Item619
 		{
@@ -15058,38 +15059,38 @@ class Mission
 		class Item683
 		{
 			dataType="Trigger";
-			position[]={6293.2075,5.8763037,5404.8481};
+			position[]={6293.208,5.8762598,5404.8481};
 			angle=0.39926136;
 			class Attributes
 			{
 				onActivation="[crawlShooter1, tacs_target2, thisList] call TAC_Olympus_fnc_constantShoot;";
 				sizeA=1;
 				sizeB=3;
+				sizeC=3;
 				repeatable=1;
 				activationBy="GUER";
 				isRectangle=1;
 			};
 			id=1327;
 			type="EmptyDetector";
-			atlOffset=-1.5735626e-005;
 		};
 		class Item684
 		{
 			dataType="Trigger";
-			position[]={6295.9038,5.474185,5411.687};
+			position[]={6295.9038,5.4741845,5411.687};
 			angle=0.39926136;
 			class Attributes
 			{
 				onActivation="[crawlShooter1, tacs_target1, thisList] call TAC_Olympus_fnc_constantShoot;";
 				sizeA=1;
 				sizeB=3;
+				sizeC=3;
 				repeatable=1;
 				activationBy="GUER";
 				isRectangle=1;
 			};
 			id=1328;
 			type="EmptyDetector";
-			atlOffset=4.7683716e-007;
 		};
 		class Item685
 		{
@@ -28517,12 +28518,13 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6589.875,24.643906,5343.3301};
-			angle=2.9879677;
+			angle=2.9879682;
 			class Attributes
 			{
 				onActivation="fakeMine setDamage 1;";
 				sizeA=1;
 				sizeB=1;
+				sizeC=4;
 				repeatable=1;
 				activationBy="GUER";
 				isRectangle=1;
@@ -39449,11 +39451,10 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\certificatePistolRequirements.paa""];";
+				init="this setObjectTexture [0,""tempImages\certificatePistolRequirements.paa""];";
 			};
 			id=2910;
 			type="Land_MapBoard_F";
-			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -39612,7 +39613,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\certificateRifleRequirements.paa""];";
+				init="this setObjectTexture [0,""tempImages\certificateRifleRequirements.paa""];";
 			};
 			id=2916;
 			type="Land_MapBoard_F";
@@ -42899,7 +42900,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\certificatePistolRequirements.paa""];";
+				init="this setObjectTexture [0,""tempImages\certificatePistolRequirements.paa""];";
 			};
 			id=3130;
 			type="Land_MapBoard_F";
@@ -43136,7 +43137,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\courseMovementRequirements.paa""];";
+				init="this setObjectTexture [0,""tempImages\courseMovementRequirements.paa""];";
 			};
 			id=3147;
 			type="Land_MapBoard_F";
@@ -45234,7 +45235,7 @@ class Mission
 		class Item1798
 		{
 			dataType="Trigger";
-			position[]={5243.8481,155.4075,5816.6162};
+			position[]={5243.8481,158.49628,5816.6162};
 			angle=4.2663517;
 			class Attributes
 			{
@@ -45242,12 +45243,14 @@ class Mission
 				onDeactivation="bargate2 animate [""Door_1_rot"", 0];guard1_1 playAction ""saluteOff""; guard2_1 playAction ""saluteOff"";";
 				sizeA=3.5;
 				sizeB=15;
+				sizeC=3;
 				repeatable=1;
 				activationBy="GUER";
 				isRectangle=1;
 			};
 			id=3285;
 			type="EmptyDetector";
+			atlOffset=3.0887756;
 		};
 		class Item1799
 		{
