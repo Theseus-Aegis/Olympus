@@ -3,7 +3,7 @@
 </p>
 <p align="center">
     <a href="https://github.com/Theseus-Aegis/Olympus/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.1.1-blue.svg" alt="Olympus Version">
+        <img src="https://img.shields.io/badge/Version-1.1.2-blue.svg" alt="Olympus Version">
     </a>
     <a href="https://github.com/Theseus-Aegis/Olympus/issues">
         <img src="https://img.shields.io/github/issues-raw/Theseus-Aegis/Olympus.svg?label=Issues" alt="Olympus Issues">
@@ -12,7 +12,7 @@
         <img src="https://img.shields.io/badge/License-GPLv2-red.svg" alt="Olympus License">
     </a>
 </p>
-<p align="center"><sup><strong>Requires the latest version of Theseus Inc. Modpack.</strong></sup></p>
+<p align="center"><sup><strong>Requires thse latest version of Theseus Inc. Modpack.</strong></sup></p>
 
 **Olympus** is a training facility of <a href="http://www.theseus-aegis.com/">Theseus Inc.</a>, created by its members.
 
