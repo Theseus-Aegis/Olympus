@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6383.4307,12.352003,5380.6675};
-		dir[]={0.32865697,-0.50738293,0.79673886};
-		up[]={0.19350488,0.86163253,0.46909699};
-		aside[]={0.92453378,2.2137538e-006,-0.38138664};
+		pos[]={5217.2642,233.86708,5049.8413};
+		dir[]={0.42156643,-0.42051524,-0.80355144};
+		up[]={0.19539933,0.9071964,-0.37245297};
+		aside[]={-0.88563824,8.1211329e-007,-0.46461684};
 	};
 };
 binarizationWanted=0;
@@ -868,6 +868,7 @@ class Mission
 			};
 			id=5;
 			type="MapBoard_stratis_F";
+			atlOffset=0.00094032288;
 		};
 		class Item1
 		{
@@ -885,7 +886,7 @@ class Mission
 			};
 			id=8;
 			type="Land_MapBoard_F";
-			atlOffset=0.00043773651;
+			atlOffset=0.0061531067;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -925,7 +926,7 @@ class Mission
 			};
 			id=20;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=0.043816566;
+			atlOffset=1.7166138e-005;
 		};
 		class Item3
 		{
@@ -959,6 +960,7 @@ class Mission
 			};
 			id=28;
 			type="Land_CampingChair_V2_F";
+			atlOffset=1.1444092e-005;
 		};
 		class Item5
 		{
@@ -975,7 +977,7 @@ class Mission
 			};
 			id=31;
 			type="Land_CampingChair_V2_F";
-			atlOffset=0.039876461;
+			atlOffset=1.1444092e-005;
 		};
 		class Item6
 		{
@@ -992,7 +994,7 @@ class Mission
 			};
 			id=32;
 			type="Land_CampingChair_V2_F";
-			atlOffset=0.043394089;
+			atlOffset=1.1444092e-005;
 		};
 		class Item7
 		{
@@ -1009,6 +1011,7 @@ class Mission
 			};
 			id=33;
 			type="Land_CampingChair_V2_F";
+			atlOffset=1.1444092e-005;
 		};
 		class Item8
 		{
@@ -1025,7 +1028,7 @@ class Mission
 			};
 			id=34;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.047999859;
+			atlOffset=0.047992706;
 			class CustomAttributes
 			{
 				class Attribute0
