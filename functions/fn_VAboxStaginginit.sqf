@@ -556,3 +556,8 @@ params ["_crate"];
 [_crate, (itemCargo _crate) + AVAILABLE_HEADGEAR + AVAILABLE_GOGGLES + AVAILABLE_UNIFORMS + AVAILABLE_VESTS + AVAILABLE_ATTACHMENTS] call BIS_fnc_addVirtualItemCargo;
 [_crate, (magazineCargo _crate) + AVAILABLE_RIFLE_MAGAZINES] call BIS_fnc_addVirtualMagazineCargo;
 [_crate, (weaponCargo _crate) + AVAILABLE_RIFLES] call BIS_fnc_addVirtualWeaponCargo;
+
+//Adds full arsenal option
+_crate addAction ["Full Arsenal",{
+  ["Open",true] spawn BIS_fnc_arsenal;
+  },_crate];

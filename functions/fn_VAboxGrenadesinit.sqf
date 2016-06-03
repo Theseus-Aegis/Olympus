@@ -33,3 +33,8 @@ params ["_crate"];
 
 //Populate with predefined items and whatever is already in the crate
 [_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call BIS_fnc_addVirtualMagazineCargo;
+
+//Adds full arsenal option
+_crate addAction ["Full Arsenal",{
+  ["Open",true] spawn BIS_fnc_arsenal;
+  },_crate];

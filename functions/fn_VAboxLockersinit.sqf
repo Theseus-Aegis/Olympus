@@ -271,3 +271,8 @@ params ["_crate"];
 //Populate with predefined items and whatever is already in the crate
 [_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call BIS_fnc_addVirtualBackpackCargo;
 [_crate, (itemCargo _crate) + AVAILABLE_HEADGEAR + AVAILABLE_GOGGLES + AVAILABLE_UNIFORMS + AVAILABLE_VESTS] call BIS_fnc_addVirtualItemCargo;
+
+//Adds full arsenal option
+_crate addAction ["Full Arsenal",{
+  ["Open",true] spawn BIS_fnc_arsenal;
+  },_crate];
