@@ -73,6 +73,12 @@
     "hlc_rifle_auga2para_t",\
     "hgun_PDW2000_F",\
     "SMG_01_F",\
+    "SMG_03C_TR_khaki",\
+    "SMG_03C_TR_black",\
+    "SMG_03C_TR_camo",\
+    "SMG_03_TR_khaki",\
+    "SMG_03_TR_black",\
+    "SMG_03_TR_camo",\
     "SMG_02_F"\
 ]
 
@@ -90,6 +96,7 @@
     "30Rnd_9x21_Green_Mag",\
     "30Rnd_9x21_Mag",\
     "30Rnd_9x21_Red_Mag",\
+    "50Rnd_570x28_SMG_03",\
     "30Rnd_9x21_Yellow_Mag"\
 ]
 
