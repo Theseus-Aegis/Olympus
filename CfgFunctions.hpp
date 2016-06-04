@@ -12,15 +12,14 @@ class CfgFunctions {
             class VAboxStagingInit;
             class closeInventoryOnShowcase;
             class closeKillhouseDoors;
-            class combatMobilityCourse;
-            class combatMobilityCourse2;
             class constantShoot;
             class prepareMedicalExercise;
             class resetMedicalExercise;
             class setBasicLoadout;
             class setBillboard;
             class startMedicalExercise;
-
+            class timer;
+            class timerInit;
         };
     };
 };

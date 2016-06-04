@@ -18,7 +18,7 @@
 
 params ["_shooter", "_target", "_thisList"];
 
-private _weapon = (weaponState _shooter) select 1;
+private _weapon = currentWeapon _shooter;
 
 _shooter doTarget _target;
 
@@ -27,9 +27,9 @@ _shooter doTarget _target;
     _args params ["_shooter", "_weapon", "_thisList"];
 
     // Exit and remove PFH if player left trigger
-    if ((_thisList select {isPlayer _x}) isEqualTo []) exitWith {
+    if !(ACE_player in _thisList) exitWith {
         [_pfhId] call CBA_fnc_removePerFrameHandler;
     };
 
-    _shooter forceWeaponFire [_weapon, "Single"];
+    _shooter forceWeaponFire [_weapon, "manual"]; // For some reason ASR AI3 removes all modes but "manual"
 }, 0.5, [_shooter, _weapon, _thisList]] call CBA_fnc_addPerFrameHandler;
