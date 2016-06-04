@@ -20,7 +20,8 @@ class CfgFunctions {
             class setBasicLoadout;
             class setBillboard;
             class startMedicalExercise;
-
+            class timer;
+            class timerInit;
         };
     };
 };
