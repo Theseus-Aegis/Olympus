@@ -35,7 +35,7 @@ private _actionStop = [
     QGVAR(TimerStop),
     "Stop Timer",
     "",
-    {(_this select 2) call FUNC(timerStop)},
+    {[(_this select 2)] call FUNC(timerStop)},
     {(_this select 2) getVariable [QGVAR(timerStarted), false]},
     {},
     _controller

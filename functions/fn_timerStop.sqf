@@ -4,6 +4,7 @@
  *
  * Arguments:
  * 0: Controller <OBJECT>
+ * 1: Hint <BOOL>
  *
  * Return Value:
  * None
@@ -13,9 +14,12 @@
  */
 #include "..\script_component.hpp"
 
-params ["_controller"];
+params ["_controller", ["_hint", false]];
 
 _controller setVariable [QGVAR(timerStarted), false, true];
 
-GVAR(timer) = nil;
 GVAR(timerStart) = nil;
+
+if (_hint) then {
+    ["Timer Stopped"] call ace_common_fnc_displayTextStructured;
+};
