@@ -20,6 +20,7 @@ class CfgFunctions {
             class startMedicalExercise;
             class timer;
             class timerInit;
+            class timerStop;
         };
     };
 };

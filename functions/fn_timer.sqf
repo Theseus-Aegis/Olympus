@@ -29,14 +29,14 @@ _controller setVariable [QGVAR(timerStarted), true, true];
         if !(_controller getVariable [QGVAR(timerStarted), false]) exitWith {};
 
         [_text] call ace_common_fnc_displayTextStructured;
-    }, [_controller, (_x select 0)], (_x select 1)] call CBA_fnc_waitAndExecute;
+    }, [_controller, (_x select 0)], _x select 1] call CBA_fnc_waitAndExecute;
 } forEach [ ["Get Ready!", 0], ["3", 1], ["2", 2], ["1", 3]];
 
 [{
     params ["_controller", "_finishObject", "_timeout"];
 
     if !(_controller getVariable [QGVAR(timerStarted), false]) exitWith {
-        ["Timer Stopped"] call ace_common_fnc_displayTextStructured;
+        [_controller, true] call FUNC(timerStop);
     };
 
     ["Go!"] call ace_common_fnc_displayTextStructured;
@@ -46,29 +46,28 @@ _controller setVariable [QGVAR(timerStarted), true, true];
         params ["_args", "_idPFH"];
         _args params ["_controller", "_finishObject", "_timeout"];
 
-        GVAR(timer) = diag_tickTime;
-
         // Stopped
         if !(_controller getVariable [QGVAR(timerStarted), false]) exitWith {
-            ["Timer Stopped"] call ace_common_fnc_displayTextStructured;
+            [_controller, true] call FUNC(timerStop);
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _timeElapsed = GVAR(timer) - GVAR(timerStart);
+        private _timeElapsed = diag_tickTime - GVAR(timerStart);
 
         // Timeout
         if (_timeElapsed >= _timeout) exitWith {
             ["Timer Timed Out"] call ace_common_fnc_displayTextStructured;
-            _controller call FUNC(timerStop);
+            [_controller] call FUNC(timerStop);
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
         // Finish
-        if (ACE_player distance _finishObject < 0.5) exitWith {
-            private _text = format ["Timer Finished<br/><br/>Time: %1s", _timeElapsed select [0, TIME_ROUND_CHARS]];
+        if (ACE_player distance2D _finishObject < 0.5) exitWith {
+            _timeElapsed = (str _timeElapsed) splitString ".";
+            private _text = format ["Timer Finished<br/><br/>Time: %1.%2s", _timeElapsed select 0, (_timeElapsed select 1) select [0, TIME_ROUND_CHARS]];
             [_text, 2.5] call ace_common_fnc_displayTextStructured;
-            _controller call FUNC(timerStop);
+            [_controller] call FUNC(timerStop);
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
-    }, 0, [_controller, _finishObject, _timeout]] call CBA_fnc_addPerFrameHandler;
+    }, 0, _this] call CBA_fnc_addPerFrameHandler;
 }, _this, 4] call CBA_fnc_waitAndExecute;
