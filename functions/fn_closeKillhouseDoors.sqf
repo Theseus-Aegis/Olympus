@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [controller,] call TAC_Olympus_fnc_closeKillhouseDoors
+ * [controller] call TAC_Olympus_fnc_closeKillhouseDoors
  */
 
 #include "..\script_component.hpp"
