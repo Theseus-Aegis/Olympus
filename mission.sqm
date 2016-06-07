@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5158;
+		nextID=5160;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=9;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={6451.918,46.095081,5411.6987};
-		dir[]={-0.73544627,-0.67652529,0.040440097};
-		up[]={-0.67553949,0.73637772,0.037145611};
-		aside[]={0.054905448,-8.9290552e-007,0.99859297};
+		pos[]={6458.4814,33,5334.687};
+		dir[]={0.18764544,-0.70704597,0.68181914};
+		up[]={0.18761291,0.70716661,0.68170184};
+		aside[]={0.96415466,-1.132139e-008,-0.26534778};
 	};
 };
 binarizationWanted=0;
@@ -59581,7 +59581,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=3;
 						};
 					};
 				};
@@ -59714,7 +59714,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=5;
 						};
 					};
 				};
@@ -59828,7 +59828,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="khtarget1,khtarget2,khtarget3,khtarget4,khtarget5,khtarget7,khtarget8,khtarget9,khtarget10,khtarget11,khtarget12,khtarget13,khtarget14,khtarget15,khtarget16,khtarget17,khtarget18,khtarget19,khtarget20,khtarget6,khtarget21,khtarget22,khtarget23,khtarget24,khtarget25";
+							value="";
 						};
 					};
 				};
