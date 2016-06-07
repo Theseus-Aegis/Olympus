@@ -246,5 +246,5 @@ params ["_crate"];
 
 //Adds full arsenal option
 _crate addAction ["Full Arsenal",{
-  ["Open",true] spawn BIS_fnc_arsenal;
-  },_crate];
+    ["Open",true] spawn BIS_fnc_arsenal;
+},_crate, 1, false, true, "", "2 > ACE_player distance _target"];
