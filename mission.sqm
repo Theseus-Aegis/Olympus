@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5339;
+		nextID=5342;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={5269.2856,247.96106,5028.0483};
-		dir[]={-0.81198281,-0.5675137,-0.13647465};
-		up[]={-0.55966836,0.8233611,-0.094066419};
-		aside[]={-0.16575173,1.4959369e-008,0.98617166};
+		pos[]={5013.2231,193.71056,5051.8286};
+		dir[]={-0.66151994,-0.70104039,-0.26640549};
+		up[]={-0.6502915,0.71312028,-0.26188284};
+		aside[]={-0.3735683,-2.970919e-007,0.92761964};
 	};
 };
 binarizationWanted=0;
@@ -162,7 +162,8 @@ addons[]=
 	"A3_Soft_F_Gamma_Truck_02",
 	"A3_Soft_F_MRAP_02",
 	"CUP_Buildings_Config",
-	"A3_Structures_F_Kart_Civ_SportsGrounds"
+	"A3_Structures_F_Kart_Civ_SportsGrounds",
+	"A3_Structures_F_Mil_Flags"
 };
 class AddonsMetaData
 {
@@ -869,7 +870,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2976;
+		items=2978;
 		class Item0
 		{
 			dataType="Object";
@@ -72939,6 +72940,104 @@ class Mission
 			};
 			id=5338;
 			type="PlasticBarrier_02_grey_F";
+		};
+		class Item2976
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5001.5605,191.40723,5052.6665};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="[baseTeleport,teleport1,nil,nil,nil,nil] call TAC_Olympus_fnc_teleport;";
+				name="teleport1";
+			};
+			id=5340;
+			type="FlagPole_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2977
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5004.8472,189.29538,5044.7773};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="baseTeleport";
+			};
+			id=5341;
+			type="Land_Laptop_unfolded_F";
+			atlOffset=1.4900055;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections

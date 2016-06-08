@@ -14,8 +14,40 @@
  * None
  *
  * Example:
- * [this,pole1,pole2,pole3,pole4,pole5] call TAC_Olympus_fnc_teleport
+ * [baseTeleport,CQB,MG,pole3,pole4,pole5] call TAC_Olympus_fnc_teleport
  */
+#include "..\script_component.hpp"
+
+params ["_tpBase","_tpCQB","_tpMG","_tp","_teleport4","_teleport5"];
 
 
- params ["_mainTeleport","_teleport1","_teleport2","_teleport3","_teleport4","_teleport5"];
+private _teleportToBase = [
+    QGVAR(TeleportToBase),
+    "Teleport to base",
+    "",
+    {
+        ACE_player setPosASL (getPosASL (_this select 2));
+    },
+    {true},
+    {},
+    _tpBase
+] call ACE_Interact_Menu_fnc_createAction;
+
+private _teleportToCQB = [
+    QGVAR(TeleportToCQB),
+    "Teleport to CQB area",
+    "",
+    {
+        ACE_player setPosASL (getPosASL (_this select 2));
+    },
+    {true},
+    {},
+    _tpCQB
+] call ACE_Interact_Menu_fnc_createAction;
+
+[_mainTeleport, 0, ["ACE_MainActions"],
+    [
+    _teleportToBase,
+    _teleportToCQB
+    ]
+] call ACE_Interact_Menu_fnc_addActionToObject;
