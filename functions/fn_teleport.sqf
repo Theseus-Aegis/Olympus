@@ -18,36 +18,38 @@
  */
 #include "..\script_component.hpp"
 
-params ["_tpBase","_tpCQB","_tpMG","_tp","_teleport4","_teleport5"];
+//define interaction points
+_tpToBase = teleportBase;
+_tpToCQB = teleportCQB;
+_tpToMG = teleportMG;
+_tpToAdvRifle = teleportAdvRifle;
+//array
+_interactionPoints = [_tpToBase, _tpToCQB, _tpToMG, _tpToAdvRifle];
 
+//define teleport positions
+_tpToBasePos = teleportBasePos;
+_tpToCQBPos = teleportCQBPos;
+_tpToMGPos = teleportMGPos;
+_tpToAdvRiflePos = teleportAdvRiflePos;
+//array
+_teleportPositions = [_tpToBasePos, _tpToCQBPos, _tpToMGPos, _tpToAdvRiflePos];
 
-private _teleportToBase = [
-    QGVAR(TeleportToBase),
-    "Teleport to base",
-    "",
-    {
-        ACE_player setPosASL (getPosASL (_this select 2));
-    },
-    {true},
-    {},
-    _tpBase
-] call ACE_Interact_Menu_fnc_createAction;
+//define QGVARS
+_qgvar = [Base, CQB, MG, AdvRifle];
 
-private _teleportToCQB = [
-    QGVAR(TeleportToCQB),
-    "Teleport to CQB area",
-    "",
-    {
-        ACE_player setPosASL (getPosASL (_this select 2));
-    },
-    {true},
-    {},
-    _tpCQB
-] call ACE_Interact_Menu_fnc_createAction;
+{
+    _qgvar = [Base, CQB, MG, AdvRifle];
+    private _x = [
+        format [QGVAR(teleport%1), _qgvar]
+        "Teleport to base",
+        "",
+        {
+            ACE_player setPosASL (getPosASL (_this select 2));
+        },
+        {true},
+        {},
+        _tpToBase
+    ] call ACE_Interact_Menu_fnc_createAction;
 
-[_mainTeleport, 0, ["ACE_MainActions"],
-    [
-    _teleportToBase,
-    _teleportToCQB
-    ]
-] call ACE_Interact_Menu_fnc_addActionToObject;
+    [_x, 0, ["ACE_MainActions"], _teleportToBase] call ACE_Interact_Menu_fnc_addActionToObject;
+} forEach _interactionPoints;
