@@ -29,6 +29,7 @@ private _teleportToBaseAction = [
     "Fast travel to Base",
     "",
     {
+        titleText ["Fast traveling to Base", "BLACK", 1];
         ACE_player setPosASL (getPosASL (_this select 2));
     },
     {true},
