@@ -3,54 +3,97 @@
  * Teleports the player from base (this) to teleport locations (objects).
  *
  * Arguments:
- * 0: Main Teleport object. (this)
- * 1: Teleport location object 1 (objectname)
- * 2: Teleport location object 2 (objectname)
- * 3: Teleport location object 3 (objectname)
- * 4: Teleport location object 4 (objectname)
- * 5: Teleport location object 5 (objectname)
+ * 0: Interaction object.
  *
  * Return Value:
  * None
  *
  * Example:
- * [baseTeleport,CQB,MG,pole3,pole4,pole5] call TAC_Olympus_fnc_teleport
+ * [this] call TAC_Olympus_fnc_teleport
  */
+#include "..\script_component.hpp"
 
-/*#include "..\script_component.hpp"
+//define teleport locations here
+private _teleportPosBase = teleportPosBase;
+private _teleportPosAdvRifle = teleportPosAdvRifle;
+private _teleportPosMG = teleportPosMG;
+private _teleportPosCQB = teleportPosCQB;
+private _teleportPosUrban = teleportPosUrban;
 
-//define interaction points
-_tpToBase = teleportBase;
-_tpToCQB = teleportCQB;
-_tpToMG = teleportMG;
-_tpToAdvRifle = teleportAdvRifle;
-//array
-_interactionPoints = [_tpToBase, _tpToCQB, _tpToMG, _tpToAdvRifle];
 
-//define teleport positions
-_tpToBasePos = teleportBasePos;
-_tpToCQBPos = teleportCQBPos;
-_tpToMGPos = teleportMGPos;
-_tpToAdvRiflePos = teleportAdvRiflePos;
-//array
-_teleportPositions = [_tpToBasePos, _tpToCQBPos, _tpToMGPos, _tpToAdvRiflePos];
+params ["_controller"];
 
-//define QGVARS
-_qgvar = [Base, CQB, MG, AdvRifle];
+//TP to base
+private _teleportToBaseAction = [
+    QGVAR(teleportToBase),
+    "Fast travel to Base",
+    "",
+    {
+        ACE_player setPosASL (getPosASL (_this select 2));
+    },
+    {true},
+    {},
+    _teleportPosBase
+] call ACE_Interact_Menu_fnc_createAction;
 
-{
-    _qgvar = [Base, CQB, MG, AdvRifle];
-    private _x = [
-        format [QGVAR(teleport%1), _qgvar]
-        "Teleport to base",
-        "",
-        {
-            ACE_player setPosASL (getPosASL (_this select 2));
-        },
-        {true},
-        {},
-        _tpToBase
-    ] call ACE_Interact_Menu_fnc_createAction;
+[_controller, 0, ["ACE_MainActions"], _teleportToBaseAction] call ACE_Interact_Menu_fnc_addActionToObject;
 
-    [_x, 0, ["ACE_MainActions"], _teleportToBase] call ACE_Interact_Menu_fnc_addActionToObject;
-} forEach _interactionPoints;
+//TP to advanced rifle course
+private _teleportToAdvRifleAction = [
+    QGVAR(teleportToAdvRifle),
+    "Fast travel to Adv. Rifle course",
+    "",
+    {
+        ACE_player setPosASL (getPosASL (_this select 2));
+    },
+    {true},
+    {},
+    _teleportPosAdvRifle
+] call ACE_Interact_Menu_fnc_createAction;
+
+[_controller, 0, ["ACE_MainActions"], _teleportToAdvRifleAction] call ACE_Interact_Menu_fnc_addActionToObject;
+
+//TP to MG course
+private _teleportToMGAction = [
+    QGVAR(teleportToMG),
+    "Fast travel to MG course",
+    "",
+    {
+        ACE_player setPosASL (getPosASL (_this select 2));
+    },
+    {true},
+    {},
+    _teleportPosMG
+] call ACE_Interact_Menu_fnc_createAction;
+
+[_controller, 0, ["ACE_MainActions"], _teleportToMGAction] call ACE_Interact_Menu_fnc_addActionToObject;
+
+//TP to CQB course
+private _teleportToCQBAction = [
+    QGVAR(teleportToCQB),
+    "Fast travel to CQB course",
+    "",
+    {
+        ACE_player setPosASL (getPosASL (_this select 2));
+    },
+    {true},
+    {},
+    _teleportPosCQB
+] call ACE_Interact_Menu_fnc_createAction;
+
+[_controller, 0, ["ACE_MainActions"], _teleportToCQBAction] call ACE_Interact_Menu_fnc_addActionToObject;
+
+//TP to CQB course
+private _teleportToUrbanAction = [
+    QGVAR(teleportToCQB),
+    "Fast travel to Urban City course",
+    "",
+    {
+        ACE_player setPosASL (getPosASL (_this select 2));
+    },
+    {true},
+    {},
+    _teleportPosUrban
+] call ACE_Interact_Menu_fnc_createAction;
+
+[_controller, 0, ["ACE_MainActions"], _teleportToUrbanAction] call ACE_Interact_Menu_fnc_addActionToObject;
