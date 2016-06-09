@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5354;
+		nextID=5358;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13;
+		nextID=14;
 	};
 	class Camera
 	{
-		pos[]={5213.4771,236.60364,5047.0576};
-		dir[]={0.59350896,-0.65597999,-0.4664045};
-		up[]={0.51577854,0.75477582,-0.40531924};
-		aside[]={-0.61791229,-4.2037573e-007,-0.78630787};
+		pos[]={2873.5496,180.85359,5243.8823};
+		dir[]={0.93207175,-0.3617098,-0.02083919};
+		up[]={0.36162958,0.93228281,-0.0080852117};
+		aside[]={-0.022352483,-1.9739673e-007,-0.99975687};
 	};
 };
 binarizationWanted=0;
@@ -162,14 +162,13 @@ addons[]=
 	"A3_Soft_F_Gamma_Truck_02",
 	"A3_Soft_F_MRAP_02",
 	"CUP_Buildings_Config",
-	"A3_Structures_F_Kart_Civ_SportsGrounds",
-	"A3_Props_F_Exp_A_Military_Equipment"
+	"A3_Structures_F_Kart_Civ_SportsGrounds"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=78;
+		items=77;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -630,13 +629,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item77
-		{
-			className="A3_Props_F_Exp_A";
-			name="Arma 3 Nexus Update - Decorative and mission objects";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
 	};
 };
 randomSeed=5049233;
@@ -877,7 +869,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2984;
+		items=2979;
 		class Item0
 		{
 			dataType="Object";
@@ -31938,7 +31930,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=20;
+							value=30;
 						};
 					};
 				};
@@ -39670,6 +39662,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this setObjectTexture [0,""tempImages\certificatemgRequirements.paa""];";
 			};
 			id=2915;
 			type="Land_MapBoard_F";
@@ -39695,7 +39688,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item1498
@@ -57076,17 +57088,40 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5207.3032,224.12312,5018.6382};
-				angles[]={6.2656851,2.5044532,0.017500184};
+				position[]={5207.3027,224.12314,5018.6377};
+				angles[]={6.2656798,2.5044601,0.017505653};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="this setObjectTexture [0,""tempImages\certificateAdvRifleRequirements.paa""];";
 			};
 			id=4118;
 			type="Land_MapBoard_F";
-			atlOffset=-3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item2269
 		{
@@ -58329,8 +58364,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5713.3496,67.46106,5865.3979};
-				angles[]={6.0666342,2.6559386,6.0954247};
+				position[]={5713.3501,67.460968,5865.3979};
+				angles[]={6.0666418,2.6559372,6.0954227};
 			};
 			side="Empty";
 			flags=4;
@@ -58339,6 +58374,48 @@ class Mission
 			};
 			id=2274;
 			type="Land_CamoNetB_EAST";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2329
 		{
@@ -62957,7 +63034,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2153.2625,8.6088228,5407.397};
+						position[]={2153.217,8.5899019,5408.2139};
 						angles[]={0,0.17129362,0};
 					};
 					side="West";
@@ -64612,9 +64689,10 @@ class Mission
 			name="khtrigger1";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=3;
 			b=4;
-			angle=91.795944;
+			angle=91.795982;
 			id=4609;
 			atlOffset=-0.15748596;
 		};
@@ -64625,6 +64703,7 @@ class Mission
 			name="khtrigger2";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=2;
 			b=4;
 			angle=182.47301;
@@ -64638,9 +64717,10 @@ class Mission
 			name="khtrigger3";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=2.5;
 			b=3;
-			angle=91.135963;
+			angle=91.135986;
 			id=4611;
 			atlOffset=-0.024425507;
 		};
@@ -64651,9 +64731,10 @@ class Mission
 			name="khtrigger4";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=2;
 			b=2;
-			angle=91.135963;
+			angle=91.135986;
 			id=4612;
 			atlOffset=-0.028585434;
 		};
@@ -64664,9 +64745,10 @@ class Mission
 			name="khtrigger5";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=2;
 			b=2;
-			angle=182.0419;
+			angle=182.04198;
 			id=4613;
 			atlOffset=-0.031174183;
 		};
@@ -64677,9 +64759,10 @@ class Mission
 			name="khtrigger6";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=2;
 			b=2;
-			angle=182.0419;
+			angle=182.04198;
 			id=4614;
 			atlOffset=0.035832882;
 		};
@@ -64690,9 +64773,10 @@ class Mission
 			name="khtrigger7";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=2;
 			b=2;
-			angle=182.0419;
+			angle=182.04198;
 			id=4615;
 			atlOffset=0.0054731369;
 		};
@@ -64703,6 +64787,7 @@ class Mission
 			name="khtrigger8";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=2;
 			b=2;
 			angle=183.80797;
@@ -64716,6 +64801,7 @@ class Mission
 			name="khtrigger9";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=4;
 			b=2;
 			angle=183.80797;
@@ -64729,6 +64815,7 @@ class Mission
 			name="khtrigger10";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=1.5;
 			b=2;
 			angle=183.80797;
@@ -64742,6 +64829,7 @@ class Mission
 			name="khtrigger11";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=3;
 			b=4;
 			angle=182.687;
@@ -64755,6 +64843,7 @@ class Mission
 			name="khtrigger12";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			angle=182.687;
 			id=4620;
 			atlOffset=-0.028040886;
@@ -72953,324 +73042,49 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5214.106,223.39247,5027.9575};
-				angles[]={6.2681909,0,6.2731848};
+				position[]={5206.2637,223.19923,5021.2192};
+				angles[]={6.2506957,0,0.017500184};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="teleportAdvRifle";
 			};
-			id=5346;
-			type="Land_Tablet_02_F";
-			atlOffset=-1.5258789e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
+			id=5354;
+			type="Land_ClutterCutter_large_F";
 		};
 		class Item2977
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5219.7256,223.41545,5030.5781};
-				angles[]={6.2656889,0,6.2606845};
+				position[]={5198.6533,222.99532,5015.7378};
+				angles[]={6.278182,0,0.0024897563};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="teleportMG";
 			};
-			id=5347;
-			type="Land_Tablet_02_F";
-			atlOffset=-1.5258789e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
+			id=5355;
+			type="Land_ClutterCutter_large_F";
 		};
 		class Item2978
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5226.7725,223.41945,5032.9868};
-				angles[]={6.2606878,0,6.2806892};
+				position[]={5199.9907,222.98062,5012.1685};
+				angles[]={6.278182,0,0.0024897563};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="teleportCQB";
 			};
-			id=5348;
-			type="Land_Tablet_02_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2979
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5233.6396,223.45772,5036.2905};
-				angles[]={6.2507048,0,0.0025132741};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="teleportBase";
-			};
-			id=5349;
-			type="Land_Tablet_02_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2980
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5212.2827,223.63782,5031.5908};
-				angles[]={6.2207723,0,6.2731848};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="teleportAdvRiflePos";
-			};
-			id=5350;
-			type="Land_Tablet_02_F";
-			atlOffset=0.0019989014;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2981
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5217.8809,223.55937,5033.7217};
-				angles[]={6.2382259,0,6.2606878};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="teleportMGPos";
-			};
-			id=5351;
-			type="Land_Tablet_02_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2982
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5224.6494,223.5332,5037.0464};
-				angles[]={6.2407041,0,6.2731848};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="teleportCQBPos";
-			};
-			id=5352;
-			type="Land_Tablet_02_F";
-			atlOffset=0.0010070801;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2983
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5230.9419,223.58931,5040.7886};
-				angles[]={6.2706885,0,6.2781763};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="teleportBasePos";
-			};
-			id=5353;
-			type="Land_Tablet_02_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
+			id=5357;
+			type="Land_ClutterCutter_large_F";
+			atlOffset=-0.00018310547;
 		};
 	};
 	class Connections

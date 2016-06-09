@@ -16,7 +16,8 @@
  * Example:
  * [baseTeleport,CQB,MG,pole3,pole4,pole5] call TAC_Olympus_fnc_teleport
  */
-#include "..\script_component.hpp"
+
+/*#include "..\script_component.hpp"
 
 //define interaction points
 _tpToBase = teleportBase;
