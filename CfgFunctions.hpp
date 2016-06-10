@@ -22,6 +22,7 @@ class CfgFunctions {
             class timer;
             class timerInit;
             class timerStop;
+            class urbanMovementCourse;
         };
     };
 };

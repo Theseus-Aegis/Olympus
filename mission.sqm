@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3007.8223,63.735218,5946.5313};
-		dir[]={0.61135536,-0.42376202,0.66837108};
-		up[]={0.2860212,0.90576869,0.31269458};
-		aside[]={0.73789406,-5.3201802e-008,-0.67495078};
+		pos[]={3141.2188,26.282988,6045.4873};
+		dir[]={-0.66009229,-0.73589879,0.15105908};
+		up[]={-0.71736252,0.67708498,0.1641656};
+		aside[]={0.22309045,7.3103001e-007,0.97484076};
 	};
 };
 binarizationWanted=0;
@@ -74953,7 +74953,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0,""tempImages\urbanMovementController.paa""];";
+				init="this setObjectTexture [0,""tempImages\urbanMovementController.paa""]; [this] call TAC_Olympus_fnc_urbanMovementCourse;";
 				name="urbanMovementLaptop";
 			};
 			id=5389;
