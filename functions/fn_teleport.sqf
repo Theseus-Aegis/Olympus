@@ -1,5 +1,5 @@
 /*
- * Author: Rory
+ * Author: Rory, jonpas
  * Teleports the player from base (this) to teleport locations (objects).
  *
  * Arguments:
@@ -23,78 +23,26 @@ private _teleportPosUrban = teleportPosUrban;
 
 params ["_controller"];
 
-//TP to base
-private _teleportToBaseAction = [
-    QGVAR(teleportToBase),
-    "Fast travel to Base",
-    "",
-    {
-        titleText ["Fast traveling to Base", "BLACK", 1];
-        ACE_player setPosASL (getPosASL (_this select 2));
-    },
-    {true},
-    {},
-    _teleportPosBase
-] call ACE_Interact_Menu_fnc_createAction;
+{
+    _x params ["_teleportObject", "_text"];
 
-[_controller, 0, ["ACE_MainActions"], _teleportToBaseAction] call ACE_Interact_Menu_fnc_addActionToObject;
+    private _action = [
+        format [QGVAR(%1), _teleportObject],
+        ["Fast travel to", _text] joinString " ",
+        "",
+        {
+            ACE_player setPosASL (getPosASL (_this select 2));
+        },
+        {true},
+        {},
+        _teleportObject
+    ] call ACE_Interact_Menu_fnc_createAction;
 
-//TP to advanced rifle course
-private _teleportToAdvRifleAction = [
-    QGVAR(teleportToAdvRifle),
-    "Fast travel to Adv. Rifle course",
-    "",
-    {
-        ACE_player setPosASL (getPosASL (_this select 2));
-    },
-    {true},
-    {},
-    _teleportPosAdvRifle
-] call ACE_Interact_Menu_fnc_createAction;
-
-[_controller, 0, ["ACE_MainActions"], _teleportToAdvRifleAction] call ACE_Interact_Menu_fnc_addActionToObject;
-
-//TP to MG course
-private _teleportToMGAction = [
-    QGVAR(teleportToMG),
-    "Fast travel to MG course",
-    "",
-    {
-        ACE_player setPosASL (getPosASL (_this select 2));
-    },
-    {true},
-    {},
-    _teleportPosMG
-] call ACE_Interact_Menu_fnc_createAction;
-
-[_controller, 0, ["ACE_MainActions"], _teleportToMGAction] call ACE_Interact_Menu_fnc_addActionToObject;
-
-//TP to CQB course
-private _teleportToCQBAction = [
-    QGVAR(teleportToCQB),
-    "Fast travel to CQB course",
-    "",
-    {
-        ACE_player setPosASL (getPosASL (_this select 2));
-    },
-    {true},
-    {},
-    _teleportPosCQB
-] call ACE_Interact_Menu_fnc_createAction;
-
-[_controller, 0, ["ACE_MainActions"], _teleportToCQBAction] call ACE_Interact_Menu_fnc_addActionToObject;
-
-//TP to CQB course
-private _teleportToUrbanAction = [
-    QGVAR(teleportToCQB),
-    "Fast travel to Urban City course",
-    "",
-    {
-        ACE_player setPosASL (getPosASL (_this select 2));
-    },
-    {true},
-    {},
-    _teleportPosUrban
-] call ACE_Interact_Menu_fnc_createAction;
-
-[_controller, 0, ["ACE_MainActions"], _teleportToUrbanAction] call ACE_Interact_Menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions"], _action] call ACE_Interact_Menu_fnc_addActionToObject;
+} forEach [
+    [teleportPosBase, "Base"],
+    [teleportPosAdvRifle, "Adv. Rifle course"],
+    [teleportPosMG, "MG course"],
+    [teleportPosCQB, "CQB course"],
+    [teleportPosUrban, "Urban City course"]
+];
