@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=17;
+		nextID=18;
 	};
 	class Camera
 	{
-		pos[]={3141.2188,26.282988,6045.4873};
-		dir[]={-0.66009229,-0.73589879,0.15105908};
-		up[]={-0.71736252,0.67708498,0.1641656};
-		aside[]={0.22309045,7.3103001e-007,0.97484076};
+		pos[]={2224.175,17.353189,5455.0044};
+		dir[]={-0.54246736,-0.32177663,0.77608478};
+		up[]={-0.18437646,0.94679844,0.26378146};
+		aside[]={0.81967598,-2.3492612e-007,0.57293308};
 	};
 };
 binarizationWanted=0;
@@ -70362,34 +70362,119 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3121.1284,5.6817846,6049.1772};
-				angles[]={6.2133002,3.1301603,0.12681581};
+				position[]={3121.1289,5.681911,6049.1777};
+				angles[]={6.2133021,3.1301608,0.12681562};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
 			};
 			id=5110;
 			type="Land_PlasticCase_01_large_F";
-			atlOffset=-2.9563904e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2808
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3121.196,5.8121676,6050.9038};
-				angles[]={6.2083254,3.1301603,0.13173254};
+				position[]={3121.196,5.8121996,6050.9038};
+				angles[]={6.2083282,3.1301608,0.13173746};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
 			};
 			id=5111;
 			type="Land_PlasticCase_01_large_F";
-			atlOffset=-3.0994415e-005;
+			atlOffset=9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2809
 		{
