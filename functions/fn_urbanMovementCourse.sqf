@@ -45,6 +45,12 @@ urbantarget27,
 urbantarget28
 ];
 
+//default targets down.
+{
+    [_x, 1] call TACFUNC(shootingrange,animateTarget);
+} forEach _targets;
+//////////////
+
 params ["_controller"];
 
 {
@@ -52,7 +58,7 @@ params ["_controller"];
 
     private _action = [
         format [QGVAR(%1), _interactionVariable],
-        "_interactionName",
+        _interactionName,
         "",
         {
             (_this select 2) params ["_targets", "_state"];
@@ -67,6 +73,6 @@ params ["_controller"];
 
     [_controller, 0, ["ACE_MainActions"], _action] call ACE_Interact_Menu_fnc_addActionToObject;
 } forEach [
-    [targetsUP, "Pop targets UP", 1],
-    [targetsDOWN, "Pop targets DOWN", 0]
+    ["targetsUp", "Pop targets UP", 0],
+    ["targetsDown", "Pop targets DOWN", 1]
 ];
