@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=18;
+		nextID=19;
 	};
 	class Camera
 	{
-		pos[]={2224.175,17.353189,5455.0044};
-		dir[]={-0.54246736,-0.32177663,0.77608478};
-		up[]={-0.18437646,0.94679844,0.26378146};
-		aside[]={0.81967598,-2.3492612e-007,0.57293308};
+		pos[]={2164.262,36.051804,5337.771};
+		dir[]={0.54060692,-0.66835034,0.51106024};
+		up[]={0.4856979,0.74383122,0.45915028};
+		aside[]={0.68701553,4.3469481e-007,-0.72673792};
 	};
 };
 binarizationWanted=0;
@@ -74300,7 +74300,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.paa"";";
+				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
 			};
 			id=5373;
 			type="Flag_Blue_F";
@@ -74451,17 +74451,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2183.3108,12.23719,5359.1196};
+				position[]={2183.311,12.237309,5359.1201};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.paa"";";
+				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
 			};
 			id=5376;
 			type="Flag_Blue_F";
-			atlOffset=-0.13714027;
+			atlOffset=-0.13700008;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -74491,17 +74491,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5216.9648,227.25372,5023.0117};
+				position[]={5216.9648,227.2538,5023.0122};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.paa"";";
+				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
 			};
 			id=5377;
 			type="Flag_Blue_F";
-			atlOffset=0.0019226074;
+			atlOffset=0.0019989014;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -74531,17 +74531,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6410.4014,11.774101,5404.5723};
+				position[]={6410.4009,11.774086,5404.5718};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.paa"";";
+				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
 			};
 			id=5378;
 			type="Flag_Blue_F";
-			atlOffset=0.0010271072;
+			atlOffset=0.0010004044;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -74571,17 +74571,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5713.9707,72.116295,5878.7979};
+				position[]={5713.9712,72.115746,5878.7979};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.paa"";";
+				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
 			};
 			id=5379;
 			type="Flag_Blue_F";
-			atlOffset=0.041381836;
+			atlOffset=0.040992737;
 			class CustomAttributes
 			{
 				class Attribute0
