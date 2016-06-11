@@ -48,16 +48,17 @@ urbantarget28
 params ["_controller"];
 
 {
-    _x params ["_interaction", "_interactionName", "_state"];
+    _x params ["_interactionVariable", "_interactionName", "_state"];
 
     private _action = [
-        format [QGVAR(%1), _interaction],
-        format [%1, _interactionName],
+        format [QGVAR(%1), _interactionVariable],
+        "_interactionName",
         "",
         {
+            (_this select 2) params ["_targets", "_state"];
             {
                 [_x, _state] call TACFUNC(shootingrange,animateTarget);
-            } forEach [_targets, _state];
+            } forEach _targets;
         },
         {true},
         {},
