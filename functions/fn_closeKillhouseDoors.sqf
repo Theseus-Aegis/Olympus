@@ -3,14 +3,13 @@
  * Closes all open doors in the killhouse.
  *
  * Arguments:
- * 0: Controller (object)
- * 1: Killhouse name (object)
- *
+ * none
+
  * Return Value:
  * None
  *
  * Example:
- * [controller, killhouse1] call TAC_Olympus_fnc_closeKillhouseDoors;
+ * [controller] call TAC_Olympus_fnc_closeKillhouseDoors
  */
 
 #include "..\script_component.hpp"
