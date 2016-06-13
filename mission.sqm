@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4616.978,139.0002,5295.7988};
-		dir[]={-0.55261254,-0.55153751,-0.62502855};
-		up[]={-0.36535648,0.83408552,-0.41323584};
-		aside[]={-0.74927038,1.0512304e-006,0.6624555};
+		pos[]={4626.1304,145.29233,5289.7036};
+		dir[]={-0.76201248,-0.48024961,0.43466899};
+		up[]={-0.41721353,0.87706441,0.23798507};
+		aside[]={0.49554157,1.2961682e-006,0.86873448};
 	};
 };
 binarizationWanted=0;
@@ -64373,16 +64373,59 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4595.2612,133.9566,5288.269};
-				angles[]={0,3.8768659,0};
+				position[]={4595.2612,133.95709,5288.269};
+				angles[]={0,3.8768651,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
 			};
 			id=4571;
 			type="Land_PlasticCase_01_large_F";
-			atlOffset=1.985199;
+			atlOffset=1.9856873;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2495
 		{
@@ -65452,16 +65495,59 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4596.7495,133.95959,5289.9248};
-				angles[]={0,3.8768659,0};
+				position[]={4596.75,133.95941,5289.9248};
+				angles[]={0,3.8768651,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
+				init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
 			};
 			id=4647;
 			type="Land_PlasticCase_01_large_F";
+			atlOffset=1.9877319;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item2540
 		{
