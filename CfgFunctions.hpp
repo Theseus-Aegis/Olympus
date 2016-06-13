@@ -14,6 +14,7 @@ class CfgFunctions {
             class closeKillhouseDoors;
             class constantShoot;
             class prepareMedicalExercise;
+            class resetDamagedObjects;
             class resetMedicalExercise;
             class setBasicLoadout;
             class setBillboard;

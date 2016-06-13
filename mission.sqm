@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=10;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5390;
+		nextID=5404;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=19;
+		nextID=20;
 	};
 	class Camera
 	{
-		pos[]={2164.262,36.051804,5337.771};
-		dir[]={0.54060692,-0.66835034,0.51106024};
-		up[]={0.4856979,0.74383122,0.45915028};
-		aside[]={0.68701553,4.3469481e-007,-0.72673792};
+		pos[]={4621.3604,139.0744,5292.168};
+		dir[]={-0.7861985,-0.56561333,0.24940926};
+		up[]={-0.53918165,0.82461518,0.17104632};
+		aside[]={0.30242139,8.8410161e-007,0.95330334};
 	};
 };
 binarizationWanted=0;
@@ -878,7 +878,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2998;
+		items=3006;
 		class Item0
 		{
 			dataType="Object";
@@ -63000,8 +63000,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2165.6008,8.5828896,5407.2871};
-						angles[]={0,6.2629924,0};
+						position[]={2165.6011,8.5829,5407.2866};
+						angles[]={0,6.2629914,0};
 					};
 					side="West";
 					flags=7;
@@ -63011,28 +63011,10 @@ class Mission
 					};
 					id=4513;
 					type="B_Soldier_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -63051,7 +63033,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -63059,6 +63079,7 @@ class Mission
 			{
 			};
 			id=4512;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item2465
 		{
@@ -63073,7 +63094,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2153.217,8.5899019,5408.2139};
-						angles[]={0,0.17129362,0};
+						angles[]={0,0.17128661,0};
 					};
 					side="West";
 					flags=7;
@@ -63086,25 +63107,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -63123,7 +63125,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -74461,7 +74501,7 @@ class Mission
 			};
 			id=5376;
 			type="Flag_Blue_F";
-			atlOffset=-0.13700008;
+			atlOffset=-0.13699913;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -75086,6 +75126,138 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item2998
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4525.1563,62.789558,5519.5908};
+				angles[]={0,4.1759572,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=5391;
+			type="Land_Slum_House02_F";
+			atlOffset=0.37916946;
+		};
+		class Item2999
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4528.7568,77.567955,5419.1338};
+				angles[]={0,4.1759572,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=5394;
+			type="Land_Slum_House02_F";
+			atlOffset=0.61080933;
+		};
+		class Item3000
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4621.8652,100.26471,5411.9995};
+				angles[]={0.29121804,4.8519812,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=5395;
+			type="Land_Slum_House02_F";
+		};
+		class Item3001
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4569.3555,83.491776,5445.6685};
+				angles[]={0.27763909,4.2642012,0.26371235};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5397;
+			type="C_Van_01_transport_F";
+			atlOffset=0.00060272217;
+		};
+		class Item3002
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4454.2427,62.524361,5495.0098};
+				angles[]={5.868679,1.7552336,6.1026711};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5399;
+			type="C_Van_01_box_F";
+		};
+		class Item3003
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4509.6162,84.908463,5366.0181};
+				angles[]={0.1095605,0.88411099,0.079830162};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5400;
+			type="C_Quadbike_01_F";
+			atlOffset=-0.00010681152;
+		};
+		class Item3004
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4470.8008,80.754608,5575.9668};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=5402;
+			type="Land_Cargo_House_V2_F";
+			atlOffset=0.28296661;
+		};
+		class Item3005
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4597.4404,131.05998,5302.375};
+				angles[]={0.064906895,5.286891,0.072375387};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5403;
+			type="CamoNet_BLUFOR_big_F";
 		};
 	};
 	class Connections
