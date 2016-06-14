@@ -22,18 +22,17 @@ private _action = [
     "Reset targets",
     "",
     {
-        private _targets = _this select 2;
-        _targets = _targets apply {
-            if (damage _x == 0) then {
-                _x
-            } else {
+        private _targets = param [2];
+        {
+            if (damage _x != 0) then {
                 private _position = ASLToAGL (getPosASL _x);
                 private _type = typeOf _x;
                 deleteVehicle _x;
 
                 private _newTarget = createVehicle [_type, _position, [], 0, "CAN_COLLIDE"];
+                _targets set [_forEachIndex, _newTarget];
             };
-        };
+        } forEach _targets;
     },
     {true},
     {},
