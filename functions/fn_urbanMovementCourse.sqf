@@ -42,7 +42,12 @@ urbantarget24,
 urbantarget25,
 urbantarget26,
 urbantarget27,
-urbantarget28
+urbantarget28,
+urbantarget29,
+urbantarget30,
+urbantarget31,
+urbantarget32,
+urbantarget33
 ];
 
 //default targets down.
@@ -64,6 +69,7 @@ params ["_controller"];
             (_this select 2) params ["_targets", "_state"];
             {
                 [_x, _state] call TACFUNC(shootingrange,animateTarget);
+                _x setVariable ["tac_shootingrange_stayDown", true, true];
             } forEach _targets;
         },
         {true},

@@ -17,3 +17,6 @@
 #define QPATHTOTACF(var1,var2) QUOTE(PATHTOTACF(var1,var2))
 
 #define TACFUNC(var1,var2) TRIPLES(DOUBLES(tac,var1),fnc,var2)
+
+#define TACGVAR(var1,var2) TRIPLES(tac,var1,var2)
+#define QTACGVAR(var1,var2) QUOTE(TACGVAR(var1,var2))
