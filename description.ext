@@ -1,12 +1,5 @@
 #include "script_component.hpp"
 
-class ACE_Settings {
-    class tac_armory_system {
-        value = 0;
-        typeName = "SCALAR";
-    };
-};
-
 class Header {
     gameType = COOP;
     minPlayers = 1;

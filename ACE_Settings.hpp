@@ -3,4 +3,8 @@ class ACE_Settings {
         value = 1;
         typeName = "SCALAR";
     };
+    class tac_armory_system {
+        value = 0;
+        typeName = "SCALAR";
+    };
 };
