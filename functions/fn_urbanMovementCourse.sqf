@@ -13,44 +13,43 @@
  */
 #include "..\script_component.hpp"
 
-
-_targets = [
-urbantarget1,
-urbantarget2,
-urbantarget3,
-urbantarget4,
-urbantarget5,
-urbantarget6,
-urbantarget7,
-urbantarget8,
-urbantarget9,
-urbantarget10,
-urbantarget11,
-urbantarget12,
-urbantarget13,
-urbantarget14,
-urbantarget15,
-urbantarget16,
-urbantarget17,
-urbantarget18,
-urbantarget19,
-urbantarget20,
-urbantarget21,
-urbantarget22,
-urbantarget23,
-urbantarget24,
-urbantarget25,
-urbantarget26,
-urbantarget27,
-urbantarget28,
-urbantarget29,
-urbantarget30,
-urbantarget31,
-urbantarget32,
-urbantarget33
+private _targets = [
+    urbantarget1,
+    urbantarget2,
+    urbantarget3,
+    urbantarget4,
+    urbantarget5,
+    urbantarget6,
+    urbantarget7,
+    urbantarget8,
+    urbantarget9,
+    urbantarget10,
+    urbantarget11,
+    urbantarget12,
+    urbantarget13,
+    urbantarget14,
+    urbantarget15,
+    urbantarget16,
+    urbantarget17,
+    urbantarget18,
+    urbantarget19,
+    urbantarget20,
+    urbantarget21,
+    urbantarget22,
+    urbantarget23,
+    urbantarget24,
+    urbantarget25,
+    urbantarget26,
+    urbantarget27,
+    urbantarget28,
+    urbantarget29,
+    urbantarget30,
+    urbantarget31,
+    urbantarget32,
+    urbantarget33
 ];
 
-//default targets down.
+// Default targets down
 {
     [_x, 1] call TACFUNC(shootingrange,animateTarget);
 } forEach _targets;
@@ -62,7 +61,7 @@ params ["_controller"];
     _x params ["_interactionVariable", "_interactionName", "_state"];
 
     private _action = [
-        format [QGVAR(%1), _interactionVariable],
+        _interactionVariable,
         _interactionName,
         "",
         {
@@ -75,10 +74,10 @@ params ["_controller"];
         {true},
         {},
         [_targets, _state]
-    ] call ACE_Interact_Menu_fnc_createAction;
+    ] call ace_interact_menu_fnc_createAction;
 
-    [_controller, 0, ["ACE_MainActions"], _action] call ACE_Interact_Menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 } forEach [
-    ["targetsUp", "Pop targets UP", 0],
-    ["targetsDown", "Pop targets DOWN", 1]
+    [QGVAR(targetsUp), "Pop targets UP", 0],
+    [QGVAR(targetsDown), "Pop targets DOWN", 1]
 ];
