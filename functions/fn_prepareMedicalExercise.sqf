@@ -29,6 +29,10 @@ private _info = [
 
 _controller setVariable [QGVAR(MedicalExerciseInfo), _info, true];
 
+{
+    _x enableSimulationGlobal false;
+} forEach _victims;
+
 // Add EH for AI movement
 [QGVAR(move), {
     params ["_victim", "_runWaypoint"];

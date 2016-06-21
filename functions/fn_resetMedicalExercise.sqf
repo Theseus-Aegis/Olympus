@@ -29,6 +29,7 @@ _objects params ["_victims", "_mine"];
 _victims = [];
 {
     private _victim = (createGroup resistance) createUnit [_x, ASLToAGL (_victimsStartPos select _forEachIndex), [], 0, "NONE"];
+    _victim enableSimulationGlobal false;
     _victims pushBack _victim;
 } forEach _victimsClass;
 
