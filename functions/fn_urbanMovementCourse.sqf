@@ -68,7 +68,7 @@ params ["_controller"];
             (_this select 2) params ["_targets", "_state"];
             {
                 [_x, _state] call TACFUNC(shootingrange,animateTarget);
-                _x setVariable ["tac_shootingrange_stayDown", true, true];
+                _x setVariable [QTACGVAR(shootingrange,stayDown), true, true];
             } forEach _targets;
         },
         {true},
