@@ -26,6 +26,8 @@ TRACE_1("Start",_info);
 
 // Move victims to position
 {
+    _x enableSimulationGlobal true;
+
     // 'move' has local arguments
     [QGVAR(move), _x, [_x, _runWaypoint]] call ace_common_fnc_objectEvent;
 } forEach _victims;
@@ -59,15 +61,13 @@ if (isNull _mine) then {
     } forEach _victims;
 
     // Apply damage to specific victims
-      //victim 1 (select 0)
-        [_victims select 0] call ace_medical_fnc_setCardiacArrest;
-        [_victims select 0, 0.6, "leg_l", "grenade"] call ace_medical_fnc_addDamageToUnit;
-        [_victims select 0, 0.3, "leg_r", "stab"] call ace_medical_fnc_addDamageToUnit;
-        [_victims select 0, 0.3, "hand_l", "bullet"] call ace_medical_fnc_addDamageToUnit;
+    [_victims select 0] call ace_medical_fnc_setCardiacArrest;
+    [_victims select 0, 0.6, "leg_l", "grenade"] call ace_medical_fnc_addDamageToUnit;
+    [_victims select 0, 0.3, "leg_r", "stab"] call ace_medical_fnc_addDamageToUnit;
+    [_victims select 0, 0.3, "hand_l", "bullet"] call ace_medical_fnc_addDamageToUnit;
 
-      //victim 2 (select 1)
-        [_victims select 1, true, 10, true] call ace_medical_fnc_setUnconscious;
-        [_victims select 1, 0.5, "hand_r", "stab"] call ace_medical_fnc_addDamageToUnit;
-        [_victims select 1, 0.6, "leg_r", "explosive"] call ace_medical_fnc_addDamageToUnit;
+    [_victims select 1, true, 10, true] call ace_medical_fnc_setUnconscious;
+    [_victims select 1, 0.5, "hand_r", "stab"] call ace_medical_fnc_addDamageToUnit;
+    [_victims select 1, 0.6, "leg_r", "explosive"] call ace_medical_fnc_addDamageToUnit;
 
 }, [_victims, _runWaypoint, _controller]] call ace_common_fnc_waitUntilAndExecute;
