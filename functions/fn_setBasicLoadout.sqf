@@ -29,24 +29,27 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-// Add basic gear
-_unit forceAddUniform _randomUniform;
-_unit addHeadgear _randomHeadgear;
-_unit addVest "V_Rangemaster_belt";
-_unit addItem "ACE_EarPlugs";
+[{
+    params ["_unit", "_randomUniform", "_randomHeadgear"];
+    // Add basic gear
+    _unit forceAddUniform _randomUniform;
+    _unit addHeadgear _randomHeadgear;
+    _unit addVest "V_Rangemaster_belt";
+    _unit addItem "ACE_EarPlugs";
 
-_unit addItem "ItemMap";
-_unit assignItem "ItemMap";
-_unit addItem "ItemCompass";
-_unit assignItem "ItemCompass";
-_unit addItem "ItemWatch";
-_unit assignItem "ItemWatch";
-_unit addItem "ACRE_PRC343";
-_unit addItem "ACE_fieldDressing";
-_unit addItem "ACE_elasticBandage";
-_unit addItem "ACE_quikclot";
-_unit addItem "ACE_packingBandage";
-_unit addItem "ACE_fieldDressing";
-_unit addItem "ACE_elasticBandage";
-_unit addItem "ACE_quikclot";
-_unit addItem "ACE_packingBandage";
+    _unit addItem "ItemMap";
+    _unit assignItem "ItemMap";
+    _unit addItem "ItemCompass";
+    _unit assignItem "ItemCompass";
+    _unit addItem "ItemWatch";
+    _unit assignItem "ItemWatch";
+    _unit addItem "ACRE_PRC343";
+    _unit addItem "ACE_fieldDressing";
+    _unit addItem "ACE_elasticBandage";
+    _unit addItem "ACE_quikclot";
+    _unit addItem "ACE_packingBandage";
+    _unit addItem "ACE_fieldDressing";
+    _unit addItem "ACE_elasticBandage";
+    _unit addItem "ACE_quikclot";
+    _unit addItem "ACE_packingBandage";
+}, [_unit, _randomUniform, _randomHeadgear] call CBA_fnc_execNextFrame;
