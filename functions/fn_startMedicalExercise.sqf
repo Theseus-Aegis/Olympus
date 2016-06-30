@@ -29,7 +29,7 @@ TRACE_1("Start",_info);
     _x enableSimulationGlobal true;
 
     // 'move' has local arguments
-    [QGVAR(move), _x, [_x, _runWaypoint]] call ace_common_fnc_objectEvent;
+    [QGVAR(move), [_x, _runWaypoint], _x] call CBA_fnc_targetEvent;
 } forEach _victims;
 
 // Recreate mine if it got exploded accidentally
