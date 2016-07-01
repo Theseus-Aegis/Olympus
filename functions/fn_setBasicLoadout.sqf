@@ -52,4 +52,4 @@ removeGoggles _unit;
     _unit addItem "ACE_elasticBandage";
     _unit addItem "ACE_quikclot";
     _unit addItem "ACE_packingBandage";
-}, [_unit, _randomUniform, _randomHeadgear] call CBA_fnc_execNextFrame;
+}, [_unit, _randomUniform, _randomHeadgear]] call CBA_fnc_execNextFrame;
