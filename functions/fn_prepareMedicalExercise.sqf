@@ -37,7 +37,7 @@ _controller setVariable [QGVAR(MedicalExerciseInfo), _info, true];
 [QGVAR(move), {
     params ["_victim", "_runWaypoint"];
     (group _victim) move (getPos _runWaypoint);
-}] call ace_common_fnc_addEventHandler;
+}] call CBA_fnc_addEventHandler;
 
 // Start action
 private _actionStart = [
