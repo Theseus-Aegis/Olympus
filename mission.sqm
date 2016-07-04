@@ -25390,7 +25390,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[[victim1, victim2], this, fakeMine, wayPointSphere] call TAC_Olympus_fnc_prepareMedicalExercise; this setObjectTexture [0,""tempImages\medicalController.paa""];";
+				init="[[victim1, victim2], this, fakeMine, wayPointSphere] call TAC_Olympus_fnc_prepareMedicalExercise; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\medicalController.paa""];";
 				name="medicalLaptop";
 			};
 			id=1977;
@@ -38941,7 +38941,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""tempImages\certificatemgRequirements.paa""];";
+				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\certificatemgRequirements.paa""];";
 				name="mgBoard";
 			};
 			id=2915;
@@ -47675,7 +47675,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""tempImages\killhouseController.paa""];";
+				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\killhouseController.paa""];";
 				name="Killhouse1controller";
 			};
 			id=3522;
@@ -56390,7 +56390,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""tempImages\certificateAdvRifleRequirements.paa""];";
+				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\certificateAdvRifleRequirements.paa""];";
 				name="advRifle";
 			};
 			id=4118;
@@ -59227,7 +59227,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[Killhouse2controller,killHouseSmall1] call TAC_Olympus_fnc_closeKillhouseDoors; this setObjectTexture [0,""tempImages\killhouseController.paa""];";
+				init="[Killhouse2controller,killHouseSmall1] call TAC_Olympus_fnc_closeKillhouseDoors; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\killhouseController.paa""];";
 				name="Killhouse2controller";
 			};
 			id=4248;
@@ -70361,7 +70361,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""tempImages\teleportTablet.paa""];";
+				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];";
 			};
 			id=5161;
 			type="Land_CampingTable_F";
@@ -73621,7 +73621,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""tempImages\teleportTablet.paa""];";
+				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];";
 			};
 			id=5364;
 			type="Land_Tablet_02_F";
@@ -73739,7 +73739,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""tempImages\teleportTablet.paa""];";
+				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];";
 			};
 			id=5366;
 			type="Land_Tablet_02_F";
@@ -73798,7 +73798,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""tempImages\teleportTablet.paa""];";
+				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];";
 			};
 			id=5367;
 			type="Land_Tablet_02_F";
@@ -73984,7 +73984,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""tempImages\teleportTablet.paa""];";
+				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];";
 			};
 			id=5372;
 			type="Land_Tablet_02_F";
@@ -74043,7 +74043,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
+				init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
 			};
 			id=5373;
 			type="Flag_Blue_F";
@@ -74141,7 +74141,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""tempImages\teleportTablet.paa""];";
+				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];";
 			};
 			id=5375;
 			type="Land_Tablet_02_F";
@@ -74200,7 +74200,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
+				init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
 			};
 			id=5376;
 			type="Flag_Blue_F";
@@ -74240,7 +74240,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
+				init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
 			};
 			id=5377;
 			type="Flag_Blue_F";
@@ -74280,7 +74280,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
+				init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
 			};
 			id=5378;
 			type="Flag_Blue_F";
@@ -74320,7 +74320,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture ""tempImages\TAC_flag.jpg"";";
+				init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
 			};
 			id=5379;
 			type="Flag_Blue_F";
@@ -74741,7 +74741,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0,""tempImages\urbanMovementController.paa""]; [this] call TAC_Olympus_fnc_urbanMovementCourse;";
+				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\urbanMovementController.paa""]; [this] call TAC_Olympus_fnc_urbanMovementCourse;";
 				name="urbanMovementLaptop";
 			};
 			id=5389;
