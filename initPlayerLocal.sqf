@@ -19,7 +19,3 @@
 ] spawn BIS_fnc_typeText;
 
 // =======================================
-
-// Temp fix for target pop-ups, if 'nopop' is undefined targets will always pop back up
-// @todo remove after TAC Mods 1.7.2 or higher
-nopop = false;
