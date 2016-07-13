@@ -18,6 +18,7 @@ class CfgFunctions {
             class resetMedicalExercise;
             class setBasicLoadout;
             class setBillboard;
+            class spawnMovingInfantry;
             class startMedicalExercise;
             class teleport;
             class timer;
