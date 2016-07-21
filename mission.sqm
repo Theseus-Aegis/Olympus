@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5558;
+		nextID=5566;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=27;
+		nextID=28;
 	};
 	class Camera
 	{
-		pos[]={5846.9575,75.973503,5303.7715};
-		dir[]={-0.27880901,-0.75496423,0.5935744};
-		up[]={-0.32097042,0.65576649,0.68333602};
-		aside[]={0.90514171,4.4109765e-007,0.42515519};
+		pos[]={5843.415,69.469978,5313.293};
+		dir[]={-0.58970433,-0.34884936,0.72848696};
+		up[]={-0.21951486,0.93716133,0.27117738};
+		aside[]={0.77731389,7.2061084e-008,0.62922519};
 	};
 };
 binarizationWanted=0;
@@ -167,7 +167,8 @@ addons[]=
 	"A3_Props_F_Exp_A_Military_Equipment",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Soft_F_Beta_Truck_02",
-	"A3_Characters_F_Exp"
+	"A3_Characters_F_Exp",
+	"A3_Structures_F_Kart_Signs_Companies"
 };
 class AddonsMetaData
 {
@@ -930,7 +931,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3091;
+		items=3092;
 		class Item0
 		{
 			dataType="Object";
@@ -77635,6 +77636,23 @@ class Mission
 			};
 			id=5556;
 			atlOffset=-3.0517578e-005;
+		};
+		class Item3091
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5842.7686,67.950645,5314.1323};
+				angles[]={0,5.5563326,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=5565;
+			type="SignAd_SponsorS_Blueking_F";
+			atlOffset=0.0072860718;
 		};
 	};
 	class Connections

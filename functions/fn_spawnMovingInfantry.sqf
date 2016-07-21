@@ -10,7 +10,7 @@ private _action = [
     "",
     {
           _group = createGroup EAST;
-
+          _group setVariable ["testVariable", nil, false];
           "O_MU_islam_AT_F" createUnit [infantrySpawnMarker3_3, _group,
           "
           this disableAI 'AUTOTARGET';
@@ -43,6 +43,7 @@ private _action = [
           _group setFormation "FILE";
 
           _group move (getposASL infantryWaypoint3_1);
+          _group deleteVehicle (getVariable ["testVariable", nil]);
     },
     {true},
     {}
