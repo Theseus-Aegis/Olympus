@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+# Author: Jonpas
+# Packages mission into a mission folder and archives it.
+
 import os
 import shutil
 import re
@@ -5,10 +10,11 @@ import zipfile
 
 name = "Olympus"
 version_file = "script_component.hpp"
-ignore_files = [".git", ".github", "extras", "release", "tools", ".editorconfig", ".gitignore"]
+ignore_files = [".git", ".github", "extras", "release", "tools", ".editorconfig", ".gitattributes", ".gitignore"]
 release_dir = "release"
 
 os.chdir("..")
+print()
 
 # Read info
 info_file_read = ""
@@ -31,8 +37,6 @@ if os.path.exists(release_dir):
 os.makedirs(release_dir)
 os.makedirs(release_dir_copy)
 
-print(os.listdir(os.path.abspath("")))
-
 for item in os.listdir(os.path.abspath("")):
     if item not in ignore_files and ".zip" not in item:
         print("Copying {}".format(item))
@@ -41,5 +45,6 @@ for item in os.listdir(os.path.abspath("")):
         else:
             shutil.copy2(item, release_dir_copy)
 
+print("\nMaking archive TAC_{}_v{}.zip".format(name, version))
 release_archive = shutil.make_archive("TAC_{}_v{}".format(name, version), "zip", release_dir)
 shutil.move(release_archive, release_dir)
