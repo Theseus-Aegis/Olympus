@@ -42,8 +42,8 @@ private _action = [
           _group setBehaviour "SAFE";
           _group setFormation "FILE";
 
-          _group move (getposASL infantryWaypoint3_1);
-          _group deleteVehicle (getVariable ["testVariable", nil]);
+          _group move (getPosASL infantryWaypoint3_1);
+          deleteVehicle (_group getVariable ["testVariable", objNull]);
     },
     {true},
     {}
