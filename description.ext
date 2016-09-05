@@ -1,9 +1,9 @@
 #include "script_component.hpp"
 
 class Header {
-    gameType = COOP;
+    gameType = "COOP";
     minPlayers = 1;
-    maxPlayers = 23;
+    maxPlayers = 18;
 };
 
 author = "Theseus Incorporated";

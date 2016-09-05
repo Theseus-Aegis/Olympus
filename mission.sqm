@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5566;
+		nextID=5567;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=29;
+		nextID=30;
 	};
 	class Camera
 	{
-		pos[]={2215.8928,10.251541,5388.0596};
-		dir[]={-0.49929512,-0.11437043,-0.85888928};
-		up[]={-0.057491247,0.9934355,-0.098895453};
-		aside[]={-0.86455965,-8.4511703e-007,0.5025934};
+		pos[]={2232.8086,68.853378,5328.272};
+		dir[]={-0.41833621,-0.67376775,0.60918182};
+		up[]={-0.38141239,0.73894626,0.5554136};
+		aside[]={0.82437211,2.6146881e-007,0.56610817};
 	};
 };
 binarizationWanted=0;
@@ -162,6 +162,7 @@ addons[]=
 	"A3_Armor_F_Beta_APC_Tracked_01",
 	"A3_Soft_F_Gamma_Truck_02",
 	"A3_Soft_F_MRAP_02",
+	"MFFA_cgcsat",
 	"CUP_Buildings_Config",
 	"A3_Structures_F_Kart_Civ_SportsGrounds",
 	"A3_Props_F_Exp_A_Military_Equipment",
@@ -625,37 +626,37 @@ class AddonsMetaData
 		};
 		class Item70
 		{
-			className="asr_ai3_main";
-			name="asr_ai3_main";
-			author="Robalo";
-		};
-		class Item71
-		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item72
+		class Item71
 		{
 			className="tac_heavylifter";
 			name="tac_heavylifter";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item73
+		class Item72
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item74
+		class Item73
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
+		};
+		class Item74
+		{
+			className="MFFA_cgcsat";
+			name="MFFA_cgcsat";
+			author="Alganthe";
 		};
 		class Item75
 		{
@@ -696,7 +697,6 @@ randomSeed=5049233;
 class ScenarioData
 {
 	author="Omnirock";
-	corpseManagerMode="AddNoneButRespawned";
 	corpseLimit=1;
 	corpseRemovalMinTime=1;
 	corpseRemovalMaxTime=5;
@@ -946,7 +946,6 @@ class Mission
 			};
 			id=5;
 			type="MapBoard_stratis_F";
-			atlOffset=0.00094032288;
 		};
 		class Item1
 		{
@@ -964,7 +963,7 @@ class Mission
 			};
 			id=8;
 			type="Land_MapBoard_F";
-			atlOffset=0.0061531067;
+			atlOffset=0.00043773651;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1004,7 +1003,7 @@ class Mission
 			};
 			id=20;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=1.7166138e-005;
+			atlOffset=0.043816566;
 		};
 		class Item3
 		{
@@ -1038,7 +1037,6 @@ class Mission
 			};
 			id=28;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
 		};
 		class Item5
 		{
@@ -1055,7 +1053,7 @@ class Mission
 			};
 			id=31;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
+			atlOffset=0.039876461;
 		};
 		class Item6
 		{
@@ -1072,7 +1070,7 @@ class Mission
 			};
 			id=32;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
+			atlOffset=0.043394089;
 		};
 		class Item7
 		{
@@ -1089,7 +1087,6 @@ class Mission
 			};
 			id=33;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
 		};
 		class Item8
 		{
@@ -1106,7 +1103,7 @@ class Mission
 			};
 			id=34;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.047992706;
+			atlOffset=0.047999859;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54320,7 +54317,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=5;
 						};
 					};
 				};
