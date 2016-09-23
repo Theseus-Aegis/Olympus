@@ -13,12 +13,12 @@ class CfgFunctions {
             class closeInventoryOnShowcase;
             class closeKillhouseDoors;
             class constantShoot;
+            class marksmanCourse;
             class prepareMedicalExercise;
             class resetDamagedObjects;
             class resetMedicalExercise;
             class setBasicLoadout;
             class setBillboard;
-            class spawnMovingInfantry;
             class startMedicalExercise;
             class teleport;
             class timer;
