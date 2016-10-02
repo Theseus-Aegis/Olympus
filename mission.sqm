@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=30;
+		nextID=31;
 	};
 	class Camera
 	{
-		pos[]={2232.8086,68.853378,5328.272};
-		dir[]={-0.41833621,-0.67376775,0.60918182};
-		up[]={-0.38141239,0.73894626,0.5554136};
-		aside[]={0.82437211,2.6146881e-007,0.56610817};
+		pos[]={6460.2705,32.026096,5402.8374};
+		dir[]={-0.78491837,-0.55629075,0.27320319};
+		up[]={-0.52537227,0.83098114,0.18286325};
+		aside[]={0.32875547,2.4912879e-007,0.94451284};
 	};
 };
 binarizationWanted=0;
@@ -38,6 +38,7 @@ addons[]=
 	"A3_Structures_F_Heli_Items_Food",
 	"ace_slideshow",
 	"A3_Structures_F_Items_Electronics",
+	"A3_3DEN",
 	"A3_Misc_F_Helpers",
 	"A3_Structures_F_Walls",
 	"A3_Structures_F_Mil_Fortification",
@@ -174,7 +175,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=80;
+		items=81;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -219,472 +220,479 @@ class AddonsMetaData
 		};
 		class Item6
 		{
+			className="A3_3DEN";
+			name="Arma 3 Eden Update - Eden Editor";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item7
+		class Item8
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item8
+		class Item9
 		{
 			className="tac_shootingrange";
 			name="tac_shootingrange";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item9
+		class Item10
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item10
+		class Item11
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item11
+		class Item12
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item12
+		class Item13
 		{
 			className="PansyLandRovers";
 			name="PansyLandRovers";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item18
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item19
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="tacs_units";
 			name="tacs_units";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item21
+		class Item22
 		{
 			className="tacs_weapons_hlc";
 			name="tacs_weapons_hlc";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item22
+		class Item23
 		{
 			className="hlcweapons_mp5";
 			name="hlcweapons_mp5";
 			author="toadie";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item25
+		class Item26
 		{
 			className="hlcweapons_aks";
 			name="hlcweapons_aks";
 			author="toadie";
 		};
-		class Item26
+		class Item27
 		{
 			className="tacs_headgear";
 			name="tacs_headgear";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="CUP_A1_EditorObjects";
 			name="CUP_A1_EditorObjects";
 			author="NeoArmageddon";
 		};
-		class Item30
+		class Item31
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item31
+		class Item32
 		{
 			className="CUP_CAMisc_ACR_Shooting_range";
 			name="CUP_CAMisc_ACR_Shooting_range";
 		};
-		class Item32
+		class Item33
 		{
 			className="CUP_A2_EditorObjects";
 			name="CUP_A2_EditorObjects";
 			author="MemphisBelle";
 		};
-		class Item33
+		class Item34
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item34
+		class Item35
 		{
 			className="tac_radios";
 			name="tac_radios";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item35
+		class Item36
 		{
 			className="hlcweapons_ar15";
 			name="hlcweapons_ar15";
 			author="toadie";
 		};
-		class Item36
+		class Item37
 		{
 			className="hlcweapons_AUG";
 			name="hlcweapons_AUG";
 			author="toadie";
 		};
-		class Item37
+		class Item38
 		{
 			className="hlcweapons_falpocalypse";
 			name="hlcweapons_falpocalypse";
 			author="toadie";
 		};
-		class Item38
+		class Item39
 		{
 			className="hlcweapons_G36";
 			name="hlcweapons_G36";
 			author="toadie";
 		};
-		class Item39
+		class Item40
 		{
 			className="hlcweapons_g3";
 			name="hlcweapons_g3";
 			author="toadie";
 		};
-		class Item40
+		class Item41
 		{
 			className="tacs_weapons";
 			name="tacs_weapons";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item41
+		class Item42
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item42
+		class Item43
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item43
+		class Item44
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item44
+		class Item45
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Interier";
 			name="CUP_CAStructures_E_Misc_Misc_Interier";
 		};
-		class Item45
+		class Item46
 		{
 			className="MELB";
 			name="MELB";
 		};
-		class Item46
+		class Item47
 		{
 			className="MU_vehicles";
 			name="MU_vehicles";
 		};
-		class Item47
+		class Item48
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item49
+		class Item50
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item50
+		class Item51
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item51
+		class Item52
 		{
 			className="ace_common";
 			name="ACE3 - Common";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item52
+		class Item53
 		{
 			className="ace_flashsuppressors";
 			name="ACE3 - Flash Suppressors";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item53
+		class Item54
 		{
 			className="ace_huntir";
 			name="ACE3 - HuntIR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item54
+		class Item55
 		{
 			className="ace_mx2a";
 			name="ACE3 - MX-2A";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item55
+		class Item56
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item56
+		class Item57
 		{
 			className="CST_Industrial_Objects_Construction";
 			name="CST_Industrial_Objects_Construction";
 		};
-		class Item57
+		class Item58
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item58
+		class Item59
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Market";
 			name="CUP_CAStructures_E_Misc_Misc_Market";
 		};
-		class Item59
+		class Item60
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item60
+		class Item61
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item61
+		class Item62
 		{
 			className="CUP_CAMisc_ACR_Sign_Mines";
 			name="CUP_CAMisc_ACR_Sign_Mines";
 		};
-		class Item62
+		class Item63
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item63
+		class Item64
 		{
 			className="CUP_CAMP_Armory_Misc_Red_Light";
 			name="CUP_CAMP_Armory_Misc_Red_Light";
 		};
-		class Item64
+		class Item65
 		{
 			className="tac_armory";
 			name="tac_armory";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item65
+		class Item66
 		{
 			className="CUP_CAMP_Armory_Misc_Loudspeakers";
 			name="CUP_CAMP_Armory_Misc_Loudspeakers";
 		};
-		class Item66
+		class Item67
 		{
 			className="CST_Misc_Objects";
 			name="CST_Misc_Objects";
 		};
-		class Item67
+		class Item68
 		{
 			className="CUP_Desert2_Config";
 			name="CUP_Desert2_Config";
 		};
-		class Item68
+		class Item69
 		{
 			className="A3_Air_F_Heli";
 			name="Arma 3 Helicopters - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item69
+		class Item70
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item70
+		class Item71
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item71
+		class Item72
 		{
 			className="tac_heavylifter";
 			name="tac_heavylifter";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item72
+		class Item73
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item73
+		class Item74
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item74
+		class Item75
 		{
 			className="MFFA_cgcsat";
 			name="MFFA_cgcsat";
 			author="Alganthe";
 		};
-		class Item75
+		class Item76
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item76
+		class Item77
 		{
 			className="A3_Structures_F_Kart";
 			name="Arma 3 Karts - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item77
+		class Item78
 		{
 			className="A3_Props_F_Exp_A";
 			name="Arma 3 Nexus Update - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item78
+		class Item79
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item79
+		class Item80
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
@@ -19126,13 +19134,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\PistolRangeBoardRight.paa""];";
 			};
 			id=1603;
 			type="SignAd_Sponsor_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\PistolRangeBoardRight.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -19151,7 +19177,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item844
@@ -19166,7 +19192,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\PistolRangeBoardLeft.paa""];";
 			};
 			id=1604;
 			type="SignAd_Sponsor_F";
@@ -19174,6 +19199,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\PistolRangeBoardLeft.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -19192,7 +19236,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item845
@@ -19207,14 +19251,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\DuelingRange.paa""];";
 			};
 			id=1605;
 			type="SignAd_Sponsor_F";
-			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\DuelingRange.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -19233,7 +19294,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item846
@@ -20094,14 +20155,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6401.1255,8.5210533,5429.5083};
+				position[]={6401.125,8.5210533,5429.5078};
 				angles[]={0,5.4892349,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\RifleRangeBoardLeft.paa""];";
 			};
 			id=1652;
 			type="SignAd_Sponsor_F";
@@ -20109,8 +20169,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -20119,36 +20179,14 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\RifleRangeBoardLeft.paa";
 						};
 					};
 				};
-				nAttributes=1;
-			};
-		};
-		class Item863
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6418.8809,8.5107231,5447.7729};
-				angles[]={0,5.3407598,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\RifleRangeBoardRight.paa""];";
-			};
-			id=1653;
-			type="SignAd_Sponsor_F";
-			atlOffset=0.28014088;
-			class CustomAttributes
-			{
-				class Attribute0
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -20167,7 +20205,66 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
+			};
+		};
+		class Item863
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6418.8809,8.5105829,5447.7729};
+				angles[]={0,5.3407598,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1653;
+			type="SignAd_Sponsor_F";
+			atlOffset=0.28000021;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\RifleRangeBoardRight.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item864
@@ -23815,13 +23912,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\MarksmanBoard.paa""];";
 			};
 			id=1892;
 			type="SignAd_Sponsor_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\MarksmanBoard.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -23840,7 +23955,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item993
@@ -28544,20 +28659,38 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6564.6553,24.371248,5324.6548};
+				position[]={6564.6548,24.371231,5324.6548};
 				angles[]={0,1.0537076,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\MedicalBoard.paa""];";
 			};
 			id=2139;
 			type="SignAd_Sponsor_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\MedicalBoard.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -28576,7 +28709,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1133
@@ -35599,6 +35732,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="a3\structures_f\civ\infoboards\data\billboard_metal_co.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -35616,7 +35768,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1349
@@ -38791,7 +38943,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\MGRangeBoardRight.paa""];";
 			};
 			id=2911;
 			type="SignAd_Sponsor_F";
@@ -38799,6 +38950,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\MGRangeBoardRight.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -38817,7 +38987,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1490
@@ -38832,14 +39002,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\MGRangeBoardLeft.paa""];";
 			};
 			id=2912;
 			type="SignAd_Sponsor_F";
-			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\MGRangeBoardLeft.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -38858,7 +39045,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1491
@@ -41031,13 +41218,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\grenadesBoardLeft.paa""];";
 			};
 			id=3050;
 			type="SignAd_Sponsor_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\grenadesBoardLeft.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -41056,7 +41261,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1605
@@ -41071,13 +41276,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\grenadesBoardRight.paa""];";
 			};
 			id=3051;
 			type="SignAd_Sponsor_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\grenadesBoardRight.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -41096,7 +41319,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1606
@@ -42698,7 +42921,6 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\grenadesLane1.paa""];";
 			};
 			id=3165;
 			type="SignAd_Sponsor_F";
@@ -42706,6 +42928,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\grenadesLane1.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -42724,7 +42965,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1683
@@ -42739,7 +42980,6 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\grenadesLane2.paa""];";
 			};
 			id=3166;
 			type="SignAd_Sponsor_F";
@@ -42747,6 +42987,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\grenadesLane2.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -42765,7 +43024,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1684
@@ -42780,7 +43039,6 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\grenadesLane3.paa""];";
 			};
 			id=3167;
 			type="SignAd_Sponsor_F";
@@ -42788,6 +43046,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\grenadesLane3.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -42806,7 +43083,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1685
@@ -47941,13 +48218,32 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\AircraftsBoardLeft.paa""];";
 			};
 			id=3542;
 			type="SignAd_Sponsor_F";
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="\x\tac\addons\resources\Olympus\AircraftsBoardLeft.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -47966,7 +48262,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item1916
