@@ -19,6 +19,7 @@ private _teleportPosAdvRifle = teleportPosAdvRifle;
 private _teleportPosMG = teleportPosMG;
 private _teleportPosCQB = teleportPosCQB;
 private _teleportPosUrban = teleportPosUrban;
+private _teleportPosGL = teleportPosGL;
 
 
 params ["_controller"];
@@ -44,5 +45,6 @@ params ["_controller"];
     [teleportPosAdvRifle, "Adv. Rifle course"],
     [teleportPosMG, "MG course"],
     [teleportPosCQB, "CQB course"],
-    [teleportPosUrban, "Urban City course"]
+    [teleportPosUrban, "Urban City course"],
+    [teleportPosGL, "RPG and UGL course"]
 ];
