@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=5567;
+		nextID=5575;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=31;
+		nextID=32;
 	};
 	class Camera
 	{
-		pos[]={6460.2705,32.026096,5402.8374};
-		dir[]={-0.78491837,-0.55629075,0.27320319};
-		up[]={-0.52537227,0.83098114,0.18286325};
-		aside[]={0.32875547,2.4912879e-007,0.94451284};
+		pos[]={2196.7908,9.8261881,5352.917};
+		dir[]={0.90899903,-0.084270641,0.40827149};
+		up[]={0.076882288,0.9964394,0.03453128};
+		aside[]={0.40972647,-3.1664968e-008,-0.91224337};
 	};
 };
 binarizationWanted=0;
@@ -938,7 +938,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3089;
+		items=3094;
 		class Item0
 		{
 			dataType="Object";
@@ -18651,7 +18651,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\PistolSmgController.paa""];";
 				name="LaptopCloseRangeLeft";
 			};
 			id=1582;
@@ -18661,8 +18660,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -18671,10 +18670,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\PistolSmgController.paa";
 						};
 					};
 				};
@@ -18697,7 +18696,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item835
@@ -19254,6 +19272,7 @@ class Mission
 			};
 			id=1605;
 			type="SignAd_Sponsor_F";
+			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19308,7 +19327,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\PistolSmgController.paa""];";
 				name="LaptopCloseRangeRight";
 			};
 			id=1607;
@@ -19318,8 +19336,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -19328,10 +19346,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\PistolSmgController.paa";
 						};
 					};
 				};
@@ -19354,7 +19372,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item847
@@ -19959,25 +19996,24 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6398.4385,14.378072,5446.1846};
+				position[]={6398.438,14.378073,5446.1851};
 				angles[]={0,2.5613928,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\RifleLeftController.paa""];";
 				name="LaptopRifleRangeLeft";
 			};
 			id=1636;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.00019073486;
+			atlOffset=0.00019168854;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -19986,10 +20022,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\RifleLeftController.paa";
 						};
 					};
 				};
@@ -20012,7 +20048,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item859
@@ -20095,24 +20150,23 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6399.1465,14.377072,5446.9927};
+				position[]={6399.146,14.377073,5446.9932};
 				angles[]={0,2.1493206,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\RifleRightController.paa""];";
 				name="LaptopRifleRangeRight";
 			};
 			id=1639;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.81219673;
+			atlOffset=0.81219769;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -20121,10 +20175,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\RifleRightController.paa";
 						};
 					};
 				};
@@ -20147,7 +20201,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item862
@@ -20223,7 +20296,7 @@ class Mission
 			};
 			id=1653;
 			type="SignAd_Sponsor_F";
-			atlOffset=0.28000021;
+			atlOffset=0.28000069;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25454,7 +25527,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[[victim1, victim2], this, fakeMine, wayPointSphere] call TAC_Olympus_fnc_prepareMedicalExercise; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\medicalController.paa""];";
+				init="[[victim1, victim2], this, fakeMine, wayPointSphere] call TAC_Olympus_fnc_prepareMedicalExercise;";
 				name="medicalLaptop";
 			};
 			id=1977;
@@ -25464,8 +25537,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -25474,10 +25547,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\medicalController.paa";
 						};
 					};
 				};
@@ -25500,7 +25573,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item1041
@@ -29142,25 +29234,23 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6509.4492,28.919744,5359.481};
-				angles[]={0,1.8632623,0};
+				position[]={6509.4492,28.919252,5359.481};
+				angles[]={0,1.8632612,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\MarksmanController.paa""];";
 				name="LaptopMarksman";
 			};
 			id=2154;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.00040054321;
+			atlOffset=0.78691483;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -29169,10 +29259,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\MarksmanController.paa";
 						};
 					};
 				};
@@ -29195,7 +29285,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item1143
@@ -39005,6 +39114,7 @@ class Mission
 			};
 			id=2912;
 			type="SignAd_Sponsor_F";
+			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47884,7 +47994,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\killhouseController.paa""];";
 				name="Killhouse1controller";
 			};
 			id=3522;
@@ -47894,8 +48003,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -47904,10 +48013,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\killhouseController.paa";
 						};
 					};
 				};
@@ -47930,7 +48039,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item1901
@@ -48221,7 +48349,6 @@ class Mission
 			};
 			id=3542;
 			type="SignAd_Sponsor_F";
-			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54310,7 +54437,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\advRifleController.paa""];";
 				name="advRifleController";
 			};
 			id=4000;
@@ -54320,8 +54446,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -54330,10 +54456,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\advRifleController.paa";
 						};
 					};
 				};
@@ -54356,7 +54482,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item2195
@@ -59425,7 +59570,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="[Killhouse2controller,killHouseSmall1] call TAC_Olympus_fnc_closeKillhouseDoors; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\killhouseController.paa""];";
+				init="[Killhouse2controller,killHouseSmall1] call TAC_Olympus_fnc_closeKillhouseDoors;";
 				name="Killhouse2controller";
 			};
 			id=4248;
@@ -59435,8 +59580,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
 					class Value
 					{
 						class data
@@ -59445,10 +59590,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=0;
+							value="\x\tac\addons\resources\Olympus\killhouseController.paa";
 						};
 					};
 				};
@@ -59471,7 +59616,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item2353
@@ -75292,11 +75456,10 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4596.3408,134.54762,5289.6279};
+				position[]={4596.3408,134.53963,5289.6279};
 				angles[]={0,2.3783078,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="[laptopRPG, [rpgVeh1, rpgVeh2, rpgVeh3, rpgVeh4, rpgVeh5, rpgVeh6, rpgVeh7, rpgVeh8]] call TAC_Olympus_fnc_resetDamagedObjects;";
@@ -75304,7 +75467,7 @@ class Mission
 			};
 			id=5404;
 			type="Land_Laptop_device_F";
-			atlOffset=0.00047302246;
+			atlOffset=0.80549622;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -75553,11 +75716,10 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4620.1929,133.98827,5315.77};
+				position[]={4620.1929,133.98494,5315.77};
 				angles[]={0,4.2384796,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="[Controller40mike,[Target40mike1,Target40mike2,Target40mike3,Target40mike4,Target40mike5,Target40mike6,Target40mike7]] call TAC_Olympus_fnc_resetDamagedObjects;";
@@ -75565,7 +75727,7 @@ class Mission
 			};
 			id=5413;
 			type="Land_Laptop_device_F";
-			atlOffset=0.00032043457;
+			atlOffset=0.74494934;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -76453,17 +76615,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4607.7334,135.59274,5279.165};
-				angles[]={0,3.3528821,0};
+				position[]={4606.5225,134.52939,5277.4707};
+				angles[]={0,2.9327569,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="whiteboardRPG";
 			};
 			id=5489;
 			type="Land_MapBoard_F";
-			atlOffset=1.0633545;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -77901,6 +78063,281 @@ class Mission
 			};
 			id=5556;
 			atlOffset=-3.0517578e-005;
+		};
+		class Item3089
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4606.2578,133.259,5308.085};
+				angles[]={0,2.666008,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
+			};
+			id=5568;
+			type="Land_PlasticCase_01_medium_F";
+			atlOffset=1.9875336;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item3090
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4608.0293,133.75352,5278.9463};
+				angles[]={0,0.85650873,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
+			};
+			id=5569;
+			type="Land_PlasticCase_01_medium_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item3091
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4608.1196,130.69249,5296.3008};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="teleportPosGL";
+			};
+			id=5570;
+			type="Sign_Sphere100cm_F";
+			atlOffset=0.86477661;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item3092
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4613.4585,131.27628,5310.0547};
+				angles[]={4.7195578,3.1379323,5.7977142};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="[this] call TAC_Olympus_fnc_teleport; this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];";
+			};
+			id=5571;
+			type="Land_Tablet_02_F";
+			atlOffset=0.1711731;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item3093
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4614.9512,133.59592,5310.8691};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
+			};
+			id=5572;
+			type="Flag_Blue_F";
+			atlOffset=1.5258789e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
