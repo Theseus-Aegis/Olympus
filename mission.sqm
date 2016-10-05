@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5571;
+		nextID=5569;
 	};
 	class MarkerIDProvider
 	{
-		nextID=142;
+		nextID=141;
 	};
 	class LayerIndexProvider
 	{
-		nextID=32;
+		nextID=30;
 	};
 	class Camera
 	{
-		pos[]={5847.4546,78.201843,5295.4858};
-		dir[]={-0.083324306,-0.47732741,0.87478685};
-		up[]={-0.045261707,0.87871939,0.4751848};
-		aside[]={0.99550825,2.272136e-007,0.094824195};
+		pos[]={6516.3721,33.533485,5363.3618};
+		dir[]={-0.7220965,-0.62469047,-0.29735878};
+		up[]={-0.57763332,0.78087306,-0.23786771};
+		aside[]={-0.38079068,2.6461203e-007,0.92470729};
 	};
 };
 binarizationWanted=0;
@@ -946,7 +946,6 @@ class Mission
 			};
 			id=5;
 			type="MapBoard_stratis_F";
-			atlOffset=0.00094032288;
 		};
 		class Item1
 		{
@@ -964,7 +963,7 @@ class Mission
 			};
 			id=8;
 			type="Land_MapBoard_F";
-			atlOffset=0.0061531067;
+			atlOffset=0.00043773651;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1004,7 +1003,7 @@ class Mission
 			};
 			id=20;
 			type="Land_WaterCooler_01_new_F";
-			atlOffset=1.7166138e-005;
+			atlOffset=0.043816566;
 		};
 		class Item3
 		{
@@ -1038,7 +1037,6 @@ class Mission
 			};
 			id=28;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
 		};
 		class Item5
 		{
@@ -1055,7 +1053,7 @@ class Mission
 			};
 			id=31;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
+			atlOffset=0.039876461;
 		};
 		class Item6
 		{
@@ -1072,7 +1070,7 @@ class Mission
 			};
 			id=32;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
+			atlOffset=0.043394089;
 		};
 		class Item7
 		{
@@ -1089,7 +1087,6 @@ class Mission
 			};
 			id=33;
 			type="Land_CampingChair_V2_F";
-			atlOffset=1.1444092e-005;
 		};
 		class Item8
 		{
@@ -1106,7 +1103,7 @@ class Mission
 			};
 			id=34;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.047992706;
+			atlOffset=0.047999859;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54319,7 +54316,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=5;
+							value=0;
 						};
 					};
 				};
@@ -77402,41 +77399,41 @@ class Mission
 		class Item3084
 		{
 			dataType="Marker";
-			position[]={6078.3262,2.6758359e+016,5433.8149};
-			name="marksman_targets_patrolArea_1";
+			position[]={6060.1089,-3.0524484e-038,5419.127};
+			name="marksman_targets_patrolArea1";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=213.06599;
-			b=48.405285;
-			angle=302.35501;
-			id=5568;
-			atlOffset=2.6758359e+016;
+			a=236.409;
+			b=51.348;
+			angle=303.14697;
+			id=5566;
+			atlOffset=-15.560037;
 		};
 		class Item3085
 		{
 			dataType="Marker";
-			position[]={5952.3911,2.6758359e+016,5456.7603};
-			name="marksman_targets_patrolArea_2";
+			position[]={5968.0889,1.2188575e+015,5479.4819};
+			name="marksman_targets_patrolArea2";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=176.08438;
-			b=49.390835;
-			angle=304.8718;
-			id=5569;
-			atlOffset=2.6758359e+016;
+			a=236.409;
+			b=51.348;
+			angle=304.59097;
+			id=5567;
+			atlOffset=1.2188575e+015;
 		};
 		class Item3086
 		{
 			dataType="Marker";
-			position[]={5879.1514,2.6758359e+016,5555.9761};
-			name="marksman_targets_patrolArea_3";
+			position[]={5877.313,7.0969815e+009,5540.3838};
+			name="marksman_targets_patrolArea3";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=213.06599;
-			b=48.414127;
-			angle=305.41183;
-			id=5570;
-			atlOffset=2.6758359e+016;
+			a=236.409;
+			b=51.348;
+			angle=305.05298;
+			id=5568;
+			atlOffset=7.0969815e+009;
 		};
 	};
 	class Connections
