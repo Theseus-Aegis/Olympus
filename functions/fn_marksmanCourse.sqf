@@ -16,6 +16,14 @@
 
 params ["_controller", "_patrolAreas"];
 
+// Exit if marker names are invalid
+private _patrolAreasTest = _patrolAreas select {getMarkerColor _x == ""};
+if !(_patrolAreasTest isEqualTo []) exitWith {
+    diag_log format ["%1 Patrol Area markers do not exist!", _patrolAreasTest]
+    //ERROR_1("%1 Patrol Area markers do not exist!",_patrolAreasTest);
+};
+
+TRACE_1("areas",_patrolAreas);
 GVAR(marksmanTargetGroups) = call CBA_fnc_createNamespace;
 
 {
@@ -60,7 +68,7 @@ GVAR(marksmanTargetGroups) = call CBA_fnc_createNamespace;
         },
         {
             (_this select 2) params ["_level"];
-            isNull (GVAR(marksmanTargetGroups) getVariable [_level, grpNull])
+            isNull ([GVAR(marksmanTargetGroups) getVariable _level] param [0, grpNull]);
         },
         {},
         [_level, _x]
@@ -73,7 +81,7 @@ GVAR(marksmanTargetGroups) = call CBA_fnc_createNamespace;
         {
             (_this select 2) params ["_level"];
 
-            private _group = GVAR(marksmanTargetGroups) getVariable [_level, grpNull];
+            private _group = [GVAR(marksmanTargetGroups) getVariable _level] param [0, grpNull];
             // Remove units and group
             {
                 deleteVehicle _x;
@@ -85,7 +93,7 @@ GVAR(marksmanTargetGroups) = call CBA_fnc_createNamespace;
         },
         {
             (_this select 2) params ["_level"];
-            !isNull (GVAR(marksmanTargetGroups) getVariable [_level, grpNull])
+            !isNull ([GVAR(marksmanTargetGroups) getVariable _level] param [0, grpNull]);
         },
         {},
         [_level]
