@@ -13,6 +13,7 @@ class CfgFunctions {
             class closeInventoryOnShowcase;
             class closeKillhouseDoors;
             class constantShoot;
+            class grenadeCourseTargets;
             class marksmanCourse;
             class prepareMedicalExercise;
             class resetDamagedObjects;
