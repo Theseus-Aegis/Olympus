@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=5705;
+		nextID=5710;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=35;
+		nextID=36;
 	};
 	class Camera
 	{
-		pos[]={6257.7935,10.492724,5461.2368};
-		dir[]={-0.8828975,-0.4010123,0.24443568};
-		up[]={-0.38650468,0.91605902,0.10700798};
-		aside[]={0.26682925,-3.0745286e-007,0.96377409};
+		pos[]={6473.4243,29.387472,5345.5405};
+		dir[]={-0.03999541,-0.70258385,0.71055597};
+		up[]={-0.039484255,0.71158385,0.7014851};
+		aside[]={0.99846619,1.0269287e-006,0.056197759};
 	};
 };
 binarizationWanted=0;
@@ -39264,6 +39264,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\certificateDMRRequirements.paa""];";
 				name="marksmanBoard";
 			};
 			id=2917;
@@ -77650,7 +77651,7 @@ class Mission
 			type="rectangle";
 			a=65;
 			b=25;
-			angle=114.19492;
+			angle=114.19489;
 			id=5579;
 			atlOffset=2.4857742e+012;
 		};
@@ -77658,7 +77659,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6150.3306,15.82251,5627.6299};
-			angle=1.9461832;
+			angle=1.9461827;
 			class Attributes
 			{
 				sizeA=65;
