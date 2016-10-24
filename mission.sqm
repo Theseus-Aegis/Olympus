@@ -8,7 +8,7 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=5751;
+		nextID=5759;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=37;
+		nextID=38;
 	};
 	class Camera
 	{
-		pos[]={2161.6863,49.272308,5442.2056};
-		dir[]={0.058571339,-0.63975739,-0.76649922};
-		up[]={0.048753485,0.76847279,-0.63797772};
-		aside[]={-0.99718463,-3.8557118e-007,-0.076200381};
+		pos[]={5705.8354,83.329689,5882.7261};
+		dir[]={0.73416382,-0.64787346,0.20317879};
+		up[]={0.62440693,0.76174414,0.17280328};
+		aside[]={0.26672345,2.7532224e-008,-0.96378195};
 	};
 };
 binarizationWanted=0;
@@ -33,7 +33,6 @@ addons[]=
 	"A3_Structures_F_Bootcamp_Items_Electronics",
 	"A3_Structures_F_Heli_Items_Electronics",
 	"A3_Structures_F_Civ_Camping",
-	"ace_sitting",
 	"acex_sitting",
 	"A3_Structures_F_Heli_Items_Food",
 	"ace_slideshow",
@@ -175,7 +174,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=81;
+		items=80;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -199,500 +198,493 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="ace_sitting";
-			name="ACE3 - Sitting";
+			className="acex_sitting";
+			name="ACEX - Sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item4
-		{
-			className="acex_sitting";
-			name="acex_sitting";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item5
 		{
 			className="ace_slideshow";
 			name="ACE3 - Slideshow";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_3DEN";
 			name="Arma 3 Eden Update - Eden Editor";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item9
+		class Item8
 		{
 			className="tac_shootingrange";
 			name="tac_shootingrange";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item10
+		class Item9
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="PansyLandRovers";
 			name="PansyLandRovers";
 		};
-		class Item14
+		class Item13
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item15
+		class Item14
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item16
+		class Item15
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item17
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item18
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item21
+		class Item20
 		{
 			className="tacs_units";
 			name="tacs_units";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item22
+		class Item21
 		{
 			className="tacs_weapons_hlc";
 			name="tacs_weapons_hlc";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item23
+		class Item22
 		{
 			className="hlcweapons_mp5";
 			name="hlcweapons_mp5";
 			author="toadie";
 		};
-		class Item24
+		class Item23
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item25
+		class Item24
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item26
+		class Item25
 		{
 			className="hlcweapons_aks";
 			name="hlcweapons_aks";
 			author="toadie";
 		};
-		class Item27
+		class Item26
 		{
 			className="tacs_headgear";
 			name="tacs_headgear";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item28
+		class Item27
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="CUP_A1_EditorObjects";
 			name="CUP_A1_EditorObjects";
 			author="NeoArmageddon";
 		};
-		class Item31
+		class Item30
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item32
+		class Item31
 		{
 			className="CUP_CAMisc_ACR_Shooting_range";
 			name="CUP_CAMisc_ACR_Shooting_range";
 		};
-		class Item33
+		class Item32
 		{
 			className="CUP_A2_EditorObjects";
 			name="CUP_A2_EditorObjects";
 			author="MemphisBelle";
 		};
-		class Item34
+		class Item33
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item35
+		class Item34
 		{
 			className="tac_radios";
 			name="tac_radios";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item36
+		class Item35
 		{
 			className="hlcweapons_ar15";
 			name="hlcweapons_ar15";
 			author="toadie";
 		};
-		class Item37
+		class Item36
 		{
 			className="hlcweapons_AUG";
 			name="hlcweapons_AUG";
 			author="toadie";
 		};
-		class Item38
+		class Item37
 		{
 			className="hlcweapons_falpocalypse";
 			name="hlcweapons_falpocalypse";
 			author="toadie";
 		};
-		class Item39
+		class Item38
 		{
 			className="hlcweapons_G36";
 			name="hlcweapons_G36";
 			author="toadie";
 		};
-		class Item40
+		class Item39
 		{
 			className="hlcweapons_g3";
 			name="hlcweapons_g3";
 			author="toadie";
 		};
-		class Item41
+		class Item40
 		{
 			className="tacs_weapons";
 			name="tacs_weapons";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item42
+		class Item41
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item43
+		class Item42
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item44
+		class Item43
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item45
+		class Item44
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Interier";
 			name="CUP_CAStructures_E_Misc_Misc_Interier";
 		};
-		class Item46
+		class Item45
 		{
 			className="MELB";
 			name="MELB";
 		};
-		class Item47
+		class Item46
 		{
 			className="MU_vehicles";
 			name="MU_vehicles";
 		};
-		class Item48
+		class Item47
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item49
+		class Item48
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item49
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item51
+		class Item50
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item52
+		class Item51
 		{
 			className="ace_common";
 			name="ACE3 - Common";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item53
+		class Item52
 		{
 			className="ace_flashsuppressors";
 			name="ACE3 - Flash Suppressors";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item54
+		class Item53
 		{
 			className="ace_huntir";
 			name="ACE3 - HuntIR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item55
+		class Item54
 		{
 			className="ace_mx2a";
 			name="ACE3 - MX-2A";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item56
+		class Item55
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item57
+		class Item56
 		{
 			className="CST_Industrial_Objects_Construction";
 			name="CST_Industrial_Objects_Construction";
 		};
-		class Item58
+		class Item57
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item59
+		class Item58
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Market";
 			name="CUP_CAStructures_E_Misc_Misc_Market";
 		};
-		class Item60
+		class Item59
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item61
+		class Item60
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item62
+		class Item61
 		{
 			className="CUP_CAMisc_ACR_Sign_Mines";
 			name="CUP_CAMisc_ACR_Sign_Mines";
 		};
-		class Item63
+		class Item62
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item64
+		class Item63
 		{
 			className="CUP_CAMP_Armory_Misc_Red_Light";
 			name="CUP_CAMP_Armory_Misc_Red_Light";
 		};
-		class Item65
+		class Item64
 		{
 			className="tac_armory";
 			name="tac_armory";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item66
+		class Item65
 		{
 			className="CUP_CAMP_Armory_Misc_Loudspeakers";
 			name="CUP_CAMP_Armory_Misc_Loudspeakers";
 		};
-		class Item67
+		class Item66
 		{
 			className="CST_Misc_Objects";
 			name="CST_Misc_Objects";
 		};
-		class Item68
+		class Item67
 		{
 			className="CUP_Desert2_Config";
 			name="CUP_Desert2_Config";
 		};
-		class Item69
+		class Item68
 		{
 			className="A3_Air_F_Heli";
 			name="Arma 3 Helicopters - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item70
+		class Item69
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item71
+		class Item70
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item72
+		class Item71
 		{
 			className="tac_heavylifter";
 			name="tac_heavylifter";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item73
+		class Item72
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item74
+		class Item73
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item75
+		class Item74
 		{
 			className="MFFA_cgcsat";
 			name="MFFA_cgcsat";
 			author="Alganthe";
 		};
-		class Item76
+		class Item75
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item77
+		class Item76
 		{
 			className="A3_Structures_F_Kart";
 			name="Arma 3 Karts - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item78
+		class Item77
 		{
 			className="A3_Props_F_Exp_A";
 			name="Arma 3 Nexus Update - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item79
+		class Item78
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item80
+		class Item79
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
@@ -938,7 +930,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3169;
+		items=3175;
 		class Item0
 		{
 			dataType="Object";
@@ -29296,17 +29288,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5878.6211,15.313993,5903.4731};
-				angles[]={6.1464424,1.2631202,6.2214751};
+				position[]={5878.6211,15.313676,5903.4731};
+				angles[]={6.1464391,1.2631123,6.2214704};
 			};
 			side="Empty";
 			class Attributes
 			{
-				name="machinegun_range_target_1";
+				name="machinegun_range_trigger_target_18";
 			};
 			id=2171;
 			type="TargetP_Inf_F";
-			atlOffset=1.199317;
+			atlOffset=1.1990004;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29336,18 +29328,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5919.3052,6.1932459,5897.3276};
-				angles[]={6.2357211,1.8588017,6.2083254};
+				position[]={5919.3052,6.1932697,5897.3281};
+				angles[]={6.2357121,1.8587931,6.2083282};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_2";
+				name="machinegun_range_trigger_target_27";
 			};
 			id=2172;
 			type="TargetP_Inf_F";
-			atlOffset=4.7683716e-007;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29378,13 +29370,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5924.6592,5.4853745,5891.4058};
-				angles[]={6.2606897,1.8588017,6.1934271};
+				angles[]={6.2606878,1.8587931,6.1934228};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_3";
+				name="machinegun_range_trigger_target_28";
 			};
 			id=2173;
 			type="TargetP_Inf_F";
@@ -29417,17 +29409,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5912.3623,7.3319263,5888.5488};
-				angles[]={0.024993783,1.572678,6.0594931};
+				position[]={5912.3618,7.3320379,5888.5488};
+				angles[]={0.024993116,1.5726813,6.0594869};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_4";
+				name="machinegun_range_trigger_target_26";
 			};
 			id=2174;
 			type="TargetP_Inf_F";
+			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29457,18 +29450,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5877.6255,15.546529,5906.1704};
-				angles[]={6.149189,1.1958805,6.2292776};
+				position[]={5877.625,15.546116,5906.1699};
+				angles[]={6.1491961,1.1958821,6.2292724};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_5";
+				name="machinegun_range_trigger_target_17";
 			};
 			id=2175;
 			type="TargetP_Inf_F";
-			atlOffset=9.5367432e-007;
+			atlOffset=1.1870003;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29499,13 +29491,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5911.1699,7.3569927,5895.4111};
-				angles[]={0.06988623,1.4972476,5.9712167};
+				angles[]={0.069882989,1.4972482,5.9712076};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_6";
+				name="machinegun_range_trigger_target_25";
 			};
 			id=2176;
 			type="TargetP_Inf_F";
@@ -29540,13 +29532,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5885.9761,12.154159,5875.1279};
-				angles[]={6.1686883,1.3816135,6.2257481};
+				angles[]={6.1686916,1.3816202,6.2257466};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_7";
+				name="machinegun_range_trigger_target_24";
 			};
 			id=2177;
 			type="TargetP_Inf_F";
@@ -29579,17 +29571,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5879.6284,15.019934,5900.083};
-				angles[]={0.0009765625,1.3154323,0.001544081};
+				position[]={5879.6279,15.019681,5900.083};
+				angles[]={0.00097738439,1.3154372,0.0015358897};
 			};
 			side="Empty";
 			class Attributes
 			{
-				name="machinegun_range_target_8";
+				name="machinegun_range_trigger_target_19";
 			};
 			id=2178;
 			type="TargetP_Inf_F";
-			atlOffset=1.1412868;
+			atlOffset=1.1409998;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29619,14 +29611,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5886.9683,11.354107,5867.3687};
-				angles[]={6.1934271,1.9044425,6.1934271};
+				position[]={5886.9678,11.354195,5867.3691};
+				angles[]={6.1934228,1.9044509,6.1934228};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_9";
+				name="machinegun_range_trigger_target_22";
 			};
 			id=2179;
 			type="TargetP_Inf_F";
@@ -29659,14 +29651,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5882.9424,11.750712,5867.7588};
-				angles[]={6.2008715,1.9127787,6.1959071};
+				position[]={5882.9419,11.750755,5867.7588};
+				angles[]={6.2008753,1.9127761,6.1959186};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_10";
+				name="machinegun_range_trigger_target_21";
 			};
 			id=2180;
 			type="TargetP_Inf_F";
@@ -29699,14 +29691,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5873.7246,14.237006,5899.2578};
-				angles[]={6.2232571,1.5346768,6.218277};
+				position[]={5873.7251,14.236975,5899.2578};
+				angles[]={6.2232509,1.534668,6.2182765};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_11";
+				name="machinegun_range_trigger_target_16";
 			};
 			id=2181;
 			type="TargetP_Inf_F";
@@ -29740,13 +29732,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5880.4341,12.231029,5871.5688};
-				angles[]={6.2008719,1.940824,6.2108126};
+				angles[]={6.2008753,1.9408236,6.2108064};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_12";
+				name="machinegun_range_trigger_target_20";
 			};
 			id=2182;
 			type="TargetP_Inf_F";
@@ -29780,14 +29772,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5924.082,5.1018839,5885.2827};
-				angles[]={6.220767,1.7273536,6.2058401};
+				position[]={5924.082,5.1019144,5885.2832};
+				angles[]={6.2207723,1.7273524,6.205832};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_13";
+				name="machinegun_range_trigger_target_29";
 			};
 			id=2183;
 			type="TargetP_Inf_F";
@@ -29820,14 +29812,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5870.5005,14.794831,5904.3037};
-				angles[]={6.2033553,1.5346768,6.2083254};
+				position[]={5870.5,14.794908,5904.3042};
+				angles[]={6.2033539,1.534668,6.2083282};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_14";
+				name="machinegun_range_trigger_target_15";
 			};
 			id=2184;
 			type="TargetP_Inf_F";
@@ -29861,13 +29853,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5886.2622,11.946815,5873.3931};
-				angles[]={6.1934271,1.5346768,6.2008719};
+				angles[]={6.1934228,1.534668,6.2008753};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_15";
+				name="machinegun_range_trigger_target_23";
 			};
 			id=2185;
 			type="TargetP_Inf_F";
@@ -29901,13 +29893,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5873.3589,15.007717,5910.123};
-				angles[]={6.2008715,1.3368673,6.1983886};
+				angles[]={6.2008753,1.3368698,6.1983795};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_16";
+				name="machinegun_range_trigger_target_14";
 			};
 			id=2186;
 			type="TargetP_Inf_F";
@@ -29940,14 +29932,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5786.9658,43.579433,5889.8228};
-				angles[]={6.1416383,1.3853587,5.9554467};
+				position[]={5786.9658,43.579502,5889.8232};
+				angles[]={6.1416392,1.3853551,5.9554472};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_17";
+				name="machinegun_range_trigger_target_4";
 			};
 			id=2187;
 			type="TargetP_Inf_F";
@@ -29980,14 +29972,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5785.3833,44.492847,5892.5425};
-				angles[]={6.1637564,1.2362138,5.9554472};
+				position[]={5785.3828,44.492954,5892.542};
+				angles[]={6.1637526,1.2362168,5.9554472};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_18";
+				name="machinegun_range_trigger_target_2";
 			};
 			id=2188;
 			type="TargetP_Inf_F";
@@ -30020,14 +30012,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5784.6914,44.973484,5894.5874};
-				angles[]={6.1637564,1.1057206,5.9554472};
+				position[]={5784.6909,44.973587,5894.5869};
+				angles[]={6.1637526,1.1057185,5.9554472};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_19";
+				name="machinegun_range_trigger_target_1";
 			};
 			id=2189;
 			type="TargetP_Inf_F";
@@ -30060,14 +30052,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5785.6494,44.316185,5891.8521};
-				angles[]={6.1416383,1.3762366,5.9554467};
+				position[]={5785.6489,44.316353,5891.8521};
+				angles[]={6.1416392,1.3762444,5.9554472};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_20";
+				name="machinegun_range_trigger_target_3";
 			};
 			id=2190;
 			type="TargetP_Inf_F";
@@ -32143,11 +32135,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5834.4512,19.388037,5885.7041};
+				position[]={5769.833,47.650627,5882.582};
 			};
 			id=2384;
 			type="tac_shootingrange_Module";
-			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32203,7 +32194,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="MG_trigger_1,MG_trigger_1,MG_trigger_1,MG_trigger_1,MG_trigger_2,MG_trigger_2,MG_trigger_2,MG_trigger_2,MG_trigger_3,MG_trigger_3,MG_trigger_3,MG_trigger_3,MG_trigger_3,MG_trigger_4,MG_trigger_4,MG_trigger_4,MG_trigger_4,MG_trigger_4,MG_trigger_4,MG_trigger_5,MG_trigger_5,MG_trigger_5,MG_trigger_5,MG_trigger_5,MG_trigger_6,MG_trigger_6,MG_trigger_6,MG_trigger_6,MG_trigger_6";
 						};
 					};
 				};
@@ -32298,7 +32289,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=4;
 						};
 					};
 				};
@@ -32393,7 +32384,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="4";
 						};
 					};
 				};
@@ -32488,7 +32479,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="machinegun_range_target_1,machinegun_range_target_2,machinegun_range_target_3,machinegun_range_target_4,machinegun_range_target_5,machinegun_range_target_6,machinegun_range_target_7,machinegun_range_target_8,machinegun_range_target_9,machinegun_range_target_10,machinegun_range_target_11,machinegun_range_target_12,machinegun_range_target_13,machinegun_range_target_14,machinegun_range_target_15,machinegun_range_target_16,machinegun_range_target_17,machinegun_range_target_18,machinegun_range_target_19,machinegun_range_target_20,machinegun_range_target_21,machinegun_range_target_22,machinegun_range_target_23,machinegun_range_target_24,machinegun_range_target_25,machinegun_range_target_26,machinegun_range_target_27,machinegun_range_target_28,machinegun_range_target_29";
+							value="machinegun_range_trigger_target_1,machinegun_range_trigger_target_2,machinegun_range_trigger_target_3,machinegun_range_trigger_target_4,machinegun_range_trigger_target_5,machinegun_range_trigger_target_6,machinegun_range_trigger_target_7,machinegun_range_trigger_target_8,machinegun_range_trigger_target_9,machinegun_range_trigger_target_10,machinegun_range_trigger_target_11,machinegun_range_trigger_target_12,machinegun_range_trigger_target_13,machinegun_range_trigger_target_14,machinegun_range_trigger_target_15,machinegun_range_trigger_target_16,machinegun_range_trigger_target_17,machinegun_range_trigger_target_18,machinegun_range_trigger_target_19,machinegun_range_trigger_target_20,machinegun_range_trigger_target_21,machinegun_range_trigger_target_22,machinegun_range_trigger_target_23,machinegun_range_trigger_target_24,machinegun_range_trigger_target_25,machinegun_range_trigger_target_26,machinegun_range_trigger_target_27,machinegun_range_trigger_target_28,machinegun_range_trigger_target_29";
 						};
 					};
 				};
@@ -77593,7 +77584,7 @@ class Mission
 			type="rectangle";
 			a=65;
 			b=25;
-			angle=114.19488;
+			angle=114.19484;
 			id=5579;
 			atlOffset=2.4857742e+012;
 		};
@@ -77601,7 +77592,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6150.3306,15.82251,5627.6299};
-			angle=1.9461825;
+			angle=1.9461818;
 			class Attributes
 			{
 				sizeA=65;
@@ -77629,7 +77620,7 @@ class Mission
 		class Item3059
 		{
 			dataType="Trigger";
-			position[]={5778.3555,82.203125,5441.208};
+			position[]={5775.8506,82.203125,5442.6035};
 			angle=2.9534113;
 			class Attributes
 			{
@@ -77639,7 +77630,7 @@ class Mission
 			};
 			id=5584;
 			type="EmptyDetector";
-			atlOffset=2.8044205;
+			atlOffset=2.2929764;
 		};
 		class Item3060
 		{
@@ -79626,18 +79617,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5852.5381,15.860273,5890.7642};
-				angles[]={6.2033544,1.534668,6.1711559};
+				position[]={5852.5381,15.860356,5890.7642};
+				angles[]={6.2033539,1.534668,6.1711526};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_21";
+				name="machinegun_range_trigger_target_11";
 			};
 			id=5720;
 			type="TargetP_Inf_F";
-			atlOffset=0.090916634;
+			atlOffset=0.090999603;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -79667,14 +79658,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5850.3096,15.886362,5886.1094};
-				angles[]={6.2332273,1.534668,6.1147952};
+				position[]={5850.3101,15.886237,5886.1089};
+				angles[]={6.2332339,1.534668,6.1147957};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_22";
+				name="machinegun_range_trigger_target_10";
 			};
 			id=5721;
 			type="TargetP_Inf_F";
@@ -79707,18 +79698,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5852.5752,15.345559,5881.1758};
-				angles[]={6.255693,1.534668,6.161293};
+				position[]={5852.5752,15.346004,5881.1758};
+				angles[]={6.2556963,1.534668,6.1612911};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_23";
+				name="machinegun_range_trigger_target_9";
 			};
 			id=5722;
 			type="TargetP_Inf_F";
-			atlOffset=0.095554352;
+			atlOffset=0.095999718;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -79748,18 +79739,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5850.9902,20.602438,5888.25};
+				position[]={5850.9902,20.602427,5888.25};
 				angles[]={0,1.534668,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_24";
+				name="machinegun_range_trigger_target_12";
 			};
 			id=5723;
 			type="TargetP_Inf_F";
-			atlOffset=0.097066879;
+			atlOffset=0.097055435;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -79789,18 +79780,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5851.0327,20.587397,5884.9287};
+				position[]={5851.0332,20.586914,5884.9292};
 				angles[]={0,1.534668,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_25";
+				name="machinegun_range_trigger_target_13";
 			};
 			id=5724;
 			type="TargetP_Inf_F";
-			atlOffset=0.082025528;
+			atlOffset=0.081542969;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -79841,7 +79832,7 @@ class Mission
 			};
 			id=5726;
 			type="Land_HBarrier_1_F";
-			atlOffset=-0.12789631;
+			atlOffset=-0.12789726;
 		};
 		class Item3154
 		{
@@ -79955,17 +79946,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5787.1328,42.525272,5874.374};
-				angles[]={0,1.6001699,0};
+				position[]={5787.1328,42.525276,5874.374};
+				angles[]={0,1.6001701,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_26";
+				name="machinegun_range_trigger_target_5";
 			};
 			id=5733;
 			type="TargetP_Inf_F";
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -79995,17 +79987,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5785.1563,44.466167,5871.6743};
-				angles[]={0,1.8464334,0};
+				position[]={5785.1558,44.466244,5871.6738};
+				angles[]={0,1.8464361,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_27";
+				name="machinegun_range_trigger_target_6";
 			};
 			id=5734;
 			type="TargetP_Inf_F";
+			atlOffset=4.196167e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -80036,13 +80029,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5782,44.208069,5868};
-				angles[]={0.027492445,1.8397596,6.0382071};
+				angles[]={0.027488936,1.8397516,6.0382109};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_28";
+				name="machinegun_range_trigger_target_8";
 			};
 			id=5735;
 			type="TargetP_Inf_F";
@@ -80076,13 +80069,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5782,44.188072,5870};
-				angles[]={0.010000871,1.8949867,6.0382066};
+				angles[]={0.010000736,1.8949912,6.0382109};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="machinegun_range_target_29";
+				name="machinegun_range_trigger_target_7";
 			};
 			id=5736;
 			type="TargetP_Inf_F";
@@ -80192,6 +80185,82 @@ class Mission
 			};
 			id=5750;
 			type="Land_Shoot_House_Panels_Crouch_F";
+		};
+		class Item3169
+		{
+			dataType="Marker";
+			position[]={5719.6621,3.3217223e+015,5881.7881};
+			name="MG_trigger_1";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=5;
+			b=5;
+			angle=181.91893;
+			id=5751;
+			atlOffset=3.3217223e+015;
+		};
+		class Item3170
+		{
+			dataType="Marker";
+			position[]={5719.6982,71.267189,5881.7544};
+			name="MG_trigger_2";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=5;
+			b=5;
+			angle=181.91893;
+			id=5753;
+		};
+		class Item3171
+		{
+			dataType="Marker";
+			position[]={5719.603,75.223297,5881.8774};
+			name="MG_trigger_3";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=5;
+			b=5;
+			angle=181.91893;
+			id=5754;
+			atlOffset=3.9295578;
+		};
+		class Item3172
+		{
+			dataType="Marker";
+			position[]={5719.5049,68.094971,5881.7886};
+			name="MG_trigger_4";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=5;
+			b=5;
+			angle=181.91893;
+			id=5755;
+			atlOffset=1.0403442;
+		};
+		class Item3173
+		{
+			dataType="Marker";
+			position[]={5719.5283,75.65625,5881.6191};
+			name="MG_trigger_5";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=5;
+			b=5;
+			angle=181.91893;
+			id=5756;
+			atlOffset=4.3640518;
+		};
+		class Item3174
+		{
+			dataType="Marker";
+			position[]={5719.6113,71.283295,5881.7378};
+			name="MG_trigger_6";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=5;
+			b=5;
+			angle=181.91893;
+			id=5757;
 		};
 	};
 	class Connections

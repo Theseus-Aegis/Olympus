@@ -1,9 +1,10 @@
 /*
  * Author: Rory, jonpas
- * Sets all pop-up targets in the street up or down
+ * Sets all pop-up targets in the course up or down
  *
  * Arguments:
  * 0: Interaction object.
+ * 1: Targets (array)
  *
  * Return Value:
  * None
