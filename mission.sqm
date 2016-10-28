@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=5912;
+		nextID=5913;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=329;
+		nextID=468;
 	};
 	class Camera
 	{
-		pos[]={5768.6919,58.18652,5887.4619};
-		dir[]={0.67842913,-0.73230863,0.058988012};
-		up[]={0.72955936,0.68096811,0.063434251};
-		aside[]={0.086622797,-1.0470103e-007,-0.99624819};
+		pos[]={5714.1113,79.848953,5868.519};
+		dir[]={0.72999781,-0.60232216,0.32311952};
+		up[]={0.55079263,0.79823923,0.24379799};
+		aside[]={0.40477556,-6.4121559e-007,-0.91446447};
 	};
 };
 binarizationWanted=0;
@@ -930,7 +930,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=200;
+		items=201;
 		class Item0
 		{
 			dataType="Marker";
@@ -7197,7 +7197,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6150.3306,15.82251,5627.6299};
-					angle=1.9461815;
+					angle=1.9461807;
 					class Attributes
 					{
 						sizeA=65;
@@ -8409,7 +8409,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\certificateDMRRequirements.paa""];";
+								init="this setObjectTexture [0,""tempImages\certificateDMRRequirements.paa""];";
 								name="marksmanBoard";
 							};
 							id=2917;
@@ -11101,7 +11101,7 @@ class Mission
 							};
 							id=1206;
 							type="Land_CampingTable_F";
-							atlOffset=0.0049285889;
+							atlOffset=0.0048675537;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11160,7 +11160,7 @@ class Mission
 							};
 							id=1207;
 							type="Land_CampingTable_F";
-							atlOffset=0.02862072;
+							atlOffset=0.028617859;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11219,7 +11219,7 @@ class Mission
 							};
 							id=1208;
 							type="Land_CampingTable_F";
-							atlOffset=0.001455307;
+							atlOffset=0.0014533997;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11934,7 +11934,7 @@ class Mission
 							};
 							id=1209;
 							type="Land_CampingTable_F";
-							atlOffset=0.025527954;
+							atlOffset=0.025527;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12429,7 +12429,6 @@ class Mission
 							};
 							id=2615;
 							type="Land_Shelf_EP1";
-							atlOffset=9.5367432e-007;
 						};
 						class Item24
 						{
@@ -12637,7 +12636,6 @@ class Mission
 							};
 							id=2027;
 							type="Land_Shelf_EP1";
-							atlOffset=9.5367432e-007;
 						};
 						class Item1
 						{
@@ -69628,7 +69626,7 @@ class Mission
 							{
 							};
 							id=4512;
-							atlOffset=-9.5367432e-007;
+							atlOffset=142.91;
 						};
 						class Item19
 						{
@@ -69720,6 +69718,7 @@ class Mission
 							{
 							};
 							id=4514;
+							atlOffset=142.91;
 						};
 						class Item20
 						{
@@ -69811,6 +69810,7 @@ class Mission
 							{
 							};
 							id=4516;
+							atlOffset=142.91;
 						};
 						class Item21
 						{
@@ -69903,11 +69903,11 @@ class Mission
 							{
 							};
 							id=4518;
-							atlOffset=0.0069997311;
+							atlOffset=142.91;
 						};
 					};
 					id=5900;
-					atlOffset=11.848494;
+					atlOffset=142.91;
 				};
 				class Item1
 				{
@@ -71339,7 +71339,7 @@ class Mission
 				};
 			};
 			id=5899;
-			atlOffset=31.227079;
+			atlOffset=61.804295;
 		};
 		class Item198
 		{
@@ -82010,6 +82010,47 @@ class Mission
 			};
 			id=5816;
 			atlOffset=4.1404476;
+		};
+		class Item200
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5717.6099,71.926147,5884.1758};
+				angles[]={6.2409134,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call TAC_Olympus_fnc_TargetGroupPopUps;";
+			};
+			id=5912;
+			type="Land_InfoStand_V1_F";
+			atlOffset=0.00033569336;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
