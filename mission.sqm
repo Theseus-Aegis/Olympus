@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=5913;
+		nextID=5916;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=468;
+		nextID=607;
 	};
 	class Camera
 	{
-		pos[]={5714.1113,79.848953,5868.519};
-		dir[]={0.72999781,-0.60232216,0.32311952};
-		up[]={0.55079263,0.79823923,0.24379799};
-		aside[]={0.40477556,-6.4121559e-007,-0.91446447};
+		pos[]={5703.9409,74.92202,5878.6494};
+		dir[]={0.78280383,-0.48162138,0.39424187};
+		up[]={0.43018958,0.87634653,0.21665597};
+		aside[]={0.44983777,-1.1315569e-007,-0.89319307};
 	};
 };
 binarizationWanted=0;
@@ -930,7 +930,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=201;
+		items=202;
 		class Item0
 		{
 			dataType="Marker";
@@ -7197,7 +7197,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6150.3306,15.82251,5627.6299};
-					angle=1.9461807;
+					angle=1.946179;
 					class Attributes
 					{
 						sizeA=65;
@@ -8409,7 +8409,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setObjectTexture [0,""tempImages\certificateDMRRequirements.paa""];";
+								init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\certificateDMRRequirements.paa""];";
 								name="marksmanBoard";
 							};
 							id=2917;
@@ -82016,8 +82016,24 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5717.6099,71.926147,5884.1758};
-				angles[]={6.2409134,0,0};
+				position[]={5718.0508,71.603271,5881.0771};
+				angles[]={6.2409158,1.6649524,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=5913;
+			type="Land_CampingTable_small_F";
+			atlOffset=2.3235931;
+		};
+		class Item201
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5717.8379,72.050049,5881.0967};
+				angles[]={6.2409134,4.9668579,0};
 			};
 			side="Empty";
 			flags=4;
@@ -82025,9 +82041,9 @@ class Mission
 			{
 				init="[this] call TAC_Olympus_fnc_TargetGroupPopUps;";
 			};
-			id=5912;
-			type="Land_InfoStand_V1_F";
-			atlOffset=0.00033569336;
+			id=5915;
+			type="Land_Tablet_02_F";
+			atlOffset=0.0048828125;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -82049,7 +82065,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};

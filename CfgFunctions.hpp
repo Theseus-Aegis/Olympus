@@ -21,6 +21,7 @@ class CfgFunctions {
             class setBasicLoadout;
             class setBillboard;
             class startMedicalExercise;
+            class TargetGroupPopUps;
             class teleport;
             class timer;
             class timerInit;
