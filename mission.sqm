@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=5927;
+		nextID=5937;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6401.9326,11.519684,5435.126};
-		dir[]={-0.099394336,-0.28004158,0.95493889};
-		up[]={-0.029001491,0.95995247,0.27862218};
-		aside[]={0.99471897,-1.4537363e-007,0.10353673};
+		pos[]={6450.4785,12.606236,5373.2637};
+		dir[]={0.74142808,-0.48197681,-0.4671171};
+		up[]={0.4079119,0.87608474,-0.25699002};
+		aside[]={-0.53311425,3.4895493e-007,-0.84617501};
 	};
 };
 binarizationWanted=0;
@@ -930,7 +930,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=202;
+		items=210;
 		class Item0
 		{
 			dataType="Marker";
@@ -11076,7 +11076,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Main building interior";
-			state=1;
 			class Entities
 			{
 				items=3;
@@ -11277,7 +11276,6 @@ class Mission
 							class Attributes
 							{
 								ammo=0.33468026;
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1210;
 							type="weapon_hlc_smg_mp5a2";
@@ -11337,7 +11335,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1211;
 							type="weapon_hlc_smg_mp5n";
@@ -11397,7 +11394,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1212;
 							type="Weapon_SMG_01_F";
@@ -11456,7 +11452,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1214;
 							type="Weapon_hgun_P07_F";
@@ -11515,7 +11510,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1215;
 							type="Weapon_hgun_Pistol_heavy_01_F";
@@ -11574,7 +11568,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1216;
 							type="Weapon_hlc_rifle_ak47";
@@ -11634,7 +11627,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1217;
 							type="Item_acc_flashlight";
@@ -11694,7 +11686,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1218;
 							type="Item_optic_Holosight";
@@ -11753,7 +11744,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1223;
 							type="Item_U_B_CombatUniform_mcam";
@@ -11813,7 +11803,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1224;
 							type="Item_U_B_CTRG_1";
@@ -11872,7 +11861,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1226;
 							type="Item_Binocular";
@@ -11990,7 +11978,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1231;
 							type="Headgear_H_HelmetB_black";
@@ -12049,7 +12036,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1232;
 							type="Headgear_H_HelmetSpecB_paint1";
@@ -12108,7 +12094,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1236;
 							type="Item_ItemGPS";
@@ -12167,7 +12152,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1241;
 							type="Item_NVGoggles_OPFOR";
@@ -12226,7 +12210,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1246;
 							type="Item_ItemCompass";
@@ -12286,7 +12269,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1254;
 							type="tacs_Item_Hat_Boonie_Woodland";
@@ -12345,7 +12327,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1255;
 							type="tacs_Item_Cap_BlackLogo";
@@ -12386,7 +12367,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1261;
 							type="Vest_V_HarnessO_gry";
@@ -74412,6 +74392,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="Course - Rifle";
+			state=1;
 			class Entities
 			{
 				items=9;
@@ -74468,7 +74449,6 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1460;
 							type="Land_LampAirport_F";
@@ -82207,6 +82187,135 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item202
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6458.5732,8.3870401,5374.8237};
+				angles[]={0,5.4713473,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=5927;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=0.36925411;
+		};
+		class Item203
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6454.7793,8.4280977,5371.7549};
+				angles[]={0,5.4505444,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=5929;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=0.407691;
+		};
+		class Item204
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6457.9702,8.3817062,5374.7637};
+				angles[]={0,5.6332893,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=5930;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=0.36350346;
+		};
+		class Item205
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6457.9185,9.195509,5374.6655};
+				angles[]={0,5.629611,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=5931;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=1.1772699;
+		};
+		class Item206
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6455.1152,8.4286461,5372.0933};
+				angles[]={0,5.4505444,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=5932;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=0.40847206;
+		};
+		class Item207
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6454.6357,9.2909555,5371.4043};
+				angles[]={0,5.4505444,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=5933;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=1.2704496;
+		};
+		class Item208
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6455.6299,8.7998133,5371.8281};
+				angles[]={0,5.4505444,6.282495};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=5935;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=0.77999401;
+		};
+		class Item209
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6454.8833,8.9926319,5370.9043};
+				angles[]={0,5.4505444,6.282495};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5936;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=0.13376427;
 		};
 	};
 	class Connections
