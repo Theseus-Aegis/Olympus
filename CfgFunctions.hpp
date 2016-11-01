@@ -10,7 +10,6 @@ class CfgFunctions {
             class VAboxPistolSMGInit;
             class VAboxRifleInit;
             class VAboxStagingInit;
-            class closeInventoryOnShowcase;
             class closeKillhouseDoors;
             class constantShoot;
             class grenadeCourseTargets;
