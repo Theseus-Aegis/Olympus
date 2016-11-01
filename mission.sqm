@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=746;
+		nextID=885;
 	};
 	class Camera
 	{
@@ -76015,7 +76015,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1845;
 							type="Weapon_arifle_TRG21_F";
@@ -76055,7 +76054,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1846;
 							type="Weapon_hlc_rifle_falosw";
@@ -76111,7 +76109,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1841;
 							type="Weapon_arifle_MX_F";
@@ -76151,7 +76148,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1843;
 							type="Weapon_arifle_MXC_F";
@@ -76191,7 +76187,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1836;
 							type="Weapon_arifle_Mk20_plain_F";
@@ -76231,7 +76226,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1837;
 							type="Weapon_hlc_rifle_FAL5061";
@@ -76271,7 +76265,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1838;
 							type="weapon_hlc_rifle_G36A1";
@@ -76311,7 +76304,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1839;
 							type="Weaponhlc_rifle_G36KA1";
@@ -76351,7 +76343,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1840;
 							type="Weapon_hlc_rifle_G3A3";
@@ -76391,7 +76382,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1779;
 							type="Weapon_hlc_rifle_aek971";
@@ -76432,7 +76422,6 @@ class Mission
 							class Attributes
 							{
 								ammo=0.4271715;
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1780;
 							type="Weapon_hlc_rifle_ak12";
@@ -76472,7 +76461,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1781;
 							type="Weapon_hlc_rifle_akU12";
@@ -76512,7 +76500,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1782;
 							type="Weapon_hlc_rifle_ak47";
@@ -76552,7 +76539,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1783;
 							type="Weapon_hlc_rifle_ak74";
@@ -76592,7 +76578,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1784;
 							type="Weapon_hlc_rifle_vendimus";
@@ -76632,7 +76617,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1786;
 							type="Weapon_hlc_rifle_RU5562";
@@ -76672,7 +76656,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1785;
 							type="Weapon_hlc_rifle_RU556";
@@ -76712,7 +76695,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1830;
 							type="Weapon_hlc_rifle_auga1carb_b";
@@ -76752,7 +76734,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1833;
 							type="Weapon_hlc_rifle_auga2carb_b";
@@ -76792,7 +76773,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1834;
 							type="Weapon_hlc_rifle_auga2lsw";
@@ -76832,7 +76812,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1835;
 							type="Weapon_hlc_rifle_auga2";
@@ -76872,7 +76851,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1787;
 							type="Weapon_hlc_rifle_bcmjack";
@@ -76912,7 +76890,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="this setVariable [""TAC_Olympus_isShowcase"", true];";
 							};
 							id=1788;
 							type="Weapon_hlc_rifle_Colt727";
