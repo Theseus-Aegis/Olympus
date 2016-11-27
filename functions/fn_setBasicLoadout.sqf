@@ -15,8 +15,6 @@
 
 params ["_unit"];
 
-if (!local _unit) exitWith {};
-
 private _randomUniform = selectRandom ["tacs_Uniform_Polo_TP_LS_TP_TB", "tacs_Uniform_Polo_TP_GS_TP_TB", "tacs_Uniform_Polo_TP_BS_LP_BB"];
 private _randomHeadgear = selectRandom ["tacs_Cap_BlackLogo", "tacs_Cap_TanLogo"];
 
