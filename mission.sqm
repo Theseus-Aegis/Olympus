@@ -137,10 +137,8 @@ addons[]=
 	"A3_Structures_F_Wrecks",
 	"CUP_CAStructures_E_Misc_Misc_Market",
 	"A3_Structures_F_EPA_Civ_Camping",
-	"CST_Industrial_Objects_Construction",
 	"A3_Structures_F_Furniture",
 	"A3_Structures_F_Civ_Market",
-	"CST_Misc_Objects",
 	"CUP_Desert2_Config",
 	"CUP_CAMP_Armory_Misc_Red_Light",
 	"mbg_killhouses_a3",
@@ -176,7 +174,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=82;
+		items=80;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -572,134 +570,124 @@ class AddonsMetaData
 		};
 		class Item60
 		{
-			className="CST_Industrial_Objects_Construction";
-			name="CST_Industrial_Objects_Construction";
-		};
-		class Item61
-		{
-			className="CST_Misc_Objects";
-			name="CST_Misc_Objects";
-		};
-		class Item62
-		{
 			className="CUP_Desert2_Config";
 			name="CUP_Desert2_Config";
 		};
-		class Item63
+		class Item61
 		{
 			className="CUP_CAMP_Armory_Misc_Red_Light";
 			name="CUP_CAMP_Armory_Misc_Red_Light";
 		};
-		class Item64
+		class Item62
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item65
+		class Item63
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item66
+		class Item64
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item67
+		class Item65
 		{
 			className="tac_heavylifter";
 			name="TAC - Heavy Lifter";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item68
+		class Item66
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item69
+		class Item67
 		{
 			className="A3_Air_F_Heli";
 			name="Arma 3 Helicopters - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item70
+		class Item68
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item71
+		class Item69
 		{
 			className="tac_armory";
 			name="TAC - Armory";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item72
+		class Item70
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item73
+		class Item71
 		{
 			className="CUP_CAMisc_ACR_Sign_Mines";
 			name="CUP_CAMisc_ACR_Sign_Mines";
 		};
-		class Item74
+		class Item72
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item75
+		class Item73
 		{
 			className="CUP_CAMisc_ACR_Shooting_range";
 			name="CUP_CAMisc_ACR_Shooting_range";
 		};
-		class Item76
+		class Item74
 		{
 			className="hlcweapons_falpocalypse";
 			name="hlcweapons_falpocalypse";
 			author="toadie";
 		};
-		class Item77
+		class Item75
 		{
 			className="tacs_weapons";
 			name="tacs_weapons";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item78
+		class Item76
 		{
 			className="hlcweapons_G36";
 			name="hlcweapons_G36";
 			author="toadie";
 		};
-		class Item79
+		class Item77
 		{
 			className="hlcweapons_g3";
 			name="hlcweapons_g3";
 			author="toadie";
 		};
-		class Item80
+		class Item78
 		{
 			className="hlcweapons_ar15";
 			name="hlcweapons_ar15";
 			author="toadie";
 		};
-		class Item81
+		class Item79
 		{
 			className="hlcweapons_AUG";
 			name="hlcweapons_AUG";
@@ -76227,7 +76215,7 @@ class Mission
 							{
 							};
 							id=1839;
-							type="Weaponhlc_rifle_G36KA1";
+							type="weapon_hlc_rifle_G36KA1";
 							atlOffset=1.3079996;
 							class CustomAttributes
 							{
