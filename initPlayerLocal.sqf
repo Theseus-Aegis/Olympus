@@ -22,5 +22,4 @@
 
 
 // Sets default loadout to joining players
-params ["_unit"];
 [_this select 0] call FUNC(setBasicLoadout);
