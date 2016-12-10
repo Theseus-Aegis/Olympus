@@ -23,3 +23,25 @@
 
 // Sets default loadout to joining players
 [_this select 0] call FUNC(setBasicLoadout);
+
+
+[QTACGVAR(shootingrange,started), {
+    params ["", "_name"];
+
+    // Exit if not wanted range
+    if (_name find "Advanced Rifle Course" == -1) exitWith {};
+
+    ace_advanced_fatigue_ae1Reserve = 4000000; // AE1_MAXRESERVE (advanced fatigue - "script-component.hpp")
+    ace_advanced_fatigue_ae2Reserve = 84000; // AE2_MAXRESERVE (advanced fatigue - "script-component.hpp")
+    ace_advanced_fatigue_anReserve = 2300; // AN_MAXRESERVE (advanced fatigue - "script-component.hpp")
+    ace_advanced_fatigue_anFatigue = 0;
+    ace_advanced_fatigue_muscleDamage = 0;
+}] call CBA_fnc_addEventHandler;
+
+
+/*   For additional courses
+if (_name find "Advanced Rifle Course" == -1 &&
+    {_name find "Name 2" == -1} &&
+    {_name find "Name 3" == -1}
+) exitWith {};
+*/
