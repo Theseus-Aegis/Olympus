@@ -45,3 +45,15 @@ if (_name find "Advanced Rifle Course" == -1 &&
     {_name find "Name 3" == -1}
 ) exitWith {};
 */
+
+
+/*
+["ace_weaponJammed", {
+    params ["_unit", "_weapon"];
+
+    // Clear jam instantly if in marker/trigger/location/coordinates
+    if (_unit inArea marker) then {
+        [_unit, _weapon, true] call ACEFUNC(overheating,clearJam);
+    };
+}] call CBA_fnc_addEventHandler;
+*/
