@@ -29,7 +29,7 @@
     params ["", "_name"];
 
     // Exit if not wanted range
-    if (_name find "Advanced Rifle Course" == -1 &&
+    if  (_name find "Advanced Rifle Course" == -1 &&
         {_name find "Killhouse Firing Range  1" == -1} &&
         {_name find "Killhouse Firing Range  2" == -1}
     ) exitWith {};
@@ -41,12 +41,15 @@
     ace_advanced_fatigue_muscleDamage = 0;
 }] call CBA_fnc_addEventHandler;
 
-/*["ace_weaponJammed", {
+["ace_weaponJammed", {
     params ["_unit", "_weapon"];
 
     // Clear jam instantly if in marker/trigger/location/coordinates
-    if (_unit inArea weaponJamDisableMarker) then {
-        [_unit, _weapon, true] call ACEFUNC(overheating,clearJam);
+    if  (_unit inArea disableWeaponJam_MG ||
+        {_unit inArea disableWeaponJam_Rifle} ||
+        {_unit inArea disableWeaponJam_Pistol} ||
+        {_unit inArea disableWeaponJam_advRifle} ||
+        {_unit inArea disableWeaponJam_killhouse}) then {
+        [_unit, _weapon, true] call ace_overheating_fnc_clearJam;
     };
 }] call CBA_fnc_addEventHandler;
-*/

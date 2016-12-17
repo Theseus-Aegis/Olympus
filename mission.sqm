@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5967;
+		nextID=5974;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1871;
+		nextID=2012;
 	};
 	class Camera
 	{
-		pos[]={5679.9004,91.471107,5881.2642};
-		dir[]={0.79828584,-0.60228598,-0.00019648418};
-		up[]={0.60228765,0.79827976,-0.00014848163};
-		aside[]={-0.00024601625,-8.5933266e-008,-1.0000027};
+		pos[]={6398.0249,25,5346.0649};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -925,7 +925,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=203;
+		items=201;
 		class Item0
 		{
 			dataType="Marker";
@@ -2442,82 +2442,6 @@ class Mission
 			atlOffset=2.4857742e+012;
 		};
 		class Item155
-		{
-			dataType="Marker";
-			position[]={5719.6621,3.3217223e+015,5881.7881};
-			name="MG_trigger_1";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=5;
-			b=5;
-			angle=181.91893;
-			id=5751;
-			atlOffset=3.3217223e+015;
-		};
-		class Item156
-		{
-			dataType="Marker";
-			position[]={5719.6982,71.267189,5881.7544};
-			name="MG_trigger_2";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=5;
-			b=5;
-			angle=181.91893;
-			id=5753;
-		};
-		class Item157
-		{
-			dataType="Marker";
-			position[]={5719.603,75.223297,5881.8774};
-			name="MG_trigger_3";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=5;
-			b=5;
-			angle=181.91893;
-			id=5754;
-			atlOffset=3.9295578;
-		};
-		class Item158
-		{
-			dataType="Marker";
-			position[]={5719.5049,68.094971,5881.7886};
-			name="MG_trigger_4";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=5;
-			b=5;
-			angle=181.91893;
-			id=5755;
-			atlOffset=1.0403442;
-		};
-		class Item159
-		{
-			dataType="Marker";
-			position[]={5719.5283,75.65625,5881.6191};
-			name="MG_trigger_5";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=5;
-			b=5;
-			angle=181.91893;
-			id=5756;
-			atlOffset=4.3640518;
-		};
-		class Item160
-		{
-			dataType="Marker";
-			position[]={5719.6113,71.283295,5881.7378};
-			name="MG_trigger_6";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=5;
-			b=5;
-			angle=181.91893;
-			id=5757;
-		};
-		class Item161
 		{
 			dataType="Layer";
 			name="Course - MG";
@@ -6400,7 +6324,7 @@ class Mission
 			id=5759;
 			atlOffset=1.3921738;
 		};
-		class Item162
+		class Item156
 		{
 			dataType="Layer";
 			name="Course - DMR";
@@ -8982,7 +8906,7 @@ class Mission
 			id=5770;
 			atlOffset=27.338829;
 		};
-		class Item163
+		class Item157
 		{
 			dataType="Layer";
 			name="Aircraft landing";
@@ -9166,7 +9090,7 @@ class Mission
 			id=5773;
 			atlOffset=1.9036659;
 		};
-		class Item164
+		class Item158
 		{
 			dataType="Layer";
 			name="Player slots";
@@ -10692,7 +10616,7 @@ class Mission
 			id=5775;
 			atlOffset=142.91;
 		};
-		class Item165
+		class Item159
 		{
 			dataType="Layer";
 			name="Main building interior";
@@ -15846,7 +15770,7 @@ class Mission
 			id=5776;
 			atlOffset=0.48445988;
 		};
-		class Item166
+		class Item160
 		{
 			dataType="Layer";
 			name="Dueling area";
@@ -16270,7 +16194,7 @@ class Mission
 			id=5780;
 			atlOffset=0.011545181;
 		};
-		class Item167
+		class Item161
 		{
 			dataType="Layer";
 			name="Outside objects";
@@ -19728,7 +19652,7 @@ class Mission
 			id=5782;
 			atlOffset=17.028107;
 		};
-		class Item168
+		class Item162
 		{
 			dataType="Layer";
 			name="Course - Medical";
@@ -21250,7 +21174,7 @@ class Mission
 			id=5788;
 			atlOffset=-147.14618;
 		};
-		class Item169
+		class Item163
 		{
 			dataType="Layer";
 			name="General Staging Area";
@@ -21980,7 +21904,7 @@ class Mission
 			id=5792;
 			atlOffset=0.36049509;
 		};
-		class Item170
+		class Item164
 		{
 			dataType="Layer";
 			name="Teleport Objects";
@@ -22733,7 +22657,7 @@ class Mission
 			id=5794;
 			atlOffset=-40.81163;
 		};
-		class Item171
+		class Item165
 		{
 			dataType="Layer";
 			name="Course - Grenades";
@@ -26670,7 +26594,7 @@ class Mission
 			id=5801;
 			atlOffset=-0.19112587;
 		};
-		class Item172
+		class Item166
 		{
 			dataType="Layer";
 			name="Course - Movement";
@@ -29572,7 +29496,7 @@ class Mission
 			id=5808;
 			atlOffset=-25.61953;
 		};
-		class Item173
+		class Item167
 		{
 			dataType="Layer";
 			name="Course - Bounding";
@@ -29817,7 +29741,7 @@ class Mission
 			id=5831;
 			atlOffset=0.41311216;
 		};
-		class Item174
+		class Item168
 		{
 			dataType="Layer";
 			name="Course - Pistol";
@@ -35670,7 +35594,7 @@ class Mission
 			id=5833;
 			atlOffset=0.30897045;
 		};
-		class Item175
+		class Item169
 		{
 			dataType="Layer";
 			name="Checkpoint Kamino";
@@ -36623,7 +36547,7 @@ class Mission
 			id=5848;
 			atlOffset=-53.165428;
 		};
-		class Item176
+		class Item170
 		{
 			dataType="Layer";
 			name="Checkpoint Rogan";
@@ -37567,7 +37491,7 @@ class Mission
 			id=5854;
 			atlOffset=4.6300812;
 		};
-		class Item177
+		class Item171
 		{
 			dataType="Layer";
 			name="Course - Advanced Rifle";
@@ -52816,7 +52740,7 @@ class Mission
 			id=5861;
 			atlOffset=-5.8127899;
 		};
-		class Item178
+		class Item172
 		{
 			dataType="Layer";
 			name="Course - 40mm & Launcher";
@@ -54748,7 +54672,7 @@ class Mission
 			id=5869;
 			atlOffset=-1.5549469;
 		};
-		class Item179
+		class Item173
 		{
 			dataType="Layer";
 			name="Course - Urban Area";
@@ -56447,7 +56371,7 @@ class Mission
 			id=5877;
 			atlOffset=1.0809727;
 		};
-		class Item180
+		class Item174
 		{
 			dataType="Layer";
 			name="Killhouse Large";
@@ -61752,7 +61676,7 @@ class Mission
 			id=5882;
 			atlOffset=0.16778374;
 		};
-		class Item181
+		class Item175
 		{
 			dataType="Layer";
 			name="Killhouse Medium";
@@ -63843,7 +63767,7 @@ class Mission
 			id=5890;
 			atlOffset=0.32675695;
 		};
-		class Item182
+		class Item176
 		{
 			dataType="Layer";
 			name="Killhouse Small";
@@ -64061,7 +63985,7 @@ class Mission
 			id=5896;
 			atlOffset=1.1871853;
 		};
-		class Item183
+		class Item177
 		{
 			dataType="Layer";
 			name="NATO FOB";
@@ -67428,7 +67352,7 @@ class Mission
 			id=5899;
 			atlOffset=61.804295;
 		};
-		class Item184
+		class Item178
 		{
 			dataType="Layer";
 			name="Course - Demolition";
@@ -70476,7 +70400,7 @@ class Mission
 			id=5903;
 			atlOffset=-0.015557289;
 		};
-		class Item185
+		class Item179
 		{
 			dataType="Layer";
 			name="Course - Rifle";
@@ -77926,7 +77850,7 @@ class Mission
 			id=5816;
 			atlOffset=4.1500564;
 		};
-		class Item186
+		class Item180
 		{
 			dataType="Trigger";
 			position[]={5191.1548,222.98,5004.313};
@@ -77942,7 +77866,7 @@ class Mission
 			id=5947;
 			type="EmptyDetector";
 		};
-		class Item187
+		class Item181
 		{
 			dataType="Trigger";
 			position[]={5180.1069,222.98,4997.2061};
@@ -77958,7 +77882,7 @@ class Mission
 			id=5948;
 			type="EmptyDetector";
 		};
-		class Item188
+		class Item182
 		{
 			dataType="Trigger";
 			position[]={5176.3066,222.97415,4985.3584};
@@ -77974,7 +77898,7 @@ class Mission
 			id=5949;
 			type="EmptyDetector";
 		};
-		class Item189
+		class Item183
 		{
 			dataType="Trigger";
 			position[]={5181.0269,222.97028,4977.543};
@@ -77990,7 +77914,7 @@ class Mission
 			id=5950;
 			type="EmptyDetector";
 		};
-		class Item190
+		class Item184
 		{
 			dataType="Trigger";
 			position[]={5188.2324,222.98,4980.5684};
@@ -78006,7 +77930,7 @@ class Mission
 			id=5951;
 			type="EmptyDetector";
 		};
-		class Item191
+		class Item185
 		{
 			dataType="Trigger";
 			position[]={5197.8979,222.98,4985.6157};
@@ -78022,7 +77946,7 @@ class Mission
 			id=5952;
 			type="EmptyDetector";
 		};
-		class Item192
+		class Item186
 		{
 			dataType="Trigger";
 			position[]={5204.2544,222.98,4992.3525};
@@ -78038,7 +77962,7 @@ class Mission
 			id=5953;
 			type="EmptyDetector";
 		};
-		class Item193
+		class Item187
 		{
 			dataType="Trigger";
 			position[]={5209.9429,223.04691,4996.7769};
@@ -78054,7 +77978,7 @@ class Mission
 			id=5954;
 			type="EmptyDetector";
 		};
-		class Item194
+		class Item188
 		{
 			dataType="Trigger";
 			position[]={5229.2319,223.25761,5000.5791};
@@ -78070,7 +77994,7 @@ class Mission
 			id=5955;
 			type="EmptyDetector";
 		};
-		class Item195
+		class Item189
 		{
 			dataType="Trigger";
 			position[]={5240.4209,223.31992,5017.561};
@@ -78086,7 +78010,7 @@ class Mission
 			id=5956;
 			type="EmptyDetector";
 		};
-		class Item196
+		class Item190
 		{
 			dataType="Trigger";
 			position[]={5230.0024,223.26923,5007.688};
@@ -78102,7 +78026,7 @@ class Mission
 			id=5957;
 			type="EmptyDetector";
 		};
-		class Item197
+		class Item191
 		{
 			dataType="Trigger";
 			position[]={5226.4136,223.2645,5012.9717};
@@ -78118,7 +78042,7 @@ class Mission
 			id=5958;
 			type="EmptyDetector";
 		};
-		class Item198
+		class Item192
 		{
 			dataType="Trigger";
 			position[]={5225.272,223.28796,5020.957};
@@ -78134,7 +78058,7 @@ class Mission
 			id=5959;
 			type="EmptyDetector";
 		};
-		class Item199
+		class Item193
 		{
 			dataType="Trigger";
 			position[]={5212.6187,223.19102,5015.4844};
@@ -78150,7 +78074,7 @@ class Mission
 			id=5960;
 			type="EmptyDetector";
 		};
-		class Item200
+		class Item194
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78191,7 +78115,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item201
+		class Item195
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78232,18 +78156,74 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item202
+		class Item196
 		{
 			dataType="Marker";
-			position[]={4116.75,-6.2054422e-031,4067.613};
-			name="weaponJamDisableMarker";
+			position[]={5710.2759,7.4576175e+014,5878.9102};
+			name="disableWeaponJam_MG";
 			markerType="RECTANGLE";
 			type="rectangle";
 			alpha=0;
-			a=4000;
-			b=4000;
+			a=20;
+			b=20;
 			id=5966;
-			atlOffset=-170.40645;
+			atlOffset=7.4576175e+014;
+		};
+		class Item197
+		{
+			dataType="Marker";
+			position[]={6400.25,1.4124237e-014,5444.7002};
+			name="disableWeaponJam_Rifle";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			a=25;
+			b=10;
+			angle=132.79399;
+			id=5967;
+			atlOffset=-8.9812498;
+		};
+		class Item198
+		{
+			dataType="Marker";
+			position[]={6398.0249,9.599116e+026,5371.0649};
+			name="disableWeaponJam_Pistol";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			a=30;
+			b=5;
+			angle=222.20299;
+			id=5968;
+			atlOffset=9.599116e+026;
+		};
+		class Item199
+		{
+			dataType="Marker";
+			position[]={5208.25,-3.9506237e-032,5001.4302};
+			name="disableWeaponJam_advRifle";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			a=40;
+			b=15;
+			angle=153.36198;
+			id=5969;
+			atlOffset=-223.06386;
+		};
+		class Item200
+		{
+			dataType="Marker";
+			position[]={2205.2549,-1.9654355e-031,5379.8442};
+			name="disableWeaponJam_killhouse";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			a=25;
+			b=20;
+			angle=272.43497;
+			id=5973;
+			atlOffset=-7.300415;
 		};
 	};
 	class Connections
