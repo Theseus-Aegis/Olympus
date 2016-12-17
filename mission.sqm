@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5966;
+		nextID=5967;
 	};
 	class MarkerIDProvider
 	{
-		nextID=141;
+		nextID=142;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1730;
+		nextID=1871;
 	};
 	class Camera
 	{
-		pos[]={4632.8579,145.67738,5285.6924};
-		dir[]={-0.67927206,-0.43131641,0.5937773};
-		up[]={-0.32474428,0.90219682,0.28387105};
-		aside[]={0.65814352,2.2863969e-007,0.75290614};
+		pos[]={5679.9004,91.471107,5881.2642};
+		dir[]={0.79828584,-0.60228598,-0.00019648418};
+		up[]={0.60228765,0.79827976,-0.00014848163};
+		aside[]={-0.00024601625,-8.5933266e-008,-1.0000027};
 	};
 };
 binarizationWanted=0;
@@ -143,6 +143,7 @@ addons[]=
 	"mbg_killhouses_a3",
 	"A3_Structures_F_EPB_Items_Vessels",
 	"A3_Characters_F",
+	"asr_ai3_cfgcamouflage",
 	"asr_ai3_cfgvehicles",
 	"A3_Armor_F_Beta_APC_Wheeled_01",
 	"A3_Soft_F_Gamma_Truck_01",
@@ -924,7 +925,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=202;
+		items=203;
 		class Item0
 		{
 			dataType="Marker";
@@ -6403,7 +6404,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Course - DMR";
-			state=1;
 			class Entities
 			{
 				items=15;
@@ -52820,6 +52820,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="Course - 40mm & Launcher";
+			state=1;
 			class Entities
 			{
 				items=5;
@@ -53991,7 +53992,7 @@ class Mission
 									};
 									id=4593;
 									type="C_Offroad_01_F";
-									atlOffset=-0.04662323;
+									atlOffset=-0.046615601;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -54032,7 +54033,7 @@ class Mission
 									};
 									id=4580;
 									type="O_Truck_02_fuel_F";
-									atlOffset=-0.087150574;
+									atlOffset=-0.087142944;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -56450,7 +56451,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Killhouse Large";
-			state=1;
 			class Entities
 			{
 				items=8;
@@ -78166,7 +78166,7 @@ class Mission
 			};
 			id=5961;
 			type="C_Offroad_02_unarmed_F";
-			atlOffset=-0.0049972534;
+			atlOffset=-0.0050010681;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -78231,6 +78231,19 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item202
+		{
+			dataType="Marker";
+			position[]={4116.75,-6.2054422e-031,4067.613};
+			name="weaponJamDisableMarker";
+			markerType="RECTANGLE";
+			type="rectangle";
+			alpha=0;
+			a=4000;
+			b=4000;
+			id=5966;
+			atlOffset=-170.40645;
 		};
 	};
 	class Connections

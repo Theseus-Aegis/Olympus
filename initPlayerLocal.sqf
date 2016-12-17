@@ -29,7 +29,10 @@
     params ["", "_name"];
 
     // Exit if not wanted range
-    if (_name find "Advanced Rifle Course" == -1) exitWith {};
+    if (_name find "Advanced Rifle Course" == -1 &&
+        {_name find "Killhouse Firing Range  1" == -1} &&
+        {_name find "Killhouse Firing Range  2" == -1}
+    ) exitWith {};
 
     ace_advanced_fatigue_ae1Reserve = 4000000; // AE1_MAXRESERVE (advanced fatigue - "script-component.hpp")
     ace_advanced_fatigue_ae2Reserve = 84000; // AE2_MAXRESERVE (advanced fatigue - "script-component.hpp")
@@ -38,21 +41,11 @@
     ace_advanced_fatigue_muscleDamage = 0;
 }] call CBA_fnc_addEventHandler;
 
-
-/*   For additional courses
-if (_name find "Advanced Rifle Course" == -1 &&
-    {_name find "Name 2" == -1} &&
-    {_name find "Name 3" == -1}
-) exitWith {};
-*/
-
-
-/*
-["ace_weaponJammed", {
+/*["ace_weaponJammed", {
     params ["_unit", "_weapon"];
 
     // Clear jam instantly if in marker/trigger/location/coordinates
-    if (_unit inArea marker) then {
+    if (_unit inArea weaponJamDisableMarker) then {
         [_unit, _weapon, true] call ACEFUNC(overheating,clearJam);
     };
 }] call CBA_fnc_addEventHandler;
