@@ -108,7 +108,6 @@ addons[]=
 	"A3_Soft_F_Offroad_01",
 	"A3_Soft_F_Quadbike_01",
 	"A3_Soft_F_Gamma_Van_01",
-	"PansyLandRovers",
 	"tacs_weapons_hlc",
 	"ace_medical",
 	"A3_Weapons_F_Explosives",
@@ -174,7 +173,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=79;
+		items=78;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -473,213 +472,208 @@ class AddonsMetaData
 		};
 		class Item45
 		{
-			className="PansyLandRovers";
-			name="PansyLandRovers";
-		};
-		class Item46
-		{
 			className="tacs_weapons_hlc";
 			name="tacs_weapons_hlc";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item47
+		class Item46
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item48
+		class Item47
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item49
+		class Item48
 		{
 			className="CUP_A1_EditorObjects";
 			name="CUP_A1_EditorObjects";
 			author="NeoArmageddon";
 		};
-		class Item50
+		class Item49
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item51
+		class Item50
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item52
+		class Item51
 		{
 			className="A3_Structures_F_Kart";
 			name="Arma 3 Karts - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item53
+		class Item52
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item54
+		class Item53
 		{
 			className="MFFA_cgcsat";
 			name="MFFA_cgcsat";
 			author="Alganthe";
 		};
-		class Item55
+		class Item54
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item56
+		class Item55
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item57
+		class Item56
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item58
+		class Item57
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Market";
 			name="CUP_CAStructures_E_Misc_Misc_Market";
 		};
-		class Item59
+		class Item58
 		{
 			className="CUP_Desert2_Config";
 			name="CUP_Desert2_Config";
 		};
-		class Item60
+		class Item59
 		{
 			className="CUP_CAMP_Armory_Misc_Red_Light";
 			name="CUP_CAMP_Armory_Misc_Red_Light";
 		};
-		class Item61
+		class Item60
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item62
+		class Item61
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item63
+		class Item62
 		{
 			className="tac_heavylifter";
 			name="TAC - Heavy Lifter";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item64
+		class Item63
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item65
+		class Item64
 		{
 			className="A3_Air_F_Heli";
 			name="Arma 3 Helicopters - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item66
+		class Item65
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item67
+		class Item66
 		{
 			className="tac_armory";
 			name="TAC - Armory";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item68
+		class Item67
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item69
+		class Item68
 		{
 			className="CUP_CAMisc_ACR_Sign_Mines";
 			name="CUP_CAMisc_ACR_Sign_Mines";
 		};
-		class Item70
+		class Item69
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item71
+		class Item70
 		{
 			className="CUP_CAMisc_ACR_Shooting_range";
 			name="CUP_CAMisc_ACR_Shooting_range";
 		};
-		class Item72
+		class Item71
 		{
 			className="hlcweapons_falpocalypse";
 			name="hlcweapons_falpocalypse";
 			author="toadie";
 		};
-		class Item73
+		class Item72
 		{
 			className="tacs_weapons";
 			name="tacs_weapons";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item74
+		class Item73
 		{
 			className="hlcweapons_G36";
 			name="hlcweapons_G36";
 			author="toadie";
 		};
-		class Item75
+		class Item74
 		{
 			className="hlcweapons_g3";
 			name="hlcweapons_g3";
 			author="toadie";
 		};
-		class Item76
+		class Item75
 		{
 			className="hlcweapons_ar15";
 			name="hlcweapons_ar15";
 			author="toadie";
 		};
-		class Item77
+		class Item76
 		{
 			className="hlcweapons_AUG";
 			name="hlcweapons_AUG";
 			author="toadie";
 		};
-		class Item78
+		class Item77
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
@@ -18802,7 +18796,7 @@ class Mission
 							{
 							};
 							id=307;
-							type="LandRover_ACR";
+							type="CUP_B_LR_Transport_CZ_W";
 							atlOffset=-4.2915344e-006;
 						};
 						class Item11
@@ -18819,7 +18813,7 @@ class Mission
 							{
 							};
 							id=309;
-							type="BAF_Offroad_W";
+							type="CUP_B_LR_Transport_CZ_W";
 							atlOffset=-0.00021219254;
 						};
 						class Item12
@@ -18836,7 +18830,7 @@ class Mission
 							{
 							};
 							id=310;
-							type="BAF_Offroad_W";
+							type="CUP_B_LR_Transport_CZ_W";
 							atlOffset=4.7683716e-007;
 						};
 						class Item13
@@ -18853,7 +18847,7 @@ class Mission
 							{
 							};
 							id=2891;
-							type="LandRover_ACR";
+							type="CUP_B_LR_Transport_CZ_W";
 						};
 						class Item14
 						{
