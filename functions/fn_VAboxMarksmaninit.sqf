@@ -16,12 +16,26 @@
 //Lists of items to include
 #define AVAILABLE_DMR [\
     "arifle_MXM_F",\
+    "hlc_rifle_SAMR",\
     "hlc_rifle_M14",\
     "hlc_rifle_M21",\
     "hlc_rifle_M14DMR",\
     "arifle_MXM_Black_F",\
+    "srifle_DMR_03_F",\
+    "srifle_DMR_03_khaki_F",\
+    "srifle_DMR_03_tan_F",\
+    "srifle_DMR_03_multicam_F",\
+    "srifle_DMR_03_woodland_F",\
     "srifle_DMR_06_camo_F",\
-    "srifle_DMR_06_olive_F"\
+    "srifle_DMR_06_olive_F",\
+    "arifle_MXM_khk_F",\
+    "arifle_SPAR_03_blk_F",\
+    "arifle_SPAR_03_khk_F",\
+    "arifle_SPAR_03_snd_F",\
+    "srifle_DMR_07_blk_F",\
+    "srifle_DMR_07_ghex_F",\
+    "srifle_DMR_07_hex_F",\
+    "CUP_arifle_Mk20"\
 ]
 
 #define AVAILABLE_DMR_MAGAZINES [\
@@ -113,21 +127,13 @@
 ]
 
 #define AVAILABLE_ATTACHMENTS [\
+    "optic_DMS",\
+    "ACE_optic_SOS_2D",\
     "hlc_Optic_ZFSG1",\
-    "hlc_optic_accupoint_g3",\
-    "hlc_optic_artel_m14",\
-    "hlc_optic_LRT_m14",\
-    "optic_KHS_blk",\
-    "optic_KHS_hex",\
-    "optic_KHS_old",\
-    "optic_KHS_tan",\
+    "optic_SOS",\
     "RH_shortdot",\
-    "RH_m3lr",\
-    "RH_accupoint",\
-    "RH_leu_mk4",\
-    "bipod_01_F_snd",\
-    "bipod_01_F_blk",\
-    "bipod_01_F_mtp"\
+    "optic_DMS_ghex_F",\
+    "optic_SOS_khk_F"\
 ]
 
 //Init stuff
