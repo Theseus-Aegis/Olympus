@@ -3,7 +3,9 @@
 **Olympus Version:** `x.y.z` (stable / latest on Theseus server + date / dev + commit hash)
 
 **Mods:**
+```
 - Theseus Inc. Modpack
+```
 
 **Description:**
 - Add a detailed description of the error.
