@@ -144,8 +144,6 @@ addons[]=
 	"A3_Structures_F_EPB_Items_Vessels",
 	"A3_Structures_F_Households_Slum",
 	"A3_Characters_F",
-	"asr_ai3_cfgcamouflage",
-	"asr_ai3_cfgvehicles",
 	"A3_Armor_F_Beta_APC_Wheeled_01",
 	"A3_Soft_F_Gamma_Truck_01",
 	"A3_Soft_F_MRAP_01",
