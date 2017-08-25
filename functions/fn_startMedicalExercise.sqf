@@ -55,19 +55,35 @@ if (isNull _mine) then {
     if !(_controller getVariable [QGVAR(MedicalExerciseStarted), false]) exitWith {};
 
     // Apply damage to all victims
+    // 'addDamageToUnit', 'setCardiacArrest' and 'adjustPainLevel' have to be called local to the unit
     {
-        [_x, 0.8, "body", "explosive"] call ace_medical_fnc_addDamageToUnit;
-        [_x, 0.6] call ace_medical_fnc_adjustPainLevel;
+        [QGVAR(addDamageToUnit), [_x, 0.8, "body", "explosive"], _x] call CBA_fnc_targetEvent;
+        [QGVAR(adjustPainLevel), [_x, 0.6], _x] call CBA_fnc_targetEvent;
     } forEach _victims;
 
     // Apply damage to specific victims
-    [_victims select 0] call ace_medical_fnc_setCardiacArrest;
-    [_victims select 0, 0.6, "leg_l", "grenade"] call ace_medical_fnc_addDamageToUnit;
-    [_victims select 0, 0.3, "leg_r", "stab"] call ace_medical_fnc_addDamageToUnit;
-    [_victims select 0, 0.3, "hand_l", "bullet"] call ace_medical_fnc_addDamageToUnit;
+    // We need to wait a bit for damage to propagate and to make sure it is not registered from same source and ignored (HandleDamage oddities)
+    // That's why we wait 1 second between each 'addDamageToUnit' call
+    _victims params ["_victim1", "_victim2"];
 
-    [_victims select 1, true, 10, true] call ace_medical_fnc_setUnconscious;
-    [_victims select 1, 0.5, "hand_r", "stab"] call ace_medical_fnc_addDamageToUnit;
-    [_victims select 1, 0.6, "leg_r", "explosive"] call ace_medical_fnc_addDamageToUnit;
+    // Victim 1
+    [QGVAR(setCardiacArrest), [_victim1], _victim1] call CBA_fnc_targetEvent;
+    [{
+        [QGVAR(addDamageToUnit), [_this, 0.6, "leg_l", "grenade"], _this] call CBA_fnc_targetEvent;
+    }, _victim1, 1] call CBA_fnc_waitAndExecute;
+    [{
+        [QGVAR(addDamageToUnit), [_this, 0.3, "leg_r", "stab"], _this] call CBA_fnc_targetEvent;
+    }, _victim1, 2] call CBA_fnc_waitAndExecute;
+    [{
+        [QGVAR(addDamageToUnit), [_this, 0.3, "hand_l", "bullet"], _this] call CBA_fnc_targetEvent;
+    }, _victim1, 3] call CBA_fnc_waitAndExecute;
 
+    // Victim 2
+    [_victim2, true, 10, true] call ace_medical_fnc_setUnconscious; // Handles locality
+    [{
+        [QGVAR(addDamageToUnit), [_this, 0.5, "hand_r", "stab"], _this] call CBA_fnc_targetEvent;
+    }, _victim2, 1] call CBA_fnc_waitAndExecute;
+    [{
+        [QGVAR(addDamageToUnit), [_this, 0.6, "leg_r", "explosive"], _this] call CBA_fnc_targetEvent;
+    }, _victim2, 2] call CBA_fnc_waitAndExecute;
 }, [_victims, _runWaypoint, _controller]] call ace_common_fnc_waitUntilAndExecute;

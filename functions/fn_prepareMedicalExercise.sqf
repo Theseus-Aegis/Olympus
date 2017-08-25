@@ -39,6 +39,11 @@ _controller setVariable [QGVAR(MedicalExerciseInfo), _info, true];
     (group _victim) move (getPos _runWaypoint);
 }] call CBA_fnc_addEventHandler;
 
+// Add EH for damage (requires local)
+[QGVAR(addDamageToUnit), ace_medical_fnc_addDamageToUnit] call CBA_fnc_addEventHandler;
+[QGVAR(adjustPainLevel), ace_medical_fnc_adjustPainLevel] call CBA_fnc_addEventHandler;
+[QGVAR(setCardiacArrest), ace_medical_fnc_setCardiacArrest] call CBA_fnc_addEventHandler;
+
 // Start action
 private _actionStart = [
     QGVAR(MedicalExerciseStart),
