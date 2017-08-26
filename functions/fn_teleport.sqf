@@ -35,7 +35,9 @@ params ["_controller"];
         {
             ACE_player setPosASL (getPosASL (_this select 2));
         },
-        {true},
+        {
+            ACE_player distance (_this select 2) < 10
+        },
         {},
         _teleportObject
     ] call ACE_Interact_Menu_fnc_createAction;
