@@ -33,13 +33,17 @@ params ["_controller"];
         ["Fast travel to", _text] joinString " ",
         "",
         {
-            ACE_player setPosASL (getPosASL (_this select 2));
+            (_this select 2) params ["_teleportObject", "_text"];
+            titleText [["Fast travelling to", _text, "..."] joinString " ", "BLACK IN", 1];
+            ACE_player setPosASL (getPosASL _teleportObject);
+            titleFadeOut 1;
         },
         {
-            ACE_player distance (_this select 2) < 10
+            (_this select 2) params ["_teleportObject"];
+            ACE_player distance _teleportObject < 10
         },
         {},
-        _teleportObject
+        [_teleportObject, _text]
     ] call ACE_Interact_Menu_fnc_createAction;
 
     [_controller, 0, ["ACE_MainActions"], _action] call ACE_Interact_Menu_fnc_addActionToObject;
