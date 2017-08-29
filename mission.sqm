@@ -29037,7 +29037,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this, move_finishObj, 70] call TAC_Olympus_fnc_timerInit;";
+								init="[this, move_finishObj] call TAC_Olympus_fnc_timerInit;";
 							};
 							id=4563;
 							type="Land_InfoStand_V1_F";
