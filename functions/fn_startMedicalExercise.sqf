@@ -41,7 +41,7 @@ if (isNull _mine) then {
 
 // Wait for units to get to waypoint and set damage on them
 [{
-    params ["_victims", "_runWaypoint", "_controller"];
+    params ["_victims", "_controller", "_runWaypoint"];
 
     private _nearWaypointObjects = nearestObjects [ASLToAGL (getPosASL _runWaypoint), ["CAManBase"], 2];
     _nearWaypointObjects = _nearWaypointObjects select [0, 2];
@@ -49,7 +49,7 @@ if (isNull _mine) then {
     _controller getVariable [QGVAR(MedicalExerciseStarted), false] &&
     {([_victims select 0, _victims select 1] isEqualTo _nearWaypointObjects) || ([_victims select 1, _victims select 0] isEqualTo _nearWaypointObjects)}
 }, {
-    params ["_victims", "", "_controller"];
+    params ["_victims", "_controller"];
 
     // Exit if reset
     if !(_controller getVariable [QGVAR(MedicalExerciseStarted), false]) exitWith {};
@@ -86,4 +86,7 @@ if (isNull _mine) then {
     [{
         [QGVAR(addDamageToUnit), [_this, 0.6, "leg_r", "explosive"], _this] call CBA_fnc_targetEvent;
     }, _victim2, 2] call CBA_fnc_waitAndExecute;
-}, [_victims, _runWaypoint, _controller]] call ace_common_fnc_waitUntilAndExecute;
+}, [_victims, _controller, _runWaypoint], 30, {
+    params ["", "_controller"];
+    _controller call FUNC(resetMedicalExercise);
+}] call CBA_fnc_waitUntilAndExecute;
