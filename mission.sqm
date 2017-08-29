@@ -26879,7 +26879,7 @@ class Mission
 								repeatable=1;
 								activationBy="ANY";
 								isRectangle=1;
-                                isServerOnly=1;
+								isServerOnly=1;
 							};
 							id=1327;
 							type="EmptyDetector";
@@ -26900,7 +26900,7 @@ class Mission
 								repeatable=1;
 								activationBy="ANY";
 								isRectangle=1;
-                                isServerOnly=1;
+								isServerOnly=1;
 							};
 							id=1328;
 							type="EmptyDetector";
