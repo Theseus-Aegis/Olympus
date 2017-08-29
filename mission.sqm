@@ -26871,7 +26871,7 @@ class Mission
 							angle=0.39926136;
 							class Attributes
 							{
-								condition="ACE_player in thisList";
+								condition="this";
 								onActivation="[crawlShooter1, tacs_target2, thisList] call TAC_Olympus_fnc_constantShoot;";
 								sizeA=1;
 								sizeB=3;
@@ -26879,6 +26879,7 @@ class Mission
 								repeatable=1;
 								activationBy="ANY";
 								isRectangle=1;
+                                isServerOnly=1;
 							};
 							id=1327;
 							type="EmptyDetector";
@@ -26891,7 +26892,7 @@ class Mission
 							angle=0.39926136;
 							class Attributes
 							{
-								condition="ACE_player in thisList";
+								condition="this";
 								onActivation="[crawlShooter1, tacs_target1, thisList] call TAC_Olympus_fnc_constantShoot;";
 								sizeA=1;
 								sizeB=3;
@@ -26899,6 +26900,7 @@ class Mission
 								repeatable=1;
 								activationBy="ANY";
 								isRectangle=1;
+                                isServerOnly=1;
 							};
 							id=1328;
 							type="EmptyDetector";
