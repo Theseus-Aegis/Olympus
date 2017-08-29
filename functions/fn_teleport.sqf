@@ -40,7 +40,7 @@ params ["_controller"];
         },
         {
             (_this select 2) params ["_teleportObject"];
-            ACE_player distance _teleportObject < 10
+            ACE_player distance _teleportObject > 10
         },
         {},
         [_teleportObject, _text]
