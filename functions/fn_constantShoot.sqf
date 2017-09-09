@@ -27,7 +27,7 @@ _shooter doTarget _target;
     _args params ["_shooter", "_weapon", "_thisList"];
 
     // Exit and remove PFH if player left trigger
-    if !(ACE_player in _thisList) exitWith {
+    if (_thisList isEqualTo []) exitWith {
         [_pfhId] call CBA_fnc_removePerFrameHandler;
     };
 
