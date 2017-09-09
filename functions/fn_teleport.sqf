@@ -3,7 +3,7 @@
  * Teleports the player from base (this) to teleport locations (objects).
  *
  * Arguments:
- * 0: Interaction object.
+ * 0: Interaction object <OBJECT>
  *
  * Return Value:
  * None
@@ -13,15 +13,17 @@
  */
 #include "..\script_component.hpp"
 
-//define teleport locations here
-private _teleportPosBase = teleportPosBase;
-private _teleportPosAdvRifle = teleportPosAdvRifle;
-private _teleportPosMG = teleportPosMG;
-private _teleportPosCQB = teleportPosCQB;
-private _teleportPosUrban = teleportPosUrban;
-private _teleportPosGL = teleportPosGL;
-private _teleportPos40MM = teleportPosMike;
-
+// Define teleport locations here
+private _teleportLocations = [
+    // [objectVarName, "Display Name"]
+    [teleportPosBase, "Base"],
+    [teleportPosAdvRifle, "Adv. Rifle course"],
+    [teleportPosMG, "MG course"],
+    [teleportPosCQB, "CQB course"],
+    [teleportPosUrban, "Urban City course"],
+    [teleportPosGL, "RPG course"],
+    [teleportPosMike, "40MM course"]
+];
 
 params ["_controller"];
 
@@ -47,12 +49,4 @@ params ["_controller"];
     ] call ACE_Interact_Menu_fnc_createAction;
 
     [_controller, 0, ["ACE_MainActions"], _action] call ACE_Interact_Menu_fnc_addActionToObject;
-} forEach [
-    [teleportPosBase, "Base"],
-    [teleportPosAdvRifle, "Adv. Rifle course"],
-    [teleportPosMG, "MG course"],
-    [teleportPosCQB, "CQB course"],
-    [teleportPosUrban, "Urban City course"],
-    [teleportPosGL, "RPG course"],
-    [teleportPosMike, "40MM course"]
-];
+} forEach _teleportLocations;
