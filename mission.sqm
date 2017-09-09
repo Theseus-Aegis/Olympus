@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2730;
+		nextID=3020;
 	};
 	class Camera
 	{
-		pos[]={6338.248,12.497556,5454.6538};
-		dir[]={-0.81544459,-0.48793012,-0.31145129};
-		up[]={-0.4558239,0.87287879,-0.17409757};
-		aside[]={-0.35680488,-2.8219074e-007,0.93419224};
+		pos[]={6332.333,8.1244173,5454.6577};
+		dir[]={-0.64703131,-0.3866612,-0.65727621};
+		up[]={-0.27127525,0.92220068,-0.27557057};
+		aside[]={-0.71269625,-1.4179386e-007,0.70159078};
 	};
 };
 binarizationWanted=0;
@@ -610,7 +610,7 @@ class AddonsMetaData
 		class Item66
 		{
 			className="A3_Air_F_Heli";
-			name="Arma 3 Helicopters - Aircrafts";
+			name="Arma 3 Helicopters - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -3160,7 +3160,6 @@ class Mission
 							flags=1;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5744;
 							type="Land_Cargo_House_V4_ruins_F";
@@ -3410,7 +3409,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5726;
 							type="Land_HBarrier_1_F";
@@ -3428,7 +3426,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5727;
 							type="Land_HBarrier_1_F";
@@ -3446,7 +3443,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5728;
 							type="Land_HBarrier_1_F";
@@ -3464,7 +3460,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5729;
 							type="Land_HBarrier_1_F";
@@ -3482,7 +3477,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5730;
 							type="Land_BagFence_Long_F";
@@ -3500,7 +3494,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5731;
 							type="Land_BagFence_Long_F";
@@ -3769,7 +3762,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5711;
 							type="Land_HBarrierWall6_F";
@@ -3786,7 +3778,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5745;
 							type="Land_HBarrier_1_F";
@@ -4015,7 +4006,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5716;
 							type="Land_BagFence_Long_F";
@@ -4032,7 +4022,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5717;
 							type="Land_BagFence_Long_F";
@@ -4049,7 +4038,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5718;
 							type="Land_HBarrier_3_F";
@@ -4280,7 +4268,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5712;
 							type="Land_HBarrier_3_F";
@@ -4298,7 +4285,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5713;
 							type="Land_HBarrier_1_F";
@@ -4316,7 +4302,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5714;
 							type="Land_HBarrier_1_F";
@@ -4334,7 +4319,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5715;
 							type="Land_HBarrier_3_F";
@@ -20029,7 +20013,7 @@ class Mission
 							};
 							id=1919;
 							type="Land_Bandage_F";
-							atlOffset=0.0035820007;
+							atlOffset=0.0037555695;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20070,7 +20054,7 @@ class Mission
 							};
 							id=1920;
 							type="Land_Bandage_F";
-							atlOffset=0.0037593842;
+							atlOffset=0.0039329529;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20111,7 +20095,7 @@ class Mission
 							};
 							id=1921;
 							type="Land_Bandage_F";
-							atlOffset=0.0037918091;
+							atlOffset=0.0039653778;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20227,14 +20211,13 @@ class Mission
 								angles[]={6.2132993,0,0.035071474};
 							};
 							side="Empty";
-							flags=4;
 							class Attributes
 							{
 								disableSimulation=1;
 							};
 							id=1922;
 							type="Land_BloodBag_F";
-							atlOffset=0.0037250519;
+							atlOffset=0.81046486;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20268,14 +20251,13 @@ class Mission
 								angles[]={0,5.457603,0};
 							};
 							side="Empty";
-							flags=4;
 							class Attributes
 							{
 								disableSimulation=1;
 							};
 							id=1923;
 							type="Land_BloodBag_F";
-							atlOffset=0.0037784576;
+							atlOffset=0.81157684;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20322,34 +20304,36 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6576.8096,24.46953,5338.0205};
-								angles[]={6.2132993,2.8500984,0.037483942};
+								position[]={6576.8101,24.469332,5338.02};
+								angles[]={6.2133021,2.850105,0.037489671};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=1916;
 							type="Land_CampingTable_F";
-							atlOffset=-0.0038166046;
+							atlOffset=-0.0039997101;
 						};
 						class Item12
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6574.8784,24.352358,5337.3418};
-								angles[]={6.2132993,2.733057,0.034986377};
+								position[]={6574.8789,24.352238,5337.3423};
+								angles[]={6.2133021,2.7330635,0.034993853};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=1918;
 							type="Land_CampingTable_F";
-							atlOffset=-0.0038318634;
+							atlOffset=-0.0040016174;
 						};
 						class Item13
 						{
@@ -20717,7 +20701,7 @@ class Mission
 							};
 							id=1959;
 							type="Land_MobilePhone_smart_F";
-							atlOffset=0.012203217;
+							atlOffset=0.012384415;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24692,7 +24676,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5605;
 							type="Land_HBarrier_3_F";
@@ -24733,7 +24716,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5626;
 							type="Land_HBarrier_5_F";
@@ -26483,7 +26465,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5643;
 							type="Land_BagFence_Long_F";
@@ -26500,7 +26481,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5645;
 							type="Land_BagFence_Long_F";
@@ -26517,7 +26497,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5646;
 							type="Land_BagFence_Long_F";
@@ -26550,7 +26529,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5586;
 							type="Land_BagFence_Round_F";
@@ -26568,7 +26546,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5587;
 							type="Land_BagFence_Round_F";
@@ -26586,7 +26563,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5588;
 							type="Land_BagFence_Round_F";
@@ -26604,7 +26580,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5589;
 							type="Land_BagFence_Round_F";
@@ -26621,7 +26596,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5667;
 							type="Land_BagFence_Round_F";
@@ -26639,7 +26613,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5668;
 							type="Land_BagFence_Round_F";
@@ -26656,7 +26629,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5669;
 							type="Land_BagFence_Round_F";
@@ -26673,7 +26645,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5670;
 							type="Land_BagFence_Round_F";
@@ -26691,7 +26662,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5648;
 							type="Land_BagFence_Short_F";
@@ -26708,7 +26678,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5649;
 							type="Land_BagFence_Short_F";
@@ -26725,7 +26694,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5650;
 							type="Land_BagFence_Short_F";
@@ -26742,7 +26710,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5681;
 							type="Land_BagFence_Short_F";
@@ -26759,7 +26726,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5682;
 							type="Land_BagFence_Short_F";
@@ -26776,7 +26742,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5683;
 							type="Land_BagFence_Short_F";
@@ -26793,7 +26758,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5684;
 							type="Land_BagFence_Short_F";
@@ -28495,7 +28459,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6315.9707,5.4525862,5450.4321};
+								position[]={6313.5,5.228364,5452.603};
 								angles[]={6.2581916,2.5024137,6.223258};
 							};
 							side="Empty";
@@ -28505,7 +28469,7 @@ class Mission
 							};
 							id=1406;
 							type="Land_HBarrier_Big_F";
-							atlOffset=2.5272369e-005;
+							atlOffset=-0.44027996;
 						};
 						class Item70
 						{
@@ -28594,7 +28558,7 @@ class Mission
 						};
 					};
 					id=5811;
-					atlOffset=0.019838333;
+					atlOffset=0.018827915;
 				};
 				class Item3
 				{
@@ -29722,7 +29686,7 @@ class Mission
 				};
 			};
 			id=5808;
-			atlOffset=1.0340548;
+			atlOffset=1.0340056;
 		};
 		class Item167
 		{
@@ -55720,18 +55684,18 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3120.7915,5.9171033,6053.2959};
+								position[]={3120.791,5.916821,6053.2959};
 								angles[]={6.2431998,4.6551247,0.13173746};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
-								init="this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];";
+								disableSimulation=1;
 							};
 							id=5161;
 							type="Land_CampingTable_F";
-							atlOffset=-0.0037827492;
+							atlOffset=-0.0040001869;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -55864,11 +55828,11 @@ class Mission
 						};
 					};
 					id=5880;
-					atlOffset=0.41751242;
+					atlOffset=0.41750765;
 				};
 			};
 			id=5877;
-			atlOffset=1.0809436;
+			atlOffset=1.0809412;
 		};
 		class Item174
 		{
@@ -76281,7 +76245,7 @@ class Mission
 							};
 							id=1635;
 							type="Land_PencilBlue_F";
-							atlOffset=0.0037527084;
+							atlOffset=0.0038013458;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -76322,7 +76286,7 @@ class Mission
 							};
 							id=1633;
 							type="Land_Notepad_F";
-							atlOffset=0.0037460327;
+							atlOffset=0.0037946701;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -76396,7 +76360,7 @@ class Mission
 							};
 							id=1634;
 							type="Land_File2_F";
-							atlOffset=0.013605118;
+							atlOffset=0.013653755;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -76460,20 +76424,21 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6398.7744,13.815306,5446.5771};
-								angles[]={0,2.2854834,0};
+								position[]={6398.7739,13.815257,5446.5771};
+								angles[]={0,2.2854912,0};
 							};
 							side="Empty";
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=1638;
 							type="Land_CampingTable_F";
-							atlOffset=2.4157705;
+							atlOffset=2.4157219;
 						};
 					};
 					id=5828;
-					atlOffset=0.30632687;
+					atlOffset=0.30630302;
 				};
 				class Item8
 				{
@@ -76506,7 +76471,7 @@ class Mission
 									};
 									id=1636;
 									type="Land_Laptop_unfolded_F";
-									atlOffset=0.0039453506;
+									atlOffset=0.003993988;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -76567,7 +76532,7 @@ class Mission
 									};
 									id=1639;
 									type="Land_Laptop_unfolded_F";
-									atlOffset=0.0029459;
+									atlOffset=0.0029945374;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -76613,7 +76578,7 @@ class Mission
 								};
 							};
 							id=5830;
-							atlOffset=0.0034456253;
+							atlOffset=0.0034942627;
 						};
 						class Item1
 						{
@@ -77353,7 +77318,7 @@ class Mission
 				};
 			};
 			id=5816;
-			atlOffset=4.1495872;
+			atlOffset=4.1495814;
 		};
 		class Item180
 		{
@@ -77967,7 +77932,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=6026;
 							type="Land_Wreck_Ural_F";
@@ -77984,7 +77948,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=6025;
 							type="Land_Wreck_Slammer_F";
@@ -78001,7 +77964,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=6028;
 							type="Land_Wreck_BMP2_F";
@@ -78113,7 +78075,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5980;
 							type="Land_BagFence_Corner_F";
@@ -78129,7 +78090,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5981;
 							type="Land_BagFence_Corner_F";
@@ -78147,7 +78107,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5982;
 							type="Land_BagFence_Corner_F";
@@ -78164,7 +78123,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5983;
 							type="Land_BagFence_Corner_F";
@@ -78181,7 +78139,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5984;
 							type="Land_BagFence_Long_F";
@@ -78198,7 +78155,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5985;
 							type="Land_BagFence_Long_F";
@@ -78215,7 +78171,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5986;
 							type="Land_BagFence_Long_F";
@@ -78232,7 +78187,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5987;
 							type="Land_BagFence_Long_F";
@@ -78249,7 +78203,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5988;
 							type="Land_BagFence_Long_F";
@@ -78266,7 +78219,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5989;
 							type="Land_BagFence_Long_F";
@@ -78283,7 +78235,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5990;
 							type="Land_BagFence_Long_F";
@@ -78300,7 +78251,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5991;
 							type="Land_BagFence_Long_F";
@@ -78317,7 +78267,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5992;
 							type="Land_BagFence_Long_F";
@@ -78334,7 +78283,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5993;
 							type="Land_BagFence_Long_F";
@@ -78351,7 +78299,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
 							};
 							id=5994;
 							type="Land_BagFence_Short_F";
