@@ -22,6 +22,7 @@ respawnDialog = 0; // 0/1 to disable the scoreboard from showing automatically
 
 disabledAI = 1; // Disables AI for Playable Units
 enableDebugConsole = 1; // Enables Debug Console in Pause menu (1 = Hosts and Admins)
+enableTargetDebug = 1; // Enables Target Debug in Pause menu
 
 forceRotorLibSimulation = 1;
 
