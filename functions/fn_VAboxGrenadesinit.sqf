@@ -29,12 +29,15 @@
 //Init stuff
 params ["_crate"];
 
-["AmmoboxInit", [_crate, false, {true}]] spawn BIS_fnc_arsenal;
-
 //Populate with predefined items and whatever is already in the crate
-[_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call BIS_fnc_addVirtualMagazineCargo;
+[_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call ace_arsenal_fnc_addVirtualItems;
+
+//Adds arsenal option
+_crate addAction ["Arsenal",{
+    [_this select 0, player, false] call ace_arsenal_fnc_openBox;
+},_crate, 2, true, true];
 
 //Adds full arsenal option
 _crate addAction ["Full Arsenal",{
-    ["Open",true] spawn BIS_fnc_arsenal;
+    [_this select 0, player, true] call ace_arsenal_fnc_openBox;
 },_crate, 1, false, true, "", "2 > ACE_player distance _target"];
