@@ -237,10 +237,7 @@
 params ["_crate"];
 
 //Populate with predefined items and whatever is already in the crate
-[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call ace_arsenal_fnc_addVirtualItems;
-[_crate, (magazineCargo _crate) + AVAILABLE_MG_MAGAZINES] call ace_arsenal_fnc_addVirtualItems;
-[_crate, (weaponCargo _crate) + AVAILABLE_MG] call ace_arsenal_fnc_addVirtualItems;
-[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call ace_arsenal_fnc_addVirtualItems;
 
 //Adds arsenal option
 _Action = [QGVAR(Arsenal),"Arsenal","",{[_this select 0, player, false] call ace_arsenal_fnc_openBox;},{true}] call ace_interact_menu_fnc_createAction;
