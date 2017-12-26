@@ -268,10 +268,5 @@ params ["_crate"];
 //Populate with predefined items and whatever is already in the crate
 [_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call ace_arsenal_fnc_addVirtualItems;
 
-//Adds arsenal option
-_Action = [QGVAR(Arsenal),"Arsenal","",{[_this select 0, player, false] call ace_arsenal_fnc_openBox;},{true}] call ace_interact_menu_fnc_createAction;
-[_crate, 0, ["ACE_MainActions"], _Action] call ace_interact_menu_fnc_addActionToObject;
-
-//Adds full arsenal option
-_fullAction = [QGVAR(fullArsenal),"Full Arsenal","",{[_this select 0, player, true] call ace_arsenal_fnc_openBox;},{true}] call ace_interact_menu_fnc_createAction;
-[_crate, 0, ["ACE_MainActions"], _fullAction] call ace_interact_menu_fnc_addActionToObject;
+//Initialize arsenal
+[_crate] call TAC_Olympus_fnc_VAboxArsenalinit
