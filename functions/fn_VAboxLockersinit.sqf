@@ -266,7 +266,7 @@
 params ["_crate"];
 
 // Populate with predefined items and whatever is already in the crate
-[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call BIS_fnc_addVirtualBackpackCargo;
-[_crate, (itemCargo _crate) + AVAILABLE_HEADGEAR + AVAILABLE_GOGGLES + AVAILABLE_UNIFORMS + AVAILABLE_VESTS] call BIS_fnc_addVirtualItemCargo;
+[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (itemCargo _crate) + AVAILABLE_HEADGEAR + AVAILABLE_GOGGLES + AVAILABLE_UNIFORMS + AVAILABLE_VESTS] call ace_arsenal_fnc_addVirtualItems;
 
 [_crate] call TAC_Olympus_fnc_VAboxArsenalinit

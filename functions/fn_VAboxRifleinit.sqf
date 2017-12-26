@@ -303,8 +303,8 @@
 params ["_crate"];
 
 // Populate with predefined items and whatever is already in the crate
-[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call BIS_fnc_addVirtualItemCargo;
-[_crate, (magazineCargo _crate) + AVAILABLE_RIFLE_MAGAZINES] call BIS_fnc_addVirtualMagazineCargo;
-[_crate, (weaponCargo _crate) + AVAILABLE_RIFLES] call BIS_fnc_addVirtualWeaponCargo;
+[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (magazineCargo _crate) + AVAILABLE_RIFLE_MAGAZINES] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (weaponCargo _crate) + AVAILABLE_RIFLES] call ace_arsenal_fnc_addVirtualItems;
 
 [_crate] call TAC_Olympus_fnc_VAboxArsenalinit
