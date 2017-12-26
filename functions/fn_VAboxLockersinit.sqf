@@ -266,13 +266,16 @@
 //Init stuff
 params ["_crate"];
 
-["AmmoboxInit", [_crate, false, {true}]] spawn BIS_fnc_arsenal;
-
 //Populate with predefined items and whatever is already in the crate
-[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call BIS_fnc_addVirtualBackpackCargo;
-[_crate, (itemCargo _crate) + AVAILABLE_HEADGEAR + AVAILABLE_GOGGLES + AVAILABLE_UNIFORMS + AVAILABLE_VESTS] call BIS_fnc_addVirtualItemCargo;
+[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (itemCargo _crate) + AVAILABLE_HEADGEAR + AVAILABLE_GOGGLES + AVAILABLE_UNIFORMS + AVAILABLE_VESTS] call ace_arsenal_fnc_addVirtualItems;
+
+//Adds arsenal option
+_crate addAction ["Arsenal",{
+    [_this select 0, player, false] call ace_arsenal_fnc_openBox;
+},_crate, 2, true, true];
 
 //Adds full arsenal option
 _crate addAction ["Full Arsenal",{
-    ["Open",true] spawn BIS_fnc_arsenal;
+    [_this select 0, player, true] call ace_arsenal_fnc_openBox;
 },_crate, 1, false, true, "", "2 > ACE_player distance _target"];
