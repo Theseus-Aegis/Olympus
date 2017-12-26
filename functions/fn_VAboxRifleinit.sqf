@@ -13,7 +13,7 @@
  */
 #include "..\script_component.hpp"
 
-//Lists of items to include
+// Lists of items to include
 #define AVAILABLE_RIFLES [\
     "arifle_MX_F",\
     "arifle_MXC_F",\
@@ -299,17 +299,12 @@
     "RH_TD_ACB_g"\
 ]
 
-//Init stuff
+// Init stuff
 params ["_crate"];
 
-["AmmoboxInit", [_crate, false, {true}]] spawn BIS_fnc_arsenal;
+// Populate with predefined items and whatever is already in the crate
+[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (magazineCargo _crate) + AVAILABLE_RIFLE_MAGAZINES] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (weaponCargo _crate) + AVAILABLE_RIFLES] call ace_arsenal_fnc_addVirtualItems;
 
-//Populate with predefined items and whatever is already in the crate
-[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call BIS_fnc_addVirtualItemCargo;
-[_crate, (magazineCargo _crate) + AVAILABLE_RIFLE_MAGAZINES] call BIS_fnc_addVirtualMagazineCargo;
-[_crate, (weaponCargo _crate) + AVAILABLE_RIFLES] call BIS_fnc_addVirtualWeaponCargo;
-
-//Adds full arsenal option
-_crate addAction ["Full Arsenal",{
-    ["Open",true] spawn BIS_fnc_arsenal;
-},_crate, 1, false, true, "", "2 > ACE_player distance _target"];
+[_crate] call TAC_Olympus_fnc_VAboxArsenalinit

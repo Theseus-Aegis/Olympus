@@ -13,7 +13,7 @@
  */
 #include "..\script_component.hpp"
 
-//Lists of items to include
+// Lists of items to include
 #define AVAILABLE_PISTOLS [\
     "hgun_P07_F",\
     "hgun_rook40_f",\
@@ -180,17 +180,12 @@
     "RH_x300"\
 ]
 
-//Init stuff
+// Init stuff
 params ["_crate"];
 
-["AmmoboxInit", [_crate, false, {true}]] spawn BIS_fnc_arsenal;
+// Populate with predefined items and whatever is already in the crate
+[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (magazineCargo _crate) + AVAILABLE_PISTOL_MAGAZINES + AVAILABLE_SMG_MAGAZINES] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (weaponCargo _crate) + AVAILABLE_PISTOLS + AVAILABLE_SMGS] call ace_arsenal_fnc_addVirtualItems;
 
-//Populate with predefined items and whatever is already in the crate
-[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call BIS_fnc_addVirtualItemCargo;
-[_crate, (magazineCargo _crate) + AVAILABLE_PISTOL_MAGAZINES + AVAILABLE_SMG_MAGAZINES] call BIS_fnc_addVirtualMagazineCargo;
-[_crate, (weaponCargo _crate) + AVAILABLE_PISTOLS + AVAILABLE_SMGS] call BIS_fnc_addVirtualWeaponCargo;
-
-//Adds full arsenal option
-_crate addAction ["Full Arsenal",{
-    ["Open",true] spawn BIS_fnc_arsenal;
-},_crate, 1, false, true, "", "2 > ACE_player distance _target"];
+[_crate] call TAC_Olympus_fnc_VAboxArsenalinit

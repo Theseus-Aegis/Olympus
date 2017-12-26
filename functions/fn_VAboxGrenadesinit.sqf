@@ -13,7 +13,7 @@
  */
 #include "..\script_component.hpp"
 
-//Lists of items to include
+// Lists of items to include
 
 #define AVAILABLE_GRENADES [\
     "HandGrenade",\
@@ -26,15 +26,10 @@
     "SmokeShellPurple"\
 ]
 
-//Init stuff
+// Init stuff
 params ["_crate"];
 
-["AmmoboxInit", [_crate, false, {true}]] spawn BIS_fnc_arsenal;
+// Populate with predefined items and whatever is already in the crate
+[_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call ace_arsenal_fnc_addVirtualItems;
 
-//Populate with predefined items and whatever is already in the crate
-[_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call BIS_fnc_addVirtualMagazineCargo;
-
-//Adds full arsenal option
-_crate addAction ["Full Arsenal",{
-    ["Open",true] spawn BIS_fnc_arsenal;
-},_crate, 1, false, true, "", "2 > ACE_player distance _target"];
+[_crate] call TAC_Olympus_fnc_VAboxArsenalinit

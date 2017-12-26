@@ -13,7 +13,7 @@
  */
 #include "..\script_component.hpp"
 
-//Lists of items to include
+// Lists of items to include
 #define AVAILABLE_UNIFORMS [\
     "U_B_HeliPilotCoveralls",\
     "U_I_HeliPilotCoveralls",\
@@ -262,17 +262,11 @@
     "tacs_Vest_PlateCarrier_MARPAT",\
     "tacs_Vest_Tactical_DarkBlack"\
 ]
-
-//Init stuff
+// Init stuff
 params ["_crate"];
 
-["AmmoboxInit", [_crate, false, {true}]] spawn BIS_fnc_arsenal;
+// Populate with predefined items and whatever is already in the crate
+[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (itemCargo _crate) + AVAILABLE_HEADGEAR + AVAILABLE_GOGGLES + AVAILABLE_UNIFORMS + AVAILABLE_VESTS] call ace_arsenal_fnc_addVirtualItems;
 
-//Populate with predefined items and whatever is already in the crate
-[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call BIS_fnc_addVirtualBackpackCargo;
-[_crate, (itemCargo _crate) + AVAILABLE_HEADGEAR + AVAILABLE_GOGGLES + AVAILABLE_UNIFORMS + AVAILABLE_VESTS] call BIS_fnc_addVirtualItemCargo;
-
-//Adds full arsenal option
-_crate addAction ["Full Arsenal",{
-    ["Open",true] spawn BIS_fnc_arsenal;
-},_crate, 1, false, true, "", "2 > ACE_player distance _target"];
+[_crate] call TAC_Olympus_fnc_VAboxArsenalinit
