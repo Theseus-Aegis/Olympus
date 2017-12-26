@@ -233,11 +233,13 @@
     "tacs_Backpack_Kitbag_DarkBlack"\
 ]
 
-//Init stuff
+// Init stuff
 params ["_crate"];
 
-//Populate with predefined items and whatever is already in the crate
-[_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call ace_arsenal_fnc_addVirtualItems;
+// Populate with predefined items and whatever is already in the crate
+[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call BIS_fnc_addVirtualItemCargo;
+[_crate, (magazineCargo _crate) + AVAILABLE_MG_MAGAZINES] call BIS_fnc_addVirtualMagazineCargo;
+[_crate, (weaponCargo _crate) + AVAILABLE_MG] call BIS_fnc_addVirtualWeaponCargo;
+[_crate, (backpackCargo _crate) + AVAILABLE_BACKPACKS] call BIS_fnc_addVirtualBackpackCargo;
 
-//Initialize arsenal
 [_crate] call TAC_Olympus_fnc_VAboxArsenalinit

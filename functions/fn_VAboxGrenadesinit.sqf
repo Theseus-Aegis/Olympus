@@ -13,7 +13,7 @@
  */
 #include "..\script_component.hpp"
 
-//Lists of items to include
+// Lists of items to include
 
 #define AVAILABLE_GRENADES [\
     "HandGrenade",\
@@ -26,11 +26,10 @@
     "SmokeShellPurple"\
 ]
 
-//Init stuff
+// Init stuff
 params ["_crate"];
 
-//Populate with predefined items and whatever is already in the crate
+// Populate with predefined items and whatever is already in the crate
 [_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call ace_arsenal_fnc_addVirtualItems;
 
-//Initialize arsenal
 [_crate] call TAC_Olympus_fnc_VAboxArsenalinit

@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Initializes 2 ace arsenals on an object (1 full, 1 partial)
+ * Initializes 2 ACE Arsenals on an object (1 full, 1 partial).
  *
  * Arguments:
  * 0: Crate <OBJECT>
@@ -9,14 +9,13 @@
  * None
  *
  * Example:
- * [crate] call TAC_Olympus_fnc_VAboxArsenalinit
+ * [crate] call TAC_Olympus_fnc_VAboxArsenalInit
  */
 #include "..\script_component.hpp"
 
-//Init stuff
 params["_crate"];
 
-//Adds arsenal option
+//Add arsenal option
 private _action = [
   QGVAR(arsenal),
   "Arsenal",
@@ -27,7 +26,7 @@ private _action = [
 
 [_crate, 0, ["ACE_MainActions"], _Action] call ace_interact_menu_fnc_addActionToObject;
 
-//Adds full arsenal option
+//Add full arsenal option
 private _fullAction = [
   QGVAR(fullArsenal),
   "Full Arsenal",

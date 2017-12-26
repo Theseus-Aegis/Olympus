@@ -3,7 +3,7 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class functions {
             file = "functions";
-            class VAboxArsenalinit;
+            class VAboxArsenalInit;
             class VAboxGrenadesInit;
             class VAboxLockersInit;
             class VAboxMarksmanInit;
