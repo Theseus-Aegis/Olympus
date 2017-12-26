@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3310;
+		nextID=3600;
 	};
 	class Camera
 	{
-		pos[]={6374.4248,16.73904,5461.2529};
-		dir[]={-0.77296364,-0.47710207,0.4183149};
-		up[]={-0.41960829,0.87883896,0.22708604};
-		aside[]={0.47597605,-5.5762939e-007,0.87951177};
+		pos[]={6402.0605,15.077332,5453.4419};
+		dir[]={-0.78253216,-0.30016577,0.54558617};
+		up[]={-0.24626368,0.95386899,0.17169788};
+		aside[]={0.57195991,-7.0070382e-007,0.82035899};
 	};
 };
 binarizationWanted=0;
@@ -10719,7 +10719,7 @@ class Mission
 							};
 							id=1206;
 							type="Land_CampingTable_F";
-							atlOffset=0.058632851;
+							atlOffset=0.058697224;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -10760,7 +10760,7 @@ class Mission
 							};
 							id=1207;
 							type="Land_CampingTable_F";
-							atlOffset=0.050949097;
+							atlOffset=0.050951004;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -10801,7 +10801,7 @@ class Mission
 							};
 							id=1208;
 							type="Land_CampingTable_F";
-							atlOffset=0.01649332;
+							atlOffset=0.016495228;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11309,7 +11309,7 @@ class Mission
 							};
 							id=1209;
 							type="Land_CampingTable_F";
-							atlOffset=0.040834427;
+							atlOffset=0.040835381;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -76496,14 +76496,14 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={6327.9712,5.2179079,5496.8706};
-								angles[]={0,0.60958177,0};
+								position[]={6290.1519,5.217803,5524.499};
+								angles[]={0,0.60957366,0};
 							};
-							areaSize[]={10.730968,0,30.573854};
+							areaSize[]={102.826,0,43.659};
 							flags=1;
 							id=6061;
 							type="ModuleHideTerrainObjects_F";
-							atlOffset=-0.27819061;
+							atlOffset=0.90340233;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -76521,7 +76521,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=15;
+											value=7;
 										};
 									};
 								};
@@ -76549,7 +76549,7 @@ class Mission
 						};
 					};
 					id=5826;
-					atlOffset=-0.7853055;
+					atlOffset=1.9430945;
 				};
 				class Item6
 				{
@@ -77895,7 +77895,7 @@ class Mission
 				};
 			};
 			id=5816;
-			atlOffset=4.2637248;
+			atlOffset=4.7683291;
 		};
 		class Item180
 		{
