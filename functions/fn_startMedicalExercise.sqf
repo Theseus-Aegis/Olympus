@@ -57,8 +57,8 @@ if (isNull _mine) then {
     // Apply damage to all victims
     // 'addDamageToUnit', 'setCardiacArrest' and 'adjustPainLevel' have to be called local to the unit
     {
-        [QGVAR(addDamageToUnit), [_x, 0.8, "body", "explosive"], _x] call CBA_fnc_targetEvent;
-        [QGVAR(adjustPainLevel), [_x, 0.6], _x] call CBA_fnc_targetEvent;
+        [QGVAR(addDamageToUnit), [_x, 0.1, "body", "explosive"], _x] call CBA_fnc_targetEvent;
+        [QGVAR(adjustPainLevel), [_x, 0.2], _x] call CBA_fnc_targetEvent;
     } forEach _victims;
 
     // Apply damage to specific victims
@@ -69,22 +69,22 @@ if (isNull _mine) then {
     // Victim 1
     [QGVAR(setCardiacArrest), [_victim1], _victim1] call CBA_fnc_targetEvent;
     [{
-        [QGVAR(addDamageToUnit), [_this, 0.6, "leg_l", "grenade"], _this] call CBA_fnc_targetEvent;
+        [QGVAR(addDamageToUnit), [_this, 0.1, "leg_l", "grenade"], _this] call CBA_fnc_targetEvent;
     }, _victim1, 1] call CBA_fnc_waitAndExecute;
     [{
-        [QGVAR(addDamageToUnit), [_this, 0.3, "leg_r", "stab"], _this] call CBA_fnc_targetEvent;
+        [QGVAR(addDamageToUnit), [_this, 0.2, "leg_r", "stab"], _this] call CBA_fnc_targetEvent;
     }, _victim1, 2] call CBA_fnc_waitAndExecute;
     [{
-        [QGVAR(addDamageToUnit), [_this, 0.3, "hand_l", "bullet"], _this] call CBA_fnc_targetEvent;
+        [QGVAR(addDamageToUnit), [_this, 0.1, "hand_l", "bullet"], _this] call CBA_fnc_targetEvent;
     }, _victim1, 3] call CBA_fnc_waitAndExecute;
 
     // Victim 2
     [_victim2, true, 10, true] call ace_medical_fnc_setUnconscious; // Handles locality
     [{
-        [QGVAR(addDamageToUnit), [_this, 0.5, "hand_r", "stab"], _this] call CBA_fnc_targetEvent;
+        [QGVAR(addDamageToUnit), [_this, 0.2, "hand_r", "stab"], _this] call CBA_fnc_targetEvent;
     }, _victim2, 1] call CBA_fnc_waitAndExecute;
     [{
-        [QGVAR(addDamageToUnit), [_this, 0.6, "leg_r", "explosive"], _this] call CBA_fnc_targetEvent;
+        [QGVAR(addDamageToUnit), [_this, 0.3, "leg_r", "explosive"], _this] call CBA_fnc_targetEvent;
     }, _victim2, 2] call CBA_fnc_waitAndExecute;
 }, [_victims, _controller, _runWaypoint], 30, {
     params ["", "_controller"];
