@@ -20,7 +20,11 @@ private _action = [
     QGVAR(arsenal),
     "Arsenal",
     "",
-    {[_this select 0, _this select 1, false] call ace_arsenal_fnc_openBox;},
+    {
+    params ["_target", "_player"];
+
+    [{[_this select 0, _this select 1, false] call ace_arsenal_fnc_openBox}, [_target, _player]] call CBA_fnc_execNextFrame;
+    },
     {true}
 ] call ace_interact_menu_fnc_createAction;
 
@@ -31,7 +35,11 @@ private _fullAction = [
     QGVAR(fullArsenal),
     "Full Arsenal",
     "",
-    {[_this select 0, _this select 1, true] call ace_arsenal_fnc_openBox;},
+    {
+    params ["_target", "_player"];
+
+    [{[_this select 0, _this select 1, true] call ace_arsenal_fnc_openBox}, [_target, _player]] call CBA_fnc_execNextFrame;
+    },
     {true}
 ] call ace_interact_menu_fnc_createAction;
 
