@@ -19,7 +19,6 @@ private _info = _controller getVariable QGVAR(MedicalExerciseInfo);
 _info params ["_objects", "_victimsClass", "_victimsStartPos", "_mineClass", "_mineStartPos"];
 _objects params ["_victims", "_mine"];
 
-
 // Delete used victims
 {
     deleteVehicle _x;
