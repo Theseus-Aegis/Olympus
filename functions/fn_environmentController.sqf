@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Allows switching between different time of day.
+ * Allows switching between different time of day and month.
  *
  * Arguments:
  * 0: Crate <OBJECT>
@@ -32,7 +32,7 @@ private _timeAction = [
 
 // 0200
 private _0200Action = [
-    QGVAR(dawnAction),
+    QGVAR(0200Action),
     "0200",
     "",
     {
@@ -43,7 +43,7 @@ private _0200Action = [
 
 // 0400
 private _0400Action = [
-    QGVAR(noonAction),
+    QGVAR(0400Action),
     "0400",
     "",
     {
@@ -54,7 +54,7 @@ private _0400Action = [
 
 // 0600
 private _0600Action = [
-    QGVAR(noonAction),
+    QGVAR(0600Action),
     "0600",
     "",
     {
@@ -65,7 +65,7 @@ private _0600Action = [
 
 // 0800
 private _0800Action = [
-    QGVAR(noonAction),
+    QGVAR(0800Action),
     "0800",
     "",
     {
@@ -76,7 +76,7 @@ private _0800Action = [
 
 // 1000
 private _1000Action = [
-    QGVAR(noonAction),
+    QGVAR(1000Action),
     "1000",
     "",
     {
@@ -87,7 +87,7 @@ private _1000Action = [
 
 // 1200
 private _1200Action = [
-    QGVAR(noonAction),
+    QGVAR(1200Action),
     "1200",
     "",
     {
@@ -98,7 +98,7 @@ private _1200Action = [
 
 // 1400
 private _1400Action = [
-    QGVAR(noonAction),
+    QGVAR(1400Action),
     "1400",
     "",
     {
@@ -109,7 +109,7 @@ private _1400Action = [
 
 // 1600
 private _1600Action = [
-    QGVAR(noonAction),
+    QGVAR(1600Action),
     "1600",
     "",
     {
@@ -120,7 +120,7 @@ private _1600Action = [
 
 // 1800
 private _1800Action = [
-    QGVAR(noonAction),
+    QGVAR(1800Action),
     "1800",
     "",
     {
@@ -131,7 +131,7 @@ private _1800Action = [
 
 // 2000
 private _2000Action = [
-    QGVAR(noonAction),
+    QGVAR(2000Action),
     "2000",
     "",
     {
@@ -142,7 +142,7 @@ private _2000Action = [
 
 // 2200
 private _2200Action = [
-    QGVAR(noonAction),
+    QGVAR(2200Action),
     "2200",
     "",
     {
@@ -153,7 +153,7 @@ private _2200Action = [
 
 // 2400
 private _2400Action = [
-    QGVAR(noonAction),
+    QGVAR(2400Action),
     "2400",
     "",
     {
@@ -334,3 +334,153 @@ private _decAction = [
 [_controller, 0, ["ACE_MainActions", QGVAR(dateAction)], _octAction] call ace_interact_menu_fnc_addActionToObject;
 [_controller, 0, ["ACE_MainActions", QGVAR(dateAction)], _novAction] call ace_interact_menu_fnc_addActionToObject;
 [_controller, 0, ["ACE_MainActions", QGVAR(dateAction)], _decAction] call ace_interact_menu_fnc_addActionToObject;
+
+
+
+
+// Add date action
+private _fogAction = [
+    QGVAR(fogAction),
+    "Set Fog",
+    "",
+    {
+
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+[_controller, 0, ["ACE_MainActions"], _fogAction] call ace_interact_menu_fnc_addActionToObject;
+
+
+// 0.0
+private _fog0Action = [
+    QGVAR(fog0Action),
+    "0.0",
+    "",
+    {
+        1 setFog 0;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.1
+private _fog1Action = [
+    QGVAR(fog1Action),
+    "0.1",
+    "",
+    {
+        1 setFog 0.1;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.2
+private _fog2Action = [
+    QGVAR(fog2Action),
+    "0.2",
+    "",
+    {
+        1 setFog 0.2;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.3
+private _fog3Action = [
+    QGVAR(fog3Action),
+    "0.3",
+    "",
+    {
+        1 setFog 0.3;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.4
+private _fog4Action = [
+    QGVAR(fog4Action),
+    "0.4",
+    "",
+    {
+        1 setFog 0.4;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.5
+private _fog5Action = [
+    QGVAR(fog5Action),
+    "0.5",
+    "",
+    {
+        1 setFog 0.5;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.6
+private _fog6Action = [
+    QGVAR(fog6Action),
+    "0.6",
+    "",
+    {
+        1 setFog 0.6;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.7
+private _fog7Action = [
+    QGVAR(fog7Action),
+    "0.7",
+    "",
+    {
+        1 setFog 0.7;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.8
+private _fog8Action = [
+    QGVAR(fog8Action),
+    "0.8",
+    "",
+    {
+        1 setFog 0.8;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 0.9
+private _fog9Action = [
+    QGVAR(fog9Action),
+    "0.9",
+    "",
+    {
+        1 setFog 0.9;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+// 1.0
+private _fog10Action = [
+    QGVAR(fog10Action),
+    "1.0",
+    "",
+    {
+        1 setFog 1;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog0Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog1Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog2Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog3Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog4Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog5Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog6Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog7Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog8Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog9Action] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _fog10Action] call ace_interact_menu_fnc_addActionToObject;
