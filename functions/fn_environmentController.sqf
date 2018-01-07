@@ -21,9 +21,7 @@ private _timeAction = [
     QGVAR(timeAction),
     "Set Time",
     "",
-    {
-
-    },
+    {},
     {true}
 ] call ace_interact_menu_fnc_createAction;
 
@@ -70,9 +68,7 @@ private _dateAction = [
     QGVAR(dateAction),
     "Set Date",
     "",
-    {
-
-    },
+    {},
     {true}
 ] call ace_interact_menu_fnc_createAction;
 
@@ -120,39 +116,37 @@ private _fogAction = [
     QGVAR(fogAction),
     "Set Fog",
     "",
-    {
-
-    },
+    {},
     {true}
 ] call ace_interact_menu_fnc_createAction;
 
 [_controller, 0, ["ACE_MainActions"], _fogAction] call ace_interact_menu_fnc_addActionToObject;
 
 private _fogSettings = [
-    // [fogValue, "Display Name"]
-    [0, "0.0"],
-    [0.1, "0.1"],
-    [0.2, "0.2"],
-    [0.3, "0.3"],
-    [0.4, "0.4"],
-    [0.5, "0.5"],
-    [0.6, "0.6"],
-    [0.7, "0.7"],
-    [0.8, "0.8"],
-    [0.9, "0.9"],
-    [1, "1.0"]
+    // [fogValue]
+    [0.0],
+    [0.1],
+    [0.2],
+    [0.3],
+    [0.4],
+    [0.5],
+    [0.6],
+    [0.7],
+    [0.8],
+    [0.9],
+    [1.0]
 ];
 
 {
-    _x params ["_fogLevel", "_fogText"];
+    _x params ["_fogLevel"];
 
     private _action = [
-        format [QGVAR(fog_%1), _fogText],
-        _fogText,
+        format [QGVAR(fog_%1), _fogLevel],
+        str (_fogLevel),
         "",
         {
             (_this select 2) params ["_fogLevel"];
-            1 setFog _fogLevel;
+            [QGVAR(setFog), [_fogLevel]] call CBA_fnc_serverEvent;
         },
         {true},
         {},
