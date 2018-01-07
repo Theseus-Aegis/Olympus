@@ -54,4 +54,8 @@
     };
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(setTime), {skipTime ((_this select 0) - daytime + 24 ) % 24;}] call CBA_fnc_addEventHandler;
+
+[QGVAR(setDate), {setDate (_this select 0)}] call CBA_fnc_addEventHandler;
+
 [QGVAR(setFog), {1 setFog (_this select 0)}] call CBA_fnc_addEventHandler;

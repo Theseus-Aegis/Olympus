@@ -52,7 +52,7 @@ private _timeSettings = [
         "",
         {
             (_this select 2) params ["_time"];
-            skipTime (_time - daytime + 24 ) % 24;
+            [QGVAR(setTime), [_time]] call CBA_fnc_globalEvent;
         },
         {true},
         {},
@@ -100,7 +100,7 @@ private _dateSettings = [
         {
             (_this select 2) params ["_dateFloat"];
             _date = numberToDate [2018, _dateFloat];
-            setDate _date;
+            [QGVAR(setDate), [_date]] call CBA_fnc_globalEvent;
         },
         {true},
         {},
@@ -146,7 +146,7 @@ private _fogSettings = [
         "",
         {
             (_this select 2) params ["_fogLevel"];
-            [QGVAR(setFog), [_fogLevel]] call CBA_fnc_serverEvent;
+            [QGVAR(setFog), [_fogLevel]] call CBA_fnc_globalEvent;
         },
         {true},
         {},
