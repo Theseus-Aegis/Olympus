@@ -3,7 +3,7 @@
 // environmentController eventHandlers
 [QGVAR(setTime), {
     skipTime ((_this select 0) - daytime + 24 ) % 24; // Skip forward to a specific
-    timeforceWeatherChange;
+    forceWeatherChange;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(setDate), {
