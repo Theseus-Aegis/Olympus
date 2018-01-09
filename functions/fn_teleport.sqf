@@ -36,7 +36,7 @@ params ["_controller"];
         "",
         {
             (_this select 2) params ["_teleportObject", "_text"];
-            titleText [["Fast travelling to", _text, "..."] joinString " ", "BLACK IN", 1];
+            titleText [["Fast travelling to", _text, "..."] joinString " ", "BLACK IN", 2];
             ACE_player setPosASL (getPosASL _teleportObject);
             titleFadeOut 1;
         },
