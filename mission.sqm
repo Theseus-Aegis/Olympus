@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=10;
+	toggles=1034;
 	class ItemIDProvider
 	{
 		nextID=6062;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4035;
+		nextID=3600;
 	};
 	class Camera
 	{
@@ -4581,7 +4581,6 @@ class Mission
 							class Attributes
 							{
 								init="call{[this] call TAC_Olympus_fnc_TargetGroupPopUps;}";
-								init="call{[this] call TAC_Olympus_fnc_TargetGroupPopUps;" \n "this setObjectTexture [0,""\x\tac\addons\resources\Olympus\MGTablet.paa""];}";
 								disableSimulation=1;
 							};
 							id=5915;
@@ -21729,7 +21728,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item10
@@ -22093,7 +22092,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{[this] call TAC_Olympus_fnc_teleport;" \n "this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];}";
+								init="call{[this] call TAC_Olympus_fnc_teleport;}";
 								name="mainArea";
 								disableSimulation=1;
 							};
@@ -22117,7 +22116,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="";
+											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22154,7 +22153,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{[this] call TAC_Olympus_fnc_teleport;" \n "this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];}";
+								init="call{[this] call TAC_Olympus_fnc_teleport;}";
 								name="mgTeleport";
 								disableSimulation=1;
 							};
@@ -22178,7 +22177,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="";
+											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22215,7 +22214,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{[this] call TAC_Olympus_fnc_teleport;" \n "this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];}";
+								init="call{[this] call TAC_Olympus_fnc_teleport;}";
 								name="launcherTablet";
 								disableSimulation=1;
 							};
@@ -22239,7 +22238,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="";
+											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22276,7 +22275,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{[this] call TAC_Olympus_fnc_teleport;" \n "this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];}";
+								init="call{[this] call TAC_Olympus_fnc_teleport;}";
 								name="tabletUrban";
 								disableSimulation=1;
 							};
@@ -22300,7 +22299,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="";
+											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22337,7 +22336,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{[this] call TAC_Olympus_fnc_teleport;" \n "this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];}";
+								init="call{[this] call TAC_Olympus_fnc_teleport;}";
 								name="tabletCQB";
 								disableSimulation=1;
 							};
@@ -22361,7 +22360,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="";
+											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22398,7 +22397,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{[this] call TAC_Olympus_fnc_teleport;" \n "this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];}";
+								init="call{[this] call TAC_Olympus_fnc_teleport;}";
 								name="mikeTablet";
 								disableSimulation=1;
 							};
@@ -22422,7 +22421,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="";
+											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -39770,7 +39769,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{[this] call TAC_Olympus_fnc_teleport;" \n "this setObjectTexture [0,""\x\tac\addons\resources\Olympus\teleportTablet.paa""];}";
+								init="call{[this] call TAC_Olympus_fnc_teleport;}";
 								disableSimulation=1;
 							};
 							id=5364;
@@ -39793,7 +39792,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="";
+											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -57588,7 +57587,7 @@ class Mission
 							};
 							id=4088;
 							type="Red_Light_Blinking_EP1";
-							atlOffset=2.6118546;
+							atlOffset=2.3666258;
 						};
 						class Item53
 						{
@@ -57834,7 +57833,7 @@ class Mission
 						};
 					};
 					id=5884;
-					atlOffset=0.066585541;
+					atlOffset=0.065628052;
 				};
 				class Item2
 				{
@@ -61620,7 +61619,7 @@ class Mission
 				};
 			};
 			id=5882;
-			atlOffset=0.16767597;
+			atlOffset=0.16766834;
 		};
 		class Item175
 		{
@@ -63257,7 +63256,6 @@ class Mission
 							};
 							id=4334;
 							type="Red_Light_Blinking_EP1";
-							atlOffset=0.24522924;
 						};
 						class Item16
 						{
@@ -63273,7 +63271,6 @@ class Mission
 							};
 							id=4335;
 							type="Red_Light_Blinking_EP1";
-							atlOffset=0.24522924;
 						};
 						class Item17
 						{
@@ -63309,7 +63306,7 @@ class Mission
 						};
 					};
 					id=5893;
-					atlOffset=2.5343671;
+					atlOffset=2.4883866;
 				};
 				class Item3
 				{
@@ -63715,7 +63712,7 @@ class Mission
 				};
 			};
 			id=5890;
-			atlOffset=0.33825159;
+			atlOffset=0.32675695;
 		};
 		class Item176
 		{
@@ -63777,7 +63774,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2207.9563,9.5914173,5339.896};
+								position[]={2207.9563,9.5914164,5339.896};
 								angles[]={0,1.6626509,0};
 							};
 							side="Empty";
@@ -63788,7 +63785,6 @@ class Mission
 							};
 							id=4330;
 							type="AmmoCrates_NoInteractive_Large";
-							atlOffset=9.5367432e-007;
 							class CustomAttributes
 							{
 								class Attribute0
