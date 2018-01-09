@@ -141,7 +141,7 @@ private _fogSettings = [
     _x params ["_fogLevel"];
 
     private _action = [
-        format [QGVAR(fog_%1), {[str _fogLevel, ".", ""] call CBA_fnc_replace;}],
+        format [QGVAR(fog_%1), [str _fogLevel, ".", ""] call CBA_fnc_replace],
         str _fogLevel,
         "",
         {
