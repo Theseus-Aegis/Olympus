@@ -99,7 +99,7 @@ private _dateSettings = [
         "",
         {
             (_this select 2) params ["_dateFloat"];
-            _date = numberToDate [2018, _dateFloat];
+            private _date = numberToDate [2018, _dateFloat];
             [QGVAR(setDate), [_date]] call CBA_fnc_globalEvent;
         },
         {true},
@@ -142,7 +142,7 @@ private _fogSettings = [
 
     private _action = [
         format [QGVAR(fog_%1), _fogLevel],
-        str (_fogLevel),
+        str _fogLevel,
         "",
         {
             (_this select 2) params ["_fogLevel"];
