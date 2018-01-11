@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3600;
+		nextID=3745;
 	};
 	class Camera
 	{
@@ -21701,6 +21701,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="call{[this] call TAC_Olympus_fnc_environmentController;}";
 						name="stagingLaptop";
 						disableSimulation=1;
 					};
@@ -21710,6 +21711,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="ObjectTextureCustom0";
+							expression="_this setObjectTextureGlobal [0,_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="a3\structures_f\items\electronics\data\electronics_screens_laptop_co.paa";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="ace_isMedicalFacility";
 							expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -21728,7 +21748,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item10
@@ -28868,7 +28888,7 @@ class Mission
 						};
 					};
 					id=5812;
-					atlOffset=1.0120006;
+					atlOffset=142.91;
 				};
 				class Item4
 				{
@@ -29908,7 +29928,7 @@ class Mission
 				};
 			};
 			id=5808;
-			atlOffset=1.0340056;
+			atlOffset=-25.61948;
 		};
 		class Item167
 		{
@@ -57587,7 +57607,7 @@ class Mission
 							};
 							id=4088;
 							type="Red_Light_Blinking_EP1";
-							atlOffset=2.3666258;
+							atlOffset=2.6118546;
 						};
 						class Item53
 						{
@@ -57833,7 +57853,7 @@ class Mission
 						};
 					};
 					id=5884;
-					atlOffset=0.065628052;
+					atlOffset=0.066585541;
 				};
 				class Item2
 				{
@@ -61619,7 +61639,7 @@ class Mission
 				};
 			};
 			id=5882;
-			atlOffset=0.16766834;
+			atlOffset=0.16767597;
 		};
 		class Item175
 		{
@@ -63256,6 +63276,7 @@ class Mission
 							};
 							id=4334;
 							type="Red_Light_Blinking_EP1";
+							atlOffset=0.24522924;
 						};
 						class Item16
 						{
@@ -63271,6 +63292,7 @@ class Mission
 							};
 							id=4335;
 							type="Red_Light_Blinking_EP1";
+							atlOffset=0.24522924;
 						};
 						class Item17
 						{
@@ -63306,7 +63328,7 @@ class Mission
 						};
 					};
 					id=5893;
-					atlOffset=2.4883866;
+					atlOffset=2.5343671;
 				};
 				class Item3
 				{
@@ -63712,7 +63734,7 @@ class Mission
 				};
 			};
 			id=5890;
-			atlOffset=0.32675695;
+			atlOffset=0.33825159;
 		};
 		class Item176
 		{
@@ -63774,7 +63796,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2207.9563,9.5914164,5339.896};
+								position[]={2207.9563,9.5914173,5339.896};
 								angles[]={0,1.6626509,0};
 							};
 							side="Empty";
@@ -63785,6 +63807,7 @@ class Mission
 							};
 							id=4330;
 							type="AmmoCrates_NoInteractive_Large";
+							atlOffset=9.5367432e-007;
 							class CustomAttributes
 							{
 								class Attribute0
