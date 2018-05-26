@@ -14,8 +14,8 @@
 
 #include "\x\cba\addons\main\script_macros_mission.hpp"
 
-#define PATHTOTACR(var1,var2) PATHTOF_SYS(\x\tac\addons,var1,var2)
-#define QPATHTOTACR(var1,var2) QUOTE(PATHTOTACR(var1,var2))
+#define PATHTOTACRF(var1,var2) PATHTOF_SYS(\x\tac\addons,var1,var2)
+#define QPATHTOTACRF(var1,var2) QUOTE(PATHTOTACRF(var1,var2))
 
 #define TACFUNC(var1,var2) TRIPLES(DOUBLES(tac,var1),fnc,var2)
 
