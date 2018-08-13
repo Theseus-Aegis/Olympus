@@ -4603,7 +4603,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\MGTablet.paa";
+											value="\x\tacr\addons\images\olympus\MGTablet.paa";
 										};
 									};
 								};
@@ -4812,7 +4812,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\MGController.paa";
+											value="\x\tacr\addons\images\olympus\MGController.paa";
 										};
 									};
 								};
@@ -5142,7 +5142,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificatemgRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificatemgRequirements.paa";
 										};
 									};
 								};
@@ -7467,7 +7467,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\MarksmanBoard.paa";
+											value="\x\tacr\addons\images\olympus\MarksmanBoard.paa";
 										};
 									};
 								};
@@ -7968,7 +7968,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\MarksmanController.paa";
+											value="\x\tacr\addons\images\olympus\MarksmanController.paa";
 										};
 									};
 								};
@@ -8043,7 +8043,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificateDMRRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificateDMRRequirements.paa";
 										};
 									};
 								};
@@ -14251,7 +14251,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\0-Screensaver.paa,\x\tac\addons\resources\Olympus\ML1-Introduction.paa,\x\tac\addons\resources\Olympus\ML2-LessonPlan.paa,\x\tac\addons\resources\Olympus\ML3-RoleInField.paa,\x\tac\addons\resources\Olympus\ML4-Assess.paa,\x\tac\addons\resources\Olympus\ML5-Bandage.paa,\x\tac\addons\resources\Olympus\ML6-CareCommunicate.paa,\x\tac\addons\resources\Olympus\ML7-MedicalEquipment.paa,\x\tac\addons\resources\Olympus\ML8-WoundTypes.paa,\x\tac\addons\resources\Olympus\ML9-BandageTypes.paa,\x\tac\addons\resources\Olympus\ML10-BandageEffectiveness.paa,\x\tac\addons\resources\Olympus\ML11-BloodPressure.paa,\x\tac\addons\resources\Olympus\ML12-HeartRateCardiacArrest.paa,\x\tac\addons\resources\Olympus\ML13-AdvIntEpinephrine.paa,\x\tac\addons\resources\Olympus\ML14-AdvIntMorphine.paa,\x\tac\addons\resources\Olympus\ML15-AdvIntAtropineAdenosine.paa,\x\tac\addons\resources\Olympus\ML16-AdvIntSurgicalKit.paa,\x\tac\addons\resources\Olympus\ML17-AdvIntPAK.paa,\x\tac\addons\resources\Olympus\ML18-AdvIntTourniquet.paa,\x\tac\addons\resources\Olympus\ML19-AdvIntIVFluids.paa  ";
+											value="\x\tacr\addons\images\olympus\0-Screensaver.paa,\x\tacr\addons\images\olympus\ML1-Introduction.paa,\x\tacr\addons\images\olympus\ML2-LessonPlan.paa,\x\tacr\addons\images\olympus\ML3-RoleInField.paa,\x\tacr\addons\images\olympus\ML4-Assess.paa,\x\tacr\addons\images\olympus\ML5-Bandage.paa,\x\tacr\addons\images\olympus\ML6-CareCommunicate.paa,\x\tacr\addons\images\olympus\ML7-MedicalEquipment.paa,\x\tacr\addons\images\olympus\ML8-WoundTypes.paa,\x\tacr\addons\images\olympus\ML9-BandageTypes.paa,\x\tacr\addons\images\olympus\ML10-BandageEffectiveness.paa,\x\tacr\addons\images\olympus\ML11-BloodPressure.paa,\x\tacr\addons\images\olympus\ML12-HeartRateCardiacArrest.paa,\x\tacr\addons\images\olympus\ML13-AdvIntEpinephrine.paa,\x\tacr\addons\images\olympus\ML14-AdvIntMorphine.paa,\x\tacr\addons\images\olympus\ML15-AdvIntAtropineAdenosine.paa,\x\tacr\addons\images\olympus\ML16-AdvIntSurgicalKit.paa,\x\tacr\addons\images\olympus\ML17-AdvIntPAK.paa,\x\tacr\addons\images\olympus\ML18-AdvIntTourniquet.paa,\x\tacr\addons\images\olympus\ML19-AdvIntIVFluids.paa  ";
 										};
 									};
 								};
@@ -15232,7 +15232,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\whiteboardA1.paa";
+											value="\x\tacr\addons\images\olympus\whiteboardA1.paa";
 										};
 									};
 								};
@@ -16001,7 +16001,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="\x\tac\addons\resources\Olympus\DuelingRange.paa";
+									value="\x\tacr\addons\images\olympus\DuelingRange.paa";
 								};
 							};
 						};
@@ -18102,7 +18102,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\AircraftsBoardLeft.paa";
+											value="\x\tacr\addons\images\olympus\AircraftsBoardLeft.paa";
 										};
 									};
 								};
@@ -19068,7 +19068,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\grenadesBoardRight.paa";
+											value="\x\tacr\addons\images\olympus\grenadesBoardRight.paa";
 										};
 									};
 								};
@@ -19127,7 +19127,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\grenadesBoardLeft.paa";
+											value="\x\tacr\addons\images\olympus\grenadesBoardLeft.paa";
 										};
 									};
 								};
@@ -19187,7 +19187,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\MGRangeBoardRight.paa";
+											value="\x\tacr\addons\images\olympus\MGRangeBoardRight.paa";
 										};
 									};
 								};
@@ -19247,7 +19247,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\MGRangeBoardLeft.paa";
+											value="\x\tacr\addons\images\olympus\MGRangeBoardLeft.paa";
 										};
 									};
 								};
@@ -20691,7 +20691,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\medicalController.paa";
+											value="\x\tacr\addons\images\olympus\medicalController.paa";
 										};
 									};
 								};
@@ -21134,7 +21134,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\MedicalBoard.paa";
+											value="\x\tacr\addons\images\olympus\MedicalBoard.paa";
 										};
 									};
 								};
@@ -22136,7 +22136,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
+											value="\x\tacr\addons\images\olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22197,7 +22197,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
+											value="\x\tacr\addons\images\olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22258,7 +22258,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
+											value="\x\tacr\addons\images\olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22319,7 +22319,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
+											value="\x\tacr\addons\images\olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22380,7 +22380,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
+											value="\x\tacr\addons\images\olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22441,7 +22441,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
+											value="\x\tacr\addons\images\olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -22852,7 +22852,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
+								init="this setFlagTexture ""\x\tacr\addons\images\olympus\TAC_Flag.paa"";";
 								name="mainAreaFlag";
 							};
 							id=5378;
@@ -22893,7 +22893,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
+								init="this setFlagTexture ""\x\tacr\addons\images\olympus\TAC_Flag.paa"";";
 								name="mgFlag";
 							};
 							id=5379;
@@ -22934,7 +22934,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
+								init="this setFlagTexture ""\x\tacr\addons\images\olympus\TAC_Flag.paa"";";
 								name="launcherFlag";
 							};
 							id=5572;
@@ -22974,7 +22974,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
+								init="this setFlagTexture ""\x\tacr\addons\images\olympus\TAC_Flag.paa"";";
 								name="flagUrban";
 							};
 							id=5373;
@@ -23014,7 +23014,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
+								init="this setFlagTexture ""\x\tacr\addons\images\olympus\TAC_Flag.paa"";";
 								name="flagCQB";
 							};
 							id=5376;
@@ -23055,7 +23055,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
+								init="this setFlagTexture ""\x\tacr\addons\images\olympus\TAC_Flag.paa"";";
 								name="mikeFlag";
 							};
 							id=6048;
@@ -23808,7 +23808,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\grenadesLane3.paa";
+											value="\x\tacr\addons\images\olympus\grenadesLane3.paa";
 										};
 									};
 								};
@@ -23867,7 +23867,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\grenadesLane1.paa";
+											value="\x\tacr\addons\images\olympus\grenadesLane1.paa";
 										};
 									};
 								};
@@ -23926,7 +23926,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\grenadesLane2.paa";
+											value="\x\tacr\addons\images\olympus\grenadesLane2.paa";
 										};
 									};
 								};
@@ -23986,7 +23986,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificateGrenadeRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificateGrenadeRequirements.paa";
 										};
 									};
 								};
@@ -29900,7 +29900,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="\x\tac\addons\resources\Olympus\courseMovementRequirements.paa";
+									value="\x\tacr\addons\images\olympus\courseMovementRequirements.paa";
 								};
 							};
 						};
@@ -30336,7 +30336,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificatePistolRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificatePistolRequirements.paa";
 										};
 									};
 								};
@@ -30396,7 +30396,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificatePistolRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificatePistolRequirements.paa";
 										};
 									};
 								};
@@ -30495,7 +30495,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\PistolRangeBoardRight.paa";
+											value="\x\tacr\addons\images\olympus\PistolRangeBoardRight.paa";
 										};
 									};
 								};
@@ -30554,7 +30554,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\PistolRangeBoardLeft.paa";
+											value="\x\tacr\addons\images\olympus\PistolRangeBoardLeft.paa";
 										};
 									};
 								};
@@ -31444,7 +31444,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\x\tac\addons\resources\Olympus\PistolSmgController.paa";
+													value="\x\tacr\addons\images\olympus\PistolSmgController.paa";
 												};
 											};
 										};
@@ -31505,7 +31505,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\x\tac\addons\resources\Olympus\PistolSmgController.paa";
+													value="\x\tacr\addons\images\olympus\PistolSmgController.paa";
 												};
 											};
 										};
@@ -38664,7 +38664,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseAimRight.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseAimRight.paa";
 										};
 									};
 								};
@@ -38723,7 +38723,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseAimRight.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseAimRight.paa";
 										};
 									};
 								};
@@ -38782,7 +38782,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseAimRight.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseAimRight.paa";
 										};
 									};
 								};
@@ -38841,7 +38841,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseDuckProneRight.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseDuckProneRight.paa";
 										};
 									};
 								};
@@ -38900,7 +38900,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseJump.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseJump.paa";
 										};
 									};
 								};
@@ -38959,7 +38959,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseKneel.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseKneel.paa";
 										};
 									};
 								};
@@ -39018,7 +39018,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseKneel.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseKneel.paa";
 										};
 									};
 								};
@@ -39077,7 +39077,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseLeanLeft.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseLeanLeft.paa";
 										};
 									};
 								};
@@ -39136,7 +39136,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseStand.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseStand.paa";
 										};
 									};
 								};
@@ -39195,7 +39195,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseStand.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseStand.paa";
 										};
 									};
 								};
@@ -39254,7 +39254,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\shoothouseStand.paa";
+											value="\x\tacr\addons\images\olympus\shoothouseStand.paa";
 										};
 									};
 								};
@@ -39324,7 +39324,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificateAdvRifleRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificateAdvRifleRequirements.paa";
 										};
 									};
 								};
@@ -39812,7 +39812,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\teleportTablet.paa";
+											value="\x\tacr\addons\images\olympus\teleportTablet.paa";
 										};
 									};
 								};
@@ -41200,7 +41200,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setFlagTexture ""\x\tac\addons\resources\Olympus\TAC_Flag.paa"";";
+								init="this setFlagTexture ""\x\tacr\addons\images\olympus\TAC_Flag.paa"";";
 							};
 							id=5377;
 							type="Flag_Blue_F";
@@ -43837,7 +43837,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\advRifleController.paa";
+											value="\x\tacr\addons\images\olympus\advRifleController.paa";
 										};
 									};
 								};
@@ -54433,7 +54433,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\licenseLauncherRequirements.paa";
+											value="\x\tacr\addons\images\olympus\licenseLauncherRequirements.paa";
 										};
 									};
 								};
@@ -56152,7 +56152,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\urbanMovementController.paa";
+											value="\x\tacr\addons\images\olympus\urbanMovementController.paa";
 										};
 									};
 								};
@@ -56642,7 +56642,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificateAdvPistolRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificateAdvPistolRequirements.paa";
 										};
 									};
 								};
@@ -56701,7 +56701,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificateAdvPistolRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificateAdvPistolRequirements.paa";
 										};
 									};
 								};
@@ -61552,7 +61552,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\x\tac\addons\resources\Olympus\killhouseController.paa";
+													value="\x\tacr\addons\images\olympus\killhouseController.paa";
 												};
 											};
 										};
@@ -63698,7 +63698,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\x\tac\addons\resources\Olympus\killhouseController.paa";
+													value="\x\tacr\addons\images\olympus\killhouseController.paa";
 												};
 											};
 										};
@@ -70625,7 +70625,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\RifleRangeBoardRight.paa";
+											value="\x\tacr\addons\images\olympus\RifleRangeBoardRight.paa";
 										};
 									};
 								};
@@ -70683,7 +70683,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\RifleRangeBoardLeft.paa";
+											value="\x\tacr\addons\images\olympus\RifleRangeBoardLeft.paa";
 										};
 									};
 								};
@@ -70743,7 +70743,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\certificateRifleRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificateRifleRequirements.paa";
 										};
 									};
 								};
@@ -77089,7 +77089,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\x\tac\addons\resources\Olympus\RifleLeftController.paa";
+													value="\x\tacr\addons\images\olympus\RifleLeftController.paa";
 												};
 											};
 										};
@@ -77150,7 +77150,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="\x\tac\addons\resources\Olympus\RifleRightController.paa";
+													value="\x\tacr\addons\images\olympus\RifleRightController.paa";
 												};
 											};
 										};
@@ -79006,7 +79006,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tac\addons\resources\Olympus\Certificate40mmRequirements.paa";
+											value="\x\tacr\addons\images\olympus\Certificate40mmRequirements.paa";
 										};
 									};
 								};

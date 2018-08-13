@@ -9,8 +9,8 @@ class Header {
 author = "Theseus Incorporated";
 briefingName = "Olympus"; // in mission select menu
 onLoadName = "Olympus"; // on load screen
-overviewPicture = QPATHTOTACF(resources,Olympus\loading.paa); // in mission select menu
-loadScreen = QPATHTOTACF(resources,Olympus\loading.paa); // on load screen
+overviewPicture = QPATHTOTACRF(images,olympus\loading.paa); // in mission select menu
+loadScreen = QPATHTOTACRF(images,olympus\loading.paa); // on load screen
 overviewText = "Olympus Training Facilities"; // in mission select menu
 onLoadMission = "Olympus Training Facilities"; // on load screen
 

@@ -17,10 +17,10 @@ params ["_billboard"];
     _textureObject attachTo [_billboard, _position];
 
 } forEach [
-    [QPATHTOTACF(resources,Olympus\BillBoard1.paa), [-2.5, -0.55, 1.2]],
-    [QPATHTOTACF(resources,Olympus\BillBoard2.paa), [-1.5, -0.55, 1.2]],
-    [QPATHTOTACF(resources,Olympus\BillBoard3.paa), [-0.5, -0.55, 1.2]],
-    [QPATHTOTACF(resources,Olympus\BillBoard4.paa), [0.5, -0.55, 1.2]],
-    [QPATHTOTACF(resources,Olympus\BillBoard5.paa), [1.5, -0.55, 1.2]],
-    [QPATHTOTACF(resources,Olympus\BillBoard6.paa), [2.5, -0.55, 1.2]]
+    [QPATHTOTACRF(images,olympus\BillBoard1.paa), [-2.5, -0.55, 1.2]],
+    [QPATHTOTACRF(images,olympus\BillBoard2.paa), [-1.5, -0.55, 1.2]],
+    [QPATHTOTACRF(images,olympus\BillBoard3.paa), [-0.5, -0.55, 1.2]],
+    [QPATHTOTACRF(images,olympus\BillBoard4.paa), [0.5, -0.55, 1.2]],
+    [QPATHTOTACRF(images,olympus\BillBoard5.paa), [1.5, -0.55, 1.2]],
+    [QPATHTOTACRF(images,olympus\BillBoard6.paa), [2.5, -0.55, 1.2]]
 ];
