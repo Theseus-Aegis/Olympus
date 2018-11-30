@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3890;
+		nextID=4035;
 	};
 	class Camera
 	{
-		pos[]={2187.8254,13.484223,5380.2383};
-		dir[]={0.93499589,-0.35235611,0.040833037};
-		up[]={0.35203642,0.93585646,0.01537388};
-		aside[]={0.043630488,1.2951205e-008,-0.99906629};
+		pos[]={6424.9077,45.366318,5311.481};
+		dir[]={0.45757547,-0.54042554,0.70609409};
+		up[]={0.29389957,0.84139103,0.45352304};
+		aside[]={0.83919638,-9.057112e-008,-0.54383099};
 	};
 };
 binarizationWanted=0;
@@ -39,7 +39,6 @@ addons[]=
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Structures_F_Mil_BagFence",
 	"CUP_CAMP_Armory_Misc_Loudspeakers",
-	"A3_Misc_F_Helpers",
 	"CUP_Misc_e_Config",
 	"CUP_CAMP_Armory_Misc_Infostands",
 	"A3_Props_F_Exp_A_Military_Equipment",
@@ -58,6 +57,7 @@ addons[]=
 	"CUP_A2_EditorObjects",
 	"A3_Structures_F_Civ_Lamps",
 	"A3_Structures_F_EPA_Civ_Constructions",
+	"A3_Misc_F_Helpers",
 	"A3_Structures_F_Walls",
 	"A3_Signs_F_Signs_Ad",
 	"A3_Structures_F_Bootcamp_Civ_SportsGrounds",
@@ -232,73 +232,73 @@ class AddonsMetaData
 		};
 		class Item8
 		{
-			className="A3_Misc_F";
-			name="Arma 3 - 3D Aids and Helpers";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item9
-		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item10
+		class Item9
 		{
 			className="CUP_CAMP_Armory_Misc_Infostands";
 			name="CUP_CAMP_Armory_Misc_Infostands";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Props_F_Exp_A";
 			name="Arma 3 Nexus Update - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item13
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item14
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item15
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item17
+		class Item16
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item17
 		{
 			className="CUP_A2_EditorObjects";
 			name="CUP_A2_EditorObjects";
 			author="MemphisBelle";
+		};
+		class Item18
+		{
+			className="A3_Misc_F";
+			name="Arma 3 - 3D Aids and Helpers";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item19
 		{
@@ -4355,7 +4355,7 @@ class Mission
 					name="Shooting platform";
 					class Entities
 					{
-						items=11;
+						items=10;
 						class Item0
 						{
 							dataType="Object";
@@ -4521,47 +4521,6 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5715.4995,69.689636,5876.9771};
-								angles[]={0,0.067399673,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="this setObjectTexture [0,""highScoresImages\highScoreTemplate.paa""];";
-								name="highscoresMG";
-							};
-							id=5503;
-							type="UserTexture1m_F";
-							atlOffset=1.0036392;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_isMedicalFacility";
-									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item9
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={5718.1802,71.780716,5881.1377};
 								angles[]={6.2409134,1.574828,0};
 							};
@@ -4597,7 +4556,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item10
+						class Item9
 						{
 							dataType="Object";
 							class PositionInfo
@@ -10748,7 +10707,7 @@ class Mission
 							};
 							id=1206;
 							type="Land_CampingTable_F";
-							atlOffset=0.058697224;
+							atlOffset=0.058632851;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -10789,7 +10748,7 @@ class Mission
 							};
 							id=1207;
 							type="Land_CampingTable_F";
-							atlOffset=0.050951004;
+							atlOffset=0.050949097;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -10830,7 +10789,7 @@ class Mission
 							};
 							id=1208;
 							type="Land_CampingTable_F";
-							atlOffset=0.016495228;
+							atlOffset=0.01649332;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11338,7 +11297,7 @@ class Mission
 							};
 							id=1209;
 							type="Land_CampingTable_F";
-							atlOffset=0.040835381;
+							atlOffset=0.040834427;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28914,11 +28873,11 @@ class Mission
 								behaviour="COMBAT";
 							};
 							id=1325;
-							atlOffset=1.0120006;
+							atlOffset=142.91;
 						};
 					};
 					id=5812;
-					atlOffset=1.0120006;
+					atlOffset=142.91;
 				};
 				class Item4
 				{
@@ -29958,7 +29917,7 @@ class Mission
 				};
 			};
 			id=5808;
-			atlOffset=1.0340056;
+			atlOffset=-25.61948;
 		};
 		class Item167
 		{
@@ -30332,7 +30291,7 @@ class Mission
 					name="Custom signs";
 					class Entities
 					{
-						items=5;
+						items=4;
 						class Item0
 						{
 							dataType="Object";
@@ -30457,47 +30416,6 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6395.7002,9.4099998,5382.6509};
-								angles[]={0,0.71917385,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="this setObjectTexture [0,""highScoresImages\highScoreTemplate.paa""];";
-								name="highscoresPistol";
-							};
-							id=5502;
-							type="UserTexture1m_F";
-							atlOffset=1.4099998;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_isMedicalFacility";
-									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={6395.1182,9.0661221,5373.8682};
 								angles[]={0,3.8299329,0};
 							};
@@ -30551,7 +30469,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item4
+						class Item3
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38619,49 +38537,8 @@ class Mission
 					name="Spray paint hints";
 					class Entities
 					{
-						items=12;
+						items=11;
 						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={5201.8838,224.5663,5009.4819};
-								angles[]={0,2.6545358,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="this setObjectTexture [0,""highScoresImages\highScoreAdvRifle.paa""];";
-								name="highscoresAdvRifle";
-							};
-							id=5501;
-							type="UserTexture1m_F";
-							atlOffset=1.5674591;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_isMedicalFacility";
-									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item1
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38720,7 +38597,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item2
+						class Item1
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38779,7 +38656,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item3
+						class Item2
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38838,7 +38715,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item4
+						class Item3
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38897,7 +38774,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item5
+						class Item4
 						{
 							dataType="Object";
 							class PositionInfo
@@ -38956,7 +38833,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item6
+						class Item5
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39015,7 +38892,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item7
+						class Item6
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39074,7 +38951,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item8
+						class Item7
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39133,7 +39010,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item9
+						class Item8
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39192,7 +39069,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item10
+						class Item9
 						{
 							dataType="Object";
 							class PositionInfo
@@ -39251,7 +39128,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item11
+						class Item10
 						{
 							dataType="Object";
 							class PositionInfo
@@ -54463,7 +54340,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tacr\addons\images\olympus\licenseLauncherRequirements.paa";
+											value="\x\tacr\addons\images\olympus\certificateLauncherRequirements.paa";
 										};
 									};
 								};
@@ -60957,7 +60834,7 @@ class Mission
 						};
 					};
 					id=5887;
-					atlOffset=0.82495022;
+					atlOffset=0.82479954;
 				};
 				class Item5
 				{
@@ -61588,7 +61465,7 @@ class Mission
 				};
 			};
 			id=5882;
-			atlOffset=0.16767597;
+			atlOffset=0.16766644;
 		};
 		class Item175
 		{
@@ -70542,7 +70419,7 @@ class Mission
 					name="Custom Signs";
 					class Entities
 					{
-						items=4;
+						items=3;
 						class Item0
 						{
 							dataType="Object";
@@ -70695,66 +70572,6 @@ class Mission
 												};
 											};
 											value="\x\tacr\addons\images\olympus\certificateRifleRequirements.paa";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_isMedicalFacility";
-									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={6400.0928,14.639616,5447.0156};
-								angles[]={0,0.73248011,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								init="this setObjectTexture [0,""highScoresImages\highScoreTemplate.paa""];";
-								name="highscoresRifle";
-							};
-							id=5500;
-							type="UserTexture1m_F";
-							atlOffset=1.230813;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ObjectTextureCustom0";
-									expression="_this setObjectTextureGlobal [0,_value]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
 										};
 									};
 								};
