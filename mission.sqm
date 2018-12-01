@@ -8,7 +8,7 @@ class EditorData
 	toggles=1034;
 	class ItemIDProvider
 	{
-		nextID=6062;
+		nextID=6064;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2200.6489,19.17314,5388.9678};
-		dir[]={-0.0015357523,-0.77873939,-0.62745219};
-		up[]={-0.0019095712,0.62729907,-0.77877855};
-		aside[]={-1.0000553,6.4177766e-007,0.0024515837};
+		pos[]={5693.5942,91.163849,5882.5693};
+		dir[]={0.79257703,-0.60694247,-0.058711603};
+		up[]={0.60528839,0.79474312,-0.044837821};
+		aside[]={-0.073874786,-1.3707904e-008,-0.99726981};
 	};
 };
 binarizationWanted=0;
@@ -712,7 +712,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -1369,11 +1369,12 @@ class Mission
 		class Item48
 		{
 			dataType="Marker";
-			position[]={6285.9043,8.1137562,5429.0317};
+			position[]={5718.2954,8.1137695,5881.1777};
 			name="marker_4";
 			text="LMG Range";
 			type="mil_warning";
 			id=2390;
+			atlOffset=-59.171272;
 		};
 		class Item49
 		{
