@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3890;
+		nextID=4035;
 	};
 	class Camera
 	{
-		pos[]={2187.8254,13.484223,5380.2383};
-		dir[]={0.93499589,-0.35235611,0.040833037};
-		up[]={0.35203642,0.93585646,0.01537388};
-		aside[]={0.043630488,1.2951205e-008,-0.99906629};
+		pos[]={2200.6489,19.17314,5388.9678};
+		dir[]={-0.0015357523,-0.77873939,-0.62745219};
+		up[]={-0.0019095712,0.62729907,-0.77877855};
+		aside[]={-1.0000553,6.4177766e-007,0.0024515837};
 	};
 };
 binarizationWanted=0;
@@ -28914,11 +28914,11 @@ class Mission
 								behaviour="COMBAT";
 							};
 							id=1325;
-							atlOffset=1.0120006;
+							atlOffset=142.91;
 						};
 					};
 					id=5812;
-					atlOffset=1.0120006;
+					atlOffset=142.91;
 				};
 				class Item4
 				{
@@ -29958,7 +29958,7 @@ class Mission
 				};
 			};
 			id=5808;
-			atlOffset=1.0340056;
+			atlOffset=-25.61948;
 		};
 		class Item167
 		{
@@ -60957,7 +60957,7 @@ class Mission
 						};
 					};
 					id=5887;
-					atlOffset=0.82495022;
+					atlOffset=0.82479954;
 				};
 				class Item5
 				{
@@ -61163,7 +61163,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="khtrigger1,khtrigger1,khtrigger2,khtrigger2,khtrigger3,khtrigger3,khtrigger4,khtrigger5,khtrigger5,khtrigger5,khtrigger5,khtrigger5,khtrigger6,khtrigger6,khtrigger7,khtrigger8,khtrigger8,khtrigger9,khtrigger9,khtrigger10,khtrigger11,khtrigger11,khtrigger11,khtrigger12,khtrigger12";
+											value="khtrigger1,khtrigger1,khtrigger2,khtrigger2,khtrigger3,khtrigger3,khtrigger4,khtrigger5,khtrigger5,khtrigger5,khtrigger6,khtrigger6,khtrigger7,khtrigger8,khtrigger8,khtrigger9,khtrigger9,khtrigger10,khtrigger11,khtrigger11,khtrigger11,khtrigger12,khtrigger12";
 										};
 									};
 								};
@@ -61277,7 +61277,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil";
+											value="nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil";
 										};
 									};
 								};
@@ -61410,7 +61410,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="khtarget1,khtarget2,khtarget3,khtarget4,khtarget5,khtarget7,khtarget8,khtarget9,khtarget10,khtarget11,khtarget12,khtarget13,khtarget14,khtarget15,khtarget16,khtarget17,khtarget18,khtarget19,khtarget20,khtarget6,khtarget21,khtarget22,khtarget23,khtarget24,khtarget25";
+											value="khtarget1,khtarget2,khtarget3,khtarget4,khtarget5,khtarget7,khtarget8,khtarget10,khtarget11,khtarget13,khtarget14,khtarget15,khtarget16,khtarget17,khtarget18,khtarget19,khtarget20,khtarget6,khtarget21,khtarget22,khtarget23,khtarget24,khtarget25 ";
 										};
 									};
 								};
@@ -61588,7 +61588,7 @@ class Mission
 				};
 			};
 			id=5882;
-			atlOffset=0.16767597;
+			atlOffset=0.16766644;
 		};
 		class Item175
 		{
