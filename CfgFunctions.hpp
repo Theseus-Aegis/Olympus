@@ -8,9 +8,13 @@ class CfgFunctions {
             class VAboxLockersInit;
             class VAboxMarksmanInit;
             class VAboxMGInit;
-            class VAboxPistolSMGInit;
+            class VAboxPistolInit;
             class VAboxRifleInit;
             class VAboxStagingInit;
+            class VAboxAdvRifleInit;
+            class VAboxAdvPistolInit;
+            class VAbox40MikeInit;
+            class VAboxlauncherInit;
             class closeKillhouseDoors;
             class constantShoot;
             class grenadeCourseTargets;

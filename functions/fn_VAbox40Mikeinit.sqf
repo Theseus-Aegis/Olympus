@@ -9,17 +9,19 @@
  * None
  *
  * Example:
- * [crate] call TAC_Olympus_fnc_VAboxRifleInit
+ * [crate] call TAC_Olympus_fnc_VAbox40MikeInit
  */
 #include "..\script_component.hpp"
 
 // Lists of items to include
 #define AVAILABLE_RIFLES [\
-    "hlc_rifle_Colt727"\
+    "arifle_SPAR_01_GL_blk_F",\
+    "arifle_SPAR_01_GL_snd_F",\
+    "arifle_SPAR_01_GL_khk_F"\
 ]
 
 #define AVAILABLE_RIFLE_MAGAZINES [\
-    "hlc_30rnd_556x45_EPR"\
+    "1Rnd_HE_Grenade_shell"\
 ]
 
 #define AVAILABLE_GEAR [\
