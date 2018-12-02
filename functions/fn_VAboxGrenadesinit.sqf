@@ -16,20 +16,21 @@
 // Lists of items to include
 
 #define AVAILABLE_GRENADES [\
-    "HandGrenade",\
-    "HandGrenade_Stone",\
-    "SmokeShell",\
-    "SmokeShellGreen",\
-    "SmokeShellYellow",\
-    "SmokeShellOrange",\
-    "SmokeShellBlue",\
-    "SmokeShellPurple"\
+    "HandGrenade"\
+]
+
+#define AVAILABLE_GEAR [\
+    "tacs_Backpack_AssaultExpanded_Black",\
+    "tacs_Backpack_AssaultExpanded_Green",\
+    "tacs_Backpack_AssaultExpanded_Tan",\
+    "V_Rangemaster_belt"\
 ]
 
 // Init stuff
 params ["_crate"];
 
 // Populate with predefined items and whatever is already in the crate
+[_crate, AVAILABLE_GEAR] call ace_arsenal_fnc_addVirtualItems;
 [_crate, (magazineCargo _crate) + AVAILABLE_GRENADES] call ace_arsenal_fnc_addVirtualItems;
 
 [_crate] call TAC_Olympus_fnc_VAboxArsenalinit

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1034;
 	class ItemIDProvider
 	{
-		nextID=6062;
+		nextID=6068;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3890;
+		nextID=4180;
 	};
 	class Camera
 	{
-		pos[]={2187.8254,13.484223,5380.2383};
-		dir[]={0.93499589,-0.35235611,0.040833037};
-		up[]={0.35203642,0.93585646,0.01537388};
-		aside[]={0.043630488,1.2951205e-008,-0.99906629};
+		pos[]={2212.2319,18.436855,5377.1519};
+		dir[]={-0.83205837,-0.55091578,0.064720467};
+		up[]={-0.54926378,0.83455765,0.042723645};
+		aside[]={0.077550747,1.4551915e-009,0.99699926};
 	};
 };
 binarizationWanted=0;
@@ -712,7 +712,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -1369,11 +1369,12 @@ class Mission
 		class Item48
 		{
 			dataType="Marker";
-			position[]={6285.9043,8.1137562,5429.0317};
+			position[]={5718.2954,8.1137695,5881.1777};
 			name="marker_4";
 			text="LMG Range";
 			type="mil_warning";
 			id=2390;
+			atlOffset=-59.171272;
 		};
 		class Item49
 		{
@@ -28914,11 +28915,11 @@ class Mission
 								behaviour="COMBAT";
 							};
 							id=1325;
-							atlOffset=1.0120006;
+							atlOffset=142.91;
 						};
 					};
 					id=5812;
-					atlOffset=1.0120006;
+					atlOffset=142.91;
 				};
 				class Item4
 				{
@@ -29958,7 +29959,7 @@ class Mission
 				};
 			};
 			id=5808;
-			atlOffset=1.0340056;
+			atlOffset=-25.61948;
 		};
 		class Item167
 		{
@@ -34318,7 +34319,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxPistolInit;}";
 							};
 							id=1573;
 							type="Land_PlasticCase_01_large_F";
@@ -34339,7 +34340,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -34377,7 +34378,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxPistolInit;}";
 							};
 							id=1616;
 							type="Land_PlasticCase_01_large_F";
@@ -34398,7 +34399,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -34435,7 +34436,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxPistolInit;}";
 								disableSimulation=1;
 							};
 							id=1584;
@@ -34458,7 +34459,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -34495,7 +34496,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxPistolInit;}";
 								disableSimulation=1;
 							};
 							id=1599;
@@ -34518,7 +34519,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -34556,7 +34557,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxPistolInit;}";
 								disableSimulation=1;
 							};
 							id=1611;
@@ -34579,7 +34580,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -34616,7 +34617,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxPistolInit;}";
 								disableSimulation=1;
 							};
 							id=1612;
@@ -34639,7 +34640,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -34676,7 +34677,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxPistolInit;}";
 								disableSimulation=1;
 							};
 							id=1614;
@@ -34699,7 +34700,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -34737,7 +34738,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxPistolInit;}";
 								disableSimulation=1;
 							};
 							id=1615;
@@ -34760,7 +34761,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -51983,7 +51984,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxAdvRifleInit;}";
 							};
 							id=4117;
 							type="Land_PlasticCase_01_large_F";
@@ -52005,7 +52006,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -52043,7 +52044,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxAdvRifleInit;}";
 							};
 							id=4119;
 							type="Land_PlasticCase_01_large_F";
@@ -52064,7 +52065,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -53662,7 +53663,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxLauncherInit;}";
 							};
 							id=4571;
 							type="Land_PlasticCase_01_large_F";
@@ -53684,7 +53685,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -53722,7 +53723,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxLauncherInit;}";
 							};
 							id=4647;
 							type="Land_PlasticCase_01_large_F";
@@ -53744,7 +53745,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -53782,7 +53783,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxLauncherInit;}";
 							};
 							id=5411;
 							type="Land_PlasticCase_01_large_F";
@@ -53804,7 +53805,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -53842,7 +53843,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxLauncherInit;}";
 							};
 							id=5569;
 							type="Land_PlasticCase_01_medium_F";
@@ -53863,7 +53864,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -56926,7 +56927,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxAdvPistolInit;}";
 							};
 							id=3513;
 							type="AmmoCrate_NoInteractive_";
@@ -56967,7 +56968,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxPistolSMGInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxAdvPistolInit;}";
 							};
 							id=3514;
 							type="AmmoCrate_NoInteractive_";
@@ -57008,7 +57009,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxAdvPistolInit;}";
 							};
 							id=3515;
 							type="AmmoCrates_NoInteractive_Large";
@@ -60957,7 +60958,7 @@ class Mission
 						};
 					};
 					id=5887;
-					atlOffset=0.82495022;
+					atlOffset=0.82479954;
 				};
 				class Item5
 				{
@@ -60978,7 +60979,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxAdvPistolInit;}";
 							};
 							id=4607;
 							type="Land_PlasticCase_01_large_F";
@@ -61000,7 +61001,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -61038,7 +61039,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxRifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAboxAdvPistolInit;}";
 							};
 							id=4608;
 							type="Land_PlasticCase_01_large_F";
@@ -61060,7 +61061,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -61163,7 +61164,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="khtrigger1,khtrigger1,khtrigger2,khtrigger2,khtrigger3,khtrigger3,khtrigger4,khtrigger5,khtrigger5,khtrigger5,khtrigger5,khtrigger5,khtrigger6,khtrigger6,khtrigger7,khtrigger8,khtrigger8,khtrigger9,khtrigger9,khtrigger10,khtrigger11,khtrigger11,khtrigger11,khtrigger12,khtrigger12";
+											value="khtrigger1,khtrigger1,khtrigger2,khtrigger2,khtrigger3,khtrigger3,khtrigger4,khtrigger5,khtrigger5,khtrigger5,khtrigger6,khtrigger6,khtrigger7,khtrigger8,khtrigger8,khtrigger9,khtrigger9,khtrigger10,khtrigger11,khtrigger11,khtrigger11,khtrigger12,khtrigger12";
 										};
 									};
 								};
@@ -61277,7 +61278,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil";
+											value="nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil";
 										};
 									};
 								};
@@ -61410,7 +61411,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="khtarget1,khtarget2,khtarget3,khtarget4,khtarget5,khtarget7,khtarget8,khtarget9,khtarget10,khtarget11,khtarget12,khtarget13,khtarget14,khtarget15,khtarget16,khtarget17,khtarget18,khtarget19,khtarget20,khtarget6,khtarget21,khtarget22,khtarget23,khtarget24,khtarget25";
+											value="khtarget1,khtarget2,khtarget3,khtarget4,khtarget5,khtarget7,khtarget8,khtarget10,khtarget11,khtarget13,khtarget14,khtarget15,khtarget16,khtarget17,khtarget18,khtarget19,khtarget20,khtarget6,khtarget21,khtarget22,khtarget23,khtarget24,khtarget25 ";
 										};
 									};
 								};
@@ -61588,7 +61589,7 @@ class Mission
 				};
 			};
 			id=5882;
-			atlOffset=0.16767597;
+			atlOffset=0.16766644;
 		};
 		class Item175
 		{
@@ -78876,7 +78877,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="[this] call TAC_Olympus_fnc_VAboxrifleInit;";
+								init="call{[this] call TAC_Olympus_fnc_VAbox40MikeInit;}";
 							};
 							id=6009;
 							type="Land_PlasticCase_01_large_F";
@@ -78898,7 +78899,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};

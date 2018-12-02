@@ -9,24 +9,14 @@
  * None
  *
  * Example:
- * [crate] call TAC_Olympus_fnc_VAboxMGInit
+ * [crate] call TAC_Olympus_fnc_VAboxLauncherInit
  */
 #include "..\script_component.hpp"
 
-//Lists of items to include
-#define AVAILABLE_MG [\
-    "hlc_m249_pip1"\
-]
-
-#define AVAILABLE_MG_MAGAZINES [\
-    "hlc_200rnd_556x45_B_SAW",\
-    "hlc_200rnd_556x45_Mdim_SAW",\
-    "hlc_200rnd_556x45_M_SAW",\
-    "hlc_200rnd_556x45_T_SAW"\
-]
-
-#define AVAILABLE_ATTACHMENTS [\
-    "rh_compm2"\
+// Lists of items to include
+#define AVAILABLE_LAUNCHERS [\
+    "launch_RPG32_F",\
+    "launch_RPG32_ghex_F"\
 ]
 
 #define AVAILABLE_GEAR [\
@@ -36,13 +26,17 @@
     "V_Rangemaster_belt"\
 ]
 
+#define AVAILABLE_LAUNCHER_MAGAZINES [\
+    "RPG32_F",\
+    "RPG32_HE_F"\
+]
+
 // Init stuff
 params ["_crate"];
 
 // Populate with predefined items and whatever is already in the crate
 [_crate, AVAILABLE_GEAR] call ace_arsenal_fnc_addVirtualItems;
-[_crate, (itemCargo _crate) + AVAILABLE_ATTACHMENTS] call ace_arsenal_fnc_addVirtualItems;
-[_crate, (magazineCargo _crate) + AVAILABLE_MG_MAGAZINES] call ace_arsenal_fnc_addVirtualItems;
-[_crate, (weaponCargo _crate) + AVAILABLE_MG] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (magazineCargo _crate) + AVAILABLE_LAUNCHER_MAGAZINES] call ace_arsenal_fnc_addVirtualItems;
+[_crate, (weaponCargo _crate) + AVAILABLE_LAUNCHERS] call ace_arsenal_fnc_addVirtualItems;
 
 [_crate] call TAC_Olympus_fnc_VAboxArsenalinit
