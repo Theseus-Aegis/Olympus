@@ -28,6 +28,7 @@ class CfgFunctions {
             class timerStop;
             class urbanMovementCourse;
             class environmentController;
+            class personalArsenal;
         };
     };
 };

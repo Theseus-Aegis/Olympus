@@ -44,3 +44,6 @@ private _fullAction = [
 ] call ace_interact_menu_fnc_createAction;
 
 [_crate, 0, ["ACE_MainActions"], _fullAction] call ace_interact_menu_fnc_addActionToObject;
+
+// Call personalArsenal
+[{!isNull player}, {[player, _this] call TAC_Olympus_fnc_personalArsenal}, _crate] call CBA_fnc_waitUntilAndExecute;
