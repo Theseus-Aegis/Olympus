@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=33;
+	toggles=1057;
 	class ItemIDProvider
 	{
 		nextID=1851;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1164;
+		nextID=1255;
 	};
 	class Camera
 	{
-		pos[]={8602.0918,33.748619,17492.811};
-		dir[]={-0.80302167,-0.5160656,0.29807553};
-		up[]={-0.48381406,0.8565473,0.17958817};
-		aside[]={0.34799558,2.2485619e-007,0.93750632};
+		pos[]={8615.4873,32.202778,17524.773};
+		dir[]={-0.13893767,-0.38209707,-0.91362351};
+		up[]={-0.057446621,0.9241212,-0.37775633};
+		aside[]={-0.98863649,-6.4610504e-008,0.15034521};
 	};
 };
 binarizationWanted=0;
@@ -6483,19 +6483,19 @@ class Mission
 						class Item3
 						{
 							dataType="Trigger";
-							position[]={8356.0273,3.04,16877.375};
+							position[]={8355.4121,3.04,16877.152};
 							angle=2.7925258;
 							class Attributes
 							{
 								name="courseAdvPistolTrigger04";
-								sizeA=2.1930001;
+								sizeA=2.8474932;
 								sizeB=2.47;
 								sizeC=1.531;
 								isRectangle=1;
 							};
 							id=366;
 							type="EmptyDetectorArea10x10";
-							atlOffset=1.2927127;
+							atlOffset=1.2933848;
 						};
 						class Item4
 						{
@@ -6936,7 +6936,7 @@ class Mission
 						};
 					};
 					id=362;
-					atlOffset=0.78468919;
+					atlOffset=0.78544521;
 				};
 				class Item5
 				{
@@ -25354,6 +25354,7 @@ class Mission
 							};
 							id=1236;
 							type="Box_NATO_Equip_F";
+							atlOffset=0.00035858154;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27212,7 +27213,7 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={3900.0481,8,16961.938};
+								position[]={3900.0469,8,16961.938};
 							};
 							areaSize[]={1,-1,1};
 							id=1848;
