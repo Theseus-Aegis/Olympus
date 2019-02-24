@@ -8,8 +8,8 @@
 OnLoadName = "Olympus";
 OnLoadMission = "Olympus Training Facilities";
 author = "Theseus Incorporated";
-loadScreen = QPATHTOTACRF(images,olympus2\OlympusLoading.paa);
-overviewPicture = QPATHTOTACRF(images,olympus2\OlympusLoading.paa);
+loadScreen = QPATHTOTACRF(images,olympusTwo\OlympusLoading.paa);
+overviewPicture = QPATHTOTACRF(images,olympusTwo\OlympusLoading.paa);
 onLoadIntroTime = 1;
 onLoadMissionTime = 1;
 forceRotorLibSimulation = 1;

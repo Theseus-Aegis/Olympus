@@ -4238,7 +4238,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+								init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 							};
 							id=11;
 							type="Flag_Blue_F";
@@ -4279,7 +4279,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -5962,7 +5962,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateAdvPistolSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateAdvPistolSetup.paa";
 										};
 									};
 								};
@@ -6002,7 +6002,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\certificateAdvPistolRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\certificateAdvPistolRequirements.paa";
 										};
 									};
 								};
@@ -6042,7 +6042,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseAdvPistol.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseAdvPistol.paa";
 										};
 									};
 								};
@@ -7318,7 +7318,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textShoot.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textShoot.paa";
 										};
 									};
 								};
@@ -7357,7 +7357,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -7396,7 +7396,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -7435,7 +7435,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowRight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowRight.paa";
 										};
 									};
 								};
@@ -7474,7 +7474,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textKneel.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textKneel.paa";
 										};
 									};
 								};
@@ -7513,7 +7513,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowRight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowRight.paa";
 										};
 									};
 								};
@@ -7552,7 +7552,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -7591,7 +7591,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -7630,7 +7630,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textShoot.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textShoot.paa";
 										};
 									};
 								};
@@ -7669,7 +7669,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -7708,7 +7708,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowLeft.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowLeft.paa";
 										};
 									};
 								};
@@ -7747,7 +7747,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -7786,7 +7786,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textAim.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textAim.paa";
 										};
 									};
 								};
@@ -7825,7 +7825,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -7864,7 +7864,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textShoot.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textShoot.paa";
 										};
 									};
 								};
@@ -7903,7 +7903,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -7938,7 +7938,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+						init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 					};
 					id=401;
 					type="Flag_Blue_F";
@@ -8013,7 +8013,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+									value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 								};
 							};
 						};
@@ -10259,7 +10259,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\certificateAdvRifleRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\certificateAdvRifleRequirements.paa";
 										};
 									};
 								};
@@ -10301,7 +10301,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateAdvRifleSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateAdvRifleSetup.paa";
 										};
 									};
 								};
@@ -10382,7 +10382,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseAdvRifle.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseAdvRifle.paa";
 										};
 									};
 								};
@@ -11172,7 +11172,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -11211,7 +11211,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textKneel.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textKneel.paa";
 										};
 									};
 								};
@@ -11250,7 +11250,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowLeft.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowLeft.paa";
 										};
 									};
 								};
@@ -11289,7 +11289,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textShoot.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textShoot.paa";
 										};
 									};
 								};
@@ -11328,7 +11328,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowRight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowRight.paa";
 										};
 									};
 								};
@@ -11367,7 +11367,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textLean.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textLean.paa";
 										};
 									};
 								};
@@ -11406,7 +11406,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowRight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowRight.paa";
 										};
 									};
 								};
@@ -11445,7 +11445,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textShoot.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textShoot.paa";
 										};
 									};
 								};
@@ -11484,7 +11484,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textAim.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textAim.paa";
 										};
 									};
 								};
@@ -11523,7 +11523,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -11562,7 +11562,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textShoot.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textShoot.paa";
 										};
 									};
 								};
@@ -11601,7 +11601,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -11640,7 +11640,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -11679,7 +11679,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textProne.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textProne.paa";
 										};
 									};
 								};
@@ -11718,7 +11718,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowRight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowRight.paa";
 										};
 									};
 								};
@@ -11757,7 +11757,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -11796,7 +11796,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textAim.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textAim.paa";
 										};
 									};
 								};
@@ -11835,7 +11835,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowRight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowRight.paa";
 										};
 									};
 								};
@@ -11874,7 +11874,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textShoot.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textShoot.paa";
 										};
 									};
 								};
@@ -11913,7 +11913,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowRight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowRight.paa";
 										};
 									};
 								};
@@ -11952,7 +11952,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\textFireWhileMoving.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\textFireWhileMoving.paa";
 										};
 									};
 								};
@@ -11991,7 +11991,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\shoothouse\arrowStraight.paa";
+											value="x\tacr\addons\images\olympusTwo\shoothouse\arrowStraight.paa";
 										};
 									};
 								};
@@ -16632,7 +16632,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\whiteboard\certificateBasicRifleRequirements.paa";
+													value="x\tacr\addons\images\olympusTwo\whiteboard\certificateBasicRifleRequirements.paa";
 												};
 											};
 										};
@@ -16691,7 +16691,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\laptop\certificateBasicRifleSetup.paa";
+													value="x\tacr\addons\images\olympusTwo\laptop\certificateBasicRifleSetup.paa";
 												};
 											};
 										};
@@ -17126,7 +17126,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\signs\rangeBasicRifle.paa";
+													value="x\tacr\addons\images\olympusTwo\signs\rangeBasicRifle.paa";
 												};
 											};
 										};
@@ -17709,7 +17709,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\whiteboard\certificateBasicRifleRequirements.paa";
+													value="x\tacr\addons\images\olympusTwo\whiteboard\certificateBasicRifleRequirements.paa";
 												};
 											};
 										};
@@ -17810,7 +17810,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\laptop\certificateBasicRifleSetup.paa";
+													value="x\tacr\addons\images\olympusTwo\laptop\certificateBasicRifleSetup.paa";
 												};
 											};
 										};
@@ -18243,7 +18243,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\signs\rangeBasicRifle.paa";
+													value="x\tacr\addons\images\olympusTwo\signs\rangeBasicRifle.paa";
 												};
 											};
 										};
@@ -18856,7 +18856,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+								init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 							};
 							id=1386;
 							type="Flag_Blue_F";
@@ -18930,7 +18930,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -19073,7 +19073,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\laptop\certificateBasicPistolSetup.paa";
+													value="x\tacr\addons\images\olympusTwo\laptop\certificateBasicPistolSetup.paa";
 												};
 											};
 										};
@@ -19170,7 +19170,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\whiteboard\certificateBasicPistolRequirements.paa";
+													value="x\tacr\addons\images\olympusTwo\whiteboard\certificateBasicPistolRequirements.paa";
 												};
 											};
 										};
@@ -19546,7 +19546,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\signs\rangeBasicPistol.paa";
+													value="x\tacr\addons\images\olympusTwo\signs\rangeBasicPistol.paa";
 												};
 											};
 										};
@@ -20002,7 +20002,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\laptop\certificateBasicPistolSetup.paa";
+													value="x\tacr\addons\images\olympusTwo\laptop\certificateBasicPistolSetup.paa";
 												};
 											};
 										};
@@ -20098,7 +20098,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\whiteboard\certificateBasicPistolRequirements.paa";
+													value="x\tacr\addons\images\olympusTwo\whiteboard\certificateBasicPistolRequirements.paa";
 												};
 											};
 										};
@@ -20491,7 +20491,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="x\tacr\addons\images\olympus2\signs\rangeBasicPistol.paa";
+													value="x\tacr\addons\images\olympusTwo\signs\rangeBasicPistol.paa";
 												};
 											};
 										};
@@ -20990,7 +20990,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -21009,7 +21009,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+								init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 							};
 							id=1390;
 							type="Flag_Blue_F";
@@ -21221,7 +21221,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateBasicLMGSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateBasicLMGSetup.paa";
 										};
 									};
 								};
@@ -21260,7 +21260,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\certificateBasicLMGRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\certificateBasicLMGRequirements.paa";
 										};
 									};
 								};
@@ -21331,7 +21331,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\rangeBasicLMG.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\rangeBasicLMG.paa";
 										};
 									};
 								};
@@ -22256,7 +22256,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+								init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 							};
 							id=1397;
 							type="Flag_Blue_F";
@@ -22330,7 +22330,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -22956,7 +22956,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateBasicMarksmanSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateBasicMarksmanSetup.paa";
 										};
 									};
 								};
@@ -22996,7 +22996,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\certificateBasicMarksmanRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\certificateBasicMarksmanRequirements.paa";
 										};
 									};
 								};
@@ -23055,7 +23055,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateAdvMarksmanSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateAdvMarksmanSetup.paa";
 										};
 									};
 								};
@@ -23471,7 +23471,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\rangeMarksman.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\rangeMarksman.paa";
 										};
 									};
 								};
@@ -24020,7 +24020,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+								init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 							};
 							id=1372;
 							type="Flag_Blue_F";
@@ -24060,7 +24060,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -24151,7 +24151,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\certificate40mmRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\certificate40mmRequirements.paa";
 										};
 									};
 								};
@@ -24193,7 +24193,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificate40mmSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificate40mmSetup.paa";
 										};
 									};
 								};
@@ -25429,7 +25429,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -25465,7 +25465,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+								init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 							};
 							id=1374;
 							type="Flag_Blue_F";
@@ -25713,7 +25713,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+								init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 							};
 							id=1202;
 							type="Flag_Blue_F";
@@ -25751,7 +25751,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\certificateLauncherRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\certificateLauncherRequirements.paa";
 										};
 									};
 								};
@@ -25970,7 +25970,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -26092,7 +26092,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateLauncherSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateLauncherSetup.paa";
 										};
 									};
 								};
@@ -26134,7 +26134,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateLauncherSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateLauncherSetup.paa";
 										};
 									};
 								};
@@ -26177,7 +26177,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateLauncherSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateLauncherSetup.paa";
 										};
 									};
 								};
@@ -26220,7 +26220,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\certificateLauncherSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\certificateLauncherSetup.paa";
 										};
 									};
 								};
@@ -27406,7 +27406,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setFlagTexture ""\x\tacr\addons\images\olympus2\FlagTheseus.paa"";}";
+								init="call{this setFlagTexture ""\x\tacr\addons\images\olympusTwo\FlagTheseus.paa"";}";
 							};
 							id=1278;
 							type="Flag_Blue_F";
@@ -27447,7 +27447,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -27487,7 +27487,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\licenseEngineerRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\licenseEngineerRequirements.paa";
 										};
 									};
 								};
@@ -27771,7 +27771,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseEngineer.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseEngineer.paa";
 										};
 									};
 								};
@@ -28669,7 +28669,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseEngineerMine01.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseEngineerMine01.paa";
 										};
 									};
 								};
@@ -28729,7 +28729,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseEngineerMine02.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseEngineerMine02.paa";
 										};
 									};
 								};
@@ -28789,7 +28789,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseEngineerMine05.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseEngineerMine05.paa";
 										};
 									};
 								};
@@ -28849,7 +28849,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseEngineerMine06.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseEngineerMine06.paa";
 										};
 									};
 								};
@@ -28909,7 +28909,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseEngineerMine03.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseEngineerMine03.paa";
 										};
 									};
 								};
@@ -28969,7 +28969,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseEngineerMine07.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseEngineerMine07.paa";
 										};
 									};
 								};
@@ -29029,7 +29029,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\courseEngineerMine04.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\courseEngineerMine04.paa";
 										};
 									};
 								};
@@ -30083,7 +30083,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -30135,7 +30135,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\certificateHandGrenadeRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\certificateHandGrenadeRequirements.paa";
 										};
 									};
 								};
@@ -31935,7 +31935,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\rangeGrenadeLane3.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\rangeGrenadeLane3.paa";
 										};
 									};
 								};
@@ -31975,7 +31975,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\rangeGrenadeLane2.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\rangeGrenadeLane2.paa";
 										};
 									};
 								};
@@ -32015,7 +32015,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\signs\rangeGrenadeLane1.paa";
+											value="x\tacr\addons\images\olympusTwo\signs\rangeGrenadeLane1.paa";
 										};
 									};
 								};
@@ -33309,7 +33309,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\laptop\fastTravel.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
 										};
 									};
 								};
@@ -33446,7 +33446,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\licenseTransportPilotRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\licenseTransportPilotRequirements.paa";
 										};
 									};
 								};
@@ -33486,7 +33486,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="x\tacr\addons\images\olympus2\whiteboard\licenseCASPilotRequirements.paa";
+											value="x\tacr\addons\images\olympusTwo\whiteboard\licenseCASPilotRequirements.paa";
 										};
 									};
 								};
