@@ -8,22 +8,22 @@ class EditorData
 	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=2264;
+		nextID=2268;
 	};
 	class MarkerIDProvider
 	{
-		nextID=13;
+		nextID=15;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2061;
+		nextID=2169;
 	};
 	class Camera
 	{
-		pos[]={8523.9189,43.761925,17502.156};
-		dir[]={0.86939329,-0.45894963,-0.18313263};
-		up[]={0.44909874,0.88846147,-0.094599716};
-		aside[]={-0.20612291,-1.2206146e-007,-0.97853404};
+		pos[]={8536.126,35.259262,17502.439};
+		dir[]={0.89203125,-0.42151213,-0.1634614};
+		up[]={0.41463163,0.90680891,-0.075977564};
+		aside[]={-0.18025263,-2.6880298e-007,-0.98366743};
 	};
 };
 binarizationWanted=0;
@@ -12089,7 +12089,7 @@ class Mission
 			name="Location Markers";
 			class Entities
 			{
-				items=8;
+				items=9;
 				class Item0
 				{
 					dataType="Marker";
@@ -12102,23 +12102,13 @@ class Mission
 				class Item1
 				{
 					dataType="Marker";
-					position[]={8602.6777,10,17484.029};
-					name="markerMainCamp";
-					text="Main Camp";
-					type="mil_flag";
-					colorName="ColorWEST";
-					id=605;
-				};
-				class Item2
-				{
-					dataType="Marker";
 					position[]={5973.7178,10,16901.383};
 					name="markerBasicWeapons";
 					text="Basic Weapons Ranges";
 					type="mil_marker";
 					id=1044;
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Marker";
 					position[]={5469.7231,10,16913.703};
@@ -12127,7 +12117,7 @@ class Mission
 					type="mil_marker";
 					id=1107;
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Marker";
 					position[]={9688.4199,15.001,4162.9399};
@@ -12137,7 +12127,7 @@ class Mission
 					id=1235;
 					atlOffset=-0.00024223328;
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Marker";
 					position[]={3923.293,8,16838.387};
@@ -12146,7 +12136,7 @@ class Mission
 					type="mil_marker";
 					id=1411;
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Marker";
 					position[]={8958.2275,1.5,3789.3591};
@@ -12155,7 +12145,7 @@ class Mission
 					type="mil_marker";
 					id=1534;
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Marker";
 					position[]={1021.9287,6,1244.0587};
@@ -12164,9 +12154,28 @@ class Mission
 					type="mil_marker";
 					id=1753;
 				};
+				class Item7
+				{
+					dataType="Marker";
+					position[]={8602.0752,10,17466.537};
+					name="markerMainCamp";
+					text="Main Camp";
+					type="mil_flag";
+					colorName="ColorWEST";
+					id=2267;
+				};
+				class Item8
+				{
+					dataType="Marker";
+					position[]={8635.7363,10,17533.543};
+					name="markerMedic";
+					text="Medic Course";
+					type="mil_marker";
+					id=2266;
+				};
 			};
 			id=603;
-			atlOffset=0.76839018;
+			atlOffset=-0.87356853;
 		};
 		class Item6
 		{
@@ -36362,6 +36371,7 @@ class Mission
 							};
 							id=2257;
 							type="Land_LampHarbour_F";
+							atlOffset=-4.7683716e-007;
 						};
 						class Item1
 						{
@@ -36378,9 +36388,11 @@ class Mission
 							};
 							id=2258;
 							type="Land_LampHarbour_F";
+							atlOffset=-4.7683716e-007;
 						};
 					};
 					id=2259;
+					atlOffset=-4.7683716e-007;
 				};
 				class Item4
 				{
@@ -36463,6 +36475,7 @@ class Mission
 							};
 							id=2250;
 							type="Land_LampHalogen_F";
+							atlOffset=-9.5367432e-007;
 						};
 						class Item2
 						{
@@ -36479,6 +36492,7 @@ class Mission
 							};
 							id=2251;
 							type="Land_LampHalogen_F";
+							atlOffset=-9.5367432e-007;
 						};
 						class Item3
 						{
@@ -36495,6 +36509,7 @@ class Mission
 							};
 							id=2252;
 							type="Land_LampHalogen_F";
+							atlOffset=-9.5367432e-007;
 						};
 						class Item4
 						{
@@ -36527,10 +36542,11 @@ class Mission
 							};
 							id=2254;
 							type="Land_LampHalogen_F";
+							atlOffset=-9.5367432e-007;
 						};
 					};
 					id=2261;
-					atlOffset=-0.078500748;
+					atlOffset=-0.078501701;
 				};
 				class Item6
 				{
@@ -36596,6 +36612,7 @@ class Mission
 							};
 							id=2243;
 							type="Land_LampHarbour_F";
+							atlOffset=2.3841858e-007;
 						};
 						class Item1
 						{
@@ -36612,6 +36629,7 @@ class Mission
 							};
 							id=2244;
 							type="Land_LampHarbour_F";
+							atlOffset=2.3841858e-007;
 						};
 						class Item2
 						{
@@ -36628,6 +36646,7 @@ class Mission
 							};
 							id=2245;
 							type="Land_LampHarbour_F";
+							atlOffset=2.3841858e-007;
 						};
 						class Item3
 						{
@@ -36644,6 +36663,7 @@ class Mission
 							};
 							id=2246;
 							type="Land_LampHarbour_F";
+							atlOffset=2.3841858e-007;
 						};
 						class Item4
 						{
@@ -36660,6 +36680,7 @@ class Mission
 							};
 							id=2247;
 							type="Land_LampHarbour_F";
+							atlOffset=2.3841858e-007;
 						};
 						class Item5
 						{
@@ -36676,9 +36697,11 @@ class Mission
 							};
 							id=2248;
 							type="Land_LampHarbour_F";
+							atlOffset=2.3841858e-007;
 						};
 					};
 					id=2263;
+					atlOffset=2.3841858e-007;
 				};
 			};
 			id=1852;
@@ -39126,9 +39149,33 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{[this] call TAC_Olympus_fnc_VAboxMedicinit}";
 							};
 							id=2235;
 							type="ACE_medicalSupplyCrate_advanced";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
 						};
 						class Item24
 						{
@@ -39142,9 +39189,33 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{[this] call TAC_Olympus_fnc_VAboxMedicinit}";
 							};
 							id=2233;
 							type="ACE_medicalSupplyCrate_advanced";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
 						};
 					};
 					id=2227;
@@ -39156,7 +39227,7 @@ class Mission
 					name="Instruction Building";
 					class Entities
 					{
-						items=40;
+						items=41;
 						class Item0
 						{
 							dataType="Object";
@@ -39574,7 +39645,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8638.8945,11.435233,17541.531};
+								position[]={8639.4121,11.435233,17541.701};
 								angles[]={1.5707964,0,0};
 							};
 							side="Empty";
@@ -39700,8 +39771,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8639.3223,11.452233,17541.746};
-								angles[]={1.5707964,1.7453292e-005,0.57595867};
+								position[]={8639.498,11.452233,17541.902};
+								angles[]={1.5707964,1.7441396e-005,0.31415924};
 							};
 							side="Empty";
 							flags=4;
@@ -39830,16 +39901,40 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8637.9492,10.601673,17540.193};
-								angles[]={0,2.5481808,0};
+								position[]={8638.8389,10.601673,17539.98};
+								angles[]={-0,2.5481808,0};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
+								init="call{[this] call TAC_Olympus_fnc_VAboxMedicinit}";
 							};
 							id=2236;
 							type="ACE_medicalSupplyCrate_advanced";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
 						};
 						class Item38
 						{
@@ -40010,9 +40105,49 @@ class Mission
 								nAttributes=6;
 							};
 						};
+						class Item40
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={8638.459,10.601673,17538.744};
+								angles[]={-0,1.2391839,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="call{[this] call TAC_Olympus_fnc_VAboxMedicinit}";
+							};
+							id=2264;
+							type="ACE_medicalSupplyCrate_advanced";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=2228;
-					atlOffset=0.2852726;
+					atlOffset=0.20284367;
 				};
 				class Item3
 				{
@@ -40243,7 +40378,7 @@ class Mission
 				};
 			};
 			id=2225;
-			atlOffset=0.17053795;
+			atlOffset=0.11982727;
 		};
 	};
 };

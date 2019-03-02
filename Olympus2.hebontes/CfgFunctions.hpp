@@ -20,6 +20,7 @@ class CfgFunctions {
 			class VAboxCombatEngineerinit;
 			class VAboxHandGrenades;
 			class VAboxLauncherinit;
+			class VAboxMedicinit;
 			class VAboxStaginginit;
         };
     };
