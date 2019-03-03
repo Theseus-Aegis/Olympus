@@ -12,7 +12,7 @@
 
 #include "script_component.hpp"
 
-// Types a "OLYMPUS" text on the screen, letter by letter, cursor blinking.
+// Types "OLYMPUS" text on the screen, letter by letter, cursor blinking.
 [
     [
         ["OLYMPUS", "<t size = '1.5' underline = '1'>%1</t><br/>"],
