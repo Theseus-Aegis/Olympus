@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [controller] call TAC_Olympus_fnc_environmentController
+ * [controller] call TAC_Olympus_fnc_environmentControl
  */
 #include "..\script_component.hpp"
 

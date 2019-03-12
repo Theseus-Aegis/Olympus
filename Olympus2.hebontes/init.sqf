@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-// environmentController eventHandlers
+// environmentControl eventHandlers
 [QGVAR(setTime), {
     ["Environment changing..."] call ace_common_fnc_displayTextStructured;
     skipTime ((_this select 0) - daytime + 24 ) % 24; // Skip forward to a specific

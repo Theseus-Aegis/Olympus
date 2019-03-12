@@ -1,6 +1,6 @@
 /*
  * Author: Rory
- * Resets all damaged objects back to their original state
+ * Resets target damaged objects back to their original state
  *
  * Arguments:
  * 0: Controller (object)
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [controller, [target1,target2,target3]] call TAC_Olympus_fnc_resetDamagedObjects;
+ * [controller, [target1, target2, target3]] call TAC_Olympus_fnc_resetDamagedObjects
  */
 #include "..\script_component.hpp"
 

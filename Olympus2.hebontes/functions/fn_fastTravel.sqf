@@ -9,20 +9,24 @@
  * None
  *
  * Example:
- * [this] call TAC_Olympus_fnc_teleport
+ * [this] call TAC_Olympus_fnc_fastTravel
  */
 #include "..\script_component.hpp"
 
 // Define teleport locations here
 private _teleportLocations = [
     // [objectVarName, "Display Name"]
-    [teleportPosBase, "Base"],
-    [teleportPosAdvRifle, "Adv. Rifle course"],
-    [teleportPosMG, "MG course"],
-    [teleportPosCQB, "CQB course"],
-    [teleportPosUrban, "Urban City course"],
-    [teleportPosGL, "RPG course"],
-    [teleportPosMike, "40MM course"]
+    [tpPosBase, "Base"],
+	[tpPosAirport, "Airport"],
+    [tpPos40mm, "40mm GL Range"],
+    [tpPosAdvPistolRifle, "Adv. Pistol and Rifle Course"],
+	[tpPosMarksman, "Adv. and Basic Marksman Range"],
+	[tpPosBasicLMG, "Basic LMG Range"],
+	[tpPosBasicPistol, "Basic Pistol Range"],
+	[tpPosBasicRifle, "Basic Rifle Range"],
+	[tpPosEngineer, "Combat Engineer Course"],
+	[tpPosHandGrenade, "Hand Grenade Range"],
+    [tpPosLauncher, "Launcher Range"]
 ];
 
 params ["_controller"];

@@ -1,6 +1,6 @@
 /*
  * Author: Jonpas
- * Spawns moving units for Marksman Course.
+ * Spawns moving units for Advanced Marksman range
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [controller] call TAC_Olympus_fnc_marksmanCourse
+ * [controller, ["area1", "area2", "area3"]] call TAC_Olympus_fnc_rangeAdvMarksmanGroups
  */
 #include "..\script_component.hpp"
 
@@ -24,13 +24,13 @@ if !(_patrolAreasTest isEqualTo []) exitWith {
 };
 
 TRACE_1("areas",_patrolAreas);
-GVAR(marksmanTargetGroups) = call CBA_fnc_createNamespace;
+GVAR(advMarksmanTargetGroups) = call CBA_fnc_createNamespace;
 
 {
     private _level = ["Close", "Medium", "Far"] select _forEachIndex;
 
     private _actionSpawn = [
-        format [QGVAR(marksmanTargetsSpawn%1), _level],
+        format [QGVAR(advMarksmanTargetsSpawn%1), _level],
         format ["Spawn Moving Targets - %1", _level],
         "",
         {
@@ -64,24 +64,24 @@ GVAR(marksmanTargetGroups) = call CBA_fnc_createNamespace;
             [_group, _patrolArea, "SAFE", "BLUE", "LIMITED", "COLUMN"] call CBA_fnc_taskSearchArea;
 
             // Save variable for removal
-            GVAR(marksmanTargetGroups) setVariable [_level, _group];
+            GVAR(advMarksmanTargetGroups) setVariable [_level, _group];
         },
         {
             (_this select 2) params ["_level"];
-            isNull ([GVAR(marksmanTargetGroups) getVariable _level] param [0, grpNull]);
+            isNull ([GVAR(advMarksmanTargetGroups) getVariable _level] param [0, grpNull]);
         },
         {},
         [_level, _x]
     ] call ace_interact_menu_fnc_createAction;
 
     private _actionDespawn = [
-        format [QGVAR(marksmanTargetsDespawn%1), _level],
+        format [QGVAR(advMarksmanTargetsDespawn%1), _level],
         format ["Despawn Moving Targets - %1", _level],
         "",
         {
             (_this select 2) params ["_level"];
 
-            private _group = [GVAR(marksmanTargetGroups) getVariable _level] param [0, grpNull];
+            private _group = [GVAR(advMarksmanTargetGroups) getVariable _level] param [0, grpNull];
             // Remove units and group
             {
                 deleteVehicle _x;
@@ -89,11 +89,11 @@ GVAR(marksmanTargetGroups) = call CBA_fnc_createNamespace;
             deleteGroup _group;
 
             // Mark removed
-            GVAR(marksmanTargetGroups) setVariable [_level, grpNull];
+            GVAR(advMarksmanTargetGroups) setVariable [_level, grpNull];
         },
         {
             (_this select 2) params ["_level"];
-            !isNull ([GVAR(marksmanTargetGroups) getVariable _level] param [0, grpNull]);
+            !isNull ([GVAR(advMarksmanTargetGroups) getVariable _level] param [0, grpNull]);
         },
         {},
         [_level]
