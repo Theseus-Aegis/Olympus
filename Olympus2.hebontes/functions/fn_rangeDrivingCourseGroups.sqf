@@ -1,6 +1,6 @@
 /*
  * Author: Rory, Jonpas
- * Allows for the instructor to choose what group of targets pop up for basic LMG range
+ * Allows for instructor to control pop up targets on Driving course
  *
  * Arguments:
  * 0: Interaction object.
@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [this] call TAC_Olympus_fnc_rangeBasicLMGTargetGroups;
+ * [this] call TAC_Olympus_fnc_rangeDrivingCourseGroups;
  */
 #include "..\script_component.hpp"
 
