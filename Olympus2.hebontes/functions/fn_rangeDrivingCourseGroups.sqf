@@ -13,8 +13,8 @@
  */
 #include "..\script_component.hpp"
 
-#define TARGET_GROUP_1 rangeBasicDrivingTarget01, rangeBasicDrivingTarget02, rangeBasicDrivingTarget03, rangeBasicDrivingTarget04, rangeBasicDrivingTarget05, rangeBasicDrivingTarget06
-#define TARGET_GROUP_2 rangeBasicDrivingTarget07, rangeBasicDrivingTarget08, rangeBasicDrivingTarget09, rangeBasicDrivingTarget10
+#define TARGET_GROUP_1 courseDrivingTarget01, courseDrivingTarget02, courseDrivingTarget03, courseDrivingTarget04, courseDrivingTarget05, courseDrivingTarget06
+#define TARGET_GROUP_2 courseDrivingTarget07, courseDrivingTarget08, courseDrivingTarget09, courseDrivingTarget10
 
 #define ALL_TARGETS TARGET_GROUP_1, TARGET_GROUP_2
 #define ALL_TARGET_GROUPS [[ALL_TARGETS], [ALL_TARGETS], [TARGET_GROUP_1], [TARGET_GROUP_2]]

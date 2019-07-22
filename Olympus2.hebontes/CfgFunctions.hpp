@@ -9,7 +9,7 @@ class CfgFunctions {
 			class range40mmTargetGroups;
 			class rangeAdvMarksmanGroups;
 			class rangeBasicLMGTargetGroups;
-            class rangeDrivingCourseGroups;
+            class courseBasicDrivingTargetGroups;
 			class resetDamagedObjects;
             class setBasicLoadout;
         };
