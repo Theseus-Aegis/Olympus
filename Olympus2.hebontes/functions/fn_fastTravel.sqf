@@ -17,15 +17,16 @@
 private _teleportLocations = [
     // [objectVarName, "Display Name"]
     [tpPosBase, "Base"],
-	[tpPosAirport, "Airport"],
+    [tpPosAirport, "Airport"],
     [tpPos40mm, "40mm GL Range"],
     [tpPosAdvPistolRifle, "Adv. Pistol and Rifle Course"],
-	[tpPosMarksman, "Adv. and Basic Marksman Range"],
-	[tpPosBasicLMG, "Basic LMG Range"],
-	[tpPosBasicPistol, "Basic Pistol Range"],
-	[tpPosBasicRifle, "Basic Rifle Range"],
-	[tpPosEngineer, "Combat Engineer Course"],
-	[tpPosHandGrenade, "Hand Grenade Range"],
+    [tpPosMarksman, "Adv. and Basic Marksman Range"],
+    [tpPosBasicLMG, "Basic LMG Range"],
+    [tpPosBasicPistol, "Basic Pistol Range"],
+    [tpPosBasicRifle, "Basic Rifle Range"],
+    [tpPosEngineer, "Combat Engineer Course"],
+    [tpPosDrivingCourse, "Driving Course"],
+    [tpPosHandGrenade, "Hand Grenade Range"],
     [tpPosLauncher, "Launcher Range"]
 ];
 

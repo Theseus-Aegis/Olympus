@@ -60,6 +60,6 @@ params ["_controller"];
     [QGVAR(group3up), "House - Close", 0],
     [QGVAR(group4up), "House - Far", 0],
     [QGVAR(group5up), "Village", 0],
-	[QGVAR(group6up), "Wrecks - Close", 0],
-	[QGVAR(group7up), "Wrecks - Far", 0]
+    [QGVAR(group6up), "Wrecks - Close", 0],
+    [QGVAR(group7up), "Wrecks - Far", 0]
 ];
