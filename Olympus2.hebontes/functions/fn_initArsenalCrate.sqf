@@ -61,12 +61,17 @@ private _basicLMG = [
 private _basicMarksman = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
+    "arifle_MXM_Black_F",
+    "30Rnd_65x39_caseless_black_mag",
+    "optic_hamr",
+    "srifle_DMR_03_F",
+    "20Rnd_762x51_Mag",
+    "optic_mrco",
+    "srifle_EBR_F",
+    "cup_optic_elcan",
     "V_Rangemaster_belt",
-    "hlc_rifle_M14_Bipod_Rail",
     "Rangefinder",
-    "hlc_20Rnd_762x51_T_M14",
-    "ACE_RangeCard",
-    "optic_sos"
+    "ACE_RangeCard"
 ];
 
 private _basicPistol = [
