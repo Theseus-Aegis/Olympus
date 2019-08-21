@@ -1,7 +1,7 @@
 /*
  * Author: JoramD, Jonpas, Kresky
  * Initializes 2 ACE Arsenals on an object (1 full, 1 partial) and selects an item array.
- * AVAILABLE OPTIONS: 40mm, advancedPistol, advancedRifle, basicLMG, basicMarksman, basicPistol, basicRifle, engineer, grenade, launcher, medical, full (Only makes full arsenal)
+ * AVAILABLE OPTIONS: 40mm, advancedPistol, advancedRifle, basicLMG, basicPistol, basicRifle, engineer, grenade, launcher, marksman, medical, full (Only makes full arsenal)
  *
  * Arguments:
  * 0: Crate <OBJECT>
@@ -58,15 +58,20 @@ private _basicLMG = [
     "tacs_Backpack_Carryall_DarkBlack"
 ];
 
-private _basicMarksman = [
+private _marksman = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
+    "arifle_MXM_Black_F",
+    "30Rnd_65x39_caseless_black_mag",
+    "optic_hamr",
+    "srifle_DMR_03_F",
+    "20Rnd_762x51_Mag",
+    "optic_mrco",
+    "srifle_EBR_F",
+    "cup_optic_elcan",
     "V_Rangemaster_belt",
-    "hlc_rifle_M14_Bipod_Rail",
     "Rangefinder",
-    "hlc_20Rnd_762x51_T_M14",
-    "ACE_RangeCard",
-    "optic_sos"
+    "ACE_RangeCard"
 ];
 
 private _basicPistol = [
@@ -174,7 +179,7 @@ switch (_type) do {
     case "advancedPistol": { _chosen = _advancedPistol; };
     case "advancedRifle": { _chosen = _advancedRifle; };
     case "basicLMG": { _chosen = _basicLMG; };
-    case "basicMarksman": { _chosen = _basicMarksman; };
+    case "marksman": { _chosen = _marksman; };
     case "basicPistol": { _chosen = _basicPistol; };
     case "basicRifle": { _chosen = _basicRifle; };
     case "engineer": { _chosen = _engineer; };
