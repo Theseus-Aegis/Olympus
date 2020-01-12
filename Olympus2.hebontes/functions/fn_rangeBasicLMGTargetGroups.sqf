@@ -18,9 +18,10 @@
 #define TARGET_GROUP_3 rangeBasicLMGTarget12, rangeBasicLMGTarget13, rangeBasicLMGTarget14, rangeBasicLMGTarget15
 #define TARGET_GROUP_4 rangeBasicLMGTarget16, rangeBasicLMGTarget17, rangeBasicLMGTarget18, rangeBasicLMGTarget19, rangeBasicLMGTarget20
 #define TARGET_GROUP_5 rangeBasicLMGTarget21, rangeBasicLMGTarget22, rangeBasicLMGTarget23, rangeBasicLMGTarget24, rangeBasicLMGTarget25
+#define TARGET_GROUP_6 rangeBasicLMGTarget26, rangeBasicLMGTarget27, rangeBasicLMGTarget28, rangeBasicLMGTarget29, rangeBasicLMGTarget30, rangeBasicLMGTarget31
 
-#define ALL_TARGETS TARGET_GROUP_1, TARGET_GROUP_2, TARGET_GROUP_3, TARGET_GROUP_4, TARGET_GROUP_5
-#define ALL_TARGET_GROUPS [[ALL_TARGETS], [ALL_TARGETS], [TARGET_GROUP_1], [TARGET_GROUP_2], [TARGET_GROUP_3], [TARGET_GROUP_4], [TARGET_GROUP_5]]
+#define ALL_TARGETS TARGET_GROUP_1, TARGET_GROUP_2, TARGET_GROUP_3, TARGET_GROUP_4, TARGET_GROUP_5, TARGET_GROUP_6
+#define ALL_TARGET_GROUPS [[ALL_TARGETS], [ALL_TARGETS], [TARGET_GROUP_1], [TARGET_GROUP_2], [TARGET_GROUP_3], [TARGET_GROUP_4], [TARGET_GROUP_5], [TARGET_GROUP_6]]
 
 // Default targets down
 {
@@ -54,8 +55,9 @@ params ["_controller"];
     [QGVAR(targetsUp), "All Up", 0],
     [QGVAR(targetsDown), "All Down", 1],
     [QGVAR(group1up), "Group 1 Up", 0],
-    [QGVAR(group2up), "Group 2 Up", 0],
-    [QGVAR(group3up), "Group 3 Up", 0],
+    [QGVAR(group2up), "Left to Right Patrol Up", 0],
+    [QGVAR(group3up), "Penetrating Fire Up", 0],
     [QGVAR(group4up), "Group 4 Up", 0],
-    [QGVAR(group5up), "Group 5 Up", 0]
+    [QGVAR(group5up), "Group 5 Up", 0],
+    [QGVAR(group6up), "Enfilading Fire Patrol Up", 0]
 ];

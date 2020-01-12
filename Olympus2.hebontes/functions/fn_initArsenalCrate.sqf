@@ -21,8 +21,15 @@ private _40mm = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
     "V_Rangemaster_belt",
-    "arifle_SPAR_01_GL_blk_F",
+    "arifle_Mk20_GL_plain_F",
+    "CUP_arifle_L85A2_GL",
+    "hlc_rifle_m4m203",
+    "CUP_arifle_AK101_GL",
+    "cup_optic_elcan_specterdr_black",
+    "cup_optic_eotech553_black",
     "Rangefinder",
+    "hlc_VOG25_AK",
+    "CUP_1Rnd_HEDP_M203",
     "1Rnd_HE_Grenade_shell",
     "1Rnd_SmokeBlue_Grenade_shell",
     "1Rnd_SmokeGreen_Grenade_shell",
@@ -55,6 +62,8 @@ private _basicLMG = [
     "hlc_m249_pip1",
     "hlc_200rnd_556x45_M_SAW",
     "bwa3_optic_compm2",
+    "cup_optic_elcanm145",
+    "bwa3_optic_zo4x30_microt2",
     "tacs_Backpack_Carryall_DarkBlack"
 ];
 

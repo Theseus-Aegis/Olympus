@@ -8,7 +8,6 @@ class CfgFunctions {
             class fastTravel;
             class initArsenalCrate;
             class range40mmTargetGroups;
-            class rangeAdvMarksmanGroups;
             class rangeBasicLMGTargetGroups;
             class resetDamagedObjects;
             class setBasicLoadout;
