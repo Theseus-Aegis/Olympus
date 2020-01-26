@@ -27,7 +27,7 @@ private _teleportLocations = [
     ["Course", tpPosDrivingCourse, "Driving"],
     ["Range", tpPosHandGrenade, "Hand Grenade"],
     ["Range", tpPosLauncher, "Launcher"],
-	["Course", tpPosMarksman, "Marksman"]
+    ["Course", tpPosMarksman, "Marksman"]
 ];
 
 params ["_controller"];
