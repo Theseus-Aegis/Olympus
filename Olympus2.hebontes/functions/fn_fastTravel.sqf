@@ -59,6 +59,8 @@ private _createdCategories = [];
     } else {
         private _categoryActionName = format [QGVAR(FastTravel_%1), _category];
         if !(_category in _createdCategories) then {
+            _createdCategories pushBack _category;
+
             private _categoryAction = [
                 _categoryActionName,
                 _category,
@@ -66,6 +68,7 @@ private _createdCategories = [];
                 {},
                 {true}
             ] call ace_interact_menu_fnc_createAction;
+
             [_controller, 0, ["ACE_MainActions"], _categoryAction] call ace_interact_menu_fnc_addActionToObject;
         };
 
