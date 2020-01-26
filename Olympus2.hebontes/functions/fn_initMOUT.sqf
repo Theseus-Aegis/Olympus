@@ -21,7 +21,7 @@
 // Define available unit classes to spawn
 #define TYPES ["B_helicrew_F"]
 
-params ["_controller", "_name", "_markerBaseName", "_markerCount", "_chance"];
+params ["_controller", "_name", "_markerBaseName", "_markerCount", ["_chance", 30]];
 
 private _createAction = [
     format [QGVAR(%1_Create), _controller],
