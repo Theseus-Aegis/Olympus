@@ -14,20 +14,20 @@
 #include "..\script_component.hpp"
 
 // Define teleport locations here
-#define TELEPORT_LOCATIONS = [
+private _teleportLocations = [
     // ["Category", objectVarName, "Display Name"]
-    ["", tpPosBase, "Base"],
-    ["", tpPosAirport, "Airport"],
+    ["Hub", tpPosBase, "Base"],
+    ["Hub", tpPosAirport, "Airport"],
     ["Range", tpPos40mm, "40mm GL"],
     ["Course", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
-    ["Range", tpPosBasicLMG, "Basic LMG"],
+    ["Course", tpPosBasicLMG, "Machine Gun"],
     ["Range", tpPosBasicPistol, "Basic Pistol"],
     ["Range", tpPosBasicRifle, "Basic Rifle"],
     ["Course", tpPosEngineer, "Combat Engineer"],
     ["Course", tpPosDrivingCourse, "Driving"],
     ["Range", tpPosHandGrenade, "Hand Grenade"],
     ["Range", tpPosLauncher, "Launcher"],
-	["Range", tpPosMarksman, "Marksman"]
+	["Course", tpPosMarksman, "Marksman"]
 ];
 
 params ["_controller"];
@@ -71,4 +71,4 @@ private _createdCategories = [];
 
         [_controller, 0, ["ACE_MainActions", _categoryActionName], _action] call ace_interact_menu_fnc_addActionToObject;
     };
-} forEach TELEPORT_LOCATIONS;
+} forEach _teleportLocations;
