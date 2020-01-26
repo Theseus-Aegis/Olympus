@@ -7,6 +7,7 @@ class CfgFunctions {
             class environmentControl;
             class fastTravel;
             class initArsenalCrate;
+            class initMOUT;
             class range40mmTargetGroups;
             class rangeAdvMarksmanGroups;
             class rangeBasicLMGTargetGroups;
