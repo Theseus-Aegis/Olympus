@@ -1,5 +1,5 @@
 /*
- * Author: Rory, jonpas
+ * Author: Rory, Jonpas
  * Teleports the player from base (this) to teleport locations (objects).
  *
  * Arguments:
