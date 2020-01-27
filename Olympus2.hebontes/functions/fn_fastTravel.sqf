@@ -20,13 +20,13 @@ private _teleportLocations = [
     ["Hub", tpPosAirport, "Airport"],
     ["Course", tpPos40mm, "40mm GL"],
     ["Course", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
-    ["Course", tpPosBasicLMG, "Machine Gun"],
     ["Range", tpPosBasicPistol, "Basic Pistol"],
     ["Range", tpPosBasicRifle, "Basic Rifle"],
     ["Course", tpPosEngineer, "Combat Engineer"],
     ["Course", tpPosDrivingCourse, "Driving"],
     ["Range", tpPosHandGrenade, "Hand Grenade"],
     ["Range", tpPosLauncher, "Launcher"],
+    ["Course", tpPosBasicLMG, "Machine Gun"],
     ["Course", tpPosMarksman, "Marksman"]
 ];
 
