@@ -34,7 +34,7 @@ for "_i" from 0 to (_markerCount - 1) do {
     private _marker = missionNamespace getVariable [_markerName, objNull];
     if (!isNull _marker) then {
         _marker hideObject true;
-        _marker pushBack _markers;
+        _markers pushBack _marker;
     };
 };
 
