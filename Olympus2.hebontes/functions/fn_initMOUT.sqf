@@ -26,43 +26,51 @@
 
 params ["_controller", "_name", "_markerBaseName", "_markerCount", "_unitClasses", ["_unitChance", 30], ["_specialUnits", []]];
 
+private _markers = []; // Save existing (non-null) markers for action statement
+
+// Hide all markers (keep visible in editor)
+for "_i" from 0 to (_markerCount - 1) do {
+    private _markerName = format ["%1_%2", _markerBaseName, _i];
+    private _marker = missionNamespace getVariable [_markerName, objNull];
+    if (!isNull _marker) then {
+        _marker hideObject true;
+        _markers pushBack _marker;
+    };
+};
+
+// Create actions
 private _createAction = [
     format [QGVAR(%1_Create), _controller],
     format ["Create %1", _name],
     "",
     {
         params ["_controller", "", "_args"];
-        _args params ["_markerBaseName", "_markerCount", "_unitClasses", "_unitChance", "_specialUnits"];
+        _args params ["_markers", "_unitClasses", "_unitChance", "_specialUnits"];
 
         private _units = [];
         private _specialMarkerClasses = _specialUnits apply {_x select 0};
 
         // Get marker variables and spawn units
-        for "_i" from 0 to (_markerCount - 1) do {
-            private _markerName = format ["%1_%2", _markerBaseName, _i];
-            private _marker = missionNamespace getVariable [_markerName, objNull];
+        {
+            // Spawn probability
+            if (_unitChance >= random 100) then {
+                // Get data
+                private _type = selectRandom _unitClasses;
 
-            if (!isNull _marker) then {
-                // Spawn probability
-                if (_unitChance >= random 100) then {
-                    // Get data from marker
-                    private _type = selectRandom _unitClasses;
-
-                    // Special unit
-                    private _specialIndex = _specialMarkerClasses find (typeOf _marker);
-                    if (_specialIndex != -1) then {
-                        (_specialUnits select _specialIndex) params ["", "_specialUnitClasses", "_specialUnitChance"];
-                        if (_specialUnitChance >= random 100) then {
-                            _type = selectRandom _specialUnitClasses;
-                        };
+                // Special unit
+                private _specialIndex = _specialMarkerClasses find (typeOf _x);
+                if (_specialIndex != -1) then {
+                    (_specialUnits select _specialIndex) params ["", "_specialUnitClasses", "_specialUnitChance"];
+                    if (_specialUnitChance >= random 100) then {
+                        _type = selectRandom _specialUnitClasses;
                     };
-
-                    // Spawn unit
-                    private _unit = createVehicle [_type, _marker];
-                    _units pushBack _unit;
                 };
+
+                // Spawn unit
+                private _unit = createVehicle [_type, _x];
+                _units pushBack _unit;
             };
-        };
+        } forEach _markers;
 
         _controller setVariable [QGVAR(MOUTUnits), _units];
     },
@@ -71,7 +79,7 @@ private _createAction = [
         (_controller getVariable [QGVAR(MOUTUnits), []]) isEqualTo []
     },
     {},
-    [_markerBaseName, _markerCount, _unitClasses, _unitChance, _specialUnits]
+    [_markers, _unitClasses, _unitChance, _specialUnits]
 ] call ace_interact_menu_fnc_createAction;
 
 [_controller, 0, ["ACE_MainActions"], _createAction] call ace_interact_menu_fnc_addActionToObject;
