@@ -24,6 +24,8 @@
  */
 #include "..\script_component.hpp"
 
+#define MOUT_ENEMY_SIDE east
+
 params ["_controller", "_name", "_markerBaseName", "_markerCount", "_unitClasses", ["_unitChance", 30], ["_specialUnits", []]];
 
 private _markers = []; // Save existing (non-null) markers for action statement
@@ -67,7 +69,9 @@ private _createAction = [
                 };
 
                 // Spawn unit
-                private _unit = createVehicle [_type, _x];
+                private _group = createGroup [MOUT_ENEMY_SIDE, true];
+                private _unit = _group createUnit [_type, _x, [], 0, "NONE"];
+                [_unit] join _group; // createUnit spawns with side from config
                 _units pushBack _unit;
             };
         } forEach _markers;
