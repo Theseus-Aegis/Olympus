@@ -68,11 +68,17 @@ private _createAction = [
                     };
                 };
 
-                // Spawn unit
-                private _group = createGroup [MOUT_ENEMY_SIDE, true];
-                private _unit = _group createUnit [_type, _x, [], 0, "NONE"];
-                [_unit] join _group; // createUnit spawns with side from config
-                _units pushBack _unit;
+                // Spawn if possible
+                if (count allGroups < 288) then {
+                    // Spawn unit and force join it to the group side (createUnit spawns with side from config)
+                    private _group = createGroup [MOUT_ENEMY_SIDE, true];
+                    private _unit = _group createUnit [_type, _x, [], 0, "NONE"];
+                    [_unit] join _group;
+
+                    _units pushBack _unit;
+                } else {
+                    cutText ["Wait 1 minute! (group limit reached)", "PLAIN DOWN", 2];
+                };
             };
         } forEach _markers;
 
