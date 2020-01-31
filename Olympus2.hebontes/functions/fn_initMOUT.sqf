@@ -92,7 +92,7 @@ private _createAction = [
             // Show warning
             cutText ["Group limit reached! Wait 1 minute!", "PLAIN DOWN", 5];
         } else {
-            _controller setVariable [QGVAR(MOUTUnits), _units];            
+            _controller setVariable [QGVAR(MOUTUnits), _units];
         };
     },
     {
