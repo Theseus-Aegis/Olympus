@@ -1,5 +1,5 @@
 /*
- * Author: Rory, jonpas
+ * Author: Rory, Jonpas
  * Teleports the player from base (this) to teleport locations (objects).
  *
  * Arguments:
@@ -15,25 +15,27 @@
 
 // Define teleport locations here
 private _teleportLocations = [
-    // [objectVarName, "Display Name"]
-    [tpPosBase, "Base"],
-    [tpPosAirport, "Airport"],
-    [tpPos40mm, "UGL Range"],
-    [tpPosAdvPistolRifle, "Adv. Pistol and Rifle Course"],
-    [tpPosBasicLMG, "Machine Gun Range"],
-    [tpPosBasicPistol, "Basic Pistol Range"],
-    [tpPosBasicRifle, "Basic Rifle Range"],
-    [tpPosEngineer, "Combat Engineer Course"],
-    [tpPosDrivingCourse, "Driving Course"],
-    [tpPosHandGrenade, "Hand Grenade Range"],
-    [tpPosLauncher, "Launcher Range"],
-	[tpPosMarksman, "Marksman Range"]
+    // ["Category", objectVarName, "Display Name"]
+    ["Hub", tpPosAirport, "Airport"],
+    ["Hub", tpPosBase, "Base"],
+    ["Hub", tpPosMOUT, "MOUT"],
+    ["Course", tpPos40mm, "40mm GL"],
+    ["Course", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
+    ["Range", tpPosBasicPistol, "Basic Pistol"],
+    ["Range", tpPosBasicRifle, "Basic Rifle"],
+    ["Course", tpPosEngineer, "Combat Engineer"],
+    ["Course", tpPosDrivingCourse, "Driving"],
+    ["Range", tpPosHandGrenade, "Hand Grenade"],
+    ["Range", tpPosLauncher, "Launcher"],
+    ["Course", tpPosBasicLMG, "Machine Gun"],
+	["Course", tpPosMarksman, "Marksman"]
 ];
 
 params ["_controller"];
 
+private _createdCategories = [];
 {
-    _x params ["_teleportObject", "_text"];
+    _x params ["_category", "_teleportObject", "_text"];
 
     private _action = [
         format [QGVAR(%1), _teleportObject],
@@ -51,7 +53,26 @@ params ["_controller"];
         },
         {},
         [_teleportObject, _text]
-    ] call ACE_Interact_Menu_fnc_createAction;
+    ] call ace_interact_menu_fnc_createAction;
 
-    [_controller, 0, ["ACE_MainActions"], _action] call ACE_Interact_Menu_fnc_addActionToObject;
+    if (_category == "") then {
+        [_controller, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+    } else {
+        private _categoryActionName = format [QGVAR(FastTravel_%1), _category];
+        if !(_category in _createdCategories) then {
+            _createdCategories pushBack _category;
+
+            private _categoryAction = [
+                _categoryActionName,
+                _category,
+                "",
+                {},
+                {true}
+            ] call ace_interact_menu_fnc_createAction;
+
+            [_controller, 0, ["ACE_MainActions"], _categoryAction] call ace_interact_menu_fnc_addActionToObject;
+        };
+
+        [_controller, 0, ["ACE_MainActions", _categoryActionName], _action] call ace_interact_menu_fnc_addActionToObject;
+    };
 } forEach _teleportLocations;

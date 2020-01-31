@@ -174,6 +174,7 @@ private _medical = [
     "ACE_salineIV",
     "ACE_salineIV_250",
     "ACE_salineIV_500",
+    "ACE_splint",
     "ACE_surgicalKit",
     "ACE_tourniquet"
 ];
