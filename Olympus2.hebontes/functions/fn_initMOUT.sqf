@@ -53,7 +53,6 @@ private _createAction = [
         private _specialMarkerClasses = _specialUnits apply {_x select 0};
 
         // Get marker variables and spawn units
-        private _failed = false;
         {
             // Spawn probability
             if (_unitChance >= random 100) then {
@@ -69,11 +68,6 @@ private _createAction = [
                     };
                 };
 
-                // Fail if group limit reached
-                if (count allGroups >= 288) exitWith {
-                    failed = true;
-                };
-
                 // Spawn unit and force join it to the group side (createUnit spawns with side from config)
                 private _group = createGroup [MOUT_ENEMY_SIDE, true];
                 private _unit = _group createUnit [_type, _x, [], 0, "NONE"];
@@ -83,17 +77,7 @@ private _createAction = [
             };
         } forEach _markers;
 
-        if (_failed) then {
-            // Clear already spawned
-            {
-                deleteVehicle _x;
-            } forEach _units;
-            
-            // Show warning
-            cutText ["Group limit reached! Wait 1 minute!", "PLAIN DOWN", 5];
-        } else {
-            _controller setVariable [QGVAR(MOUTUnits), _units];
-        };
+        _controller setVariable [QGVAR(MOUTUnits), _units];
     },
     {
         params ["_controller"];
