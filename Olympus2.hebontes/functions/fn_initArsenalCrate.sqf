@@ -95,8 +95,8 @@ private _basicRifle = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
     "V_Rangemaster_belt",
-    "hlc_rifle_M4",
-    "hlc_30rnd_556x45_EPR"
+    "CUP_arifle_M4A1_black",
+    "30Rnd_556x45_Stanag_green"
 ];
 
 private _engineer = [
