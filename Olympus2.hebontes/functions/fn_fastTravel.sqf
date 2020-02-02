@@ -19,16 +19,16 @@ private _teleportLocations = [
     ["Hubs", tpPosAirport, "Airport"],
     ["Hubs", tpPosBase, "Base"],
     ["Hubs", tpPosMOUT, "MOUT"],
-    ["Course", tpPos40mm, "40mm GL"],
-    ["Course", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
-    ["Range", tpPosBasicPistol, "Basic Pistol"],
-    ["Range", tpPosBasicRifle, "Basic Rifle"],
-    ["Course", tpPosEngineer, "Combat Engineer"],
-    ["Course", tpPosDrivingCourse, "Driving"],
-    ["Range", tpPosHandGrenade, "Hand Grenade"],
-    ["Range", tpPosLauncher, "Launcher"],
-    ["Course", tpPosBasicLMG, "Machine Gun"],
-    ["Course", tpPosMarksman, "Marksman"]
+    ["Advanced Courses", tpPos40mm, "40mm GL"],
+    ["Advanced Courses", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
+    ["Shooting Ranges", tpPosBasicPistol, "Basic Pistol"],
+    ["Shooting Ranges", tpPosBasicRifle, "Basic Rifle"],
+    ["Advanced Courses", tpPosEngineer, "Combat Engineer"],
+    ["Advanced Courses", tpPosDrivingCourse, "Driving"],
+    ["Shooting Ranges", tpPosHandGrenade, "Hand Grenade"],
+    ["Shooting Ranges", tpPosLauncher, "Launcher"],
+    ["Advanced Courses", tpPosBasicLMG, "Machine Gun"],
+    ["Advanced Courses", tpPosMarksman, "Marksman"]
 ];
 
 params ["_controller"];
