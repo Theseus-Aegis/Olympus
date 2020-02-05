@@ -1,5 +1,5 @@
 /*
- * Author: Rory
+ * Author: Rory, Tyrone
  * Resets target damaged objects back to their original state
  *
  * Arguments:
@@ -15,7 +15,7 @@
  */
 #include "..\script_component.hpp"
 
-params ["_controller","_targets"];
+params ["_controller", "_targets"];
 
 private _action = [
     QGVAR(resetDamageAction),
@@ -29,8 +29,15 @@ private _action = [
                 private _type = typeOf _x;
                 deleteVehicle _x;
 
-                private _newTarget = createVehicle [_type, _position, [], 0, "CAN_COLLIDE"];
-                _targets set [_forEachIndex, _newTarget];
+                // Run this in the next frame
+                [
+                    {
+                        params ["_type", "_position", "_targets", "_index"];
+                        private _newTarget = createVehicle [_type, _position, [], 0, "CAN_COLLIDE"];
+                        _targets set [_index, _newTarget];
+                    },
+                    [_type, _position, _targets, _forEachIndex]
+                ] call CBA_fnc_execNextFrame;
             };
         } forEach _targets;
     },
