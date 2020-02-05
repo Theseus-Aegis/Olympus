@@ -16,12 +16,12 @@
 // Define teleport locations here
 private _teleportLocations = [
     // ["Category", objectVarName, "Display Name"]
+    ["Hubs", tpPosAirport, "Airport"],
+    ["Hubs", tpPosBase, "Base"],
     ["Advanced Courses", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
     ["Advanced Courses", tpPosEngineer, "Combat Engineer"],
     ["Advanced Courses", tpPosDrivingCourse, "Driving"],
     ["Advanced Courses", tpPosMOUT, "MOUT"],
-    ["Hubs", tpPosAirport, "Airport"],
-    ["Hubs", tpPosBase, "Base"],
     ["Shooting Ranges", tpPos40mm, "40mm GL"],
     ["Shooting Ranges", tpPosBasicPistol, "Basic Pistol"],
     ["Shooting Ranges", tpPosBasicRifle, "Basic Rifle"],
