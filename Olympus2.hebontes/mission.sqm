@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4817;
+		nextID=4823;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5115;
+		nextID=5238;
 	};
 	class Camera
 	{
-		pos[]={5443.1699,28.315928,16880.904};
-		dir[]={0.62802958,-0.46485916,0.62427014};
-		up[]={0.32971296,0.88534188,0.32773751};
-		aside[]={0.70506626,1.686858e-006,-0.70931941};
+		pos[]={4049.2344,18.755239,15437.657};
+		dir[]={0.88043898,-0.23825477,-0.40996894};
+		up[]={0.21598956,0.97120172,-0.10057285};
+		aside[]={-0.42212516,-2.0278094e-008,-0.90654576};
 	};
 };
 binarizationWanted=0;
@@ -22679,6 +22679,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="Range - UGL";
+			state=1;
 			class Entities
 			{
 				items=4;
@@ -23285,6 +23286,7 @@ class Mission
 							};
 							id=1120;
 							type="Land_Unfinished_Building_02_F";
+							atlOffset=-9.5367432e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -23522,7 +23524,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5466.644,10,16903.145};
-								angles[]={-0,3.244962,0};
+								angles[]={0,3.244962,0};
 							};
 							side="Empty";
 							flags=4;
@@ -23590,7 +23592,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5425.6543,14.097742,16876.023};
-								angles[]={-0,3.926991,0};
+								angles[]={0,3.926991,0};
 							};
 							side="Empty";
 							flags=4;
@@ -23600,7 +23602,7 @@ class Mission
 							};
 							id=1164;
 							type="TargetP_Inf_F";
-							atlOffset=0.0090074539;
+							atlOffset=0.0090084076;
 						};
 						class Item1
 						{
@@ -23608,7 +23610,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5422.8862,14.101681,16880.992};
-								angles[]={-0,4.4505897,0};
+								angles[]={0,4.4505897,0};
 							};
 							side="Empty";
 							flags=4;
@@ -23618,7 +23620,7 @@ class Mission
 							};
 							id=1165;
 							type="TargetP_Inf_F";
-							atlOffset=0.012946129;
+							atlOffset=0.012947083;
 						};
 						class Item2
 						{
@@ -23626,7 +23628,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5430.2935,10.493651,16871.691};
-								angles[]={-0,3.7056887,0};
+								angles[]={0,3.7056887,0};
 							};
 							side="Empty";
 							flags=4;
@@ -23917,7 +23919,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5444.063,7.2480717,16397.982};
-								angles[]={-0,2.9851584,0};
+								angles[]={0,2.9851584,0};
 							};
 							side="Empty";
 							flags=4;
@@ -23934,7 +23936,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5438.625,7.278409,16391.703};
-								angles[]={-0,3.2469583,0};
+								angles[]={0,3.2469583,0};
 							};
 							side="Empty";
 							class Attributes
@@ -23951,7 +23953,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5436.3525,7.2842846,16394.143};
-								angles[]={-0,3.5087576,0};
+								angles[]={0,3.5087576,0};
 							};
 							side="Empty";
 							flags=4;
@@ -23969,7 +23971,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5441.6714,10.758072,16395.523};
-								angles[]={-0,3.2469583,0};
+								angles[]={0,3.2469583,0};
 							};
 							side="Empty";
 							flags=4;
@@ -24513,6 +24515,7 @@ class Mission
 							};
 							id=1236;
 							type="Box_NATO_Equip_F";
+							atlOffset=0.00035858154;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24714,7 +24717,7 @@ class Mission
 						};
 					};
 					id=1199;
-					atlOffset=0.97442245;
+					atlOffset=0.97442341;
 				};
 				class Item1
 				{
@@ -36910,7 +36913,7 @@ class Mission
 							};
 							id=2184;
 							type="Land_CampingChair_V2_white_F";
-							atlOffset=0.60200119;
+							atlOffset=0.60200024;
 						};
 						class Item7
 						{
@@ -42656,13 +42659,14 @@ class Mission
 								angles[]={0,5.4551606,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_19";
 							};
 							id=4545;
 							type="VR_3DSelector_01_complete_F";
+							atlOffset=3.6665916;
 						};
 						class Item1
 						{
@@ -42996,13 +43000,14 @@ class Mission
 								angles[]={0,5.5797949,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_2";
 							};
 							id=4528;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=3.6665916;
 						};
 						class Item21
 						{
@@ -43166,13 +43171,14 @@ class Mission
 								angles[]={0,4.8888087,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_30";
 							};
 							id=4556;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=0.25925446;
 						};
 						class Item31
 						{
@@ -43608,13 +43614,14 @@ class Mission
 								angles[]={0,5.9806385,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_6";
 							};
 							id=4532;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=0.59659195;
 						};
 						class Item57
 						{
@@ -43744,13 +43751,14 @@ class Mission
 								angles[]={0,0.31553385,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_67";
 							};
 							id=4593;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=3.920002;
 						};
 						class Item65
 						{
@@ -43761,13 +43769,14 @@ class Mission
 								angles[]={0,5.3791995,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_7";
 							};
 							id=4533;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=0.33763504;
 						};
 						class Item66
 						{
@@ -44101,13 +44110,14 @@ class Mission
 								angles[]={0,0.47425517,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_93";
 							};
 							id=4619;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=0.86368179;
 						};
 						class Item86
 						{
