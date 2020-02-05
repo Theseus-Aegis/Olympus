@@ -27,15 +27,15 @@ private _40mm = [
     "CUP_arifle_AK101_GL",
     "cup_optic_elcan_specterdr_black",
     "cup_optic_eotech553_black",
-    "Rangefinder",
     "hlc_VOG25_AK",
-    "CUP_1Rnd_HEDP_M203",
     "1Rnd_HE_Grenade_shell",
     "1Rnd_SmokeBlue_Grenade_shell",
     "1Rnd_SmokeGreen_Grenade_shell",
     "1Rnd_SmokeRed_Grenade_shell",
     "1Rnd_Smoke_Grenade_shell",
-    "tacs_Backpack_AssaultExpanded_Black"
+    "UGL_FlareGreen_F",
+    "tacs_Backpack_AssaultExpanded_Black",
+    "NVGoggles_OPFOR"
 ];
 
 private _advancedPistol = [
