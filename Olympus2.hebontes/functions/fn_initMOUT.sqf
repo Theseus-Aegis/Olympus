@@ -78,6 +78,9 @@ private _createAction = [
         } forEach _markers;
 
         _controller setVariable [QGVAR(MOUTUnits), _units];
+
+        cutText ["MOUT Course Started", "PLAIN DOWN", 2]; // Text Confirmation
+
     },
     {
         params ["_controller"];
@@ -101,6 +104,8 @@ private _clearAction = [
             deleteVehicle _x;
         } forEach (_controller getVariable [QGVAR(MOUTUnits), []]);
 
+        cutText ["MOUT Course Cleared", "PLAIN DOWN", 2]; // Text Confirmation
+
         _controller setVariable [QGVAR(MOUTUnits), []];
     },
     {
@@ -108,5 +113,6 @@ private _clearAction = [
         !((_controller getVariable [QGVAR(MOUTUnits), []]) isEqualTo [])
     }
 ] call ace_interact_menu_fnc_createAction;
+
 
 [_controller, 0, ["ACE_MainActions"], _clearAction] call ace_interact_menu_fnc_addActionToObject;

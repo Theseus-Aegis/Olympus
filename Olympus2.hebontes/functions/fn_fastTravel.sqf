@@ -16,18 +16,19 @@
 // Define teleport locations here
 private _teleportLocations = [
     // ["Category", objectVarName, "Display Name"]
-    ["Hub", tpPosBase, "Base"],
-    ["Hub", tpPosAirport, "Airport"],
-    ["Course", tpPos40mm, "40mm GL"],
-    ["Course", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
-    ["Range", tpPosBasicPistol, "Basic Pistol"],
-    ["Range", tpPosBasicRifle, "Basic Rifle"],
-    ["Course", tpPosEngineer, "Combat Engineer"],
-    ["Course", tpPosDrivingCourse, "Driving"],
-    ["Range", tpPosHandGrenade, "Hand Grenade"],
-    ["Range", tpPosLauncher, "Launcher"],
-    ["Course", tpPosBasicLMG, "Machine Gun"],
-    ["Course", tpPosMarksman, "Marksman"]
+    ["Hubs", tpPosAirport, "Airport"],
+    ["Hubs", tpPosBase, "Base"],
+    ["Advanced Courses", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
+    ["Advanced Courses", tpPosEngineer, "Combat Engineer"],
+    ["Advanced Courses", tpPosDrivingCourse, "Driving"],
+    ["Advanced Courses", tpPosMOUT, "MOUT"],
+    ["Shooting Ranges", tpPos40mm, "40mm GL"],
+    ["Shooting Ranges", tpPosBasicPistol, "Basic Pistol"],
+    ["Shooting Ranges", tpPosBasicRifle, "Basic Rifle"],
+    ["Shooting Ranges", tpPosHandGrenade, "Hand Grenade"],
+    ["Shooting Ranges", tpPosLauncher, "Launcher"],
+    ["Shooting Ranges", tpPosBasicLMG, "Machine Gun"],
+    ["Shooting Ranges", tpPosMarksman, "Marksman"]
 ];
 
 params ["_controller"];
