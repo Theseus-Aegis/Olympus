@@ -77,7 +77,7 @@ private _createAction = [
             };
         } forEach _markers;
 
-        _controller setVariable [QGVAR(MOUTUnits), _units];
+        _controller setVariable [QGVAR(MOUTUnits), _units, true];
 
         cutText ["MOUT Course Started", "PLAIN DOWN", 2]; // Text Confirmation
 
@@ -106,7 +106,7 @@ private _clearAction = [
 
         cutText ["MOUT Course Cleared", "PLAIN DOWN", 2]; // Text Confirmation
 
-        _controller setVariable [QGVAR(MOUTUnits), []];
+        _controller setVariable [QGVAR(MOUTUnits), [], true];
     },
     {
         params ["_controller"];
