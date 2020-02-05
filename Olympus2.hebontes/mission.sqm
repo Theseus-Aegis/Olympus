@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4776;
+		nextID=4778;
 	};
 	class MarkerIDProvider
 	{
-		nextID=16;
+		nextID=17;
 	};
 	class LayerIndexProvider
 	{
-		nextID=4748;
+		nextID=4992;
 	};
 	class Camera
 	{
-		pos[]={701.69745,76.326942,9897.8955};
-		dir[]={0.6941461,-0.56449974,0.44672456};
-		up[]={0.47469491,0.82544076,0.30549461};
-		aside[]={0.54119027,1.3690442e-007,-0.84093183};
+		pos[]={8645.3848,30.514206,17479.775};
+		dir[]={-0.8913992,-0.40258056,-0.20823528};
+		up[]={-0.39203191,0.91538191,-0.09158086};
+		aside[]={-0.22748372,-1.0832446e-007,0.9737947};
 	};
 };
 binarizationWanted=0;
@@ -34,7 +34,6 @@ addons[]=
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Ui_F",
 	"A3_Modules_F_Curator_Curator",
-	"CUP_Wheeled_SUV",
 	"CUP_AirVehicles_UH60",
 	"tac_compat_cup_vehicles",
 	"tacs_vehicles",
@@ -45,6 +44,7 @@ addons[]=
 	"ace_cargo",
 	"tacs_variants_bwa3",
 	"A3_Structures_F_Mil_Helipads",
+	"Arcadian",
 	"A3_Supplies_F_Orange_Ammoboxes",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Structures_F_Items_Electronics",
@@ -131,7 +131,6 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Medical",
 	"ace_medical_treatment",
 	"A3_Structures_F_Orange_Walls_Plastic",
-	"Arcadian",
 	"A3_Structures_F_Exp_Walls_Concrete",
 	"A3_Structures_F_Households_House_Shop01",
 	"A3_Structures_F_Households_House_Shop02",
@@ -147,7 +146,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=70;
+		items=69;
 		class Item0
 		{
 			className="tacs_units";
@@ -185,67 +184,69 @@ class AddonsMetaData
 		};
 		class Item5
 		{
-			className="CUP_Wheeled_SUV";
-			name="CUP_Wheeled_SUV";
-		};
-		class Item6
-		{
 			className="CUP_AirVehicles_UH60";
 			name="CUP_AirVehicles_UH60";
 		};
-		class Item7
+		class Item6
 		{
 			className="tac_compat_cup_vehicles";
 			name="tac_compat_cup_vehicles";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item8
+		class Item7
 		{
 			className="tacs_vehicles";
 			name="Theseus Services - Vehicles";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item9
+		class Item8
 		{
 			className="tacs_variants_melb";
 			name="Theseus Services - MELB Variants";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item10
+		class Item9
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item13
 		{
 			className="tacs_variants_bwa3";
 			name="Theseus Services - BWMod Variants";
+			author="Theseus Services Team";
+			url="https://github.com/Theseus-Aegis/TheseusServices";
+		};
+		class Item14
+		{
+			className="Arcadian";
+			name="Theseus Services - Arcadian GT";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
@@ -582,36 +583,29 @@ class AddonsMetaData
 		};
 		class Item64
 		{
-			className="Arcadian";
-			name="Theseus Services - Arcadian GT";
-			author="Theseus Services Team";
-			url="https://github.com/Theseus-Aegis/TheseusServices";
-		};
-		class Item65
-		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item66
+		class Item65
 		{
 			className="CUP_Editor_A2_Roads_Config";
 			name="CUP_Editor_A2_Roads_Config";
 		};
-		class Item67
+		class Item66
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Enoch - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item68
+		class Item67
 		{
 			className="CUP_AirVehciles_MH47E";
 			name="CUP_AirVehciles_MH47E";
 		};
-		class Item69
+		class Item68
 		{
 			className="tac_armory";
 			name="TAC - Armory";
@@ -3623,45 +3617,6 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8622.3574,11.035849,17478.963};
-								angles[]={0,1.0471976,0};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=5;
-							type="CUP_I_SUV_ION";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ammoBox";
-									expression="[_this,_value] call bis_fnc_initAmmoBox;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="[[[[],[]],[[],[]],[[""ToolKit""],[1]],[[],[]]],false]";
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={8538.7666,12.635807,17467.158};
 								angles[]={0,1.8325957,0};
 							};
@@ -3696,7 +3651,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item2
+						class Item1
 						{
 							dataType="Object";
 							class PositionInfo
@@ -3735,7 +3690,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item3
+						class Item2
 						{
 							dataType="Object";
 							class PositionInfo
@@ -3796,7 +3751,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item4
+						class Item3
 						{
 							dataType="Object";
 							class PositionInfo
@@ -3835,7 +3790,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item5
+						class Item4
 						{
 							dataType="Object";
 							class PositionInfo
@@ -3874,7 +3829,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item6
+						class Item5
 						{
 							dataType="Layer";
 							name="Objects";
@@ -3900,7 +3855,7 @@ class Mission
 							};
 							id=250;
 						};
-						class Item7
+						class Item6
 						{
 							dataType="Object";
 							class PositionInfo
@@ -3939,7 +3894,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item8
+						class Item7
 						{
 							dataType="Object";
 							class PositionInfo
@@ -3972,6 +3927,45 @@ class Mission
 												};
 											};
 											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item8
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={8621.957,11.035849,17478.494};
+								angles[]={0,1.0471976,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=4777;
+							type="tacs_Arcadian_B_Black";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
 										};
 									};
 								};
@@ -4608,7 +4602,7 @@ class Mission
 				};
 			};
 			id=243;
-			atlOffset=9.9006071;
+			atlOffset=9.9127769;
 		};
 		class Item1
 		{
@@ -12140,7 +12134,7 @@ class Mission
 			name="Location Markers";
 			class Entities
 			{
-				items=11;
+				items=12;
 				class Item0
 				{
 					dataType="Marker";
@@ -12242,9 +12236,19 @@ class Mission
 					type="mil_marker";
 					id=4473;
 				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={5663.2598,30.054001,2067.1169};
+					name="markerMOUT";
+					text="MOUT Course";
+					type="mil_marker";
+					id=4776;
+					atlOffset=6.2942505e-005;
+				};
 			};
 			id=603;
-			atlOffset=-3.5043659;
+			atlOffset=0.11198235;
 		};
 		class Item6
 		{
@@ -24340,7 +24344,6 @@ class Mission
 							};
 							id=1236;
 							type="Box_NATO_Equip_F";
-							atlOffset=0.00035858154;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24542,7 +24545,7 @@ class Mission
 						};
 					};
 					id=1199;
-					atlOffset=0.97442341;
+					atlOffset=0.97442245;
 				};
 				class Item1
 				{
@@ -36738,7 +36741,7 @@ class Mission
 							};
 							id=2184;
 							type="Land_CampingChair_V2_white_F";
-							atlOffset=0.60200024;
+							atlOffset=0.60200119;
 						};
 						class Item7
 						{
@@ -38333,6 +38336,7 @@ class Mission
 							};
 							id=4775;
 							type="tacs_Arcadian_B_Tan";
+							atlOffset=-0.0012807846;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38398,7 +38402,7 @@ class Mission
 						};
 					};
 					id=4016;
-					atlOffset=-0.026667595;
+					atlOffset=-0.02371788;
 				};
 				class Item2
 				{
@@ -40035,7 +40039,7 @@ class Mission
 				};
 			};
 			id=4008;
-			atlOffset=-6.826046;
+			atlOffset=-6.8273659;
 		};
 		class Item19
 		{
@@ -42598,8 +42602,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5189.3906,41.039001,1988.7369};
-								angles[]={0,5.2812724,0};
+								position[]={5219.0713,41.039001,2022.3622};
+								angles[]={0,1.3854592,0};
 							};
 							side="Empty";
 							flags=5;
@@ -42632,8 +42636,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5168.189,51.332211,1999.1614};
-								angles[]={0,1.9212544,0};
+								position[]={5149.6631,47.247219,1941.5298};
+								angles[]={0,1.1942911,0};
 							};
 							side="Empty";
 							flags=5;
@@ -44161,8 +44165,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5168.5103,45.256489,1997.927};
-								angles[]={0,1.7569326,0};
+								position[]={5200.5952,41.039001,1998.8649};
+								angles[]={0,2.6454084,0};
 							};
 							side="Empty";
 							flags=5;
@@ -44175,7 +44179,7 @@ class Mission
 						};
 					};
 					id=4719;
-					atlOffset=2.6268539;
+					atlOffset=0.51810837;
 				};
 				class Item2
 				{
@@ -44230,8 +44234,9 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{[this, ""MOUT 1"", ""mout1"", 99, [""O_G_Soldier_F""], 30, [[""VR_3DSelector_01_complete_F"", [""O_G_Soldier_M_F""], 75], [""VR_3DSelector_01_exit_F"", [""O_G_Soldier_AR_F""], 60]]] call TAC_Olympus_fnc_initMOUT}";
+								init="call{[this, ""MOUT 1"", ""mout1"", 100, [""O_G_Soldier_F""], 35, [[""VR_3DSelector_01_complete_F"", [""O_G_Soldier_M_F""], 75], [""VR_3DSelector_01_exit_F"", [""O_G_Soldier_AR_F""], 60]]] call TAC_Olympus_fnc_initMOUT}";
 								name="courseMOUTController";
+								disableSimulation=1;
 							};
 							id=4640;
 							type="Land_Laptop_unfolded_F";
@@ -44733,7 +44738,7 @@ class Mission
 				};
 			};
 			id=4717;
-			atlOffset=-10.465649;
+			atlOffset=-10.780167;
 		};
 	};
 };
