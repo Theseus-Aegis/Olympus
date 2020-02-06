@@ -22,6 +22,7 @@ private _teleportLocations = [
     ["Advanced Courses", tpPosEngineer, "Combat Engineer"],
     ["Advanced Courses", tpPosDrivingCourse, "Driving"],
     ["Advanced Courses", tpPosMOUT, "MOUT"],
+    ["Advanced Courses", tpPosMOUTPrep, "MOUT Preparation"],
     ["Shooting Ranges", tpPos40mm, "40mm GL"],
     ["Shooting Ranges", tpPosBasicPistol, "Basic Pistol"],
     ["Shooting Ranges", tpPosBasicRifle, "Basic Rifle"],
