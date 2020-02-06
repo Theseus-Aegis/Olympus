@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 
+// Disable Ambient Animals
+[{time > 0}, {enableEnvironment [false, true];}] call CBA_fnc_waitUntilAndExecute;
+
 // environmentControl eventHandlers
 [QGVAR(setTime), {
     ["Environment changing..."] call ace_common_fnc_displayTextStructured;

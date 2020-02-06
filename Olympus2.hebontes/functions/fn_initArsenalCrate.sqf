@@ -76,6 +76,7 @@ private _marksman = [
     "srifle_DMR_03_F",
     "20Rnd_762x51_Mag",
     "optic_mrco",
+    "ace_optic_mrco_2d",
     "srifle_EBR_F",
     "cup_optic_elcan",
     "V_Rangemaster_belt",
