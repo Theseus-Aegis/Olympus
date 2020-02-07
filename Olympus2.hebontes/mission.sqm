@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4957;
+		nextID=4960;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5884;
+		nextID=6013;
 	};
 	class Camera
 	{
-		pos[]={5968.5068,27.316,1461.6899};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={5913.8027,44.392723,1438.7349};
+		dir[]={0.52439308,-0.62659907,0.57657862};
+		up[]={0.42161548,0.7793237,0.46357262};
+		aside[]={0.73981053,5.1112147e-007,-0.67285186};
 	};
 };
 binarizationWanted=0;
@@ -141,7 +141,6 @@ addons[]=
 	"A3_Structures_F_Bootcamp_VR_Helpers",
 	"A3_Weapons_F_Ammoboxes",
 	"tac_armory",
-	"A3_Props_F_Exp_Military_Camps",
 	"CUP_CAStructures_E_Wall_Wall_L",
 	"CUP_CAMisc_ACR_Targets",
 	"A3_Structures_F_EPC_Civ_Accessories"
@@ -24530,7 +24529,6 @@ class Mission
 							};
 							id=1236;
 							type="Box_NATO_Equip_F";
-							atlOffset=0.00035858154;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24732,7 +24730,7 @@ class Mission
 						};
 					};
 					id=1199;
-					atlOffset=0.97442341;
+					atlOffset=0.97442245;
 				};
 				class Item1
 				{
@@ -36928,7 +36926,7 @@ class Mission
 							};
 							id=2184;
 							type="Land_CampingChair_V2_white_F";
-							atlOffset=0.60200024;
+							atlOffset=0.60200119;
 						};
 						class Item7
 						{
@@ -44374,7 +44372,7 @@ class Mission
 					name="MOUT Hub";
 					class Entities
 					{
-						items=20;
+						items=19;
 						class Item0
 						{
 							dataType="Object";
@@ -44941,47 +44939,6 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5658.0483,31.818577,2073.1235};
-								angles[]={0,1.9994267,0};
-							};
-							side="Empty";
-							class Attributes
-							{
-								name="SpecScreen";
-								disableSimulation=1;
-							};
-							id=4943;
-							type="Land_TripodScreen_01_large_F";
-							atlOffset=0.69623566;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ObjectTextureCustom0";
-									expression="_this setObjectTextureGlobal [0,_value]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="x\tacr\addons\images\general\SpecScreen.paa";
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item18
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={5668.2666,30.480104,2061.5186};
 								angles[]={0.0088837259,0,6.2698507};
 							};
@@ -44994,7 +44951,7 @@ class Mission
 							id=4951;
 							type="Land_CampingTable_F";
 						};
-						class Item19
+						class Item18
 						{
 							dataType="Object";
 							class PositionInfo
@@ -45015,11 +44972,11 @@ class Mission
 						};
 					};
 					id=4720;
-					atlOffset=0.68658638;
+					atlOffset=2.9637775;
 				};
 			};
 			id=4717;
-			atlOffset=-6.6956215;
+			atlOffset=-7.5610428;
 		};
 		class Item21
 		{
@@ -45035,7 +44992,7 @@ class Mission
 					name="Teleporter 1 ";
 					class Entities
 					{
-						items=2;
+						items=3;
 						class Item0
 						{
 							dataType="Object";
@@ -45120,9 +45077,49 @@ class Mission
 								nAttributes=1;
 							};
 						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5968.4189,1.881529,1484.9415};
+								angles[]={-0,3.3231432,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="call{[this, ""full""] call TAC_Olympus_fnc_initArsenalCrate;}";
+							};
+							id=4959;
+							type="Box_NATO_Equip_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=4824;
-					atlOffset=0.40799999;
+					atlOffset=0.204;
 				};
 				class Item1
 				{
@@ -48183,7 +48180,7 @@ class Mission
 				};
 			};
 			id=4823;
-			atlOffset=0.023288488;
+			atlOffset=0.016913414;
 		};
 	};
 };
