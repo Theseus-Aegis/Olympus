@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4953;
+		nextID=4957;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5755;
+		nextID=5884;
 	};
 	class Camera
 	{
-		pos[]={5944.8867,38.204498,1454.8152};
-		dir[]={0.20014465,-0.69292581,0.69273311};
-		up[]={0.19233593,0.72100604,0.66570127};
-		aside[]={0.96074194,1.4673278e-006,-0.27757946};
+		pos[]={5968.5068,27.316,1461.6899};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -24530,6 +24530,7 @@ class Mission
 							};
 							id=1236;
 							type="Box_NATO_Equip_F";
+							atlOffset=0.00035858154;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24731,7 +24732,7 @@ class Mission
 						};
 					};
 					id=1199;
-					atlOffset=0.97442245;
+					atlOffset=0.97442341;
 				};
 				class Item1
 				{
@@ -36927,7 +36928,7 @@ class Mission
 							};
 							id=2184;
 							type="Land_CampingChair_V2_white_F";
-							atlOffset=0.60200119;
+							atlOffset=0.60200024;
 						};
 						class Item7
 						{
@@ -44373,7 +44374,7 @@ class Mission
 					name="MOUT Hub";
 					class Entities
 					{
-						items=21;
+						items=20;
 						class Item0
 						{
 							dataType="Object";
@@ -44444,7 +44445,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tacr\addons\images\olympusTwo\laptop\generalMOUTSetup.paa";
+											value="x\tacr\addons\images\olympusTwo\laptop\generalMOUTSetup.paa";
 										};
 									};
 								};
@@ -44940,49 +44941,6 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5968.5068,2.4720721,1486.6899};
-								angles[]={0,4.8865032,0};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								init="call{[this] call TAC_Olympus_fnc_fastTravel}";
-								name="tpLaptopMOUTPrep";
-								disableSimulation=1;
-							};
-							id=4908;
-							type="Land_Laptop_unfolded_F";
-							atlOffset=0.00040268898;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ObjectTextureCustom0";
-									expression="_this setObjectTextureGlobal [0,_value]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item18
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={5658.0483,31.818577,2073.1235};
 								angles[]={0,1.9994267,0};
 							};
@@ -45019,7 +44977,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item19
+						class Item18
 						{
 							dataType="Object";
 							class PositionInfo
@@ -45036,7 +44994,7 @@ class Mission
 							id=4951;
 							type="Land_CampingTable_F";
 						};
-						class Item20
+						class Item19
 						{
 							dataType="Object";
 							class PositionInfo
@@ -45057,11 +45015,11 @@ class Mission
 						};
 					};
 					id=4720;
-					atlOffset=4.3511639;
+					atlOffset=0.68658638;
 				};
 			};
 			id=4717;
-			atlOffset=-7.0641365;
+			atlOffset=-6.6956215;
 		};
 		class Item21
 		{
@@ -45077,7 +45035,7 @@ class Mission
 					name="Teleporter 1 ";
 					class Entities
 					{
-						items=1;
+						items=2;
 						class Item0
 						{
 							dataType="Object";
@@ -45119,8 +45077,52 @@ class Mission
 								nAttributes=1;
 							};
 						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5968.5068,2.4720721,1486.6899};
+								angles[]={0,4.8865032,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="call{[this] call TAC_Olympus_fnc_fastTravel}";
+								name="tpLaptopMOUTPrep";
+								disableSimulation=1;
+							};
+							id=4908;
+							type="Land_Laptop_unfolded_F";
+							atlOffset=0.00040268898;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="x\tacr\addons\images\olympusTwo\laptop\fastTravel.paa";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=4824;
+					atlOffset=0.40799999;
 				};
 				class Item1
 				{
@@ -48181,7 +48183,7 @@ class Mission
 				};
 			};
 			id=4823;
-			atlOffset=0.010538459;
+			atlOffset=0.023288488;
 		};
 	};
 };
