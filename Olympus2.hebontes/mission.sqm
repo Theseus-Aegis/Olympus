@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6013;
+		nextID=6142;
 	};
 	class Camera
 	{
@@ -24529,6 +24529,7 @@ class Mission
 							};
 							id=1236;
 							type="Box_NATO_Equip_F";
+							atlOffset=0.00035858154;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -24730,7 +24731,7 @@ class Mission
 						};
 					};
 					id=1199;
-					atlOffset=0.97442245;
+					atlOffset=0.97442341;
 				};
 				class Item1
 				{
@@ -36926,7 +36927,7 @@ class Mission
 							};
 							id=2184;
 							type="Land_CampingChair_V2_white_F";
-							atlOffset=0.60200119;
+							atlOffset=0.60200024;
 						};
 						class Item7
 						{
@@ -42175,47 +42176,52 @@ class Mission
 						class Item0
 						{
 							dataType="Marker";
-							position[]={4381.7329,4.7230945,15304.276};
+							position[]={4381.7329,4.723,15304.276};
 							name="rangeAdvMarksmanArea1";
 							markerType="RECTANGLE";
 							type="rectangle";
+							alpha=0;
 							a=97.856003;
 							b=11.252;
-							angle=118.59293;
+							angle=118.59299;
 							id=4636;
-							atlOffset=-0.75352812;
+							atlOffset=-0.75362253;
 						};
 						class Item1
 						{
 							dataType="Marker";
-							position[]={4575.1929,4.9457579,15206.193};
+							position[]={4575.1929,4.9460001,15206.193};
 							name="rangeAdvMarksmanArea2";
 							markerType="RECTANGLE";
 							type="rectangle";
+							alpha=0;
 							a=97.842003;
 							b=10.206;
-							angle=119.90174;
+							angle=119.902;
 							id=4637;
+							atlOffset=0.00024223328;
 						};
 						class Item2
 						{
 							dataType="Marker";
-							position[]={4816.5371,2.7232764,15097.697};
+							position[]={4816.5371,2.723,15097.697};
 							name="rangeAdvMarksmanArea3";
 							markerType="RECTANGLE";
 							type="rectangle";
+							alpha=0;
 							a=114.792;
 							b=12.389;
-							angle=119.43456;
+							angle=119.43499;
 							id=4638;
+							atlOffset=-0.00027632713;
 						};
 					};
 					id=4635;
-					atlOffset=-0.31580734;
+					atlOffset=-0.31590819;
 				};
 			};
 			id=4345;
-			atlOffset=-0.1281743;
+			atlOffset=-0.12822485;
 		};
 		class Item20
 		{
@@ -45083,7 +45089,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5968.4189,1.881529,1484.9415};
-								angles[]={-0,3.3231432,0};
+								angles[]={0,3.3231432,0};
 							};
 							side="Empty";
 							flags=4;
