@@ -1,6 +1,6 @@
 /*
- * Author: Rory, jonpas
- * Allows for the instructor to choose what group of targets pop up.
+ * Author: Rory, Jonpas
+ * Allows for the instructor to choose what group of targets pop up for basic LMG range
  *
  * Arguments:
  * 0: Interaction object.
@@ -9,16 +9,16 @@
  * None
  *
  * Example:
- * [this] call TAC_Olympus_fnc_TargetGroupPopUps;
+ * [this] call TAC_Olympus_fnc_rangeBasicLMGTargetGroups;
  */
 #include "..\script_component.hpp"
 
-#define TARGET_GROUP_1 machinegun_range_trigger_target_1, machinegun_range_trigger_target_2, machinegun_range_trigger_target_3, machinegun_range_trigger_target_4
-#define TARGET_GROUP_2 machinegun_range_trigger_target_5, machinegun_range_trigger_target_6, machinegun_range_trigger_target_7, machinegun_range_trigger_target_8
-#define TARGET_GROUP_3 machinegun_range_trigger_target_9, machinegun_range_trigger_target_10, machinegun_range_trigger_target_11, machinegun_range_trigger_target_12, machinegun_range_trigger_target_13
-#define TARGET_GROUP_4 machinegun_range_trigger_target_14, machinegun_range_trigger_target_15, machinegun_range_trigger_target_16, machinegun_range_trigger_target_17, machinegun_range_trigger_target_18, machinegun_range_trigger_target_19
-#define TARGET_GROUP_5 machinegun_range_trigger_target_20, machinegun_range_trigger_target_21, machinegun_range_trigger_target_22, machinegun_range_trigger_target_23, machinegun_range_trigger_target_24
-#define TARGET_GROUP_6 machinegun_range_trigger_target_25, machinegun_range_trigger_target_26, machinegun_range_trigger_target_27, machinegun_range_trigger_target_28, machinegun_range_trigger_target_29
+#define TARGET_GROUP_1 rangeBasicLMGTarget01, rangeBasicLMGTarget02, rangeBasicLMGTarget03, rangeBasicLMGTarget04, rangeBasicLMGTarget05
+#define TARGET_GROUP_2 rangeBasicLMGTarget06, rangeBasicLMGTarget07, rangeBasicLMGTarget08, rangeBasicLMGTarget09, rangeBasicLMGTarget10, rangeBasicLMGTarget11
+#define TARGET_GROUP_3 rangeBasicLMGTarget12, rangeBasicLMGTarget13, rangeBasicLMGTarget14, rangeBasicLMGTarget15
+#define TARGET_GROUP_4 rangeBasicLMGTarget16, rangeBasicLMGTarget17, rangeBasicLMGTarget18, rangeBasicLMGTarget19, rangeBasicLMGTarget20
+#define TARGET_GROUP_5 rangeBasicLMGTarget21, rangeBasicLMGTarget22, rangeBasicLMGTarget23, rangeBasicLMGTarget24, rangeBasicLMGTarget25
+#define TARGET_GROUP_6 rangeBasicLMGTarget26, rangeBasicLMGTarget27, rangeBasicLMGTarget28, rangeBasicLMGTarget29, rangeBasicLMGTarget30, rangeBasicLMGTarget31
 
 #define ALL_TARGETS TARGET_GROUP_1, TARGET_GROUP_2, TARGET_GROUP_3, TARGET_GROUP_4, TARGET_GROUP_5, TARGET_GROUP_6
 #define ALL_TARGET_GROUPS [[ALL_TARGETS], [ALL_TARGETS], [TARGET_GROUP_1], [TARGET_GROUP_2], [TARGET_GROUP_3], [TARGET_GROUP_4], [TARGET_GROUP_5], [TARGET_GROUP_6]]
@@ -55,9 +55,9 @@ params ["_controller"];
     [QGVAR(targetsUp), "All Up", 0],
     [QGVAR(targetsDown), "All Down", 1],
     [QGVAR(group1up), "Group 1 Up", 0],
-    [QGVAR(group2up), "Group 2 Up", 0],
-    [QGVAR(group3up), "Group 3 Up", 0],
+    [QGVAR(group2up), "Left to Right Patrol Up", 0],
+    [QGVAR(group3up), "Penetrating Fire Up", 0],
     [QGVAR(group4up), "Group 4 Up", 0],
     [QGVAR(group5up), "Group 5 Up", 0],
-    [QGVAR(group6up), "Group 6 Up", 0]
+    [QGVAR(group6up), "Enfilading Fire Patrol Up", 0]
 ];

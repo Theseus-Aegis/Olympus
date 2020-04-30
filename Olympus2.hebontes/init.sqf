@@ -1,6 +1,9 @@
 #include "script_component.hpp"
 
-// environmentController eventHandlers
+// Disable Ambient Animals
+[{time > 0}, {enableEnvironment [false, false];}] call CBA_fnc_waitUntilAndExecute;
+
+// environmentControl eventHandlers
 [QGVAR(setTime), {
     ["Environment changing..."] call ace_common_fnc_displayTextStructured;
     skipTime ((_this select 0) - daytime + 24 ) % 24; // Skip forward to a specific
