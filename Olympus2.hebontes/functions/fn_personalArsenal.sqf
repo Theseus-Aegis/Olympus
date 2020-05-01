@@ -17,7 +17,6 @@
 params ["_player", "_crate"];
 
 private _accessibleItems = [];
-private _accessibleItemsFixed = [];
 
 TRACE_1("Loading Client",_player);
 private _success = false;
@@ -50,12 +49,11 @@ if (_loadData == "loaded") then {
 if (_success) then {
     // Match config case
     {
-        private _fixedClassname = configName (_x call CBA_fnc_getItemConfig);
-        _accessibleItemsFixed pushBack _fixedClassname
+        _accessibleItems = _accessibleItems apply {configName (_x call CBA_fnc_getItemConfig)}
     } forEach _accessibleItems;
 
     // Add items to arsenal
-    [_crate, _accessibleItemsFixed] call ace_arsenal_fnc_addVirtualItems;
+    [_crate, _accessibleItems] call ace_arsenal_fnc_addVirtualItems;
 
     // Create custom arsenal action
     private _action = [
