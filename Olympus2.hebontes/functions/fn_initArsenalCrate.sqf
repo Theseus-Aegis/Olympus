@@ -80,7 +80,7 @@ private _marksman = [
     "srifle_EBR_F",
     "cup_optic_elcan",
     "V_Rangemaster_belt",
-    "Rangefinder",
+    "ACE_Vector",
     "ACE_RangeCard"
 ];
 
