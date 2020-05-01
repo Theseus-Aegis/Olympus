@@ -54,10 +54,6 @@ if (_success) then {
         _accessibleItemsFixed pushBack _fixedClassname
     } forEach _accessibleItems;
 
-    copyToClipboard str _accessibleItemsFixed;
-
-
-
     // Add items to arsenal
     [_crate, _accessibleItemsFixed] call ace_arsenal_fnc_addVirtualItems;
 
