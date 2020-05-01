@@ -64,7 +64,7 @@ if (_success) then {
         "",
         {
             params ["_target", "_player"];
-            [_target, _player, false] call ace_arsenal_fnc_openBox
+            [_target, _player, false] call ace_arsenal_fnc_openBox;
         },
         {true}
     ] call ace_interact_menu_fnc_createAction;

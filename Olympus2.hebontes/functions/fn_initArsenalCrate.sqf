@@ -239,5 +239,5 @@ private _fullAction = [
 [_crate, false] call ace_dragging_fnc_setCarryable;
 [_crate, false] call ace_dragging_fnc_setDraggable;
 
-// Call personalArsenal
+// Add personal arsenal option
 [{!isNull player}, {[player, _this] call TAC_Olympus_fnc_personalArsenal}, _crate] call CBA_fnc_waitUntilAndExecute;
