@@ -48,9 +48,7 @@ if (_loadData == "loaded") then {
 
 if (_success) then {
     // Match config case
-    {
-        _accessibleItems = _accessibleItems apply {configName (_x call CBA_fnc_getItemConfig)}
-    } forEach _accessibleItems;
+    _accessibleItems = _accessibleItems apply {configName (_x call CBA_fnc_getItemConfig)};
 
     // Add items to arsenal
     [_crate, _accessibleItems] call ace_arsenal_fnc_addVirtualItems;
