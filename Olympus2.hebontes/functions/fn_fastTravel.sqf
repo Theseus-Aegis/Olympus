@@ -24,12 +24,12 @@ private _teleportLocations = [
     ["Advanced Courses", tpPosMOUT, "MOUT"],
     ["Advanced Courses", tpPosMOUTPrep, "MOUT Preparation"],
     ["Shooting Ranges", tpPos40mm, "40mm GL"],
-    ["Shooting Ranges", tpPosBasicPistol, "Pistol"],
-    ["Shooting Ranges", tpPosBasicRifle, "Rifle"],
     ["Shooting Ranges", tpPosHandGrenade, "Hand Grenade"],
     ["Shooting Ranges", tpPosLauncher, "Launcher"],
     ["Shooting Ranges", tpPosBasicLMG, "Machine Gun"],
-    ["Shooting Ranges", tpPosMarksman, "Marksman"]
+    ["Shooting Ranges", tpPosMarksman, "Marksman"],
+    ["Shooting Ranges", tpPosBasicPistol, "Pistol"],
+    ["Shooting Ranges", tpPosBasicRifle, "Rifle"]
 ];
 
 params ["_controller"];
