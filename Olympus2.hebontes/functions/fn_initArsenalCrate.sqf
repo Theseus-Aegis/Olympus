@@ -1,7 +1,7 @@
 /*
  * Author: JoramD, Jonpas, Kresky
  * Initializes 2 ACE Arsenals on an object (1 full, 1 partial) and selects an item array.
- * AVAILABLE OPTIONS: 40mm, advancedPistol, advancedRifle, basicLMG, basicPistol, basicRifle, engineer, grenade, launcher, marksman, medical, full (Only makes full arsenal)
+ * AVAILABLE OPTIONS: 40mm, advancedPistol, advancedRifle, basicLMG, basicPistol, basicRifle, engineer, grenade, launcher, marksman, medical, full (Makes full arsenal and personalArsenal)
  *
  * Arguments:
  * 0: Crate <OBJECT>
@@ -217,7 +217,7 @@ if !(_chosen isEqualTo []) then {
 
     [_crate, 0, ["ACE_MainActions"], _Action] call ace_interact_menu_fnc_addActionToObject;
 } else {
-   if !(_type isEqualTo "full") then {
+   if !(_type == "full") then {
        ERROR_MSG_1("Incorrect item array (%1)",_type);
    };
 };
@@ -238,3 +238,8 @@ private _fullAction = [
 // Disable carrying and dragging
 [_crate, false] call ace_dragging_fnc_setCarryable;
 [_crate, false] call ace_dragging_fnc_setDraggable;
+
+// Add personal arsenal option to default arsenals
+if (_type == "full") then {
+    [{!isNull player}, {[player, _this] call TAC_Olympus_fnc_personalArsenal}, _crate] call CBA_fnc_waitUntilAndExecute;
+};
