@@ -12,7 +12,6 @@ loadScreen = QPATHTOTACRF(images,olympusTwo\OlympusLoading.paa);
 overviewPicture = QPATHTOTACRF(images,olympusTwo\OlympusLoading.paa);
 onLoadIntroTime = 1;
 onLoadMissionTime = 1;
-forceRotorLibSimulation = 1;
 
 // Gametype and playercount
 class Header {
@@ -29,7 +28,7 @@ respawnDialog = 0;
 
 // AI & debug
 disabledAI = 1;  // Disables AI for Playable Units
-enableDebugConsole[] = {"76561198048995566", "76561198033169512"};  // Enables Debug Console for players with specified UIDs (Jonpas & Kresky) and Host/Admin
+enableDebugConsole[] = {"76561198048995566", "76561198085500182"};  // Enables Debug Console for players with specified UIDs (Jonpas and Tyrone) and Host/Admin
 enableTargetDebug = 1;
 
 // Other settings
