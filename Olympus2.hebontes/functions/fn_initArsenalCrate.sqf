@@ -217,7 +217,7 @@ if !(_chosen isEqualTo []) then {
 
     [_crate, 0, ["ACE_MainActions"], _Action] call ace_interact_menu_fnc_addActionToObject;
 } else {
-   if !(_type isEqualTo "full") then {
+   if !(_type == "full") then {
        ERROR_MSG_1("Incorrect item array (%1)",_type);
    };
 };
@@ -240,6 +240,6 @@ private _fullAction = [
 [_crate, false] call ace_dragging_fnc_setDraggable;
 
 // Add personal arsenal option to default arsenals
-if (_type isEqualTo "full") then {
+if (_type == "full") then {
     [{!isNull player}, {[player, _this] call TAC_Olympus_fnc_personalArsenal}, _crate] call CBA_fnc_waitUntilAndExecute;
 };
