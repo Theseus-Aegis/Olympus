@@ -43,5 +43,5 @@
     (_this select 0) disableAI "ALL";
 }] call CBA_fnc_addEventHandler;
 [QGVAR(applyDamage), {
-    [_this] call ace_medical_fnc_addDamageToUnit;
+    _this call ace_medical_fnc_addDamageToUnit;
 }] call CBA_fnc_addEventHandler;
