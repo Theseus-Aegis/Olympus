@@ -37,3 +37,11 @@
     1 setFog (_this select 0); // Set fog
     forceWeatherChange;
 }] call CBA_fnc_addEventHandler;
+
+// medical eventHandlers
+[QGVAR(disableAI), {
+    (_this select 0) disableAI "ALL";
+}] call CBA_fnc_addEventHandler;
+[QGVAR(applyDamage), {
+    [_this] call ace_medical_fnc_addDamageToUnit;
+}] call CBA_fnc_addEventHandler;
