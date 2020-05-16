@@ -15,7 +15,7 @@
  */
 #include "..\..\script_component.hpp"
 
-#define MEDICAL_SUBJECT_SIDE independent;
+#define MEDICAL_SUBJECT_SIDE independent
 
 params ["_controller", "_spawnPos", "_stretcher", "_subjectName"];
 
@@ -27,7 +27,7 @@ private _spawnSubjectAction = [
     {
         (_this select 2) params ["_controller", "_stretcher", "_spawnPos"];
 
-        private _medSubjectsGroup = createGroup [independent, true];
+        private _medSubjectsGroup = createGroup [MEDICAL_SUBJECT_SIDE, true];
         private _medSubject = _medSubjectsGroup createUnit [
             "B_Survivor_F",
             _spawnPos,
