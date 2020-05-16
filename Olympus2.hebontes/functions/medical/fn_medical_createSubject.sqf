@@ -38,7 +38,7 @@ private _spawnSubjectAction = [
 
         cutText ["<t size='2'>Spawning subject..</t>", "PLAIN DOWN", 1, true, true];
 
-        _stretcher setVariable [format ["medSubject_%1", _stretcher], _medSubject, true];
+        _stretcher setVariable [format [QGVAR(medSubject_%1), _stretcher], _medSubject, true];
 
         [QGVAR(disableAI), [_medSubject]] call CBA_fnc_globalEvent;
         [_medSubject, true, 60, true] call ace_medical_fnc_setUnconscious;
@@ -48,9 +48,7 @@ private _spawnSubjectAction = [
     {
         (_this select 2) params ["_controller", "_stretcher"];
 
-        private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
-
-        _medSubject isEqualTo []
+        !([_stretcher] call TAC_Olympus_fnc_medical_checkSubject)
     },
     {},
     [_controller, _stretcher, _spawnPos]

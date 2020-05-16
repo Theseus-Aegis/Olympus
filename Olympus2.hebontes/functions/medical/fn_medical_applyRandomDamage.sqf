@@ -36,12 +36,9 @@ private _randomDamageMainAction = [
         "",
         {},
         {
-            // Condition to check if patient is on stretcher
             (_this select 2) params ["_controller", "_stretcher"];
 
-            private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
-
-            !(_medSubject isEqualTo [])
+            [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
         },
         {
             (_this select 2) params ["_controller", "_stretcher"];

@@ -25,18 +25,16 @@ private _removeSubjectAction = [
     {
         (_this select 2) params ["_controller", "_stretcher"];
 
-        private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
+        private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
 
         deleteVehicle _medSubject;
 
-        _stretcher setVariable [format ["medSubject_%1", _stretcher], [], true];
+        _stretcher setVariable [format [QGVAR(medSubject_%1), _stretcher], [], true];
     },
     {
         (_this select 2) params ["_controller", "_stretcher"];
 
-        private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
-
-        !(_medSubject isEqualTo [])
+        [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
     },
     {},
     [_controller, _stretcher]
