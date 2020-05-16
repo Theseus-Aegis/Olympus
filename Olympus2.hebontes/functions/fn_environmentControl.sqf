@@ -23,9 +23,9 @@ private _timeAction = [
     "",
     {},
     {true}
-] call ace_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _timeAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _timeAction] call ACEFUNC(interact_menu,addActionToObject);
 
 private _timeSettings = [
     // [time, "Display Name"]
@@ -57,9 +57,9 @@ private _timeSettings = [
         {true},
         {},
         [_time]
-    ] call ace_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
-    [_controller, 0, ["ACE_MainActions", QGVAR(timeAction)], _action] call ace_interact_menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions", QGVAR(timeAction)], _action] call ACEFUNC(interact_menu,addActionToObject);
 } forEach _timeSettings;
 
 
@@ -70,9 +70,9 @@ private _dateAction = [
     "",
     {},
     {true}
-] call ace_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _dateAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _dateAction] call ACEFUNC(interact_menu,addActionToObject);
 
 private _dateSettings = [
     // [dateFloat, "Display Name"]
@@ -105,9 +105,9 @@ private _dateSettings = [
         {true},
         {},
         [_dateFloat]
-    ] call ace_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
-    [_controller, 0, ["ACE_MainActions", QGVAR(dateAction)], _action] call ace_interact_menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions", QGVAR(dateAction)], _action] call ACEFUNC(interact_menu,addActionToObject);
 } forEach _dateSettings;
 
 
@@ -118,9 +118,9 @@ private _fogAction = [
     "",
     {},
     {true}
-] call ace_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _fogAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _fogAction] call ACEFUNC(interact_menu,addActionToObject);
 
 private _fogSettings = [
     // [fogValue]
@@ -151,7 +151,7 @@ private _fogSettings = [
         {true},
         {},
         [_fogLevel]
-    ] call ace_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
-    [_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _action] call ace_interact_menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions", QGVAR(fogAction)], _action] call ACEFUNC(interact_menu,addActionToObject);
 } forEach _fogSettings;

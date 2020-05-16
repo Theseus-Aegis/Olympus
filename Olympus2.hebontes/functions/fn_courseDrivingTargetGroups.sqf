@@ -44,9 +44,9 @@ params ["_controller"];
         {true},
         {},
         [ALL_TARGET_GROUPS select _forEachIndex, _state]
-    ] call ace_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
-    [_controller, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions"], _action] call ACEFUNC(interact_menu,addActionToObject);
 } forEach [
     [QGVAR(targetsUp), "All Up", 0],
     [QGVAR(targetsDown), "All Down", 1]

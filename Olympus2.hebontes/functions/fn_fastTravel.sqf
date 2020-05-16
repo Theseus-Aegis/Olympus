@@ -54,10 +54,10 @@ private _createdCategories = [];
         },
         {},
         [_teleportObject, _text]
-    ] call ace_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
     if (_category == "") then {
-        [_controller, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+        [_controller, 0, ["ACE_MainActions"], _action] call ACEFUNC(interact_menu,addActionToObject);
     } else {
         private _categoryActionName = format [QGVAR(FastTravel_%1), _category];
         if !(_category in _createdCategories) then {
@@ -69,11 +69,11 @@ private _createdCategories = [];
                 "",
                 {},
                 {true}
-            ] call ace_interact_menu_fnc_createAction;
+            ] call ACEFUNC(interact_menu,createAction);
 
-            [_controller, 0, ["ACE_MainActions"], _categoryAction] call ace_interact_menu_fnc_addActionToObject;
+            [_controller, 0, ["ACE_MainActions"], _categoryAction] call ACEFUNC(interact_menu,addActionToObject);
         };
 
-        [_controller, 0, ["ACE_MainActions", _categoryActionName], _action] call ace_interact_menu_fnc_addActionToObject;
+        [_controller, 0, ["ACE_MainActions", _categoryActionName], _action] call ACEFUNC(interact_menu,addActionToObject);
     };
 } forEach _teleportLocations;

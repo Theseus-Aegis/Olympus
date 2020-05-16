@@ -210,12 +210,12 @@ if !(_chosen isEqualTo []) then {
         "Arsenal",
         "",
         {
-            [_target, _player, false] call ace_arsenal_fnc_openBox;
+            [_target, _player, false] call ACEFUNC(arsenal,openBox);
         },
         {true}
-    ] call ace_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
-    [_crate, 0, ["ACE_MainActions"], _Action] call ace_interact_menu_fnc_addActionToObject;
+    [_crate, 0, ["ACE_MainActions"], _Action] call ACEFUNC(interact_menu,addActionToObject);
 } else {
    if !(_type == "full") then {
        ERROR_MSG_1("Incorrect item array (%1)",_type);
@@ -228,12 +228,12 @@ private _fullAction = [
     "Full Arsenal",
     "",
     {
-        [_target, _player, true] call ace_arsenal_fnc_openBox;
+        [_target, _player, true] call ACEFUNC(arsenal,openBox);
     },
     {true}
-] call ace_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_crate, 0, ["ACE_MainActions"], _fullAction] call ace_interact_menu_fnc_addActionToObject;
+[_crate, 0, ["ACE_MainActions"], _fullAction] call ACEFUNC(interact_menu,addActionToObject);
 
 // Disable carrying and dragging
 [_crate, false] call ace_dragging_fnc_setCarryable;

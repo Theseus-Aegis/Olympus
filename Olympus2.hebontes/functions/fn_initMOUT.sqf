@@ -88,9 +88,9 @@ private _createAction = [
     },
     {},
     [_markers, _unitClasses, _unitChance, _specialUnits]
-] call ace_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _createAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _createAction] call ACEFUNC(interact_menu,addActionToObject);
 
 private _clearAction = [
     format [QGVAR(%1_Clear), _controller],
@@ -112,7 +112,7 @@ private _clearAction = [
         params ["_controller"];
         !((_controller getVariable [QGVAR(MOUTUnits), []]) isEqualTo [])
     }
-] call ace_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
 
-[_controller, 0, ["ACE_MainActions"], _clearAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _clearAction] call ACEFUNC(interact_menu,addActionToObject);
