@@ -23,9 +23,9 @@ private _specificDamageMainAction = [
     "",
     {},
     {true}
-] call ACE_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _specificDamageMainAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _specificDamageMainAction] call ACEFUNC(interact_menu,addActionToObject);
 
 {
     _x params ["_stretcher", "_subjectName"];
@@ -126,7 +126,7 @@ private _specificDamageMainAction = [
                                             {true},
                                             {},
                                             [_controller, _stretcher, _bodyPart, _projectileType, _severity]
-                                        ] call ACE_interact_menu_fnc_createAction;
+                                        ] call ACEFUNC(interact_menu,createAction);
 
                                         _actions pushBack [_severityAction, [], _controller];
                                     } forEach _severity;
@@ -134,7 +134,7 @@ private _specificDamageMainAction = [
                                     _actions
                                 },
                                 [_controller, _stretcher, _bodyPart, _projectileType]
-                            ] call ACE_interact_menu_fnc_createAction;
+                            ] call ACEFUNC(interact_menu,createAction);
 
                             _actions pushBack [_projectileTypeAction, [], _controller];
                         } forEach _projectileTypes;
@@ -142,7 +142,7 @@ private _specificDamageMainAction = [
                         _actions
                     },
                     [_controller, _stretcher, _bodyPart]
-                ] call ACE_interact_menu_fnc_createAction;
+                ] call ACEFUNC(interact_menu,createAction);
 
                 _actions pushBack [_bodyPartAction, [], _controller];
             } forEach _bodyParts;
@@ -150,7 +150,7 @@ private _specificDamageMainAction = [
             _actions
         },
         [_controller, _stretcher]
-    ] call ACE_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
-    [_controller, 0, ["ACE_MainActions", QGVAR(specificDamageMainAction)], _specificDamageAction] call ace_interact_menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions", QGVAR(specificDamageMainAction)], _specificDamageAction] call ACEFUNC(interact_menu,addActionToObject);
 } forEach _stretchers;

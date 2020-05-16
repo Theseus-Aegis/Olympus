@@ -52,6 +52,6 @@ private _spawnSubjectAction = [
     },
     {},
     [_controller, _stretcher, _spawnPos]
-] call ACE_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions", QGVAR(spawnMainAction)], _spawnSubjectAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions", QGVAR(spawnMainAction)], _spawnSubjectAction] call ACEFUNC(interact_menu,addActionToObject);

@@ -29,9 +29,9 @@ private _spawnMainAction = [
     "",
     {},
     {true}
-] call ACE_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _spawnMainAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _spawnMainAction] call ACEFUNC(interact_menu,addActionToObject);
 
 {
     _x params ["_stretcher", "_subjectName"];
@@ -46,9 +46,9 @@ private _removeMainAction = [
     "",
     {},
     {true}
-] call ACE_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _removeMainAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _removeMainAction] call ACEFUNC(interact_menu,addActionToObject);
 
 {
     _x params ["_stretcher", "_stretcherName"];

@@ -22,9 +22,9 @@ private _randomDamageMainAction = [
     "",
     {},
     {true}
-] call ACE_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _randomDamageMainAction] call ace_interact_menu_fnc_addActionToObject;
+[_controller, 0, ["ACE_MainActions"], _randomDamageMainAction] call ACEFUNC(interact_menu,addActionToObject);
 
 
 {
@@ -96,7 +96,7 @@ private _randomDamageMainAction = [
                     {true},
                     {},
                     [_controller, _stretcher, _randomNumbers]
-                ] call ACE_interact_menu_fnc_createAction;
+                ] call ACEFUNC(interact_menu,createAction);
 
                 _actions pushBack [_severityAction, [], _controller];
             } forEach _severity;
@@ -104,7 +104,7 @@ private _randomDamageMainAction = [
             _actions
         },
         [_controller, _stretcher]
-    ] call ACE_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
-    [_controller, 0, ["ACE_MainActions", QGVAR(randomDamageMainAction)], _randomDamageAction] call ace_interact_menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions", QGVAR(randomDamageMainAction)], _randomDamageAction] call ACEFUNC(interact_menu,addActionToObject);
 } forEach _stretchers;

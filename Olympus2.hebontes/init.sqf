@@ -44,5 +44,5 @@
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(applyDamage), {
-    _this call ace_medical_fnc_addDamageToUnit;
+    _this call ACEFUNC(medical,addDamageToUnit);
 }] call CBA_fnc_addEventHandler;
