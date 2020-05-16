@@ -5,7 +5,7 @@
  * Arguments:
  * 0: Controller <OBJECT>
  * 1: Stretcher <OBJECT>
- * 2: Stretcher Name <STRING>
+ * 2: Subject Name <STRING>
  *
  * Return Value:
  * None
@@ -41,7 +41,7 @@ private _spawnSubjectAction = [
         _stretcher setVariable [format [QGVAR(medSubject_%1), _stretcher], _medSubject, true];
 
         [QGVAR(disableAI), [_medSubject]] call CBA_fnc_globalEvent;
-        [_medSubject, true, 60, true] call ace_medical_fnc_setUnconscious;
+        [_medSubject, true, 60, true] call ACEFUNC(medical,setUnconscious);
         [{(_this select 0) setPosASL (getPosASL (_this select 1));}, [_medSubject, _stretcher], 5] call CBA_fnc_waitAndExecute;
         [{(_this select 0) setDir (getDir (_this select 1));}, [_medSubject, _stretcher], 5] call CBA_fnc_waitAndExecute;
     },

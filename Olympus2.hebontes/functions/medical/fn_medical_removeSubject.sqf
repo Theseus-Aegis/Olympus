@@ -5,7 +5,7 @@
  * Arguments:
  * 0: Controller <OBJECT>
  * 1: Stretcher <OBJECT>
- * 2: Stretcher Name <STRING>
+ * 2: Subject Name <STRING>
  *
  * Return Value:
  * None
