@@ -23,6 +23,4 @@
 #define QTACGVAR(var1,var2) QUOTE(TACGVAR(var1,var2))
 
 // ACE3
-#define ACE_PREFIX ace
-
 #define ACEFUNC(var1,var2) TRIPLES(DOUBLES(ACE_PREFIX,var1),fnc,var2)
