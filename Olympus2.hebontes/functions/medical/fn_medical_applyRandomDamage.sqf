@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Apply random damage to subject
+ * Apply random damage to subject.
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -12,7 +12,7 @@
  * Example:
  * [controller, stretchers] call TAC_Olympus_fnc_medical_applyRandomDamage
  */
-#include "..\script_component.hpp"
+#include "..\..\script_component.hpp"
 
 params ["_controller", "_stretchers"];
 
@@ -39,7 +39,7 @@ private _randomDamageMainAction = [
             // Condition to check if patient is on stretcher
             (_this select 2) params ["_controller", "_stretcher"];
 
-            private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
+            private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
 
             !(_medSubject isEqualTo [])
         },
@@ -49,7 +49,7 @@ private _randomDamageMainAction = [
             private _severity = [
                 //[[min, medium, max], "fancyName"]
                 [[0.1, 0.5,1], "Lightly wounded"],
-                [[1, 1.5, 2], "Medium wounded"],
+                [[1, 1.5, 2], "Moderatly wounded"],
                 [[2, 2.5, 3], "Heavily Wounded"]
             ];
 
@@ -64,7 +64,7 @@ private _randomDamageMainAction = [
                     {
                         (_this select 2) params ["_controller", "_stretcher", "_randomNumbers"];
 
-                        private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
+                        private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
 
                         private _bodyParts = [
                             //"bodyPart"

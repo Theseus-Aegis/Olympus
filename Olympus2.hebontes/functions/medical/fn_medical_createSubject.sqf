@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Spawn a subject
+ * Spawn a subject.
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -13,7 +13,9 @@
  * Example:
  * [controller, spawnPos, stretcher, subjectName] call TAC_Olympus_fnc_medical_createSubject
  */
-#include "..\script_component.hpp"
+#include "..\..\script_component.hpp"
+
+#define MEDICAL_SUBJECT_SIDE independent;
 
 params ["_controller", "_spawnPos", "_stretcher", "_subjectName"];
 
@@ -25,7 +27,7 @@ private _spawnSubjectAction = [
     {
         (_this select 2) params ["_controller", "_stretcher", "_spawnPos"];
 
-        private _medSubjectsGroup = createGroup independent;
+        private _medSubjectsGroup = createGroup [independent, true];
         private _medSubject = _medSubjectsGroup createUnit [
             "B_Survivor_F",
             _spawnPos,

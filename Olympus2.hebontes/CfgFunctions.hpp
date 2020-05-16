@@ -14,6 +14,9 @@ class CfgFunctions {
             class rangeBasicLMGTargetGroups;
             class resetDamagedObjects;
             class setBasicLoadout;
+        };
+        class medical {
+            file = "functions\medical"
             class medical_init;
             class medical_createSubject;
             class medical_removeSubject;

@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Remove a subject
+ * Remove a subject.
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -13,7 +13,7 @@
  * Example:
  * [controller, stretcher, stretcherName] call TAC_Olympus_fnc_medical_removeSubject
  */
-#include "..\script_component.hpp"
+#include "..\..\script_component.hpp"
 
 params ["_controller", "_stretcher", "_subjectName"];
 
@@ -25,11 +25,11 @@ private _removeSubjectAction = [
     {
         (_this select 2) params ["_controller", "_stretcher"];
 
-		private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
+        private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
 
-		deleteVehicle _medSubject;
+        deleteVehicle _medSubject;
 
-		_stretcher setVariable [format ["medSubject_%1", _stretcher], [], true];
+        _stretcher setVariable [format ["medSubject_%1", _stretcher], [], true];
     },
     {
         (_this select 2) params ["_controller", "_stretcher"];

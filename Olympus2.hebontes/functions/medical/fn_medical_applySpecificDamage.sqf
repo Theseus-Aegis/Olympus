@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Apply specific damage to subject
+ * Apply specific damage to subject.
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -12,7 +12,7 @@
  * Example:
  * [controller, stretchers] call TAC_Olympus_fnc_medical_applySpecificDamage
  */
-#include "..\script_component.hpp"
+#include "..\..\script_component.hpp"
 
 params ["_controller", "_stretchers"];
 
@@ -39,7 +39,7 @@ private _specificDamageMainAction = [
             // Condition to check if patient is on stretcher
             (_this select 2) params ["_controller", "_stretcher"];
 
-            private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
+            private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
 
             !(_medSubject isEqualTo [])
         },
@@ -121,7 +121,7 @@ private _specificDamageMainAction = [
                                             {
                                                 (_this select 2) params ["_controller", "_stretcher", "_bodyPart", "_projectileType", "_severity"];
 
-                                                private _medSubject = _stretcher getVariable [format ["medSubject_%1", _stretcher], []];
+                                                private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
 
                                                 diag_log format ["[Olympus Medical] Adding Damage: Subject: %1, Bodypart: %2, Projectile: %3, Severity: %4", _medSubject, _bodyPart, _projectileType, _severity];
                                                 [QGVAR(applyDamage), [_medSubject, _severity, _bodyPart, _projectileType], _medSubject] call CBA_fnc_targetEvent;

@@ -11,7 +11,7 @@
  * Example:
  * [controller, medicalSpawnPos] call TAC_Olympus_fnc_medical_init
  */
-#include "..\script_component.hpp"
+#include "..\..\script_component.hpp"
 
 params ["_controller", "_spawnPos"];
 
