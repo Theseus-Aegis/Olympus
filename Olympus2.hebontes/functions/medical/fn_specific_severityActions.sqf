@@ -1,0 +1,53 @@
+/*
+ * Author: JoramD
+ * Creates severityActions.
+ *
+ * Arguments:
+ * 0: Controller <OBJECT>
+ * 1: Stretchers <ARRAY>
+ * 2: BodyPart <STRING>
+ * 3: ProjectileType <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [controller, stretcher, bodyPart, projectileType] call TAC_Olympus_Medical_fnc_specific_severityActions
+ */
+#include "..\..\script_component.hpp"
+
+params ["_controller", "_stretcher", "_bodyPart", "_projectileType"];
+
+
+private _severity = [
+    //[severity, "severityName"]
+    [0.1, "1"],
+    [0.35, "2"],
+    [0.7, "3"],
+    [1.05, "4"],
+    [1.4, "5"],
+    [1.75, "6"],
+    [2.1, "7"],
+    [2.45, "8"],
+    [2.8, "9"],
+    [3, "10"]
+];
+
+private _actions = [];
+{
+    _x params ["_severity", "_severityName"];
+
+    private _severityAction = [
+        format[QGVAR(severityAction_%1), _severityName],
+        _severityName,
+        "",
+        {(_this select 2) call TAC_Olympus_Medical_fnc_specific_applyDamage},
+        {true},
+        {},
+        [_controller, _stretcher, _bodyPart, _projectileType, _severity]
+    ] call ACEFUNC(interact_menu,createAction);
+
+    _actions pushBack [_severityAction, [], _controller];
+} forEach _severity;
+
+_actions

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [controller, stretcher, stretcherName] call TAC_Olympus_fnc_medical_removeSubject
+ * [controller, stretcher, stretcherName] call TAC_Olympus_Medical_fnc_removeSubject
  */
 #include "..\..\script_component.hpp"
 
@@ -34,7 +34,7 @@ private _removeSubjectAction = [
     {
         (_this select 2) params ["_controller", "_stretcher"];
 
-        [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
+        [_stretcher] call TAC_Olympus_Medical_fnc_checkSubject
     },
     {},
     [_controller, _stretcher]

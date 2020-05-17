@@ -15,14 +15,18 @@ class CfgFunctions {
             class resetDamagedObjects;
             class setBasicLoadout;
         };
-        class medical {
+    };
+    class DOUBLES(ADDON,Medical) {
+        class functions {
             file = "functions\medical";
-            class medical_init;
-            class medical_createSubject;
-            class medical_removeSubject;
-            class medical_applySpecificDamage;
-            class medical_applyRandomDamage;
-            class medical_checkSubject;
+            class init;
+            class createSubject;
+            class removeSubject;
+            class checkSubject;
+            class specific_bodyPartActions;
+            class specific_projectileTypeActions;
+            class specific_severityActions;
+            class applyDamage;
         };
     };
 };

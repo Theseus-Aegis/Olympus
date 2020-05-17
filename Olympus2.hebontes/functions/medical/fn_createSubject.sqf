@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [controller, spawnPos, stretcher, subjectName] call TAC_Olympus_fnc_medical_createSubject
+ * [controller, spawnPos, stretcher, subjectName] call TAC_Olympus_Medical_fnc_createSubject
  */
 #include "..\..\script_component.hpp"
 
@@ -48,7 +48,7 @@ private _spawnSubjectAction = [
     {
         (_this select 2) params ["_controller", "_stretcher"];
 
-        !([_stretcher] call TAC_Olympus_fnc_medical_checkSubject)
+        !([_stretcher] call TAC_Olympus_Medical_fnc_checkSubject)
     },
     {},
     [_controller, _stretcher, _spawnPos]

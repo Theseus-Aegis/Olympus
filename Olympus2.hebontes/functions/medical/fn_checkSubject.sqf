@@ -9,7 +9,7 @@
  * Boolean
  *
  * Example:
- * [stretcher] call TAC_Olympus_fnc_medical_checkSubject
+ * [stretcher] call TAC_Olympus_Medical_fnc_checkSubject
  */
 #include "..\..\script_component.hpp"
 

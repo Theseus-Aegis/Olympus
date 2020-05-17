@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [controller, medicalSpawnPos] call TAC_Olympus_fnc_medical_init
+ * [controller, medicalSpawnPos] call TAC_Olympus_Medical_fnc_init
  */
 #include "..\..\script_component.hpp"
 
@@ -36,7 +36,7 @@ private _spawnMainAction = [
 {
     _x params ["_stretcher", "_subjectName"];
 
-    [_controller, _spawnPos, _stretcher, _subjectName] call TAC_Olympus_fnc_medical_createSubject;
+    [_controller, _spawnPos, _stretcher, _subjectName] call TAC_Olympus_Medical_fnc_createSubject;
 } forEach _stretchers;
 
 // Subject removal
@@ -53,7 +53,7 @@ private _removeMainAction = [
 {
     _x params ["_stretcher", "_subjectName"];
 
-    [_controller, _stretcher, _subjectName] call TAC_Olympus_fnc_medical_removeSubject;
+    [_controller, _stretcher, _subjectName] call TAC_Olympus_Medical_fnc_removeSubject;
 } forEach _stretchers;
 
 // Specific damage
@@ -78,9 +78,9 @@ private _specificDamageMainAction = [
         {
             (_this select 2) params ["_controller", "_stretcher"];
 
-            [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
+            [_stretcher] call TAC_Olympus_Medical_fnc_checkSubject
         },
-        {(_this select 2) call TAC_Olympus_fnc_medical_applySpecificDamage},
+        {(_this select 2) call TAC_Olympus_Medical_fnc_specific_bodyPartActions},
         [_controller, _stretcher]
     ] call ACEFUNC(interact_menu,createAction);
 
@@ -109,9 +109,9 @@ private _randomDamageMainAction = [
         {
             (_this select 2) params ["_controller", "_stretcher"];
 
-            [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
+            [_stretcher] call TAC_Olympus_Medical_fnc_checkSubject
         },
-        {(_this select 2) call TAC_Olympus_fnc_medical_applyRandomDamage},
+        {(_this select 2) call TAC_Olympus_Medical_fnc_applyRandomDamage},
         [_controller, _stretcher]
     ] call ACEFUNC(interact_menu,createAction);
 
