@@ -70,7 +70,21 @@ private _specificDamageMainAction = [
 {
     _x params ["_stretcher", "_subjectName"];
 
-    [_controller, _stretcher, _subjectName] call TAC_Olympus_fnc_medical_applySpecificDamage;
+    private _specificDamageAction = [
+        format[QGVAR(specificDamageAction_%1), _stretcher],
+        format ["Damage subject %1", _subjectName],
+        "",
+        {},
+        {
+            (_this select 2) params ["_controller", "_stretcher"];
+
+            [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
+        },
+        {(_this select 2) call TAC_Olympus_fnc_medical_applySpecificDamage},
+        [_controller, _stretcher]
+    ] call ACEFUNC(interact_menu,createAction);
+
+    [_controller, 0, ["ACE_MainActions", QGVAR(specificDamageMainAction)], _specificDamageAction] call ACEFUNC(interact_menu,addActionToObject);
 } forEach _stretchers;
 
 // Random damage
@@ -87,5 +101,19 @@ private _randomDamageMainAction = [
 {
     _x params ["_stretcher", "_subjectName"];
 
-    [_controller, _stretcher, _subjectName] call TAC_Olympus_fnc_medical_applyRandomDamage;
+    private _randomDamageAction = [
+        format [QGVAR(randomDamageAction_%1), _stretcher],
+        format ["Damage subject %1", _subjectName],
+        "",
+        {},
+        {
+            (_this select 2) params ["_controller", "_stretcher"];
+
+            [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
+        },
+        {(_this select 2) call TAC_Olympus_fnc_medical_applyRandomDamage},
+        [_controller, _stretcher]
+    ] call ACEFUNC(interact_menu,createAction);
+
+    [_controller, 0, ["ACE_MainActions", QGVAR(randomDamageMainAction)], _randomDamageAction] call ACEFUNC(interact_menu,addActionToObject);
 } forEach _stretchers;

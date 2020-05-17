@@ -15,104 +15,12 @@
  */
 #include "..\..\script_component.hpp"
 
-params ["_controller", "_stretcher", "_subjectName"];
+params ["_controller", "_stretcher"];
 
 
-private _specificDamageAction = [
-    format[QGVAR(specificDamageAction_%1), _stretcher],
-    format ["Damage subject %1", _subjectName],
-    "",
-    {},
-    {
-        (_this select 2) params ["_controller", "_stretcher"];
+private _fnc_severityActions = {
+    (_this select 2) params ["_controller", "_stretcher", "_bodyPart", "_projectileType"];
 
-        [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
-    },
-    {
-        (_this select 2) params ["_controller", "_stretcher"];
-
-        [] call GVAR(bodyPartActions);
-    },
-    [_controller, _stretcher]
-] call ACEFUNC(interact_menu,createAction);
-
-[_controller, 0, ["ACE_MainActions", QGVAR(specificDamageMainAction)], _specificDamageAction] call ACEFUNC(interact_menu,addActionToObject);
-
-
-GVAR(bodyPartActions) = {
-    private _bodyParts = [
-        //["bodyPart", "bodyPartName"]
-        ["Head", "Head"],
-        ["Body", "Body"],
-        ["RightArm", "Right Arm"],
-        ["LeftArm", "Left Arm"],
-        ["RightLeg", "Right Leg"],
-        ["LeftLeg", "Left Leg"]
-    ];
-
-    private _actions = [];
-    {
-        _x params ["_bodyPart", "_bodyPartName"];
-
-        private _bodyPartAction = [
-            format[QGVAR(bodyPartAction_%1), _bodyPart],
-            _bodyPartName,
-            "",
-            {},
-            {true},
-            {
-                (_this select 2) params ["_controller", "_stretcher", "_bodyPart"];
-
-                [] call GVAR(projectileTypeActions);
-            },
-            [_controller, _stretcher, _bodyPart]
-        ] call ACEFUNC(interact_menu,createAction);
-
-        _actions pushBack [_bodyPartAction, [], _controller];
-    } forEach _bodyParts;
-
-    _actions
-};
-
-GVAR(projectileTypeActions) = {
-    private _projectileTypes = [
-        //["projectileType", "projectileTypeName"]
-        ["bullet", "Bullet"],
-        ["grenade", "Grenade"],
-        ["explosive", "Explosion"],
-        ["shell", "Explosive Shell"],
-        ["vehiclecrash", "Vehicle Crash"],
-        ["collision", "Collision"],
-        ["backblast", "Backblast"],
-        ["stab", "Stab"],
-        ["falling", "Falling"]
-    ];
-
-    private _actions = [];
-    {
-        _x params ["_projectileType", "_projectileTypeName"];
-
-        private _projectileTypeAction = [
-            format[QGVAR(projectileTypeAction_%1), _projectileType],
-            _projectileTypeName,
-            "",
-            {},
-            {true},
-            {
-                (_this select 2) params ["_controller", "_stretcher", "_bodyPart", "_projectileType"];
-
-                [] call GVAR(severityActions);
-            },
-            [_controller, _stretcher, _bodyPart, _projectileType]
-        ] call ACEFUNC(interact_menu,createAction);
-
-        _actions pushBack [_projectileTypeAction, [], _controller];
-    } forEach _projectileTypes;
-
-    _actions
-};
-
-GVAR(severityActions) = {
     private _severity = [
         //[severity, "severityName"]
         [0.1, "1"],
@@ -153,3 +61,70 @@ GVAR(severityActions) = {
 
     _actions
 };
+
+
+private _fnc_projectileTypeActions = {
+    (_this select 2) params ["_controller", "_stretcher", "_bodyPart"];
+
+    private _projectileTypes = [
+        //["projectileType", "projectileTypeName"]
+        ["bullet", "Bullet"],
+        ["grenade", "Grenade"],
+        ["explosive", "Explosion"],
+        ["shell", "Explosive Shell"],
+        ["vehiclecrash", "Vehicle Crash"],
+        ["collision", "Collision"],
+        ["backblast", "Backblast"],
+        ["stab", "Stab"],
+        ["falling", "Falling"]
+    ];
+
+    private _actions = [];
+    {
+        _x params ["_projectileType", "_projectileTypeName"];
+
+        private _projectileTypeAction = [
+            format[QGVAR(projectileTypeAction_%1), _projectileType],
+            _projectileTypeName,
+            "",
+            {},
+            {true},
+            _fnc_severityActions,
+            [_controller, _stretcher, _bodyPart, _projectileType]
+        ] call ACEFUNC(interact_menu,createAction);
+
+        _actions pushBack [_projectileTypeAction, [], _controller];
+    } forEach _projectileTypes;
+
+    _actions
+};
+
+
+private _bodyParts = [
+    //["bodyPart", "bodyPartName"]
+    ["Head", "Head"],
+    ["Body", "Body"],
+    ["RightArm", "Right Arm"],
+    ["LeftArm", "Left Arm"],
+    ["RightLeg", "Right Leg"],
+    ["LeftLeg", "Left Leg"]
+];
+
+private _actions = [];
+{
+    _x params ["_bodyPart", "_bodyPartName"];
+
+    private _bodyPartAction = [
+        format[QGVAR(bodyPartAction_%1), _bodyPart],
+        _bodyPartName,
+        "",
+        {},
+        {true},
+        _fnc_projectileTypeActions,
+        [_controller, _stretcher, _bodyPart]
+    ] call ACEFUNC(interact_menu,createAction);
+
+    _actions pushBack [_bodyPartAction, [], _controller];
+} forEach _bodyParts;
+
+_actions
