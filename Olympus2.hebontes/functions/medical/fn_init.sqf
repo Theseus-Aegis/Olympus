@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Medical training function.
+ * Initializes medical training interactions.
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -15,7 +15,6 @@
 #include "..\..\script_component.hpp"
 
 params ["_controller", "_spawnPos"];
-
 
 private _stretchers = [
     // [stretcher, "subjectName"]
@@ -36,7 +35,6 @@ private _spawnMainAction = [
 
 {
     _x params ["_stretcher", "_subjectName"];
-
     [_controller, _spawnPos, _stretcher, _subjectName] call TAC_Olympus_Medical_fnc_createSubject;
 } forEach _stretchers;
 
@@ -53,7 +51,6 @@ private _removeMainAction = [
 
 {
     _x params ["_stretcher", "_subjectName"];
-
     [_controller, _stretcher, _subjectName] call TAC_Olympus_Medical_fnc_removeSubject;
 } forEach _stretchers;
 
@@ -78,7 +75,6 @@ private _specificDamageMainAction = [
         {},
         {
             (_this select 2) params ["_controller", "_stretcher"];
-
             [_stretcher] call TAC_Olympus_Medical_fnc_checkSubject
         },
         {(_this select 2) call TAC_Olympus_Medical_fnc_specific_bodyPartActions},

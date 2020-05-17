@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Creates bodyPartActions.
+ * Create body part interactions.
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -15,7 +15,6 @@
 #include "..\..\script_component.hpp"
 
 params ["_controller", "_stretcher"];
-
 
 private _bodyParts = [
     //["bodyPart", "bodyPartName"]

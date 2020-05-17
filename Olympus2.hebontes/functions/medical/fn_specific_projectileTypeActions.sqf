@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Creates projectileTypeActions.
+ * Create project type interactions.
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -16,7 +16,6 @@
 #include "..\..\script_component.hpp"
 
 params ["_controller", "_stretcher", "_bodyPart"];
-
 
 private _projectileTypes = [
     //["projectileType", "projectileTypeName"]

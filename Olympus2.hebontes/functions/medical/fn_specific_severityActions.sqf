@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Creates severityActions.
+ * Create severity interactions.
  *
  * Arguments:
  * 0: Controller <OBJECT>
@@ -17,7 +17,6 @@
 #include "..\..\script_component.hpp"
 
 params ["_controller", "_stretcher", "_bodyPart", "_projectileType"];
-
 
 private _severity = [
     //[severity, "severityName"]
@@ -43,7 +42,6 @@ private _actions = [];
         "",
         {
             (_this select 2) params ["_controller", "_stretcher", "_bodyPart", "_projectileType", "_severity"];
-
 
             private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
 

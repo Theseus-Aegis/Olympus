@@ -17,7 +17,6 @@
 #include "..\..\script_component.hpp"
 
 params ["_controller", "_spawnPos", "_stretcher", "_subjectName"];
-
 #define MEDICAL_SUBJECT_SIDE independent
 
 
@@ -26,7 +25,7 @@ private _spawnSubjectAction = [
     format ["Spawn subject %1", _subjectName],
     "",
     {
-        (_this select 2) params ["_controller", "_stretcher", "_spawnPos"];
+        (_this select 2) params ["_stretcher", "_spawnPos"];
 
         private _medSubjectsGroup = createGroup [MEDICAL_SUBJECT_SIDE, true];
         private _medSubject = _medSubjectsGroup createUnit [
@@ -47,12 +46,11 @@ private _spawnSubjectAction = [
         [{(_this select 0) setDir (getDir (_this select 1));}, [_medSubject, _stretcher], 5] call CBA_fnc_waitAndExecute;
     },
     {
-        (_this select 2) params ["_controller", "_stretcher"];
-
+        (_this select 2) params ["_stretcher"];
         !([_stretcher] call TAC_Olympus_Medical_fnc_checkSubject)
     },
     {},
-    [_controller, _stretcher, _spawnPos]
+    [_stretcher, _spawnPos]
 ] call ACEFUNC(interact_menu,createAction);
 
 [_controller, 0, ["ACE_MainActions", QGVAR(spawnMainAction)], _spawnSubjectAction] call ACEFUNC(interact_menu,addActionToObject);
