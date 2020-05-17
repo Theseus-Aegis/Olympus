@@ -26,7 +26,7 @@ class CfgFunctions {
             class specific_bodyPartActions;
             class specific_projectileTypeActions;
             class specific_severityActions;
-            class applyDamage;
+            class specific_applyDamage;
         };
     };
 };

@@ -9,7 +9,7 @@
  * 3: ProjectileType <STRING>
  *
  * Return Value:
- * None
+ * Actions <ARRAY>
  *
  * Example:
  * [controller, stretcher, bodyPart, projectileType] call TAC_Olympus_Medical_fnc_specific_severityActions
