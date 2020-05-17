@@ -41,7 +41,15 @@ private _actions = [];
         format[QGVAR(severityAction_%1), _severityName],
         _severityName,
         "",
-        {(_this select 2) call TAC_Olympus_Medical_fnc_specific_applyDamage},
+        {
+            (_this select 2) params ["_controller", "_stretcher", "_bodyPart", "_projectileType", "_severity"];
+
+
+            private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
+
+            diag_log format ["[Olympus Medical] Adding specific damage: Subject: %1, Bodypart: %2, Projectile: %3, Severity: %4", _medSubject, _bodyPart, _projectileType, _severity];
+            [QGVAR(applyDamage), [_medSubject, _severity, _bodyPart, _projectileType], _medSubject] call CBA_fnc_targetEvent;
+        },
         {true},
         {},
         [_controller, _stretcher, _bodyPart, _projectileType, _severity]

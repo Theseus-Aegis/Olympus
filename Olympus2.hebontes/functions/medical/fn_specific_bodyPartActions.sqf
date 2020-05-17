@@ -37,7 +37,7 @@ private _actions = [];
         "",
         {},
         {true},
-        {(_this select 2) call TAC_Olympus_Medical_fnc_projectileTypeActions},
+        {(_this select 2) call TAC_Olympus_Medical_fnc_specific_projectileTypeActions},
         [_controller, _stretcher, _bodyPart]
     ] call ACEFUNC(interact_menu,createAction);
 
