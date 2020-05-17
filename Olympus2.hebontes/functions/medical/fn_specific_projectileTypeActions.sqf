@@ -4,7 +4,7 @@
  *
  * Arguments:
  * 0: Controller <OBJECT>
- * 1: Stretchers <ARRAY>
+ * 1: Stretcher <OBJECT>
  * 2: BodyPart <STRING>
  *
  * Return Value:

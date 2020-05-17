@@ -5,13 +5,12 @@
  * Arguments:
  * 0: Controller <OBJECT>
  * 1: Stretcher <OBJECT>
- * 2: Subject Name <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [controller, stretcher, stretcherName] call TAC_Olympus_fnc_medical_applyRandomDamage
+ * [controller, stretcher] call TAC_Olympus_Medical_fnc_applyRandomDamage
  */
 #include "..\..\script_component.hpp"
 

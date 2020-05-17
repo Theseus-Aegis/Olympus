@@ -4,6 +4,7 @@
  *
  * Arguments:
  * 0: Controller <OBJECT>
+ * 1: Spawn Position <ARRAY/OBJECT/GROUP>
  *
  * Return Value:
  * None

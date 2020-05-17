@@ -4,8 +4,9 @@
  *
  * Arguments:
  * 0: Controller <OBJECT>
- * 1: Stretcher <OBJECT>
- * 2: Subject Name <STRING>
+ * 1: Spawn Position <ARRAY/OBJECT/GROUP>
+ * 2: Stretcher <OBJECT>
+ * 3: Subject Name <STRING>
  *
  * Return Value:
  * None
@@ -15,9 +16,9 @@
  */
 #include "..\..\script_component.hpp"
 
-#define MEDICAL_SUBJECT_SIDE independent
-
 params ["_controller", "_spawnPos", "_stretcher", "_subjectName"];
+
+#define MEDICAL_SUBJECT_SIDE independent
 
 
 private _spawnSubjectAction = [
