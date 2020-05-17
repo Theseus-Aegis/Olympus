@@ -29,17 +29,17 @@ private _randomDamageAction = [
         [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
     },
     {
-        (_this select 2) params ["_controller", "_stretcher"];
+        (_this select 2) params ["_controller", "_stretcher", "_fnc_severityActions"];
 
-        [] call GVAR(severityActions);
+        [] call _fnc_severityActions;
     },
-    [_controller, _stretcher]
+    [_controller, _stretcher, _fnc_severityActions]
 ] call ACEFUNC(interact_menu,createAction);
 
 [_controller, 0, ["ACE_MainActions", QGVAR(randomDamageMainAction)], _randomDamageAction] call ACEFUNC(interact_menu,addActionToObject);
 
 
-GVAR(severityActions) = {
+private _fnc_severityActions = {
     private _severity = [
         //[[min, medium, max], "fancyName"]
         [[0.1, 0.5,1], "Lightly wounded"],
