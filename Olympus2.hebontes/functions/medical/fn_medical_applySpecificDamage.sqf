@@ -29,6 +29,8 @@ private _specificDamageAction = [
         [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
     },
     {
+        (_this select 2) params ["_controller", "_stretcher"];
+
         [] call GVAR(bodyPartActions);
     },
     [_controller, _stretcher]
@@ -38,8 +40,6 @@ private _specificDamageAction = [
 
 
 GVAR(bodyPartActions) = {
-    (_this select 2) params ["_controller", "_stretcher"];
-
     private _bodyParts = [
         //["bodyPart", "bodyPartName"]
         ["Head", "Head"],
@@ -61,6 +61,8 @@ GVAR(bodyPartActions) = {
             {},
             {true},
             {
+                (_this select 2) params ["_controller", "_stretcher", "_bodyPart"];
+
                 [] call GVAR(projectileTypeActions);
             },
             [_controller, _stretcher, _bodyPart]
@@ -73,8 +75,6 @@ GVAR(bodyPartActions) = {
 };
 
 GVAR(projectileTypeActions) = {
-    (_this select 2) params ["_controller", "_stretcher", "_bodyPart"];
-
     private _projectileTypes = [
         //["projectileType", "projectileTypeName"]
         ["bullet", "Bullet"],
@@ -99,6 +99,8 @@ GVAR(projectileTypeActions) = {
             {},
             {true},
             {
+                (_this select 2) params ["_controller", "_stretcher", "_bodyPart", "_projectileType"];
+
                 [] call GVAR(severityActions);
             },
             [_controller, _stretcher, _bodyPart, _projectileType]
@@ -111,8 +113,6 @@ GVAR(projectileTypeActions) = {
 };
 
 GVAR(severityActions) = {
-    (_this select 2) params ["_controller", "_stretcher", "_bodyPart", "_projectileType"];
-
     private _severity = [
         //[severity, "severityName"]
         [0.1, "1"],
