@@ -18,28 +18,9 @@
 params ["_controller", "_stretcher", "_subjectName"];
 
 
-private _randomDamageAction = [
-    format [QGVAR(randomDamageAction_%1), _stretcher],
-    format ["Damage subject %1", _subjectName],
-    "",
-    {},
-    {
-        (_this select 2) params ["_controller", "_stretcher"];
-
-        [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
-    },
-    {
-        (_this select 2) params ["_controller", "_stretcher", "_fnc_severityActions"];
-
-        [] call _fnc_severityActions;
-    },
-    [_controller, _stretcher, _fnc_severityActions]
-] call ACEFUNC(interact_menu,createAction);
-
-[_controller, 0, ["ACE_MainActions", QGVAR(randomDamageMainAction)], _randomDamageAction] call ACEFUNC(interact_menu,addActionToObject);
-
-
 private _fnc_severityActions = {
+    params ["_controller", "_stretcher"];
+
     private _severity = [
         //[[min, medium, max], "fancyName"]
         [[0.1, 0.5,1], "Lightly wounded"],
@@ -100,3 +81,20 @@ private _fnc_severityActions = {
 
     _actions
 };
+
+
+private _randomDamageAction = [
+    format [QGVAR(randomDamageAction_%1), _stretcher],
+    format ["Damage subject %1", _subjectName],
+    "",
+    {},
+    {
+        (_this select 2) params ["_controller", "_stretcher"];
+
+        [_stretcher] call TAC_Olympus_fnc_medical_checkSubject
+    },
+    {(_this select 2) call _fnc_severityActions},
+    [_controller, _stretcher]
+] call ACEFUNC(interact_menu,createAction);
+
+[_controller, 0, ["ACE_MainActions", QGVAR(randomDamageMainAction)], _randomDamageAction] call ACEFUNC(interact_menu,addActionToObject);
