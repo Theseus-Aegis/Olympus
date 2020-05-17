@@ -65,7 +65,7 @@ private _actions = [];
             private _selectedBodyPart = selectRandom _bodyParts;
             private _selectedProjectileType = selectRandom _projectileTypes;
 
-            diag_log format ["[Olympus Medical] Adding Damage: Subject: %1 Severity: %2 Bodypart:%3 ProjectileType: %4", _medSubject, _selectedSeverity, _selectedBodyPart, _selectedProjectileType];
+            INFO_4("[Medical] Adding random damage: Subject: %1, Bodypart: %2, Projectile: %3, Severity: %4", _medSubject, _selectedBodyPart, _selectedProjectileType, _selectedSeverity);
             [QGVAR(applyDamage), [_medSubject, _selectedSeverity, _selectedBodyPart, _selectedProjectileType], _medSubject] call CBA_fnc_targetEvent;
         },
         {true},
