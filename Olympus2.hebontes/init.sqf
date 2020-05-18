@@ -19,7 +19,7 @@
     [_x, "theseus"] call acre_api_fnc_setPreset;
 } forEach ["ACRE_PRC152", "ACRE_PRC117F"];
 
-// environmentControl eventHandlers
+// Environment Control Event Handlers
 [QGVAR(setTime), {
     ["Environment changing..."] call ace_common_fnc_displayTextStructured;
     skipTime ((_this select 0) - daytime + 24 ) % 24; // Skip forward to a specific
@@ -36,4 +36,13 @@
     ["Environment changing..."] call ace_common_fnc_displayTextStructured;
     1 setFog (_this select 0); // Set fog
     forceWeatherChange;
+}] call CBA_fnc_addEventHandler;
+
+// Medical Event Handlers
+[QGVAR(disableAI), {
+    (_this select 0) disableAI "ALL";
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(applyDamage), {
+    _this call ace_medical_fnc_addDamageToUnit;
 }] call CBA_fnc_addEventHandler;

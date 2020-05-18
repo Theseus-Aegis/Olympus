@@ -16,4 +16,17 @@ class CfgFunctions {
             class setBasicLoadout;
         };
     };
+    class DOUBLES(ADDON,Medical) {
+        class functions {
+            file = "functions\medical";
+            class init;
+            class createSubject;
+            class removeSubject;
+            class checkSubject;
+            class specific_bodyPartActions;
+            class specific_projectileTypeActions;
+            class specific_severityActions;
+            class applyRandomDamage;
+        };
+    };
 };

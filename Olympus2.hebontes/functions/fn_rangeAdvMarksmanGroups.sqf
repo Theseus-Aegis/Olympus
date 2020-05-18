@@ -72,7 +72,7 @@ GVAR(advMarksmanTargetGroups) = call CBA_fnc_createNamespace;
         },
         {},
         [_level, _x]
-    ] call ace_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
     private _actionDespawn = [
         format [QGVAR(advMarksmanTargetsDespawn%1), _level],
@@ -97,8 +97,8 @@ GVAR(advMarksmanTargetGroups) = call CBA_fnc_createNamespace;
         },
         {},
         [_level]
-    ] call ace_interact_menu_fnc_createAction;
+    ] call ACEFUNC(interact_menu,createAction);
 
-    [_controller, 0, ["ACE_MainActions"], _actionSpawn] call ace_interact_menu_fnc_addActionToObject;
-    [_controller, 0, ["ACE_MainActions"], _actionDespawn] call ace_interact_menu_fnc_addActionToObject;
+    [_controller, 0, ["ACE_MainActions"], _actionSpawn] call ACEFUNC(interact_menu,addActionToObject);
+    [_controller, 0, ["ACE_MainActions"], _actionDespawn] call ACEFUNC(interact_menu,addActionToObject);
 } forEach _patrolAreas;
