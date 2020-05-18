@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=5203;
+		nextID=5204;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6916;
+		nextID=7690;
 	};
 	class Camera
 	{
-		pos[]={6059.1147,66.451836,16972.203};
-		dir[]={0.13386302,-0.51139206,-0.84887171};
-		up[]={0.079659991,0.85934323,-0.5051533};
-		aside[]={-0.98780411,1.1210432e-007,-0.15577282};
+		pos[]={8589.3799,33.564327,17520.934};
+		dir[]={0.90539879,-0.42458704,0.011680821};
+		up[]={0.42463219,0.90535265,0.0054784021};
+		aside[]={0.01290136,1.4992838e-007,-0.99998218};
 	};
 };
 binarizationWanted=0;
@@ -3385,7 +3385,7 @@ class Mission
 							name="respawn_guerilla";
 							text="Player Respawn";
 							type="Empty";
-							angle=229.01237;
+							angle=229.01212;
 							id=80;
 						};
 						class Item1
@@ -24869,7 +24869,6 @@ class Mission
 							};
 							id=1236;
 							type="Box_NATO_Equip_F";
-							atlOffset=0.00035858154;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -25071,7 +25070,7 @@ class Mission
 						};
 					};
 					id=1199;
-					atlOffset=0.97442341;
+					atlOffset=0.97442245;
 				};
 				class Item1
 				{
@@ -36423,7 +36422,7 @@ class Mission
 					name="Testing Tent";
 					class Entities
 					{
-						items=25;
+						items=26;
 						class Item0
 						{
 							dataType="Object";
@@ -36627,8 +36626,8 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								name="strech";
-								createAsSimpleObject=1;
+								name="stretcher2";
+								disableSimulation=1;
 							};
 							id=2166;
 							type="Land_Stretcher_01_sand_F";
@@ -36662,13 +36661,14 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8632.7422,10.241619,17520.105};
-								angles[]={0,0.97738439,0};
+								angles[]={0,4.1189771,0};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
-								createAsSimpleObject=1;
+								name="stretcher1";
+								disableSimulation=1;
 							};
 							id=2167;
 							type="Land_Stretcher_01_sand_F";
@@ -36868,6 +36868,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{[this, medicalSpawnPos] call TAC_Olympus_Medical_fnc_init;}";
 								name="courseMedicController";
 								disableSimulation=1;
 							};
@@ -36895,7 +36896,26 @@ class Mission
 										};
 									};
 								};
-								nAttributes=1;
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
 							};
 						};
 						class Item16
@@ -37122,9 +37142,20 @@ class Mission
 								nAttributes=1;
 							};
 						};
+						class Item25
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={8576.6563,10,17470.453};
+							};
+							name="medicalSpawnPos";
+							id=5203;
+							type="Logic";
+						};
 					};
 					id=2227;
-					atlOffset=0.099686623;
+					atlOffset=0.049842834;
 				};
 				class Item2
 				{
@@ -37250,7 +37281,7 @@ class Mission
 							};
 							id=2184;
 							type="Land_CampingChair_V2_white_F";
-							atlOffset=0.60200024;
+							atlOffset=0.60200119;
 						};
 						class Item7
 						{
@@ -38241,7 +38272,7 @@ class Mission
 				};
 			};
 			id=2225;
-			atlOffset=0.17032242;
+			atlOffset=0.16409302;
 		};
 		class Item18
 		{
@@ -42996,13 +43027,14 @@ class Mission
 								angles[]={0,5.4551606,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_19";
 							};
 							id=4545;
 							type="VR_3DSelector_01_complete_F";
+							atlOffset=3.6665916;
 						};
 						class Item1
 						{
@@ -43336,13 +43368,14 @@ class Mission
 								angles[]={0,5.5797949,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_2";
 							};
 							id=4528;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=3.6665916;
 						};
 						class Item21
 						{
@@ -43506,13 +43539,14 @@ class Mission
 								angles[]={0,4.8888087,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_30";
 							};
 							id=4556;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=0.25925446;
 						};
 						class Item31
 						{
@@ -43948,13 +43982,14 @@ class Mission
 								angles[]={0,5.9806385,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_6";
 							};
 							id=4532;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=0.59659195;
 						};
 						class Item57
 						{
@@ -44102,13 +44137,14 @@ class Mission
 								angles[]={0,5.3791995,0};
 							};
 							side="Empty";
-							flags=5;
+							flags=1;
 							class Attributes
 							{
 								name="mout1_7";
 							};
 							id=4533;
 							type="VR_3DSelector_01_default_F";
+							atlOffset=0.33763504;
 						};
 						class Item66
 						{
