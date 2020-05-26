@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * N/A
+ * None
  */
 
 params ["_player", "_didJIP"];
