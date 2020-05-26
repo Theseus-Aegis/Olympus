@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: Rory, Jonpas
  * Allows for the instructor to choose what group of targets pop up for 40mm GL range
@@ -11,7 +12,6 @@
  * Example:
  * [this] call TAC_Olympus_fnc_range40mmTargetGroups;
  */
-#include "..\script_component.hpp"
 
 #define TARGET_GROUP_1 range40mmTarget01, range40mmTarget02, range40mmTarget03
 #define TARGET_GROUP_2 range40mmTarget04, range40mmTarget05, range40mmTarget06, range40mmTarget07

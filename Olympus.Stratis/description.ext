@@ -1,4 +1,4 @@
-// Description.ext for Olympus 3.0
+// Description.ext for Olympus 3
 
 #include "script_component.hpp"
 #include "CfgEventHandlers.hpp"

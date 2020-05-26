@@ -1,17 +1,17 @@
+#include "..\script_component.hpp"
 /*
  * Author: Rory, Jonpas
- * Allows for the instructor to choose what group of targets pop up for basic LMG range
+ * Allows for the instructor to choose what group of targets pop up for basic LMG range.
  *
  * Arguments:
- * 0: Interaction object.
+ * 0: Controller <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [this] call TAC_Olympus_fnc_machineGunTargetGroups;
+ * [this] call TAC_Olympus_fnc_rangeMachineGunTargetGroups
  */
-#include "..\script_component.hpp"
 
 #define TARGET_GROUP_1 rangeMachineGunTarget01, rangeMachineGunTarget02
 #define TARGET_GROUP_2 rangeMachineGunTarget03, rangeMachineGunTarget04

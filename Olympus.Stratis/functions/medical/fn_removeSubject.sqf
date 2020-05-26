@@ -1,3 +1,4 @@
+#include "..\..\script_component.hpp"
 /*
  * Author: JoramD
  * Remove a subject.
@@ -13,7 +14,6 @@
  * Example:
  * [controller, stretcher, stretcherName] call TAC_Olympus_Medical_fnc_removeSubject
  */
-#include "..\..\script_component.hpp"
 
 params ["_controller", "_stretcher", "_subjectName"];
 

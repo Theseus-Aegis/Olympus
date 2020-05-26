@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: Rory, Jonpas
  * Teleports the player from base (this) to teleport locations (objects).
@@ -11,7 +12,6 @@
  * Example:
  * [this] call TAC_Olympus_fnc_fastTravel
  */
-#include "..\script_component.hpp"
 
 // Define teleport locations here
 private _teleportLocations = [

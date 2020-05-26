@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: Rory
  * Sets basic loadout to a unit.
@@ -11,7 +12,6 @@
  * Example:
  * [unit] call TAC_Olympus_fnc_setBasicLoadout
  */
-#include "..\script_component.hpp"
 
 params ["_unit"];
 

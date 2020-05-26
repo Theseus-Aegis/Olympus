@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: JoramD
  * Allows changing environment settings (date, time and fog).
@@ -11,7 +12,6 @@
  * Example:
  * [controller] call TAC_Olympus_fnc_environmentControl
  */
-#include "..\script_component.hpp"
 
 params ["_controller"];
 

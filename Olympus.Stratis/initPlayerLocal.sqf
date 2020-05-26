@@ -1,18 +1,24 @@
+#include "script_component.hpp"
 /*
  * Author: Theseus Incorporated
- *
- * initPlayerLocal.sqf
  * Initialization of scripts local to player
  * Executed locally when player joins mission (includes both mission start and JIP)
  * Executed after initServer and before initPlayerServer and init.
  *
- * Arguments: [player:Object, didJIP:Boolean]
+ * Arguments:
+ * 0: Player <OBJECT>
+ * 1: Did JIP <BOOL>
  *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * N/A
  */
 
-#include "script_component.hpp"
+params ["_player", "_didJIP"];
 
-[] call FUNC(healCommand);
+call FUNC(addChatCommands);
 
 // Types "OLYMPUS" text on the screen, letter by letter, cursor blinking.
 [
@@ -24,4 +30,4 @@
 ] spawn BIS_fnc_typeText;
 
 // Sets default loadout to joining players
-[_this select 0] call FUNC(setBasicLoadout);
+[_player] call FUNC(setBasicLoadout);

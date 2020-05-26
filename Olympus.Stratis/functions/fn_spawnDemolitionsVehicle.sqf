@@ -1,10 +1,11 @@
+#include "..\script_component.hpp"
 /*
  * Author: JoramD
  * Spawn a vehicle from pre-defined list.
  *
  * Arguments:
  * 0: Controller <OBJECT>
- * 1: Spawn Position <ANY>
+ * 1: Spawn Position <ARRAY|OBJECT>
  *
  * Return Value:
  * None
@@ -12,10 +13,8 @@
  * Example:
  * [this, spawnPos] call TAC_Olympus_fnc_engineerCourse
  */
-#include "..\script_component.hpp"
 
 params ["_controller", "_spawnPos"];
-
 
 private _spawnAction = [
     QGVAR(SpawnVehicle),
@@ -26,7 +25,6 @@ private _spawnAction = [
         (_this select 2) params ["_controller", "_spawnPos"];
 
         private _spawnedVehicle = _controller getVariable [QGVAR(spawnedVehicle), []];
-
         _spawnedVehicle isEqualTo []
     },
     {
@@ -73,7 +71,6 @@ private _spawnAction = [
 ] call ACEFUNC(interact_menu,createAction);
 
 [_controller, 0, ["ACE_MainActions"], _spawnAction] call ACEFUNC(interact_menu,addActionToObject);
-
 
 private _removeAction = [
     QGVAR(RemoveVehicle),

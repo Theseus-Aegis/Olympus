@@ -1,3 +1,4 @@
+#include "..\..\script_component.hpp"
 /*
  * Author: JoramD
  * Create project type interactions.
@@ -13,7 +14,6 @@
  * Example:
  * [controller, stretcher, bodyPart] call TAC_Olympus_Medical_fnc_specific_projectileTypeActions
  */
-#include "..\..\script_component.hpp"
 
 params ["_controller", "_stretcher", "_bodyPart"];
 

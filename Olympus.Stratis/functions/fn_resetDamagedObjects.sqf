@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: Rory, Tyrone
  * Resets target damaged objects back to their original state
@@ -13,7 +14,6 @@
  * Example:
  * [controller, [target1, target2, target3]] call TAC_Olympus_fnc_resetDamagedObjects
  */
-#include "..\script_component.hpp"
 
 params ["_controller", "_targets"];
 
@@ -29,7 +29,6 @@ private _action = [
                 private _type = typeOf _x;
                 deleteVehicle _x;
 
-                // Waits 2s then executes.
                 [
                     {
                         params ["_type", "_position", "_targets", "_index"];

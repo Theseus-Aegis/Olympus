@@ -3,9 +3,9 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class functions {
             file = "functions";
+            class addChatCommands;
             class environmentControl;
             class fastTravel;
-            class healCommand;
             class initArsenalCrate;
             class initMOUT;
             class personalArsenal;

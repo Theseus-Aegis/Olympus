@@ -1,17 +1,17 @@
+#include "..\script_component.hpp"
 /*
  * Author: Rory, Jonpas
- * Allows for the instructor to choose what group of targets pop up for the Marksman range
+ * Allows for the instructor to choose what group of targets pop up for the Marksman range.
  *
  * Arguments:
- * 0: Interaction object.
+ * 0: Controller <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [this] call TAC_Olympus_fnc_MarksmanTargetGroups;
+ * [this] call TAC_Olympus_fnc_rangeMarksmanTargetGroups
  */
-#include "..\script_component.hpp"
 
 #define TARGET_GROUP_1 rangeMarksmanTarget01, rangeMarksmanTarget02, rangeMarksmanTarget03, rangeMarksmanTarget04, rangeMarksmanTarget05, rangeMarksmanTarget06, rangeMarksmanTarget07, rangeMarksmanTarget08, rangeMarksmanTarget09, rangeMarksmanTarget10, rangeMarksmanTarget11, rangeMarksmanTarget12, rangeMarksmanTarget13, rangeMarksmanTarget14, rangeMarksmanTarget15, rangeMarksmanTarget16, rangeMarksmanTarget17, rangeMarksmanTarget18, rangeMarksmanTarget19, rangeMarksmanTarget20
 #define TARGET_GROUP_2 rangeMarksmanTarget21

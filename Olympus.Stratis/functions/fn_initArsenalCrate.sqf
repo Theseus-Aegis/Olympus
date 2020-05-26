@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: JoramD, Jonpas, Kresky
  * Initializes 2 ACE Arsenals on an object (1 full, 1 partial) and selects an item array.
@@ -13,7 +14,6 @@
  * Example:
  * [this, "rangeRifle"] call TAC_Olympus_fnc_initArsenalCrate;
  */
-#include "..\script_component.hpp"
 
 private _default = [];
 

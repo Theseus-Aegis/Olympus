@@ -1,3 +1,4 @@
+#include "..\..\script_component.hpp"
 /*
  * Author: JoramD
  * Initializes medical training interactions.
@@ -12,7 +13,6 @@
  * Example:
  * [controller, medicalSpawnPos] call TAC_Olympus_Medical_fnc_init
  */
-#include "..\..\script_component.hpp"
 
 params ["_controller", "_spawnPos"];
 
