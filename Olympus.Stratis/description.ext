@@ -1,4 +1,4 @@
-// Description.ext for Olympus 2
+// Description.ext for Olympus 3.0
 
 #include "script_component.hpp"
 #include "CfgEventHandlers.hpp"
@@ -8,8 +8,8 @@
 OnLoadName = "Olympus";
 OnLoadMission = "Olympus Training Facilities";
 author = "Theseus Incorporated";
-loadScreen = QPATHTOTACRF(images,olympusTwo\OlympusLoading.paa);
-overviewPicture = QPATHTOTACRF(images,olympusTwo\OlympusLoading.paa);
+loadScreen = QPATHTOTACRF(images,olympus\OlympusLoading.paa);
+overviewPicture = QPATHTOTACRF(images,olympus\OlympusLoading.paa);
 onLoadIntroTime = 1;
 onLoadMissionTime = 1;
 

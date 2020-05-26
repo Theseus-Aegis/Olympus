@@ -18,18 +18,14 @@ private _teleportLocations = [
     // ["Category", objectVarName, "Display Name"]
     ["Hubs", tpPosAirport, "Airport"],
     ["Hubs", tpPosBase, "Base"],
-    ["Advanced Courses", tpPosAdvPistolRifle, "Adv. Pistol and Rifle"],
-    ["Advanced Courses", tpPosEngineer, "Combat Engineer"],
-    ["Advanced Courses", tpPosDrivingCourse, "Driving"],
-    ["Advanced Courses", tpPosMOUT, "MOUT"],
-    ["Advanced Courses", tpPosMOUTPrep, "MOUT Preparation"],
-    ["Shooting Ranges", tpPos40mm, "40mm GL"],
-    ["Shooting Ranges", tpPosHandGrenade, "Hand Grenade"],
-    ["Shooting Ranges", tpPosLauncher, "Launcher"],
-    ["Shooting Ranges", tpPosBasicLMG, "Machine Gun"],
-    ["Shooting Ranges", tpPosMarksman, "Marksman"],
-    ["Shooting Ranges", tpPosBasicPistol, "Pistol"],
-    ["Shooting Ranges", tpPosBasicRifle, "Rifle"]
+    ["Hubs", tpPosMOUT, "MOUT"],
+    ["Core", tpPosWeaponsHandling, "Weapons Handling"],
+    ["Core", tpPosDriving, "Driving Course"],
+    ["Specialist", tpPosDemolitions, "Demolitions"],
+    ["Specialist", tpPos40mm, "Grenadier"],
+    ["Specialist", tpPosMachineGun, "Machine Gun"],
+    ["Specialist", tpPosMarksman, "Marksman"],
+    ["Specialist", tpPosMedical, "Medic"]
 ];
 
 params ["_controller"];

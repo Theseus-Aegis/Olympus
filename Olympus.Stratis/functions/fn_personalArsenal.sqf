@@ -60,16 +60,16 @@ if (_success) then {
         "",
         {
             params ["_target", "_player"];
-            [_target, _player, false] call ACEFUNC(arsenal,openBox);
+            [_target, _player, false] call ace_arsenal_fnc_openBox;
         },
         {true}
     ] call ACEFUNC(interact_menu,createAction);
 
     // Add custom arsenal action to object
-    [_crate, 0, ["ACE_MainActions"], _action] call call ACEFUNC(interact_menu,addActionToObject);
+    [_crate, 0, ["ACE_MainActions"], _action] call ACEFUNC(interact_menu,addActionToObject);
 
     INFO_1("Personal Arsenal loaded successfuly.");
 } else {
     ERROR_2("Failed to load available items for personalArsenal (Name: %1 - UID: %2)!",profileName,getPlayerUID _player);
-    ["Could not load available items for Personal Arsenal", 1.5, ace_player, 10] call ACEFUNC(common,displayTextStructured);
+    ["Could not load available items for Personal Arsenal", 1.5, ace_player, 10] call ace_common_fnc_displayTextStructured
 };

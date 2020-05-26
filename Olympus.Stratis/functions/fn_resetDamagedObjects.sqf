@@ -29,15 +29,16 @@ private _action = [
                 private _type = typeOf _x;
                 deleteVehicle _x;
 
-                // Run this in the next frame
+                // Waits 2s then executes.
                 [
                     {
                         params ["_type", "_position", "_targets", "_index"];
                         private _newTarget = createVehicle [_type, _position, [], 0, "CAN_COLLIDE"];
                         _targets set [_index, _newTarget];
                     },
-                    [_type, _position, _targets, _forEachIndex]
-                ] call CBA_fnc_execNextFrame;
+                    [_type, _position, _targets, _forEachIndex],
+                    2
+                ] call CBA_fnc_waitAndExecute;
             };
         } forEach _targets;
     },
