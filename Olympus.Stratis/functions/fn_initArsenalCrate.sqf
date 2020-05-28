@@ -235,5 +235,5 @@ private _fullAction = [
 
 // Add personal arsenal option
 if (_type == "personal") then {
-    [{!isNull player}, {[player, _this] call TAC_Olympus_fnc_personalArsenal}, _crate] call CBA_fnc_waitUntilAndExecute;
+    [player, _this] call TAC_Olympus_fnc_personalArsenal
 };
