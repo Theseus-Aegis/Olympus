@@ -99,7 +99,7 @@ private _dateSettings = [
         "",
         {
             (_this select 2) params ["_dateFloat"];
-            private _date = numberToDate [2018, _dateFloat];
+            private _date = numberToDate [2020, _dateFloat];
             [QGVAR(setDate), [_date]] call CBA_fnc_globalEvent;
         },
         {true},

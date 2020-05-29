@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4451;
+		nextID=4551;
 	};
 	class Camera
 	{
@@ -733,10 +733,9 @@ class Mission
 		forecastLightnings=0.1;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=9;
+		year=2020;
+		day=1;
+		hour=12;
 		minute=0;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
@@ -16625,9 +16624,11 @@ class Mission
 							{
 							};
 							id=949;
+							atlOffset=142.91;
 						};
 					};
 					id=948;
+					atlOffset=142.91;
 				};
 				class Item1
 				{
@@ -17660,7 +17661,7 @@ class Mission
 						};
 					};
 					id=1667;
-					atlOffset=0.014074326;
+					atlOffset=0.13553905;
 				};
 				class Item6
 				{
@@ -19104,7 +19105,7 @@ class Mission
 				};
 			};
 			id=947;
-			atlOffset=0.0046675205;
+			atlOffset=0.22083569;
 		};
 		class Item6
 		{
