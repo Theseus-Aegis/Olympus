@@ -23,28 +23,10 @@ private _timeAction = [
     {},
     {true},
     {
-        private _timeSettings = [
-            // [time, "Display Name"]
-            [1],
-            [3],
-            [5],
-            [7],
-            [9],
-            [11],
-            [13],
-            [15],
-            [17],
-            [19],
-            [21],
-            [23]
-        ];
-
         private _actions = [];
-        {
-            _x params ["_time"];
-
-            private _timeText = format ["%100", str _time];
-            if (count _timeText < 4) {
+        for "_time" from 1 to 23 step 2 do {
+            private _timeText = format ["%1:00", str _time];
+            if (count _timeText < 5) then {
                 _timeText = ["0", _timeText] joinString "";
             };
 
@@ -62,7 +44,7 @@ private _timeAction = [
             ] call ACEFUNC(interact_menu,createAction);
 
             _actions pushBack [_action, [], _target];
-        } forEach _timeSettings;
+        };
 
         _actions
     }
@@ -129,28 +111,16 @@ private _fogAction = [
     {},
     {true},
     {
-        private _fogSettings = [
-            // [fogValue]
-            [0.0],
-            [0.1],
-            [0.2],
-            [0.3],
-            [0.4],
-            [0.5],
-            [0.6],
-            [0.7],
-            [0.8],
-            [0.9],
-            [1.0]
-        ];
-
         private _actions = [];
-        {
-            _x params ["_fogLevel"];
+        for "_fogLevel" from 0 to 1.1 step 0.1 do {
+            private _fogText = str _fogLevel;
+            if (count _fogText < 3) then {
+                _fogText = [_fogText, ".0"] joinString "";
+            };
 
             private _action = [
-                format [QGVAR(fog_%1), [str _fogLevel, ".", ""] call CBA_fnc_replace],
-                str _fogLevel,
+                format [QGVAR(fog_%1), [_fogText, ".", ""] call CBA_fnc_replace],
+                _fogText,
                 "",
                 {
                     (_this select 2) params ["_fogLevel"];
@@ -162,7 +132,7 @@ private _fogAction = [
             ] call ACEFUNC(interact_menu,createAction);
 
             _actions pushBack [_action, [], _target];
-        } forEach _fogSettings;
+        };
 
         _actions
     }
@@ -178,28 +148,16 @@ private _overcastAction = [
     {},
     {true},
     {
-        private _overcastSettings = [
-            // [overcastValue]
-            [0.0],
-            [0.1],
-            [0.2],
-            [0.3],
-            [0.4],
-            [0.5],
-            [0.6],
-            [0.7],
-            [0.8],
-            [0.9],
-            [1.0]
-        ];
-
         private _actions = [];
-        {
-            _x params ["_overcastLevel"];
+        for "_overcastLevel" from 0.0 to 1.1 step 0.1 do {
+            private _overcastText = str _overcastLevel;
+            if (count _overcastText < 3) then {
+                _overcastText = [_overcastText, ".0"] joinString "";
+            };
 
             private _action = [
-                format [QGVAR(overcast_%1), [str _overcastLevel, ".", ""] call CBA_fnc_replace],
-                str _overcastLevel,
+                format [QGVAR(overcast_%1), [_overcastText, ".", ""] call CBA_fnc_replace],
+                _overcastText,
                 "",
                 {
                     (_this select 2) params ["_overcastLevel"];
@@ -211,7 +169,7 @@ private _overcastAction = [
             ] call ACEFUNC(interact_menu,createAction);
 
             _actions pushBack [_action, [], _target];
-        } forEach _overcastSettings;
+        };
 
         _actions
     }
@@ -227,28 +185,16 @@ private _rainAction = [
     {},
     {true},
     {
-        private _rainSettings = [
-            // [rainValue]
-            [0.0],
-            [0.1],
-            [0.2],
-            [0.3],
-            [0.4],
-            [0.5],
-            [0.6],
-            [0.7],
-            [0.8],
-            [0.9],
-            [1.0]
-        ];
-
         private _actions = [];
-        {
-            _x params ["_rainLevel"];
+        for "_rainLevel" from 0.0 to 1.1 step 0.1 do {
+            private _rainText = str _rainLevel;
+            if (count _rainText < 3) then {
+                _rainText = [_rainText, ".0"] joinString "";
+            };
 
             private _action = [
-                format [QGVAR(rain_%1), [str _rainLevel, ".", ""] call CBA_fnc_replace],
-                str _rainLevel,
+                format [QGVAR(rain_%1), [_rainText, ".", ""] call CBA_fnc_replace],
+                _rainText,
                 "",
                 {
                     (_this select 2) params ["_rainLevel"];
@@ -265,7 +211,7 @@ private _rainAction = [
             ] call ACEFUNC(interact_menu,createAction);
 
             _actions pushBack [_action, [], _target];
-        } forEach _rainSettings;
+        };
 
         _actions
     }
