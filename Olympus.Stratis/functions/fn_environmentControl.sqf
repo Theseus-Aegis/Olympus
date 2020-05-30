@@ -25,23 +25,28 @@ private _timeAction = [
     {
         private _timeSettings = [
             // [time, "Display Name"]
-            [1, "0100"],
-            [3, "0300"],
-            [5, "0500"],
-            [7, "0700"],
-            [9, "0900"],
-            [11, "1100"],
-            [13, "1300"],
-            [15, "1500"],
-            [17, "1700"],
-            [19, "1900"],
-            [21, "2100"],
-            [23, "2300"]
+            [1],
+            [3],
+            [5],
+            [7],
+            [9],
+            [11],
+            [13],
+            [15],
+            [17],
+            [19],
+            [21],
+            [23]
         ];
 
         private _actions = [];
         {
-            _x params ["_time", "_timeText"];
+            _x params ["_time"];
+
+            private _timeText = format ["%100", str _time];
+            if (count _timeText < 4) {
+                _timeText = ["0", _timeText] joinString "";
+            };
 
             private _action = [
                 format [QGVAR(time_%1), _timeText],
