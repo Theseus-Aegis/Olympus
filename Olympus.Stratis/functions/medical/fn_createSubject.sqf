@@ -1,10 +1,11 @@
+#include "..\..\script_component.hpp"
 /*
  * Author: JoramD
  * Spawn a subject.
  *
  * Arguments:
  * 0: Controller <OBJECT>
- * 1: Spawn Position <ARRAY/OBJECT/GROUP>
+ * 1: Spawn Position <ARRAY|OBJECT|GROUP>
  * 2: Stretcher <OBJECT>
  * 3: Subject Name <STRING>
  *
@@ -14,7 +15,6 @@
  * Example:
  * [controller, spawnPos, stretcher, subjectName] call TAC_Olympus_Medical_fnc_createSubject
  */
-#include "..\..\script_component.hpp"
 
 params ["_controller", "_spawnPos", "_stretcher", "_subjectName"];
 #define MEDICAL_SUBJECT_SIDE independent

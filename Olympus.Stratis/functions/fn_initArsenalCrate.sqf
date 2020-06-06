@@ -1,7 +1,8 @@
+#include "..\script_component.hpp"
 /*
  * Author: JoramD, Jonpas, Kresky
  * Initializes 2 ACE Arsenals on an object (1 full, 1 partial) and selects an item array.
- * AVAILABLE OPTIONS: 40mm, advancedPistol, advancedRifle, basicLMG, basicPistol, basicRifle, engineer, grenade, launcher, marksman, medical, full (Makes full arsenal and personalArsenal)
+ * AVAILABLE OPTIONS: 40mm, demolitions, grenade, launcher, machineGun, marksman, medical, rangePistol, rangeRifle, weaponsHandling, full, personal.
  *
  * Arguments:
  * 0: Crate <OBJECT>
@@ -11,9 +12,8 @@
  * None
  *
  * Example:
- * [this, "basicRifle"] call TAC_Olympus_fnc_initArsenalCrate;
+ * [this, "rangeRifle"] call TAC_Olympus_fnc_initArsenalCrate;
  */
-#include "..\script_component.hpp"
 
 private _default = [];
 
@@ -34,57 +34,14 @@ private _40mm = [
     "1Rnd_SmokeRed_Grenade_shell",
     "1Rnd_Smoke_Grenade_shell",
     "UGL_FlareGreen_F",
+    "ACE_40mm_Flare_ir",
+    "CUP_1Rnd_StarFlare_Green_M203",
+    "CUP_1Rnd_StarFlare_Red_M203",
     "tacs_Backpack_AssaultExpanded_Black",
     "NVGoggles_OPFOR"
 ];
 
-private _advancedPistol = [
-    "ACE_fieldDressing",
-    "ACE_EarPlugs",
-    "V_Rangemaster_belt",
-    "hlc_pistol_P226R_357Combat",
-    "hlc_12Rnd_357SIG_B_P226"
-];
-
-private _advancedRifle = [
-    "ACE_fieldDressing",
-    "ACE_EarPlugs",
-    "V_Rangemaster_belt",
-    "hlc_rifle_bcmblackjack",
-    "29rnd_300BLK_STANAG",
-    "optic_mrco"
-];
-
-private _basicLMG = [
-    "ACE_fieldDressing",
-    "ACE_EarPlugs",
-    "V_Rangemaster_belt",
-    "hlc_m249_pip1",
-    "hlc_200rnd_556x45_M_SAW",
-    "bwa3_optic_compm2",
-    "cup_optic_elcanm145",
-    "bwa3_optic_zo4x30_microt2",
-    "tacs_Backpack_Carryall_DarkBlack"
-];
-
-private _marksman = [
-    "ACE_fieldDressing",
-    "ACE_EarPlugs",
-    "arifle_MXM_Black_F",
-    "30Rnd_65x39_caseless_black_mag",
-    "optic_hamr",
-    "srifle_DMR_03_F",
-    "20Rnd_762x51_Mag",
-    "optic_mrco",
-    "ace_optic_mrco_2d",
-    "srifle_EBR_F",
-    "cup_optic_elcan",
-    "V_Rangemaster_belt",
-    "ACE_Vector",
-    "ACE_RangeCard"
-];
-
-private _basicPistol = [
+private _rangePistol = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
     "V_Rangemaster_belt",
@@ -92,7 +49,7 @@ private _basicPistol = [
     "16Rnd_9x21_Mag"
 ];
 
-private _basicRifle = [
+private _rangeRifle = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
     "V_Rangemaster_belt",
@@ -100,18 +57,15 @@ private _basicRifle = [
     "30Rnd_556x45_Stanag_green"
 ];
 
-private _engineer = [
+private _demolitions = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
     "tacs_Backpack_Carryall_DarkBlack",
     "H_HelmetSpecB",
     "V_EOD_blue_F",
-    "ACE_VMH3",
-    "ACE_VMM3",
     "ACE_DefusalKit",
     "ACE_M26_Clacker",
     "ACE_Clacker",
-    "MineDetector",
     "ACE_wirecutter",
     "DemoCharge_Remote_Mag",
     "ATMine_Range_Mag",
@@ -120,7 +74,9 @@ private _engineer = [
     "APERSBoundingMine_Range_Mag",
     "SLAMDirectionalMine_Wire_Mag",
     "APERSTripMine_Wire_Mag",
-    "APERSMine_Range_Mag"
+    "APERSMine_Range_Mag",
+    "AMP_Breaching_Charge_Mag",
+    "ToolKit"
 ];
 
 private _grenade = [
@@ -135,7 +91,7 @@ private _launcher = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
     "CUP_launch_M136",
-    "CUP_launch_RPG7V",
+    "launch_RPG7_F",
     "CUP_PG7V_M",
     "launch_MRAWS_green_rail_F",
     "launch_NLAW_F",
@@ -180,6 +136,45 @@ private _medical = [
     "ACE_tourniquet"
 ];
 
+private _machineGun = [
+    "ACE_fieldDressing",
+    "ACE_EarPlugs",
+    "V_Rangemaster_belt",
+    "hlc_m249_pip1",
+    "hlc_200rnd_556x45_M_SAW",
+    "bwa3_optic_compm2",
+    "cup_optic_elcanm145",
+    "bwa3_optic_zo4x30_microt2",
+    "tacs_Backpack_Carryall_DarkBlack"
+];
+
+private _marksman = [
+    "ACE_fieldDressing",
+    "ACE_EarPlugs",
+    "arifle_MXM_Black_F",
+    "30Rnd_65x39_caseless_black_mag",
+    "optic_hamr",
+    "srifle_DMR_03_F",
+    "20Rnd_762x51_Mag",
+    "optic_mrco",
+    "ace_optic_mrco_2d",
+    "tacs_EBR_Black_F",
+    "cup_optic_elcan",
+    "V_Rangemaster_belt",
+    "ACE_Vector",
+    "ACE_RangeCard"
+];
+
+private _weaponsHandling = [
+    "ACE_fieldDressing",
+    "ACE_EarPlugs",
+    "V_Rangemaster_belt",
+    "CUP_arifle_M4A1_black",
+    "30Rnd_556x45_Stanag_green",
+    "tacs_Walther_P99",
+    "16Rnd_9x21_Mag"
+];
+
 // Init stuff
 params ["_crate", "_type"];
 
@@ -187,16 +182,15 @@ params ["_crate", "_type"];
 private _chosen = [];
 switch (_type) do {
     case "40mm": { _chosen = _40mm; };
-    case "advancedPistol": { _chosen = _advancedPistol; };
-    case "advancedRifle": { _chosen = _advancedRifle; };
-    case "basicLMG": { _chosen = _basicLMG; };
     case "marksman": { _chosen = _marksman; };
-    case "basicPistol": { _chosen = _basicPistol; };
-    case "basicRifle": { _chosen = _basicRifle; };
-    case "engineer": { _chosen = _engineer; };
+    case "rangePistol": { _chosen = _rangePistol; };
+    case "rangeRifle": { _chosen = _rangeRifle; };
+    case "demolitions": { _chosen = _demolitions; };
     case "grenade": { _chosen = _grenade; };
     case "launcher": { _chosen = _launcher; };
+    case "machineGun": { _chosen = _machineGun; };
     case "medical": { _chosen = _medical; };
+    case "weaponsHandling": { _chosen = _weaponsHandling; };
     default { _chosen = _default; };
 };
 
@@ -217,7 +211,7 @@ if !(_chosen isEqualTo []) then {
 
     [_crate, 0, ["ACE_MainActions"], _Action] call ACEFUNC(interact_menu,addActionToObject);
 } else {
-   if !(_type == "full") then {
+   if !(_type == "full" || _type == "personal") then {
        ERROR_MSG_1("Incorrect item array (%1)",_type);
    };
 };
@@ -239,7 +233,7 @@ private _fullAction = [
 [_crate, false] call ace_dragging_fnc_setCarryable;
 [_crate, false] call ace_dragging_fnc_setDraggable;
 
-// Add personal arsenal option to default arsenals
-if (_type == "full") then {
-    [{!isNull player}, {[player, _this] call TAC_Olympus_fnc_personalArsenal}, _crate] call CBA_fnc_waitUntilAndExecute;
+// Add personal arsenal option
+if (_type == "personal") then {
+    [player, _crate] call TAC_Olympus_fnc_personalArsenal
 };

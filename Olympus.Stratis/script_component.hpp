@@ -2,12 +2,12 @@
 #define COMPONENT Olympus
 
 // Version
-#define MAJOR 2
-#define MINOR 3
+#define MAJOR 3
+#define MINOR 0
 #define PATCHLVL 0
 
 // Map
-#define MAP hebontes
+#define MAP Stratis
 
 #define DEBUG_SYNCHRONOUS
 //#define DEBUG_MODE_FULL

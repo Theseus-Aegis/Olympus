@@ -3,17 +3,19 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class functions {
             file = "functions";
-            class courseDrivingTargetGroups;
+            class addChatCommands;
             class environmentControl;
             class fastTravel;
+            class featureOverview;
             class initArsenalCrate;
             class initMOUT;
             class personalArsenal;
             class range40mmTargetGroups;
-            class rangeAdvMarksmanGroups;
-            class rangeBasicLMGTargetGroups;
+            class rangeMachineGunTargetGroups;
+            class rangeMarksmanTargetGroups;
             class resetDamagedObjects;
             class setBasicLoadout;
+            class spawnDemolitionsVehicle;
         };
     };
     class DOUBLES(ADDON,Medical) {

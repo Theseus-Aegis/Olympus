@@ -1,3 +1,4 @@
+#include "..\..\script_component.hpp"
 /*
  * Author: JoramD
  * Check if patient is on stretcher.
@@ -11,7 +12,6 @@
  * Example:
  * [stretcher] call TAC_Olympus_Medical_fnc_checkSubject
  */
-#include "..\..\script_component.hpp"
 
 params ["_stretcher"];
 

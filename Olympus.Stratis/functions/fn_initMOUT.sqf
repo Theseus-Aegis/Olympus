@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 /*
  * Author: Jonpas
  * Initialized a MOUT course with randomly spawned AI.
@@ -22,7 +23,6 @@
  * [this, "MOUT 1", "mout1", 99, ["B_helicrew_F"], 30] call TAC_Olympus_fnc_initMOUT
  * [this, "MOUT 1", "mout1", 99, ["B_helicrew_F"], 30, [["VR_3DSelector_01_complete_F", ["B_soldier_M_F"], 50]]] call TAC_Olympus_fnc_initMOUT
  */
-#include "..\script_component.hpp"
 
 #define MOUT_ENEMY_SIDE east
 

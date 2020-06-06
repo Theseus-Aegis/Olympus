@@ -1,3 +1,4 @@
+#include "..\..\script_component.hpp"
 /*
  * Author: JoramD
  * Create body part interactions.
@@ -12,7 +13,6 @@
  * Example:
  * [controller, stretcher] call TAC_Olympus_Medical_fnc_specific_bodyPartActions
  */
-#include "..\..\script_component.hpp"
 
 params ["_controller", "_stretcher"];
 

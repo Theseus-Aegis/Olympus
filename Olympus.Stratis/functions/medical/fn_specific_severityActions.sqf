@@ -1,3 +1,4 @@
+#include "..\..\script_component.hpp"
 /*
  * Author: JoramD
  * Create severity interactions.
@@ -14,7 +15,6 @@
  * Example:
  * [controller, stretcher, bodyPart, projectileType] call TAC_Olympus_Medical_fnc_specific_severityActions
  */
-#include "..\..\script_component.hpp"
 
 params ["_controller", "_stretcher", "_bodyPart", "_projectileType"];
 
