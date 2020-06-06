@@ -6,6 +6,7 @@ class CfgFunctions {
             class addChatCommands;
             class environmentControl;
             class fastTravel;
+            class featureOverview;
             class initArsenalCrate;
             class initMOUT;
             class personalArsenal;

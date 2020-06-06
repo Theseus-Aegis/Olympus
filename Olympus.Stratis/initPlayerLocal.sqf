@@ -31,3 +31,6 @@ call FUNC(addChatCommands);
 
 // Sets default loadout to joining players
 [_player] call FUNC(setBasicLoadout);
+
+// Feature overview
+[player] call FUNC(featureOverview);
