@@ -33,4 +33,4 @@ call FUNC(addChatCommands);
 [_player] call FUNC(setBasicLoadout);
 
 // Feature overview
-[player] call FUNC(featureOverview);
+[_player] call FUNC(featureOverview);
