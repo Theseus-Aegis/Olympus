@@ -21,31 +21,31 @@
 
 // Environment Control Event Handlers
 [QGVAR(setTime), {
-    "Environment changing..." call CBA_fnc_notify;
+    ["Environment changing..."] call CBA_fnc_notify;
     skipTime skipTime ((_this select 0) - daytime); // Skip forward to a specific time
     forceWeatherChange;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(setDate), {
-    "Environment changing..." call CBA_fnc_notify;
+    ["Environment changing..."] call CBA_fnc_notify;
     setDate (_this select 0); // Set date
     forceWeatherChange;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(setFog), {
-    "Environment changing..." call CBA_fnc_notify;
+    ["Environment changing..."] call CBA_fnc_notify;
     0 setFog (_this select 0); // Set fog
     forceWeatherChange;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(setOvercast), {
-    "Environment changing..." call CBA_fnc_notify;
+    ["Environment changing..."] call CBA_fnc_notify;
     0 setOvercast (_this select 0); // Set overcast
     forceWeatherChange;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(setRain), {
-    "Environment changing..." call CBA_fnc_notify;
+    ["Environment changing..."] call CBA_fnc_notify;
     0 setRain (_this select 0); // Set rain
     forceWeatherChange;
 }] call CBA_fnc_addEventHandler;
