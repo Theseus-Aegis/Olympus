@@ -65,7 +65,7 @@ private _spawnAction = [
                         _spawnedVehicles pushBack [_spawnedVehicle, name player];
                         _controller setVariable [QGVAR(SpawnedVehicles), _spawnedVehicles, true];
                     } else {
-                        "Could not spawn vehicle, there is already a vehicle on the spawn position" call CBA_fnc_notify;
+                        ["Could not spawn vehicle, there is already a vehicle on the spawn position"] call CBA_fnc_notify;
                     };
                 },
                 {true},
@@ -117,7 +117,7 @@ private _removeAction = [
                         _spawnedvehicles deleteAt (_spawnedVehicles find [_vehicle, _playerName]);
                         _controller setVariable [QGVAR(spawnedVehicles), _spawnedvehicles, true];
                     } else {
-                        "Could not delete vehicle, there are still people in the vehicle" call CBA_fnc_notify;
+                        ["Could not delete vehicle, there are still people in the vehicle"] call CBA_fnc_notify;
                     };
                 },
                 {true},
