@@ -20,6 +20,11 @@ _player createDiaryRecord ["features", ["Environment Controller", "
     <br/>The main base and some courses have an additional laptop to control the environment.
 "]];
 
+_player createDiaryRecord ["features", ["Vehicle Spawner", "
+    <br/><img image='x\tacr\addons\images\olympus\feature\vehicleSpawn.jpg' width='300' height='350'/>
+    <br/>The main base has a <marker name = 'vehicleSpawnerMarker'>vehicle spawner</marker> that allows you to spawn and delete various vehicles.
+"]];
+
 _player createDiaryRecord ["features", ["Chat Commands", "
     <br/><font color='#E3D310'>#tac-heal:</font color>
     <br/>Type `#tac-heal` in chat to heal yourself.

@@ -15,6 +15,9 @@
 
 params ["_controller", "_spawnPos"];
 
+// Make empty marker for featureOverview
+createMarker ["vehicleSpawnerMarker", _controller];
+
 private _spawnAction = [
     QGVAR(SpawnVehicle),
     "Spawn Vehicle",
@@ -103,7 +106,7 @@ private _removeAction = [
                 {
                     (_this select 2) params ["_controller", "_vehicle", "_playerName", "_vehicleFancyName"];
 
-                    if ((count (crew _vehicle)) == 0) then {
+                    if (count (crew _vehicle) == 0) then {
                         deleteVehicle _vehicle;
                         private _spawnedvehicles = _controller getVariable [QGVAR(spawnedVehicles), []];
                         _spawnedvehicles deleteAt (_spawnedVehicles find [_vehicle, _playerName, _vehicleFancyName]);

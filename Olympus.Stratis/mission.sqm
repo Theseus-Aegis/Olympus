@@ -8,22 +8,22 @@ class EditorData
 	toggles=65;
 	class ItemIDProvider
 	{
-		nextID=1975;
+		nextID=1979;
 	};
 	class MarkerIDProvider
 	{
-		nextID=18;
+		nextID=19;
 	};
 	class LayerIndexProvider
 	{
-		nextID=4753;
+		nextID=5157;
 	};
 	class Camera
 	{
-		pos[]={1852.6783,78.421425,3454.3801};
-		dir[]={0.64309227,-0.48391676,0.59373432};
-		up[]={0.35560215,0.87505233,0.32831168};
-		aside[]={0.67844284,-1.4784746e-008,-0.73482555};
+		pos[]={1894.0333,26.004189,3488.7764};
+		dir[]={0.69326794,-0.36314455,0.62270921};
+		up[]={0.27023,0.93166918,0.24272867};
+		aside[]={0.66832429,1.7910497e-006,-0.74403363};
 	};
 };
 binarizationWanted=0;
@@ -13935,7 +13935,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Hub - Spawn";
-			state=1;
 			class Entities
 			{
 				items=9;
@@ -17915,18 +17914,6 @@ class Mission
 						};
 						class Item1
 						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={1917.501,2.3941271,3565.77};
-								angles[]={6.1760921,1.1170107,0.10213667};
-							};
-							name="vehicleSpawnPos";
-							id=1969;
-							type="Logic";
-						};
-						class Item2
-						{
 							dataType="Object";
 							class PositionInfo
 							{
@@ -17941,13 +17928,13 @@ class Mission
 							id=1972;
 							type="Land_Camping_Light_F";
 						};
-						class Item3
+						class Item2
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1914.123,4.2982516,3575.1726};
-								angles[]={6.2734685,2.9575078,6.2755566};
+								position[]={1914.1233,4.2985229,3575.1724};
+								angles[]={6.2734637,2.9575129,6.275558};
 							};
 							side="Empty";
 							flags=4;
@@ -17958,14 +17945,49 @@ class Mission
 							};
 							id=1974;
 							type="Land_Laptop_unfolded_F";
+							atlOffset=0.00027227402;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="x\tacr\addons\images\olympus\laptop\vehicleSpawner.paa";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item3
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={1918.203,2.486799,3566.8149};
+							};
+							name="vehicleSpawnPos";
+							id=1978;
+							type="Logic";
 						};
 					};
 					id=1973;
-					atlOffset=0.48983908;
+					atlOffset=0.085873842;
 				};
 			};
 			id=947;
-			atlOffset=0.36964035;
+			atlOffset=0.086542606;
 		};
 		class Item6
 		{
