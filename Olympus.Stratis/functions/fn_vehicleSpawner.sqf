@@ -56,6 +56,9 @@ private _spawnAction = [
                     if (count (_spawnPos nearEntities 5) == 1) then {
                         private _spawnedVehicle = createVehicle [_classname, _spawnPos, [], 0, "CAN_COLLIDE"];
                         _spawnedVehicle setDir 60;
+                        _spawnedVehicle adDItemCargoGlobal ["ToolKit", 1];
+                        ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
+                        ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
 
                         private _spawnedVehicles = _controller getVariable [QGVAR(spawnedVehicles), []];
                         _spawnedVehicles pushBack [_spawnedVehicle, name player, _fancyName];
