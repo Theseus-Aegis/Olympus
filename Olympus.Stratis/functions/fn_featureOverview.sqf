@@ -22,7 +22,7 @@ _player createDiaryRecord ["features", ["Environment Controller", "
 
 _player createDiaryRecord ["features", ["Vehicle Spawner", "
     <br/><img image='x\tacr\addons\images\olympus\feature\vehicleSpawn.jpg' width='300' height='350'/>
-    <br/>The main base has a <marker name = 'vehicleSpawnerMarker'>vehicle spawner</marker> that allows you to spawn and delete various vehicles.
+    <br/>The main base has a <marker name = 'tac_olympus_vehicleSpawnerMarker'>vehicle spawner</marker> that allows you to spawn and delete various vehicles.
 "]];
 
 _player createDiaryRecord ["features", ["Chat Commands", "
