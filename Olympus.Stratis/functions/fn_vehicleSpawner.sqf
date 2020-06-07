@@ -28,17 +28,17 @@ private _spawnAction = [
         (_this select 2) params ["_controller", "_spawnPos"];
 
         private _allowedVehicles = [
-            // ["classname", "fancyName"]
-            ["tacs_Arcadian_B_Black"],
-            ["tacs_Arcadian_B_Green"],
-            ["tacs_Arcadian_B_Tan"],
-            ["tacs_BWA3_B_Eagle_Black"],
-            ["B_LSV_01_unarmed_F"],
-            ["C_SUV_01_F"],
-            ["C_Offroad_01_F"],
-            ["C_Offroad_01_covered_F"],
-            ["C_Offroad_02_unarmed_F"],
-            ["C_Van_02_transport_F"]
+            // "classname"
+            "tacs_Arcadian_B_Black",
+            "tacs_Arcadian_B_Green",
+            "tacs_Arcadian_B_Tan",
+            "tacs_BWA3_B_Eagle_Black",
+            "B_LSV_01_unarmed_F",
+            "C_SUV_01_F",
+            "C_Offroad_01_F",
+            "C_Offroad_01_covered_F",
+            "C_Offroad_02_unarmed_F",
+            "C_Van_02_transport_F"
         ];
 
         private _actions = [];
