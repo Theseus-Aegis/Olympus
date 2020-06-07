@@ -66,7 +66,7 @@ private _action = [
             INFO_1("Personal Arsenal loaded successfuly.");
         } else {
             ERROR_2("Failed to load available items for personalArsenal (Name: %1 - UID: %2)!",profileName,getPlayerUID _player);
-            ["Could not load available items for Personal Arsenal", 1.5, ace_player, 15] call ACEFUNC(common,displayTextStructured);
+            "Could not load available items for Personal Arsenal" call CBA_fnc_notify;
         };
     },
     {true}
