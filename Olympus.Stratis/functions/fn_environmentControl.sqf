@@ -200,7 +200,7 @@ private _rainAction = [
                     (_this select 2) params ["_rainLevel"];
 
                     if (overcast < 0.5) then {
-                        ["Rain is not possible when overcast is set to less than 0.5"] call ace_common_fnc_displayTextStructured;
+                        ["Rain is not possible when overcast is set to less than 0.5"] call CBA_fnc_notify;
                     } else {
                         [QGVAR(setRain), [_rainLevel]] call CBA_fnc_globalEvent;
                     };
