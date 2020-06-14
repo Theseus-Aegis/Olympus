@@ -29,7 +29,7 @@
                 ["ace_common_systemChatGlobal", "[TAC] Found multiple players to heal, please specify", ace_player] call CBA_fnc_targetEvent;
             } else {
                 private _foundPlayer = _foundPlayers select 0;
-                [_foundPlayer] call ACEFUNC(medical_treatment,fullHealLocal);
+                ["ace_medical_treatment_fullHealLocal", _foundPlayer, _foundPlayer] call CBA_fnc_targetEvent;
                 ["ace_common_systemChatGlobal", format ["[TAC] Healed %1", name _foundPlayer], ace_player] call CBA_fnc_targetEvent;
             };
         };
