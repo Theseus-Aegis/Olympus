@@ -14,6 +14,8 @@
  * [player] call FUNC(featureOverview);
  */
 
+params ["_player"];
+
 _player createDiarySubject ["features", "Features"];
 
 _player createDiaryRecord ["features", ["Environment Controller", "
@@ -41,6 +43,6 @@ _player createDiaryRecord ["features", ["Arsenals", "
 "]];
 
 _player createDiaryRecord ["features", ["Teleporters", "
-    <br/><img image='teleporter.jpg' width='300' height='350'/>
+    <br/><img image='x\tacr\addons\images\olympus\feature\teleporter.jpg' width='300' height='350'/>
     <br/>There are teleporters in various locations around Olympus. It will always have a personal arsenal.
 "]];
