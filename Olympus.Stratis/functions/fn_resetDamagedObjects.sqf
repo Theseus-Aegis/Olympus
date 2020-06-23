@@ -33,6 +33,11 @@ private _action = [
                     {
                         params ["_type", "_position", "_targets", "_index"];
                         private _newTarget = createVehicle [_type, _position, [], 0, "CAN_COLLIDE"];
+                        _newTarget setVehicleLock "LOCKED";
+                        _newTarget setVehicleAmmo 0;
+                        clearMagazineCargoGlobal _newTarget;
+                        clearWeaponCargoGlobal _newTarget;
+                        clearItemCargoGlobal _newTarget;
                         _targets set [_index, _newTarget];
                     },
                     [_type, _position, _targets, _forEachIndex],

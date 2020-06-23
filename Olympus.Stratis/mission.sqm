@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5258;
+		nextID=5359;
 	};
 	class Camera
 	{
@@ -17680,6 +17680,7 @@ class Mission
 							};
 							id=1979;
 							type="CUP_C_Golf4_kitty_Civ";
+							atlOffset=-0.061695099;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17706,7 +17707,7 @@ class Mission
 						};
 					};
 					id=1673;
-					atlOffset=-1.4833469;
+					atlOffset=-1.5604048;
 				};
 				class Item7
 				{
@@ -18035,7 +18036,7 @@ class Mission
 				};
 			};
 			id=947;
-			atlOffset=-72.814247;
+			atlOffset=-72.825356;
 		};
 		class Item6
 		{
@@ -28262,6 +28263,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget02";
 									};
 									id=623;
@@ -28303,6 +28306,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget01";
 									};
 									id=622;
@@ -28344,6 +28349,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget05";
 									};
 									id=628;
@@ -28385,6 +28392,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget04";
 									};
 									id=624;
@@ -28426,6 +28435,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget03";
 									};
 									id=1877;
