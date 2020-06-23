@@ -16,6 +16,7 @@ class CfgFunctions {
             class resetDamagedObjects;
             class setBasicLoadout;
             class spawnDemolitionsVehicle;
+            class vehicleSpawner;
         };
     };
     class DOUBLES(ADDON,Medical) {
