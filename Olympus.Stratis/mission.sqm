@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4551;
+		nextID=4651;
 	};
 	class Camera
 	{
@@ -29332,6 +29332,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget02";
 									};
 									id=623;
@@ -29373,6 +29375,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget01";
 									};
 									id=622;
@@ -29414,6 +29418,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget05";
 									};
 									id=628;
@@ -29455,6 +29461,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget04";
 									};
 									id=624;
@@ -29496,6 +29504,8 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										ammo=0;
+										lock="LOCKED";
 										name="rangeLauncherTarget03";
 									};
 									id=1877;
