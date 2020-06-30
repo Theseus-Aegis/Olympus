@@ -57,6 +57,9 @@ private _spawnAction = [
                         private _spawnedVehicle = createVehicle [_classname, _spawnPos, [], 0, "CAN_COLLIDE"];
                         _spawnedVehicle setDir 60;
                         clearItemCargoGlobal _spawnedVehicle;
+                        clearBackpackCargoGlobal _spawnedVehicle;
+                        clearWeaponCargoGlobal _spawnedVehicle;
+                        clearMagazineCargoGlobal _spawnedVehicle;
                         _spawnedVehicle addItemCargoGlobal ["ToolKit", 1];
                         ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
                         ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
