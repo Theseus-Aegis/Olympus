@@ -178,6 +178,8 @@ private _weaponsHandling = [
 // Init stuff
 params ["_crate", "_type"];
 
+[_crate, -1] call ace_cargo_fnc_setSize;
+
 // Check which array to use
 private _chosen = [];
 switch (_type) do {
