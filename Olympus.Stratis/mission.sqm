@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5882;
+		nextID=5982;
 	};
 	class Camera
 	{
-		pos[]={3279.6101,35.382305,5767.1182};
-		dir[]={-0.65170234,-0.6119051,0.44836566};
-		up[]={-0.50415158,0.79089212,0.34685314};
-		aside[]={0.56685197,1.4436082e-006,0.82392377};
+		pos[]={2083.6238,9.0701752,5594.6255};
+		dir[]={0.78871894,-0.33390087,-0.51638275};
+		up[]={0.27946419,0.94255507,-0.18296827};
+		aside[]={-0.54781044,2.0783627e-006,-0.8367275};
 	};
 };
 binarizationWanted=0;
@@ -6219,7 +6219,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="\x\tacr\addons\images\olympus\slideshow\slideScreensaver.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic01.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic02.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic03.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic04.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic05.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic06.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic07.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic08.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic09.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic10.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic11.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic12.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic13.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic14.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic15.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic16.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic17.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic18.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic19.paa";
+											value="\x\tacr\addons\images\olympus\slideshow\slideScreensaver.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic01.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic02.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic03.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic04.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic05.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic06.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic07.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic08.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic09.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic10.paa,\x\tacr\addons\images\olympus\slideshow\medic\slideMedic11.paa";
 										};
 									};
 								};
@@ -6238,7 +6238,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="0-Screensaver,1-Introduction,2-LessonPlan,3-RoleintheField,4-Assess,5-Bandage,6-CareCommunicate,7-MedicalEquipment,8-WoundTypes,9-BandageTypes,10-BandageEffectiveness,11-Blood Pressure,12-HeartRateCardiacArrest,13-Epinephrine,14-Morphine,15-AtropineAdenosine,16-SurgicalKit,17-PersonalAidKit,18-Tourniquet,19-IVFluids";
+											value="0-Screensaver,1-Introduction,2-LessonPlan,3-RoleintheField,4-Assess,5-Bandage,6-CareCommunicate,7-MedicalEquipment,8-WoundTypes,9-BandageTypes,10-Blood Pressure,11-HeartRateCardiacArrest";
 										};
 									};
 								};
