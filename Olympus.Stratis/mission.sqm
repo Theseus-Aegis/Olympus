@@ -8,7 +8,7 @@ class EditorData
 	toggles=577;
 	class ItemIDProvider
 	{
-		nextID=2218;
+		nextID=2249;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5982;
+		nextID=6087;
 	};
 	class Camera
 	{
-		pos[]={2083.6238,9.0701752,5594.6255};
-		dir[]={0.78871894,-0.33390087,-0.51638275};
-		up[]={0.27946419,0.94255507,-0.18296827};
-		aside[]={-0.54781044,2.0783627e-006,-0.8367275};
+		pos[]={4374.4917,241.50375,3820.4465};
+		dir[]={-0.82174772,-0.56721723,-0.05512666};
+		up[]={-0.565952,0.82356268,-0.037966579};
+		aside[]={-0.066935077,1.0030635e-007,0.99777722};
 	};
 };
 binarizationWanted=0;
@@ -27537,7 +27537,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6396.3091,9.066493,5372.603};
+										position[]={6401.8359,9.0531044,5367.5078};
 										angles[]={0,3.843791,0};
 									};
 									side="Empty";
@@ -27633,7 +27633,7 @@ class Mission
 								};
 							};
 							id=586;
-							atlOffset=2.1831999;
+							atlOffset=2.1820927;
 						};
 						class Item1
 						{
@@ -28657,7 +28657,7 @@ class Mission
 						};
 					};
 					id=585;
-					atlOffset=0.28221989;
+					atlOffset=0.28413677;
 				};
 				class Item5
 				{
@@ -29111,8 +29111,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6569.5708,24.491629,5321.0337};
-										angles[]={6.2706885,0.99913114,0.049951322};
+										position[]={6569.3403,24.489096,5321.7529};
+										angles[]={6.270689,0.44649875,0.049958061};
 									};
 									side="Empty";
 									flags=4;
@@ -29151,8 +29151,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6570.4648,23.905441,5318.6733};
-										angles[]={6.2606897,2.7284398,0.049958061};
+										position[]={6570.2119,23.928095,5320.4385};
+										angles[]={6.270689,2.7284398,0.049958061};
 									};
 									side="Empty";
 									flags=4;
@@ -29162,7 +29162,7 @@ class Mission
 									};
 									id=632;
 									type="Box_NATO_Equip_F";
-									atlOffset=-5.7220459e-005;
+									atlOffset=-1.9073486e-005;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -29189,7 +29189,6 @@ class Mission
 								};
 							};
 							id=630;
-							atlOffset=-0.0052757263;
 						};
 						class Item1
 						{
@@ -30208,293 +30207,1108 @@ class Mission
 						};
 					};
 					id=629;
-					atlOffset=-0.32562447;
+					atlOffset=-0.32300758;
 				};
 				class Item7
 				{
 					dataType="Layer";
-					name="Teleport";
+					name="Teleporters";
 					class Entities
 					{
-						items=8;
+						items=5;
 						class Item0
 						{
-							dataType="Object";
-							class PositionInfo
+							dataType="Layer";
+							name="Base";
+							class Entities
 							{
-								position[]={6429.8701,8.9015369,5391.2681};
-								angles[]={0.012496647,5.0602555,6.278194};
-							};
-							side="Empty";
-							class Attributes
-							{
-							};
-							id=715;
-							type="Land_Camping_Light_F";
-							atlOffset=0.81305313;
-							class CustomAttributes
-							{
-								class Attribute0
+								items=8;
+								class Item0
 								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
+									dataType="Object";
+									class PositionInfo
 									{
-										class data
+										position[]={6429.8701,8.9015369,5391.2681};
+										angles[]={0.012496647,5.0602555,6.278194};
+									};
+									side="Empty";
+									class Attributes
+									{
+									};
+									id=715;
+									type="Land_Camping_Light_F";
+									atlOffset=0.81305313;
+									class CustomAttributes
+									{
+										class Attribute0
 										{
-											class type
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
 											{
-												type[]=
+												class data
 												{
-													"BOOL"
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
 												};
 											};
-											value=0;
 										};
+										nAttributes=1;
 									};
 								};
-								nAttributes=1;
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6429.2778,8.3774242,5391.8223};
+										angles[]={0.012496558,0.72439891,6.2781935};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										createAsSimpleObject=1;
+										disableSimulation=1;
+									};
+									id=720;
+									type="Land_CampingTable_F";
+									atlOffset=-4.7683716e-007;
+								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6429.8467,11.946348,5391.2979};
+										angles[]={0,5.4633546,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+									};
+									id=714;
+									type="Flag_FD_Blue_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6429.584,8.9389277,5391.6191};
+										angles[]={0.012496558,0.71895349,6.2781935};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_fastTravel}";
+										name="tpLaptopWeaponsHandling";
+										disableSimulation=1;
+									};
+									id=712;
+									type="Land_Laptop_unfolded_F";
+									atlOffset=0.00032424927;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="x\tacr\addons\images\olympus\laptop\fastTravel.paa";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item4
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6429.0215,8.9086456,5392.1455};
+										angles[]={0.012496558,3.866585,6.2781935};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_environmentControl}";
+										name="environmentControlWeaponsHandling";
+										disableSimulation=1;
+									};
+									id=1801;
+									type="Land_Laptop_02_unfolded_F";
+									atlOffset=0.00032997131;
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6427.999,8.3382511,5393.0649};
+										angles[]={0.012496558,2.2998378,6.2781935};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										init="call{[this, ""personal""] call TAC_Olympus_fnc_initArsenalCrate;}";
+										disableSimulation=1;
+									};
+									id=716;
+									type="Land_PlasticCase_01_large_gray_F";
+									atlOffset=-7.1525574e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item6
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6431.793,8.9398298,5390.4141};
+										angles[]={0.012496558,3.1209626,6.2781935};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="coreWeaponsHandling";
+										disableSimulation=1;
+									};
+									id=1863;
+									type="Land_MapBoard_F";
+									atlOffset=-9.5367432e-007;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="x\tacr\addons\images\olympus\whiteboard\coreWeaponsHandling.paa";
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item7
+								{
+									dataType="Logic";
+									class PositionInfo
+									{
+										position[]={6430.9731,7.9428477,5392.9829};
+										angles[]={0.012496558,3.8925552,6.2781935};
+									};
+									name="tpPosWeaponsHandling";
+									id=717;
+									type="Logic";
+								};
 							};
+							id=2224;
+							atlOffset=0.082847118;
 						};
 						class Item1
 						{
-							dataType="Object";
-							class PositionInfo
+							dataType="Layer";
+							name="Rifle";
+							class Entities
 							{
-								position[]={6429.2778,8.3774242,5391.8223};
-								angles[]={0.012496558,0.72439891,6.2781935};
+								items=6;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6153.2827,13.948643,5395.2559};
+										angles[]={-0,0.75451368,0};
+									};
+									side="Empty";
+									class Attributes
+									{
+										createAsSimpleObject=1;
+										disableSimulation=1;
+									};
+									id=2219;
+									type="Land_CampingTable_F";
+									atlOffset=1.1485138;
+								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6153.8374,17.562277,5394.7148};
+										angles[]={0,5.4934692,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+									};
+									id=2220;
+									type="Flag_FD_Blue_F";
+									atlOffset=0.043598175;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6153.584,14.54051,5395.0439};
+										angles[]={0,0.74906039,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_fastTravel}";
+										name="tpLaptopWeaponsHandlingRifle";
+										disableSimulation=1;
+									};
+									id=2221;
+									type="Land_Laptop_unfolded_F";
+									atlOffset=0.031749725;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="x\tacr\addons\images\olympus\laptop\fastTravel.paa";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6153.0381,14.466087,5395.5869};
+										angles[]={-0,3.8966999,0};
+									};
+									side="Empty";
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_environmentControl}";
+										name="environmentControlWeaponsHandling_1";
+										disableSimulation=1;
+									};
+									id=2223;
+									type="Land_Laptop_02_unfolded_F";
+									atlOffset=0.79465103;
+								};
+								class Item4
+								{
+									dataType="Logic";
+									class PositionInfo
+									{
+										position[]={6155.0142,13.498744,5396.3652};
+										angles[]={0,3.9226623,0};
+									};
+									name="tpPosWeaponsHandlingRifle";
+									id=2222;
+									type="Logic";
+									atlOffset=1.1490002;
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6153.8594,14.470691,5394.6841};
+										angles[]={-0,5.0903702,0};
+									};
+									side="Empty";
+									class Attributes
+									{
+									};
+									id=2218;
+									type="Land_Camping_Light_F";
+									atlOffset=0.81014252;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								createAsSimpleObject=1;
-								disableSimulation=1;
-							};
-							id=720;
-							type="Land_CampingTable_F";
-							atlOffset=-4.7683716e-007;
+							id=2225;
+							atlOffset=0.54749298;
 						};
 						class Item2
 						{
-							dataType="Object";
-							class PositionInfo
+							dataType="Layer";
+							name="Grenades";
+							class Entities
 							{
-								position[]={6429.8467,11.946348,5391.2979};
-								angles[]={0,5.4633546,0};
-							};
-							side="Empty";
-							flags=5;
-							class Attributes
-							{
-							};
-							id=714;
-							type="Flag_FD_Blue_F";
-							class CustomAttributes
-							{
-								class Attribute0
+								items=6;
+								class Item0
 								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
+									dataType="Object";
+									class PositionInfo
 									{
-										class data
+										position[]={6570.7446,24.487156,5319.3477};
+										angles[]={6.2606897,2.3743899,0.049969997};
+									};
+									side="Empty";
+									class Attributes
+									{
+									};
+									id=2240;
+									type="Land_Camping_Light_F";
+									atlOffset=0.81575775;
+									class CustomAttributes
+									{
+										class Attribute0
 										{
-											class type
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
 											{
-												type[]=
+												class data
 												{
-													"BOOL"
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
 												};
 											};
-											value=0;
 										};
+										nAttributes=1;
 									};
 								};
-								nAttributes=1;
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6571,23.960316,5318.5854};
+										angles[]={6.2606897,4.3217187,0.049958061};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										createAsSimpleObject=1;
+										disableSimulation=1;
+									};
+									id=2235;
+									type="Land_CampingTable_F";
+									atlOffset=-2.4795532e-005;
+								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6570.7524,27.528913,5319.3105};
+										angles[]={0,2.7774889,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+									};
+									id=2236;
+									type="Flag_FD_Blue_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6570.8472,24.51981,5318.9058};
+										angles[]={6.2606878,4.3162689,0.049968775};
+									};
+									side="Empty";
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_fastTravel}";
+										name="tpLaptopWeaponsHandlingGrenades";
+										disableSimulation=1;
+									};
+									id=2237;
+									type="Land_Laptop_unfolded_F";
+									atlOffset=0.81576729;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="x\tacr\addons\images\olympus\laptop\fastTravel.paa";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item4
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6571.1201,24.491087,5318.1865};
+										angles[]={6.2606897,1.1807199,0.049969997};
+									};
+									side="Empty";
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_environmentControl}";
+										name="environmentControlWeaponsHandling_3";
+										disableSimulation=1;
+									};
+									id=2238;
+									type="Land_Laptop_02_unfolded_F";
+									atlOffset=0.8161335;
+								};
+								class Item5
+								{
+									dataType="Logic";
+									class PositionInfo
+									{
+										position[]={6569,23.448664,5318.293};
+										angles[]={6.2706885,1.2066858,0.039985489};
+									};
+									name="tpPosWeaponsHandlingGrenades";
+									id=2239;
+									type="Logic";
+								};
 							};
+							id=2226;
+							atlOffset=0.33503914;
 						};
 						class Item3
 						{
-							dataType="Object";
-							class PositionInfo
+							dataType="Layer";
+							name="Pistol";
+							class Entities
 							{
-								position[]={6429.584,8.9389277,5391.6191};
-								angles[]={0.012496558,0.71895349,6.2781935};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								init="call{[this] call TAC_Olympus_fnc_fastTravel}";
-								name="tpLaptopWeaponsHandling";
-								disableSimulation=1;
-							};
-							id=712;
-							type="Land_Laptop_unfolded_F";
-							atlOffset=0.00032424927;
-							class CustomAttributes
-							{
-								class Attribute0
+								items=6;
+								class Item0
 								{
-									property="ObjectTextureCustom0";
-									expression="_this setObjectTextureGlobal [0,_value]";
-									class Value
+									dataType="Object";
+									class PositionInfo
 									{
-										class data
+										position[]={6396.0781,8.4357214,5373.0898};
+										angles[]={0.0049914722,0.71414769,6.278194};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										createAsSimpleObject=1;
+										disableSimulation=1;
+									};
+									id=2243;
+									type="Land_CampingTable_F";
+								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6396.6538,12.000676,5372.5718};
+										angles[]={0,5.4531031,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+									};
+									id=2244;
+									type="Flag_FD_Blue_F";
+									class CustomAttributes
+									{
+										class Attribute0
 										{
-											class type
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
 											{
-												type[]=
+												class data
 												{
-													"STRING"
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
 												};
 											};
-											value="x\tacr\addons\images\olympus\laptop\fastTravel.paa";
 										};
+										nAttributes=1;
 									};
 								};
-								class Attribute1
+								class Item2
 								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
+									dataType="Object";
+									class PositionInfo
 									{
-										class data
+										position[]={6396.3882,8.9956808,5372.8901};
+										angles[]={0.0049916417,0.70869094,6.2781935};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_fastTravel}";
+										name="tpLaptopWeaponsHandlingPistol";
+										disableSimulation=1;
+									};
+									id=2245;
+									type="Land_Laptop_unfolded_F";
+									atlOffset=0.00037670135;
+									class CustomAttributes
+									{
+										class Attribute0
 										{
-											class type
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
 											{
-												type[]=
+												class data
 												{
-													"BOOL"
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="x\tacr\addons\images\olympus\laptop\fastTravel.paa";
 												};
 											};
-											value=0;
 										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
 									};
 								};
-								nAttributes=2;
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6395.8203,8.9690218,5373.4111};
+										angles[]={0.0049914722,3.8563337,6.278194};
+									};
+									side="Empty";
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_environmentControl}";
+										name="environmentControlWeaponsHandling_4";
+										disableSimulation=1;
+									};
+									id=2246;
+									type="Land_Laptop_02_unfolded_F";
+									atlOffset=0.81561565;
+								};
+								class Item4
+								{
+									dataType="Logic";
+									class PositionInfo
+									{
+										position[]={6397.7642,8.0099173,5374.269};
+										angles[]={0.0024958209,3.8822927,6.2806892};
+									};
+									name="tpPosWeaponsHandlingPistol";
+									id=2247;
+									type="Logic";
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6396.6772,8.9581947,5372.542};
+										angles[]={0.0049914722,5.050004,6.278194};
+									};
+									side="Empty";
+									class Attributes
+									{
+									};
+									id=2248;
+									type="Land_Camping_Light_F";
+									atlOffset=0.8156147;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 							};
+							id=2227;
+							atlOffset=0.56078053;
 						};
 						class Item4
 						{
-							dataType="Object";
-							class PositionInfo
+							dataType="Layer";
+							name="Launchers";
+							class Entities
 							{
-								position[]={6427.999,8.3382511,5393.0649};
-								angles[]={0.012496558,2.2998378,6.2781935};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								init="call{[this, ""personal""] call TAC_Olympus_fnc_initArsenalCrate;}";
-								disableSimulation=1;
-							};
-							id=716;
-							type="Land_PlasticCase_01_large_gray_F";
-							atlOffset=-7.1525574e-006;
-							class CustomAttributes
-							{
-								class Attribute0
+								items=6;
+								class Item0
 								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
+									dataType="Object";
+									class PositionInfo
 									{
-										class data
+										position[]={6383.3052,9.4115524,5429.6309};
+										angles[]={-0,0.75451368,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										createAsSimpleObject=1;
+										disableSimulation=1;
+									};
+									id=2229;
+									type="Land_CampingTable_F";
+								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6383.8599,12.976805,5429.0898};
+										angles[]={0,5.4934692,0};
+									};
+									side="Empty";
+									flags=5;
+									class Attributes
+									{
+									};
+									id=2230;
+									type="Flag_FD_Blue_F";
+									class CustomAttributes
+									{
+										class Attribute0
 										{
-											class type
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
 											{
-												type[]=
+												class data
 												{
-													"BOOL"
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
 												};
 											};
-											value=0;
 										};
+										nAttributes=1;
 									};
 								};
-								nAttributes=1;
-							};
-						};
-						class Item5
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={6430.9731,7.9428477,5392.9829};
-								angles[]={0.012496558,3.8925552,6.2781935};
-							};
-							name="tpPosWeaponsHandling";
-							id=717;
-							type="Logic";
-						};
-						class Item6
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={6429.0215,8.9086456,5392.1455};
-								angles[]={0.012496558,3.866585,6.2781935};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								init="call{[this] call TAC_Olympus_fnc_environmentControl}";
-								name="environmentControlWeaponsHandling";
-								disableSimulation=1;
-							};
-							id=1801;
-							type="Land_Laptop_02_unfolded_F";
-							atlOffset=0.00032997131;
-						};
-						class Item7
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={6431.793,8.9398298,5390.4141};
-								angles[]={0.012496558,3.1209626,6.2781935};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								name="coreWeaponsHandling";
-								disableSimulation=1;
-							};
-							id=1863;
-							type="Land_MapBoard_F";
-							atlOffset=-9.5367432e-007;
-							class CustomAttributes
-							{
-								class Attribute0
+								class Item2
 								{
-									property="ObjectTextureCustom0";
-									expression="_this setObjectTextureGlobal [0,_value]";
-									class Value
+									dataType="Object";
+									class PositionInfo
 									{
-										class data
+										position[]={6383.606,9.9720726,5429.4189};
+										angles[]={0,0.74906039,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_fastTravel}";
+										name="tpLaptopWeaponsHandlingLaunchers";
+										disableSimulation=1;
+									};
+									id=2231;
+									type="Land_Laptop_unfolded_F";
+									atlOffset=0.00040245056;
+									class CustomAttributes
+									{
+										class Attribute0
 										{
-											class type
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
 											{
-												type[]=
+												class data
 												{
-													"STRING"
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="x\tacr\addons\images\olympus\laptop\fastTravel.paa";
 												};
 											};
-											value="x\tacr\addons\images\olympus\whiteboard\coreWeaponsHandling.paa";
 										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
 									};
 								};
-								nAttributes=1;
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6383.0605,9.9985275,5429.9619};
+										angles[]={-0,3.8966999,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										init="call{[this] call TAC_Olympus_fnc_environmentControl}";
+										name="environmentControlWeaponsHandling_2";
+										disableSimulation=1;
+									};
+									id=2232;
+									type="Land_Laptop_02_unfolded_F";
+									atlOffset=0.053367615;
+								};
+								class Item4
+								{
+									dataType="Logic";
+									class PositionInfo
+									{
+										position[]={6385.0371,8.9481449,5430.7402};
+										angles[]={0,3.9226623,6.2332339};
+									};
+									name="tpPosWeaponsHandlingLaunchers";
+									id=2233;
+									type="Logic";
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={6383.8818,9.9876394,5429.0591};
+										angles[]={-0,5.0903702,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+									};
+									id=2234;
+									type="Land_Camping_Light_F";
+									atlOffset=0.053367615;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 							};
+							id=2228;
+							atlOffset=0.58275127;
 						};
 					};
 					id=719;
-					atlOffset=0.23584557;
+					atlOffset=3.3879805;
 				};
 				class Item8
 				{
@@ -30564,7 +31378,7 @@ class Mission
 				};
 			};
 			id=405;
-			atlOffset=3.828054;
+			atlOffset=4.6448326;
 		};
 		class Item7
 		{
