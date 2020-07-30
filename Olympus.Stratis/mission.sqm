@@ -8,7 +8,7 @@ class EditorData
 	toggles=577;
 	class ItemIDProvider
 	{
-		nextID=2249;
+		nextID=2253;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6087;
+		nextID=6192;
 	};
 	class Camera
 	{
-		pos[]={4374.4917,241.50375,3820.4465};
-		dir[]={-0.82174772,-0.56721723,-0.05512666};
-		up[]={-0.565952,0.82356268,-0.037966579};
-		aside[]={-0.066935077,1.0030635e-007,0.99777722};
+		pos[]={2135.2749,28.948957,5610.4287};
+		dir[]={-0.85750914,-0.50596559,0.094149075};
+		up[]={-0.50296468,0.86253178,0.055221185};
+		aside[]={0.10914772,-7.4621312e-008,0.99410248};
 	};
 };
 binarizationWanted=0;
@@ -91,6 +91,9 @@ addons[]=
 	"tacs_variants_melb",
 	"A3_Air_F_Heli_Heli_Transport_03",
 	"A3_Air_F_Exp_VTOL_01",
+	"A3_Soft_F_Gamma_Truck_01",
+	"A3_Soft_F_Exp_Truck_01",
+	"ace_refuel",
 	"A3_Structures_F_Bootcamp_VR_Helpers",
 	"CUP_AirVehciles_MH47E",
 	"A3_Structures_F_Wrecks",
@@ -158,7 +161,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=79;
+		items=80;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -454,228 +457,235 @@ class AddonsMetaData
 		};
 		class Item43
 		{
-			className="A3_Structures_F_Bootcamp";
-			name="Arma 3 Bootcamp Update - Buildings and Structures";
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item44
 		{
+			className="ace_refuel";
+			name="ACE3 - Refuel";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item45
+		{
+			className="A3_Structures_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item46
+		{
 			className="CUP_AirVehciles_MH47E";
 			name="CUP_AirVehciles_MH47E";
 		};
-		class Item45
+		class Item47
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item46
+		class Item48
 		{
 			className="CUP_CAMisc_ACR_Targets";
 			name="CUP_CAMisc_ACR_Targets";
 		};
-		class Item47
+		class Item49
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item48
+		class Item50
 		{
 			className="tac_shootingrange";
 			name="TAC - Shooting Range";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item49
+		class Item51
 		{
 			className="tacs_units";
 			name="Theseus Services - Units";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item50
+		class Item52
 		{
 			className="tacs_weapons_apex";
 			name="Theseus Services - Apex Weapons Replacement";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item51
+		class Item53
 		{
 			className="A3_Boat_F";
 			name="Arma 3 Alpha - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item52
+		class Item54
 		{
 			className="CUP_Wheeledvehicles_VWGolf";
 			name="CUP_Wheeledvehicles_VWGolf";
 		};
-		class Item53
+		class Item55
 		{
 			className="A3_Structures_F_Enoch_Infrastructure";
 			name="Arma 3 Contact Platform - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item54
+		class Item56
 		{
 			className="A3_Structures_F_Enoch_Industrial";
 			name="Arma 3 Contact Platform - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item55
+		class Item57
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item56
+		class Item58
 		{
 			className="CUP_Weapons_AmmoBoxes";
 			name="CUP_Weapons_AmmoBoxes";
 		};
-		class Item57
+		class Item59
 		{
 			className="CUP_Editor_Plants_Config";
 			name="CUP_Editor_Plants_Config";
 		};
-		class Item58
+		class Item60
 		{
 			className="A3_Structures_F_Enoch_Civilian";
 			name="Arma 3 Contact Platform - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item59
+		class Item61
 		{
 			className="A3_Structures_F_Exp_Cultural";
 			name="Arma 3 Apex - Cultural Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item60
+		class Item62
 		{
 			className="A3_Structures_F_Oldman";
 			name="Arma 3 Oldman - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item61
+		class Item63
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Interier";
 			name="CUP_CAStructures_E_Misc_Misc_Interier";
 		};
-		class Item62
+		class Item64
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item63
+		class Item65
 		{
 			className="acre_sys_intercom";
 			name="ACRE2 - Vehicle Intercom";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item64
+		class Item66
 		{
 			className="CUP_WheeledVehicles_Hilux";
 			name="CUP_WheeledVehicles_Hilux";
 		};
-		class Item65
+		class Item67
 		{
 			className="A3_Armor_F_Gamma";
 			name="Arma 3 - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item66
+		class Item68
 		{
 			className="A3_Armor_F_EPC";
 			name="Arma 3 Win Episode - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item69
 		{
 			className="ace_cookoff";
 			name="ACE3 - Cook off";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item68
+		class Item70
 		{
 			className="CUP_Editor_Structures_Config";
 			name="CUP_Editor_Structures_Config";
 		};
-		class Item69
+		class Item71
 		{
 			className="acex_field_rations";
 			name="ACEX - Field Rations";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item70
+		class Item72
 		{
 			className="CUP_CAMisc_ACR_Shooting_range";
 			name="CUP_CAMisc_ACR_Shooting_range";
 		};
-		class Item71
+		class Item73
 		{
 			className="CUP_CAStructures_E_Wall_Wall_L";
 			name="CUP_CAStructures_E_Wall_Wall_L";
 		};
-		class Item72
+		class Item74
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item73
+		class Item75
 		{
 			className="A3_Structures_F_Exp_Civilian";
 			name="Arma 3 Apex - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item74
-		{
-			className="A3_Soft_F_Gamma";
-			name="Arma 3 - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item75
+		class Item76
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item76
+		class Item77
 		{
 			className="A3_Boat_F_Gamma";
 			name="Arma 3 - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item77
+		class Item78
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item78
+		class Item79
 		{
 			className="A3_Props_F_Tank";
 			name="Arma 3 Tank - Decorative and Mission Objects";
@@ -7055,7 +7065,7 @@ class Mission
 					name="Vehicles";
 					class Entities
 					{
-						items=18;
+						items=19;
 						class Item0
 						{
 							dataType="Object";
@@ -7759,6 +7769,45 @@ class Mission
 							};
 							id=867;
 							type="B_T_VTOL_01_infantry_F";
+						};
+						class Item18
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1690.887,7.4160042,5040.8882};
+								angles[]={0,4.9870868,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=2252;
+							type="B_Truck_01_fuel_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								nAttributes=1;
+							};
 						};
 					};
 					id=928;
@@ -30515,7 +30564,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={6153.2827,13.948643,5395.2559};
-										angles[]={-0,0.75451368,0};
+										angles[]={0,0.75451368,0};
 									};
 									side="Empty";
 									class Attributes
@@ -30635,7 +30684,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={6153.0381,14.466087,5395.5869};
-										angles[]={-0,3.8966999,0};
+										angles[]={0,3.8966999,0};
 									};
 									side="Empty";
 									class Attributes
@@ -30667,7 +30716,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={6153.8594,14.470691,5394.6841};
-										angles[]={-0,5.0903702,0};
+										angles[]={0,5.0903702,0};
 									};
 									side="Empty";
 									class Attributes
@@ -31117,7 +31166,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={6383.3052,9.4115524,5429.6309};
-										angles[]={-0,0.75451368,0};
+										angles[]={0,0.75451368,0};
 									};
 									side="Empty";
 									flags=4;
@@ -31236,7 +31285,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={6383.0605,9.9985275,5429.9619};
-										angles[]={-0,3.8966999,0};
+										angles[]={0,3.8966999,0};
 									};
 									side="Empty";
 									flags=4;
@@ -31268,7 +31317,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={6383.8818,9.9876394,5429.0591};
-										angles[]={-0,5.0903702,0};
+										angles[]={0,5.0903702,0};
 									};
 									side="Empty";
 									flags=4;
