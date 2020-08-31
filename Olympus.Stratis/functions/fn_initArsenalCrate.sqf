@@ -184,7 +184,7 @@ switch (_type) do {
     case "marksman": { _chosen = _marksman; };
     case "rangePistol": { _chosen = _rangePistol; };
     case "rangeRifle": { _chosen = _rangeRifle; };
-    case "engineer": { _chosen = _demolitions; };
+    case "engineer": { _chosen = _engineer; };
     case "grenade": { _chosen = _grenade; };
     case "launcher": { _chosen = _launcher; };
     case "machineGun": { _chosen = _machineGun; };
