@@ -57,7 +57,7 @@ private _rangeRifle = [
     "30Rnd_556x45_Stanag_green"
 ];
 
-private _demolitions = [
+private _engineer = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
     "tacs_Backpack_Carryall_DarkBlack",
@@ -68,15 +68,12 @@ private _demolitions = [
     "ACE_Clacker",
     "ACE_wirecutter",
     "DemoCharge_Remote_Mag",
-    "ATMine_Range_Mag",
     "SatchelCharge_Remote_Mag",
-    "ClaymoreDirectionalMine_Remote_Mag",
-    "APERSBoundingMine_Range_Mag",
-    "SLAMDirectionalMine_Wire_Mag",
-    "APERSTripMine_Wire_Mag",
-    "APERSMine_Range_Mag",
     "AMP_Breaching_Charge_Mag",
-    "ToolKit"
+    "ToolKit",
+    "I_UGV_02_Demining_backpack_F",
+    "ACE_UAVBattery",
+    "I_UavTerminal"
 ];
 
 private _grenade = [
@@ -187,7 +184,7 @@ switch (_type) do {
     case "marksman": { _chosen = _marksman; };
     case "rangePistol": { _chosen = _rangePistol; };
     case "rangeRifle": { _chosen = _rangeRifle; };
-    case "demolitions": { _chosen = _demolitions; };
+    case "engineer": { _chosen = _engineer; };
     case "grenade": { _chosen = _grenade; };
     case "launcher": { _chosen = _launcher; };
     case "machineGun": { _chosen = _machineGun; };

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [this, spawnPos] call TAC_Olympus_fnc_engineerCourse
+ * [this, spawnPos] call TAC_Olympus_fnc_spawnEngineerVehicle
  */
 
 params ["_controller", "_spawnPos"];
