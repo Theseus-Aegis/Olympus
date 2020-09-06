@@ -25,7 +25,7 @@ private _teleportLocations = [
     ["Core", tpPosWeaponsHandlingGrenades, "Weapons Handling Grenades"],
     ["Core", tpPosWeaponsHandlingLaunchers, "Weapons Handling Launchers"],
     ["Core", tpPosDriving, "Driving Course"],
-    ["Specialist", tpPosDemolitions, "Demolitions"],
+    ["Specialist", tpPosEngineer, "Engineer"],
     ["Specialist", tpPos40mm, "Grenadier"],
     ["Specialist", tpPosMachineGun, "Machine Gun"],
     ["Specialist", tpPosMarksman, "Marksman"],
