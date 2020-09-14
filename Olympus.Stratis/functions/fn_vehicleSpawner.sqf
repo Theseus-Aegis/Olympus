@@ -32,7 +32,6 @@ private _spawnAction = [
             "tacs_Arcadian_B_Black",
             "tacs_Arcadian_B_Green",
             "tacs_Arcadian_B_Tan",
-            "tacs_BWA3_B_Eagle_Black",
             "B_LSV_01_unarmed_F",
             "C_SUV_01_F",
             "C_Offroad_01_F",
