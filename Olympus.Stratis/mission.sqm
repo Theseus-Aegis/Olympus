@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6823;
+		nextID=6928;
 	};
 	class Camera
 	{
-		pos[]={3323.4766,277.46436,2902.2075};
-		dir[]={-0.47973433,-0.71222663,0.51247865};
-		up[]={-0.48674196,0.70193577,0.51996416};
-		aside[]={0.73006338,-1.6327249e-007,0.68341351};
+		pos[]={3310.2253,37.597435,5784.2964};
+		dir[]={-0.79364491,-0.40189624,0.45675531};
+		up[]={-0.34833828,0.91568094,0.20047365};
+		aside[]={0.49881169,-3.8417056e-009,0.86672097};
 	};
 };
 binarizationWanted=0;
@@ -31,7 +31,6 @@ addons[]=
 {
 	"A3_Ui_F",
 	"Arcadian",
-	"tacs_variants_bwa3",
 	"A3_Soft_F_Exp_LSV_01",
 	"ace_repair",
 	"ace_dragging",
@@ -160,7 +159,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=80;
+		items=79;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -177,514 +176,507 @@ class AddonsMetaData
 		};
 		class Item2
 		{
-			className="tacs_variants_bwa3";
-			name="Theseus Services - BWMod Variants";
-			author="Theseus Services Team";
-			url="https://github.com/Theseus-Aegis/TheseusServices";
-		};
-		class Item3
-		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item3
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item5
+		class Item4
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item8
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item9
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Props_F_Argo";
 			name="Arma 3 Malden - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item13
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item14
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item15
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item17
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item18
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item20
 		{
 			className="CUP_Editor_A2_Roads_Config";
 			name="CUP_Editor_A2_Roads_Config";
 		};
-		class Item22
+		class Item21
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item22
 		{
 			className="acex_sitting";
 			name="ACEX - Sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item23
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item24
 		{
 			className="tac_shootingrange";
 			name="TAC - Shooting Range";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item26
+		class Item25
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item26
 		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item27
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="CUP_Weapons_Put";
 			name="CUP_Weapons_Put";
 		};
-		class Item30
+		class Item29
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item31
+		class Item30
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item32
+		class Item31
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item33
+		class Item32
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item33
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item34
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item36
+		class Item35
 		{
 			className="ace_slideshow";
 			name="ACE3 - Slideshow";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item37
+		class Item36
 		{
 			className="A3_Air_F_Exp";
 			name="Arma 3 Apex - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item37
 		{
 			className="tac_heavylifter";
 			name="TAC - Heavy Lifter";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item39
+		class Item38
 		{
 			className="CUP_AirVehicles_UH60";
 			name="CUP_AirVehicles_UH60";
 		};
-		class Item40
+		class Item39
 		{
 			className="tac_compat_cup_vehicles";
 			name="tac_compat_cup_vehicles";
 			author="TAC Mod Team";
 			url="http://www.theseus-aegis.com/";
 		};
-		class Item41
+		class Item40
 		{
 			className="tacs_variants_melb";
 			name="Theseus Services - MELB Variants";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item42
+		class Item41
 		{
 			className="A3_Air_F_Heli";
 			name="Arma 3 Helicopters - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item42
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item44
+		class Item43
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item45
+		class Item44
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item46
+		class Item45
 		{
 			className="CUP_AirVehciles_MH47E";
 			name="CUP_AirVehciles_MH47E";
 		};
-		class Item47
+		class Item46
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item48
+		class Item47
 		{
 			className="CUP_CAMisc_ACR_Targets";
 			name="CUP_CAMisc_ACR_Targets";
 		};
-		class Item49
+		class Item48
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item50
+		class Item49
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Enoch - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item51
+		class Item50
 		{
 			className="tacs_units";
 			name="Theseus Services - Units";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item52
+		class Item51
 		{
 			className="tacs_weapons_apex";
 			name="Theseus Services - Apex Weapons Replacement";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item53
+		class Item52
 		{
 			className="A3_Boat_F";
 			name="Arma 3 Alpha - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item54
+		class Item53
 		{
 			className="CUP_Wheeledvehicles_VWGolf";
 			name="CUP_Wheeledvehicles_VWGolf";
 		};
-		class Item55
+		class Item54
 		{
 			className="A3_Structures_F_Enoch_Infrastructure";
 			name="Arma 3 Contact Platform - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item56
+		class Item55
 		{
 			className="A3_Structures_F_Enoch_Industrial";
 			name="Arma 3 Contact Platform - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item57
+		class Item56
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item58
+		class Item57
 		{
 			className="CUP_Weapons_AmmoBoxes";
 			name="CUP_Weapons_AmmoBoxes";
 		};
-		class Item59
+		class Item58
 		{
 			className="CUP_Editor_Plants_Config";
 			name="CUP_Editor_Plants_Config";
 		};
-		class Item60
+		class Item59
 		{
 			className="A3_Structures_F_Enoch_Civilian";
 			name="Arma 3 Contact Platform - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item61
+		class Item60
 		{
 			className="A3_Structures_F_Exp_Cultural";
 			name="Arma 3 Apex - Cultural Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item61
 		{
 			className="A3_Structures_F_Oldman";
 			name="Arma 3 Oldman - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item63
+		class Item62
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Interier";
 			name="CUP_CAStructures_E_Misc_Misc_Interier";
 		};
-		class Item64
+		class Item63
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item65
+		class Item64
 		{
 			className="acre_sys_intercom";
 			name="ACRE2 - Vehicle Intercom";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item66
+		class Item65
 		{
 			className="CUP_WheeledVehicles_Hilux";
 			name="CUP_WheeledVehicles_Hilux";
 		};
-		class Item67
+		class Item66
 		{
 			className="A3_Armor_F_Gamma";
 			name="Arma 3 - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item68
+		class Item67
 		{
 			className="A3_Armor_F_EPC";
 			name="Arma 3 Win Episode - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item69
+		class Item68
 		{
 			className="ace_cookoff";
 			name="ACE3 - Cook off";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item70
+		class Item69
 		{
 			className="CUP_Editor_Structures_Config";
 			name="CUP_Editor_Structures_Config";
 		};
-		class Item71
+		class Item70
 		{
 			className="acex_field_rations";
 			name="ACEX - Field Rations";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item72
+		class Item71
 		{
 			className="CUP_CAMisc_ACR_Shooting_range";
 			name="CUP_CAMisc_ACR_Shooting_range";
 		};
-		class Item73
+		class Item72
 		{
 			className="CUP_CAStructures_E_Wall_Wall_L";
 			name="CUP_CAStructures_E_Wall_Wall_L";
 		};
-		class Item74
+		class Item73
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item75
+		class Item74
 		{
 			className="A3_Structures_F_Exp_Civilian";
 			name="Arma 3 Apex - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item76
+		class Item75
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item77
+		class Item76
 		{
 			className="A3_Boat_F_Gamma";
 			name="Arma 3 - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item78
+		class Item77
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item79
+		class Item78
 		{
 			className="A3_Props_F_Tank";
 			name="Arma 3 Tank - Decorative and Mission Objects";
@@ -785,7 +777,7 @@ class Mission
 					name="Vehicles";
 					class Entities
 					{
-						items=3;
+						items=2;
 						class Item0
 						{
 							dataType="Object";
@@ -827,46 +819,6 @@ class Mission
 							};
 						};
 						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={4354.0098,226.76521,3823.1616};
-								angles[]={6.2606878,1.5125548,0.0024958209};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=1106;
-							type="tacs_BWA3_B_Eagle_Black";
-							atlOffset=-0.028015137;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ammoBox";
-									expression="[_this,_value] call bis_fnc_initAmmoBox;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item2
 						{
 							dataType="Object";
 							class PositionInfo
@@ -2436,7 +2388,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={3319.9358,228.86368,2940.8247};
-								angles[]={-0,0.96358293,6.2822089};
+								angles[]={0,0.96358293,6.2822089};
 							};
 							side="Empty";
 							flags=4;
@@ -2452,7 +2404,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={3310.5515,228.69104,2952.533};
-								angles[]={-0,6.1661229,6.2812943};
+								angles[]={0,6.1661229,6.2812943};
 							};
 							side="Empty";
 							flags=4;
@@ -5950,7 +5902,7 @@ class Mission
 							name="medicalSpawnPos";
 							id=1871;
 							type="Logic";
-							atlOffset=0.78700018;
+							atlOffset=0.27327871;
 						};
 					};
 					id=921;
@@ -8916,14 +8868,14 @@ class Mission
 										angles[]={0,1.6817646,0};
 									};
 									side="Empty";
-									flags=1;
+									flags=5;
 									class Attributes
 									{
 										name="mout1_72";
 									};
 									id=2057;
 									type="VR_3DSelector_01_default_F";
-									atlOffset=3.7799835;
+									atlOffset=4.7683716e-007;
 								};
 								class Item69
 								{
@@ -10146,7 +10098,7 @@ class Mission
 							name="Vehicles";
 							class Entities
 							{
-								items=6;
+								items=3;
 								class Item0
 								{
 									dataType="Object";
@@ -10265,621 +10217,6 @@ class Mission
 											};
 										};
 										nAttributes=1;
-									};
-								};
-								class Item3
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={3186.4453,4.7102671,5806.9077};
-										angles[]={0.010000871,2.2330251,6.2806959};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-										textures="tacs_Black";
-									};
-									id=2115;
-									type="tacs_BWA3_B_Eagle_Black";
-									atlOffset=0.008398056;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="VehicleCustomization";
-											expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"ARRAY"
-														};
-													};
-													class value
-													{
-														items=2;
-														class Item0
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-															};
-														};
-														class Item1
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-																class value
-																{
-																	items=8;
-																	class Item0
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="hide_rope";
-																		};
-																	};
-																	class Item1
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item2
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="backpack_back";
-																		};
-																	};
-																	class Item3
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item4
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="backpack_top";
-																		};
-																	};
-																	class Item5
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item6
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="tarnrolle_1";
-																		};
-																	};
-																	class Item7
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item4
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={3189.8035,4.6916409,5810.8926};
-										angles[]={0.0024897563,2.2534318,0.0049914722};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-										textures="tacs_Black";
-									};
-									id=2116;
-									type="tacs_BWA3_B_Eagle_Black";
-									atlOffset=0.0027985573;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="VehicleCustomization";
-											expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"ARRAY"
-														};
-													};
-													class value
-													{
-														items=2;
-														class Item0
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-															};
-														};
-														class Item1
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-																class value
-																{
-																	items=8;
-																	class Item0
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="hide_rope";
-																		};
-																	};
-																	class Item1
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item2
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="backpack_back";
-																		};
-																	};
-																	class Item3
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item4
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="backpack_top";
-																		};
-																	};
-																	class Item5
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item6
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="tarnrolle_1";
-																		};
-																	};
-																	class Item7
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item5
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={3193.3486,4.70437,5814.7783};
-										angles[]={0,2.2950981,0.0075011365};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-										textures="tacs_Black";
-									};
-									id=2117;
-									type="tacs_BWA3_B_Eagle_Black";
-									atlOffset=-4.7683716e-007;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="VehicleCustomization";
-											expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"ARRAY"
-														};
-													};
-													class value
-													{
-														items=2;
-														class Item0
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-															};
-														};
-														class Item1
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-																class value
-																{
-																	items=8;
-																	class Item0
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="hide_rope";
-																		};
-																	};
-																	class Item1
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item2
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="backpack_back";
-																		};
-																	};
-																	class Item3
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item4
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="backpack_top";
-																		};
-																	};
-																	class Item5
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																	class Item6
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="tarnrolle_1";
-																		};
-																	};
-																	class Item7
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										nAttributes=2;
 									};
 								};
 							};
