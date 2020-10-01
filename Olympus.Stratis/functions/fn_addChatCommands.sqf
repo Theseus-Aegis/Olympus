@@ -35,3 +35,7 @@
         };
     };
 }, "all"] call CBA_fnc_registerChatCommand;
+
+["tac-repair", {
+    cursorObject setDamage 0;
+}, "all"] call CBA_fnc_registerChatCommand;

@@ -31,6 +31,9 @@ _player createDiaryRecord ["features", ["Chat Commands", "
     <br/><font color='#E3D310'>#tac-heal:</font color>
     <br/>Type `#tac-heal` in chat to heal yourself.
     <br/>If you want to heal someone else, type `#tac-heal John Doe`.
+    <br/>
+    <br/><font color='#E3D310'>#tac-repair:</font color>
+    <br/>Type `#tac-repair` in chat to repair the vehicle you are looking at.
 "]];
 
 _player createDiaryRecord ["features", ["Arsenals", "
