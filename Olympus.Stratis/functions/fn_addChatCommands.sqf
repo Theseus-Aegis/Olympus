@@ -18,7 +18,7 @@
 
     if (_name == "") then {
         [ace_player] call ACEFUNC(medical_treatment,fullHealLocal);
-        ["ace_common_systemChatGlobal", format ["[TAC] Healed %1", name ace_player]] call CBA_fnc_localEvent;
+        systemChat format ["[TAC] Healed %1", name ace_player];
     } else {
         private _foundPlayers = (call CBA_fnc_players) select {_name in (name _x)};
 
@@ -41,8 +41,8 @@
         cursorObject setDamage 0;
         cursorObject setFuel 1;
         cursorObject setVehicleAmmo 1;
-        ["ace_common_systemChatGlobal", "[TAC] Repaired, refueled and rearmed vehicle"] call CBA_fnc_localEvent;
+        systemChat "[TAC] Repaired, refueled and rearmed vehicle";
     } else {
-        ["ace_common_systemChatGlobal", "[TAC] Could not find vehicle to fix"] call CBA_fnc_localEvent;
+        systemChat "[TAC] Could not find vehicle to fix";
     };
 }, "all"] call CBA_fnc_registerChatCommand;
