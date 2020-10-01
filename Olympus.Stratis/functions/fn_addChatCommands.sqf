@@ -18,7 +18,7 @@
 
     if (_name == "") then {
         [ace_player] call ACEFUNC(medical_treatment,fullHealLocal);
-        ["ace_common_systemChatGlobal", format ["[TAC] Healed %1", name ace_player], ace_player] call CBA_fnc_targetEvent;
+        ["ace_common_systemChatGlobal", format ["[TAC] Healed %1", name ace_player], ace_player] call CBA_fnc_localEvent;
     } else {
         private _foundPlayers = (call CBA_fnc_players) select {_name in (name _x)};
 
@@ -37,10 +37,10 @@
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["tac-repair", {
-    if (cursorObject isKindOf "AllVehicles") then {
+    if (cursorObject isKindOf "LandVehicle" || cursorObject isKindOf "Air" || cursorObject isKindOf "Ship") then {
         cursorObject setDamage 0;
-        ["ace_common_systemChatGlobal", "Repaired vehicle", ace_player] call CBA_fnc_targetEvent;
+        ["ace_common_systemChatGlobal", "Repaired vehicle", ace_player] call CBA_fnc_localEvent;
     } else {
-        ["ace_common_systemChatGlobal", "Could not find vehicle to repair", ace_player] call CBA_fnc_targetEvent;
+        ["ace_common_systemChatGlobal", "Could not find vehicle to repair", ace_player] call CBA_fnc_localEvent;
     };
 }, "all"] call CBA_fnc_registerChatCommand;
