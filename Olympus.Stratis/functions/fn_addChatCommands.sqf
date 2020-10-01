@@ -37,5 +37,10 @@
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["tac-repair", {
-    cursorObject setDamage 0;
+    if (cursorObject isKindOf "AllVehicles") then {
+        cursorObject setDamage 0;
+        ["ace_common_systemChatGlobal", "Repaired vehicle", ace_player] call CBA_fnc_targetEvent;
+    } else {
+        ["ace_common_systemChatGlobal", "Could not find vehicle to repair", ace_player] call CBA_fnc_targetEvent;
+    };
 }, "all"] call CBA_fnc_registerChatCommand;
