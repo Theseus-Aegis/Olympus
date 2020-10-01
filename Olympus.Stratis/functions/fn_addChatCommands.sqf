@@ -47,3 +47,13 @@
         systemChat "[TAC] Could not find vehicle to fix";
     };
 }, "all"] call CBA_fnc_registerChatCommand;
+
+["tac-cleanup", {
+    private _weaponHolders = nearestObjects [ace_player, ["GroundWeaponHolder", "WeaponHolderSimulated"], 10];
+    if (!(_weaponHolders isEqualTo [])) then {
+        {deleteVehicle _x} forEach _weaponHolders;
+        systemChat "[TAC] Removed all items in range";
+    } else {
+        systemChat "[TAC] Could not find items in range to remove";
+    };
+}, "all"] call CBA_fnc_registerChatCommand;
