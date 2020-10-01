@@ -36,11 +36,13 @@
     };
 }, "all"] call CBA_fnc_registerChatCommand;
 
-["tac-repair", {
+["tac-fix", {
     if (cursorObject isKindOf "LandVehicle" || cursorObject isKindOf "Air" || cursorObject isKindOf "Ship") then {
         cursorObject setDamage 0;
-        ["ace_common_systemChatGlobal", "Repaired vehicle"] call CBA_fnc_localEvent;
+        cursorObject setFuel 1;
+        cursorObject setVehicleAmmo 1;
+        ["ace_common_systemChatGlobal", "[TAC] Repaired, refueled and rearmed vehicle"] call CBA_fnc_localEvent;
     } else {
-        ["ace_common_systemChatGlobal", "Could not find vehicle to repair"] call CBA_fnc_localEvent;
+        ["ace_common_systemChatGlobal", "[TAC] Could not find vehicle to fix"] call CBA_fnc_localEvent;
     };
 }, "all"] call CBA_fnc_registerChatCommand;
