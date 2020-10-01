@@ -3,7 +3,7 @@
 </p>
 <p align="center">
     <a href="https://github.com/Theseus-Aegis/Olympus/releases/latest">
-        <img src="https://img.shields.io/badge/Version-3.2.3-blue.svg" alt="Olympus Version">
+        <img src="https://img.shields.io/badge/Version-3.3.0-blue.svg" alt="Olympus Version">
     </a>
     <a href="https://github.com/Theseus-Aegis/Olympus/issues">
         <img src="https://img.shields.io/github/issues-raw/Theseus-Aegis/Olympus.svg?label=Issues" alt="Olympus Issues">
