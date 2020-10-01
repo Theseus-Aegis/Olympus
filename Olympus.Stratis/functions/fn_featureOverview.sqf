@@ -31,6 +31,12 @@ _player createDiaryRecord ["features", ["Chat Commands", "
     <br/><font color='#E3D310'>#tac-heal:</font color>
     <br/>Type `#tac-heal` in chat to heal yourself.
     <br/>If you want to heal someone else, type `#tac-heal John Doe`.
+    <br/>
+    <br/><font color='#E3D310'>#tac-fix:</font color>
+    <br/>Type `#tac-fix` in chat to repair, refuel and rearm the vehicle you are looking at.
+    <br/>
+    <br/><font color='#E3D310'>#tac-cleanup:</font color>
+    <br/>Type `#tac-cleanup` in chat to delete any items on the ground in a 10m range.
 "]];
 
 _player createDiaryRecord ["features", ["Arsenals", "
