@@ -39,9 +39,9 @@
 ["tac-fix", {
     private _object = cursorObject;
     if (_object isKindOf "LandVehicle" || {_object isKindOf "Air"} || {_object isKindOf "Ship"}) then {
-        cursorObject setDamage 0;
-        cursorObject setFuel 1;
-        cursorObject setVehicleAmmo 1;
+        _object setDamage 0;
+        _object setFuel 1;
+        _object setVehicleAmmo 1;
         systemChat "[TAC] Repaired, refueled and rearmed vehicle";
     } else {
         systemChat "[TAC] Could not find vehicle to fix";
