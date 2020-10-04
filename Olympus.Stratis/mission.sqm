@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7033;
+		nextID=7138;
 	};
 	class Camera
 	{
-		pos[]={6512.9893,40.106144,5387.7725};
-		dir[]={-0.94415367,-0.32980284,-0.0057137818};
-		up[]={-0.32992834,0.94401276,-0.0019961174};
-		aside[]={-0.006048921,-1.3347199e-006,1.0000789};
+		pos[]={6536.4297,100.60399,5409.4688};
+		dir[]={-0.77145004,-0.61443579,-0.16576868};
+		up[]={-0.60080349,0.78890783,-0.12910126};
+		aside[]={-0.21010198,-5.9412559e-007,0.97775245};
 	};
 };
 binarizationWanted=0;
@@ -23419,17 +23419,17 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6446.7783,10.436211,5374.4233};
+										position[]={6446.7783,10.305809,5374.4233};
 										angles[]={0,0.8309415,0};
 									};
 									side="Empty";
-									flags=4;
 									class Attributes
 									{
 										disableSimulation=1;
 									};
 									id=96;
 									type="CUP_str_trnka";
+									atlOffset=0.43514824;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -23815,7 +23815,7 @@ class Mission
 									};
 									id=105;
 									type="Land_Graffiti_03_F";
-									atlOffset=1.1948338;
+									atlOffset=1.4769573;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -24240,7 +24240,7 @@ class Mission
 									};
 									id=116;
 									type="CUP_TKSpecialWeapons_EP1";
-									atlOffset=-0.037273884;
+									atlOffset=-0.0015254021;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -24300,7 +24300,7 @@ class Mission
 									};
 									id=117;
 									type="CUP_TKSpecialWeapons_EP1";
-									atlOffset=-0.035816669;
+									atlOffset=-6.7710876e-005;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -24428,7 +24428,7 @@ class Mission
 								};
 							};
 							id=19;
-							atlOffset=-0.020816803;
+							atlOffset=-0.014113903;
 						};
 						class Item1
 						{
@@ -26059,7 +26059,7 @@ class Mission
 						};
 					};
 					id=18;
-					atlOffset=0.86864281;
+					atlOffset=0.86885262;
 				};
 				class Item3
 				{
@@ -27821,7 +27821,7 @@ class Mission
 									class Attributes
 									{
 										init="call{[this, [rangeLauncherTarget01, rangeLauncherTarget02, rangeLauncherTarget03, rangeLauncherTarget04, rangeLauncherTarget05]] call TAC_Olympus_fnc_resetDamagedObjects}";
-										name="rangeLauncherController02";
+										name="rangeLauncherController";
 										disableSimulation=1;
 									};
 									id=607;
@@ -29624,8 +29624,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6153.584,14.54051,5395.0439};
-										angles[]={0,0.74906039,0};
+										position[]={6153.584,14.50876,5395.0439};
+										angles[]={-0,0.74906039,0};
 									};
 									side="Empty";
 									flags=4;
@@ -29637,7 +29637,6 @@ class Mission
 									};
 									id=2221;
 									type="Land_Laptop_unfolded_F";
-									atlOffset=0.031749725;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -29754,7 +29753,7 @@ class Mission
 								};
 							};
 							id=2225;
-							atlOffset=0.54749298;
+							atlOffset=0.54550934;
 						};
 						class Item2
 						{
@@ -30287,8 +30286,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6383.0605,9.9985275,5429.9619};
-										angles[]={0,3.8966999,0};
+										position[]={6383.0605,9.9451599,5429.9619};
+										angles[]={-0,3.8966999,0};
 									};
 									side="Empty";
 									flags=4;
@@ -30300,7 +30299,6 @@ class Mission
 									};
 									id=2232;
 									type="Land_Laptop_02_unfolded_F";
-									atlOffset=0.053367615;
 								};
 								class Item4
 								{
@@ -30319,8 +30317,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6383.8818,9.9876394,5429.0591};
-										angles[]={0,5.0903702,0};
+										position[]={6383.8818,9.9342718,5429.0591};
+										angles[]={-0,5.0903702,0};
 									};
 									side="Empty";
 									flags=4;
@@ -30329,7 +30327,6 @@ class Mission
 									};
 									id=2234;
 									type="Land_Camping_Light_F";
-									atlOffset=0.053367615;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -30356,11 +30353,11 @@ class Mission
 								};
 							};
 							id=2228;
-							atlOffset=0.58275127;
+							atlOffset=0.54939651;
 						};
 					};
 					id=719;
-					atlOffset=3.3879805;
+					atlOffset=3.3711796;
 				};
 				class Item8
 				{
@@ -30430,7 +30427,7 @@ class Mission
 				};
 			};
 			id=405;
-			atlOffset=4.6448307;
+			atlOffset=4.6406317;
 		};
 		class Item7
 		{
