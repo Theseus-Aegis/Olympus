@@ -5,18 +5,49 @@
  *
  * Arguments:
  * 0: Controller <OBJECT>
+ * 1: Spawn Position <OBJECT>
+ * 2: Type <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [this, spawnPad] call TAC_Olympus_fnc_vehicleSpawner
+ * [this, spawnPad, "ground"] call TAC_Olympus_fnc_vehicleSpawner
  */
 
-params ["_controller", "_spawnPos"];
+params ["_controller", "_spawnPos", "_type"];
 
-// Make empty marker for featureOverview
-createMarker [QGVAR(vehicleSpawnerMarker), _controller];
+private _groundVehicles = [
+    // "classname"
+    "tacs_Arcadian_B_Black",
+    "tacs_Arcadian_B_Green",
+    "tacs_Arcadian_B_Tan",
+    "B_LSV_01_unarmed_F",
+    "C_SUV_01_F",
+    "C_Offroad_01_F",
+    "C_Offroad_01_covered_F",
+    "C_Offroad_02_unarmed_F",
+    "C_Van_02_transport_F"
+];
+
+private _airVehicles = [
+    // "classname"
+    "tacs_MELB_B_MH6M_Theseus_Black",
+    "tacs_MELB_B_AH6M_L_Theseus_Black",
+    "tacs_MELB_B_AH6M_M_Theseus_Black",
+    "tacs_MELB_B_AH6M_H_Theseus_Black",
+    "CUP_B_UH60M_US",
+    "B_Heli_Transport_03_F",
+    "C_Plane_Civil_01_racing_F",
+    "B_T_VTOL_01_infantry_F"
+];
+
+private _allowedVehicles = [];
+switch (_type) do {
+    case "ground": { _allowedVehicles = _groundVehicles; };
+    case "air": { _allowedVehicles = _airVehicles; };
+    default { _allowedVehicles = _groundVehicles; };
+};
 
 private _spawnAction = [
     QGVAR(SpawnVehicle),
@@ -25,20 +56,7 @@ private _spawnAction = [
     {},
     {true},
     {
-        (_this select 2) params ["_controller", "_spawnPos"];
-
-        private _allowedVehicles = [
-            // "classname"
-            "tacs_Arcadian_B_Black",
-            "tacs_Arcadian_B_Green",
-            "tacs_Arcadian_B_Tan",
-            "B_LSV_01_unarmed_F",
-            "C_SUV_01_F",
-            "C_Offroad_01_F",
-            "C_Offroad_01_covered_F",
-            "C_Offroad_02_unarmed_F",
-            "C_Van_02_transport_F"
-        ];
+        (_this select 2) params ["_controller", "_spawnPos", "_allowedVehicles"];
 
         private _actions = [];
         {
@@ -52,20 +70,22 @@ private _spawnAction = [
                 {
                     (_this select 2) params ["_controller", "_spawnPos", "_classname"];
 
-                    if (count (_spawnPos nearEntities 5) == 1) then {
+                    if (count (_spawnPos nearEntities 5) == 0) then {
                         private _spawnedVehicle = createVehicle [_classname, _spawnPos, [], 0, "CAN_COLLIDE"];
-                        _spawnedVehicle setDir 60;
+                        _spawnedVehicle setDir (getDir _spawnPos);
                         clearItemCargoGlobal _spawnedVehicle;
                         clearBackpackCargoGlobal _spawnedVehicle;
                         clearWeaponCargoGlobal _spawnedVehicle;
                         clearMagazineCargoGlobal _spawnedVehicle;
                         _spawnedVehicle addItemCargoGlobal ["ToolKit", 1];
-                        ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
-                        ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
+                        if (_object isKindOf "LandVehicle") then {
+                            ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
+                            ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
+                        };
 
-                        private _spawnedVehicles = _controller getVariable [QGVAR(spawnedVehicles), []];
+                        private _spawnedVehicles = GVAR(spawnedVehiclesNamespace) getVariable [QGVAR(spawnedVehicles), []];
                         _spawnedVehicles pushBack [_spawnedVehicle, name player];
-                        _controller setVariable [QGVAR(SpawnedVehicles), _spawnedVehicles, true];
+                        GVAR(spawnedVehiclesNamespace) setVariable [QGVAR(SpawnedVehicles), _spawnedVehicles, true];
                     } else {
                         ["Could not spawn vehicle, there is already a vehicle on the spawn position"] call CBA_fnc_notify;
                     };
@@ -80,7 +100,7 @@ private _spawnAction = [
 
         _actions
     },
-    [_controller, _spawnPos]
+    [_controller, _spawnPos, _allowedVehicles]
 ] call ACEFUNC(interact_menu,createAction);
 
 [_controller, 0, ["ACE_MainActions"], _spawnAction] call ACEFUNC(interact_menu,addActionToObject);
@@ -93,13 +113,13 @@ private _removeAction = [
     {
         (_this select 2) params ["_controller"];
 
-        private _spawnedVehicles = _controller getVariable [QGVAR(spawnedVehicles), []];
+        private _spawnedVehicles = GVAR(spawnedVehiclesNamespace) getVariable [QGVAR(spawnedVehicles), []];
         !(_spawnedVehicles isEqualTo [])
     },
     {
         (_this select 2) params ["_controller"];
 
-        private _spawnedvehicles = _controller getVariable [QGVAR(spawnedVehicles), []];
+        private _spawnedvehicles = GVAR(spawnedVehiclesNamespace) getVariable [QGVAR(spawnedVehicles), []];
 
         private _actions = [];
         {
@@ -115,9 +135,9 @@ private _removeAction = [
 
                     if ((crew _vehicle) isEqualTo []) then {
                         deleteVehicle _vehicle;
-                        private _spawnedvehicles = _controller getVariable [QGVAR(spawnedVehicles), []];
+                        private _spawnedvehicles = GVAR(spawnedVehiclesNamespace) getVariable [QGVAR(spawnedVehicles), []];
                         _spawnedvehicles deleteAt (_spawnedVehicles find [_vehicle, _playerName]);
-                        _controller setVariable [QGVAR(spawnedVehicles), _spawnedvehicles, true];
+                        GVAR(spawnedVehiclesNamespace) setVariable [QGVAR(spawnedVehicles), _spawnedvehicles, true];
                     } else {
                         ["Could not delete vehicle, there are still people in the vehicle"] call CBA_fnc_notify;
                     };
