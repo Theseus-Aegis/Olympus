@@ -114,6 +114,9 @@ private _removeAction = [
         (_this select 2) params ["_controller"];
 
         private _spawnedVehicles = GVAR(spawnedVehiclesNamespace) getVariable [QGVAR(spawnedVehicles), []];
+        _spawnedVehicles = _spawnedVehicles select {!isNull (_x select 0)};
+        GVAR(spawnedVehiclesNamespace) setVariable [QGVAR(spawnedVehicles), _spawnedvehicles, true];
+
         !(_spawnedVehicles isEqualTo [])
     },
     {
@@ -133,7 +136,7 @@ private _removeAction = [
                 {
                     (_this select 2) params ["_controller", "_vehicle", "_playerName"];
 
-                    if ((crew _vehicle) isEqualTo []) then {
+                    if ((fullCrew _vehicle) select {alive (_x select 0)} isEqualTo []) then {
                         deleteVehicle _vehicle;
                         private _spawnedvehicles = GVAR(spawnedVehiclesNamespace) getVariable [QGVAR(spawnedVehicles), []];
                         _spawnedvehicles deleteAt (_spawnedVehicles find [_vehicle, _playerName]);
