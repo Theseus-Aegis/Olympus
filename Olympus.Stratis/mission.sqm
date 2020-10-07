@@ -8,7 +8,7 @@ class EditorData
 	toggles=585;
 	class ItemIDProvider
 	{
-		nextID=2294;
+		nextID=2295;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7873;
+		nextID=7978;
 	};
 	class Camera
 	{
-		pos[]={1198.6178,298.89853,4866.436};
-		dir[]={0.81776237,-0.36357975,0.44628054};
-		up[]={0.31927317,0.93150741,0.17423704};
-		aside[]={0.47906196,-1.1193333e-006,-0.87783355};
+		pos[]={1351.9431,207.28937,4950.126};
+		dir[]={0.7836048,-0.48251867,0.39133883};
+		up[]={0.4316811,0.87588584,0.21558553};
+		aside[]={0.44679105,-3.9581209e-008,-0.89464182};
 	};
 };
 binarizationWanted=0;
@@ -148,6 +148,7 @@ addons[]=
 	"CUP_Buildings_Config",
 	"A3_Boat_F_Gamma_Boat_Transport_01",
 	"A3_Structures_F_Households_Stone_Small",
+	"A3_Structures_F_EPC_Civ_Garbage",
 	"A3_Structures_F_Enoch_Military_Camps",
 	"A3_Structures_F_Households_WIP",
 	"A3_Structures_F_Mil_BagBunker",
@@ -158,7 +159,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=78;
+		items=79;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -671,6 +672,13 @@ class AddonsMetaData
 			url="https://www.arma3.com";
 		};
 		class Item77
+		{
+			className="A3_Structures_F_EPC";
+			name="Arma 3 Win Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item78
 		{
 			className="A3_Props_F_Tank";
 			name="Arma 3 Tank - Decorative and Mission Objects";
@@ -7273,7 +7281,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1712.899,5.6106801,5150.1309};
-								angles[]={0,3.39078,-0};
+								angles[]={0,3.39078,0};
 							};
 							side="Empty";
 							flags=4;
@@ -7312,7 +7320,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1723.9189,5.6106801,5147.3184};
-								angles[]={-0,3.39078,0};
+								angles[]={0,3.39078,0};
 							};
 							side="Empty";
 							flags=4;
@@ -7351,7 +7359,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1726.7163,5.6106801,5158.3569};
-								angles[]={0,0.24859199,-0};
+								angles[]={0,0.24859199,0};
 							};
 							side="Empty";
 							flags=4;
@@ -7390,7 +7398,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1715.7058,5.6106801,5161.1338};
-								angles[]={-0,0.24859199,0};
+								angles[]={0,0.24859199,0};
 							};
 							side="Empty";
 							flags=4;
@@ -7429,7 +7437,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1700.7815,5.6106801,5102.5239};
-								angles[]={-0,3.39078,0};
+								angles[]={0,3.39078,0};
 							};
 							side="Empty";
 							flags=4;
@@ -7468,7 +7476,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1711.7917,5.6106801,5099.71};
-								angles[]={-0,3.39078,0};
+								angles[]={0,3.39078,0};
 							};
 							side="Empty";
 							flags=4;
@@ -7507,7 +7515,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1714.5919,5.6106801,5110.7231};
-								angles[]={-0,0.24859199,0};
+								angles[]={0,0.24859199,0};
 							};
 							side="Empty";
 							flags=4;
@@ -7546,7 +7554,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1703.5859,5.6106801,5113.5176};
-								angles[]={-0,0.24859199,0};
+								angles[]={0,0.24859199,0};
 							};
 							side="Empty";
 							flags=4;
@@ -31536,7 +31544,7 @@ class Mission
 					name="Objects";
 					class Entities
 					{
-						items=27;
+						items=28;
 						class Item0
 						{
 							dataType="Object";
@@ -32157,9 +32165,26 @@ class Mission
 							type="Land_d_Stone_HouseSmall_V1_F";
 							atlOffset=-0.55599976;
 						};
+						class Item27
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5321.3281,94.675423,4187.2129};
+								angles[]={0,6.2188177,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=2294;
+							type="Land_GarbageBin_01_F";
+						};
 					};
 					id=1776;
-					atlOffset=11.469376;
+					atlOffset=59.096058;
 				};
 				class Item4
 				{
@@ -32361,7 +32386,7 @@ class Mission
 				};
 			};
 			id=1772;
-			atlOffset=26.547623;
+			atlOffset=15.650146;
 		};
 		class Item8
 		{
