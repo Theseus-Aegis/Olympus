@@ -31,18 +31,19 @@ private _spawnAction = [
         (_this select 2) params ["_controller", "_spawnPos"];
 
         private _allowedVehicles = [
-            // ["classname", "fancyName"]
-            ["tacs_BWA3_B_Eagle_Tan", "Eagle IV (Tan)"],
-            ["I_MBT_03_cannon_F", "Leopard 2SG"]
+            // ["classname"]
+            ["B_MRAP_01_F"],
+            ["I_MBT_03_cannon_F"]
         ];
 
         private _actions = [];
         {
-            _x params ["_classname", "_fancyName"];
+            _x params ["_classname"];
+            private _vehicleName = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 
             private _spawnAction = [
                 format [QGVAR(SpawnAction_%1), _classname],
-                format ["Spawn %1", _fancyName],
+                format ["Spawn %1", _vehicleName],
                 "",
                 {
                     (_this select 2) params ["_controller", "_spawnPos", "_classname"];
