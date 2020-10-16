@@ -6,4 +6,4 @@ addMissionEventHandler ["HandleDisconnect", {
 }];
 
 GVAR(spawnedVehiclesNamespace) = true call CBA_fnc_createNamespace;
-publicVariable QGVAR(spawnedVehiclesNamespace)
+publicVariable QGVAR(spawnedVehiclesNamespace);

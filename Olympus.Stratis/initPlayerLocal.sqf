@@ -16,21 +16,23 @@
  * None
  */
 
-params ["_player", "_didJIP"];
+[{
+    params ["_player", "_didJIP"];
 
-call FUNC(addChatCommands);
+    call FUNC(addChatCommands);
 
-// Types "OLYMPUS" text on the screen, letter by letter, cursor blinking.
-[
+    // Types "OLYMPUS" text on the screen, letter by letter, cursor blinking.
     [
-        ["OLYMPUS", "<t size = '1.5' underline = '1'>%1</t><br/>"],
-        ["Theseus Incorporated"],
-        ["Stratis", "<t size = '1' font='puristaMedium'>%1</t>", 70]
-    ], 1, 0.75, "<t align = 'center' shadow = '1' size = '1.0'>%1</t>"
-] spawn BIS_fnc_typeText;
+        [
+            ["OLYMPUS", "<t size = '1.5' underline = '1'>%1</t><br/>"],
+            ["Theseus Incorporated"],
+            ["Stratis", "<t size = '1' font='puristaMedium'>%1</t>", 70]
+        ], 1, 0.75, "<t align = 'center' shadow = '1' size = '1.0'>%1</t>"
+    ] spawn BIS_fnc_typeText;
 
-// Sets default loadout to joining players
-[_player] call FUNC(setBasicLoadout);
+    // Sets default loadout to joining players
+    [_player] call FUNC(setBasicLoadout);
 
-// Feature overview
-[_player] call FUNC(featureOverview);
+    // Feature overview
+    [_player] call FUNC(featureOverview);
+}, _this] call CBA_fnc_directCall;
