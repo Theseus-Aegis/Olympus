@@ -1,54 +1,68 @@
 #include "..\script_component.hpp"
 /*
- * Author: Rory, Tyrone
- * Resets target damaged objects back to their original state
+ * Author: Rory, Tyrone, JoramD
+ * Spawns objects in predefined positions and allows resetting of those objects.
  *
  * Arguments:
- * 0: Controller (object)
- * 1: Objects to reset (array)
+ * 0: Controller <OBJECT>
+ * 1: Object spawn positions <ARRAY>
+ * 2: Object classnames <ARRAY>
  *
  *
  * Return Value:
  * None
  *
  * Example:
- * [controller, [target1, target2, target3]] call TAC_Olympus_fnc_resetDamagedObjects
+ * [controller, [targetPos1, targetPos2, targetPos3], ["vehicleClass1", "vehicleClass2", "vehicleClass3"]] call TAC_Olympus_fnc_resetDamagedObjects
  */
 
-params ["_controller", "_targets"];
+params ["_controller", "_targetPads", "_targetObjects"];
+
+if (isServer) exitWith {
+    {
+        private _vehicle = createVehicle [_targetObjects select _forEachIndex, _x, [], 0, "CAN_COLLIDE"];
+        _vehicle setDir getDir _x;
+        _vehicle setVehicleLock "LOCKED";
+        _vehicle setVehicleAmmo 0;
+        clearMagazineCargoGlobal _vehicle;
+        clearWeaponCargoGlobal _vehicle;
+        clearItemCargoGlobal _vehicle;
+    } forEach _targetPads;
+};
 
 private _action = [
     QGVAR(resetDamageAction),
     "Reset targets",
     "",
     {
-        private _targets = param [2];
+        (_this select 2) params ["_targetPads", "_targetObjects"];
         {
-            if (damage _x != 0) then {
-                private _position = ASLToAGL (getPosASL _x);
-                private _type = typeOf _x;
-                deleteVehicle _x;
+            private _type = _targetObjects select _forEachIndex;
+            private _nearestObjects = nearestObjects [_x, [_type], 5];
+            private _target = _nearestObjects select 0;
+            if (_nearestObjects isEqualTo [] || {damage _target != 0}) then {
+                deleteVehicle _target;
 
                 [
                     {
-                        params ["_type", "_position", "_targets", "_index"];
+                        params ["_type", "_position"];
                         private _newTarget = createVehicle [_type, _position, [], 0, "CAN_COLLIDE"];
+                        _newTarget setDir getDir _position;
                         _newTarget setVehicleLock "LOCKED";
                         _newTarget setVehicleAmmo 0;
                         clearMagazineCargoGlobal _newTarget;
                         clearWeaponCargoGlobal _newTarget;
                         clearItemCargoGlobal _newTarget;
-                        _targets set [_index, _newTarget];
                     },
-                    [_type, _position, _targets, _forEachIndex],
+                    [_type, _x],
                     2
                 ] call CBA_fnc_waitAndExecute;
             };
-        } forEach _targets;
+        } forEach _targetPads;
     },
     {true},
     {},
-    _targets
+    [_targetPads, _targetObjects]
 ] call ACEFUNC(interact_menu,createAction);
 
 [_controller, 0, ["ACE_MainActions"], _action] call ACEFUNC(interact_menu,addActionToObject);
