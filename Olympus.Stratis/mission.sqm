@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8611;
+		nextID=8717;
 	};
 	class Camera
 	{
@@ -17718,7 +17718,7 @@ class Mission
 			state=1;
 			class Entities
 			{
-				items=10;
+				items=9;
 				class Item0
 				{
 					dataType="Layer";
@@ -26067,13 +26067,6 @@ class Mission
 				class Item3
 				{
 					dataType="Layer";
-					name="Vehicles";
-					id=510;
-					atlOffset=142.91;
-				};
-				class Item4
-				{
-					dataType="Layer";
 					name="Range - Pistol";
 					class Entities
 					{
@@ -27630,7 +27623,7 @@ class Mission
 					id=585;
 					atlOffset=0.28413677;
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Layer";
 					name="Range - Launcher";
@@ -27935,7 +27928,7 @@ class Mission
 					id=600;
 					atlOffset=7.619338;
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Layer";
 					name="Range - Hand Grenades";
@@ -29052,7 +29045,7 @@ class Mission
 					id=629;
 					atlOffset=-0.32300758;
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Layer";
 					name="Teleporters";
@@ -30150,7 +30143,7 @@ class Mission
 					id=719;
 					atlOffset=3.3711796;
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Layer";
 					name="Markers";
@@ -30216,7 +30209,7 @@ class Mission
 					id=727;
 					atlOffset=4.5881925;
 				};
-				class Item9
+				class Item8
 				{
 					dataType="Layer";
 					name="Vehicle Spawner";
