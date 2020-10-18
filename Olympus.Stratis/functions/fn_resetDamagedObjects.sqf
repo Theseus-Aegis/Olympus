@@ -20,7 +20,7 @@ params ["_controller", "_targetPads", "_targetClasses"];
 
 if (isServer) exitWith {
     {
-        private _vehicle = createVehicle [_targetObjects select _forEachIndex, _x, [], 0, "CAN_COLLIDE"];
+        private _vehicle = createVehicle [_targetClasses select _forEachIndex, _x, [], 0, "CAN_COLLIDE"];
         _vehicle setDir (getDir _x);
         _vehicle setVehicleLock "LOCKED";
         _vehicle setVehicleAmmo 0;
@@ -35,9 +35,9 @@ private _action = [
     "Reset targets",
     "",
     {
-        (_this select 2) params ["_targetPads", "_targetObjects"];
+        (_this select 2) params ["_targetPads", "_targetClasses"];
         {
-            private _type = _targetObjects select _forEachIndex;
+            private _type = _targetClasses select _forEachIndex;
             private _nearestObjects = nearestObjects [_x, [_type], 5];
             private _target = _nearestObjects select 0;
             if (_nearestObjects isEqualTo [] || {damage _target != 0}) then {
@@ -62,7 +62,7 @@ private _action = [
     },
     {true},
     {},
-    [_targetPads, _targetObjects]
+    [_targetPads, _targetClasses]
 ] call ACEFUNC(interact_menu,createAction);
 
 [_controller, 0, ["ACE_MainActions"], _action] call ACEFUNC(interact_menu,addActionToObject);
