@@ -16,12 +16,12 @@
  * [controller, [targetPos1, targetPos2, targetPos3], ["vehicleClass1", "vehicleClass2", "vehicleClass3"]] call TAC_Olympus_fnc_resetDamagedObjects
  */
 
-params ["_controller", "_targetPads", "_targetObjects"];
+params ["_controller", "_targetPads", "_targetClasses"];
 
 if (isServer) exitWith {
     {
         private _vehicle = createVehicle [_targetObjects select _forEachIndex, _x, [], 0, "CAN_COLLIDE"];
-        _vehicle setDir getDir _x;
+        _vehicle setDir (getDir _x);
         _vehicle setVehicleLock "LOCKED";
         _vehicle setVehicleAmmo 0;
         clearMagazineCargoGlobal _vehicle;
@@ -47,7 +47,7 @@ private _action = [
                     {
                         params ["_type", "_position"];
                         private _newTarget = createVehicle [_type, _position, [], 0, "CAN_COLLIDE"];
-                        _newTarget setDir getDir _position;
+                        _newTarget setDir (getDir _position);
                         _newTarget setVehicleLock "LOCKED";
                         _newTarget setVehicleAmmo 0;
                         clearMagazineCargoGlobal _newTarget;
