@@ -34,7 +34,7 @@ private _action = [
 
         [_target, _player, false] call ACEFUNC(arsenal,openBox);
 
-        INFO_1("Personal Arsenal loaded successfuly.");
+        INFO("Personal Arsenal loaded successfuly.");
     },
     {true}
 ] call ACEFUNC(interact_menu,createAction);
