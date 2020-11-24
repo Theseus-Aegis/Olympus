@@ -65,7 +65,7 @@ private _engineer = [
     "ACE_EarPlugs",
     "tacs_Backpack_Carryall_DarkBlack",
     "H_HelmetSpecB",
-    "V_EOD_blue_F",
+    "tacs_Vest_PlateCarrier_Green",
     "ACE_DefusalKit",
     "ACE_M26_Clacker",
     "ACE_Clacker",

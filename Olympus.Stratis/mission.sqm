@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8717;
+		nextID=8822;
 	};
 	class Camera
 	{
-		pos[]={6564.7417,73.129608,5424.7544};
-		dir[]={-0.91824436,-0.39327136,-0.047028195};
-		up[]={-0.39277846,0.91941643,-0.020116463};
-		aside[]={-0.051151577,5.8456499e-007,0.99871373};
+		pos[]={1938.6355,19.285294,3530.9868};
+		dir[]={0.86777818,-0.4181076,-0.26863369};
+		up[]={0.39941239,0.90839452,-0.12364484};
+		aside[]={-0.2957207,7.5262506e-008,-0.95528036};
 	};
 };
 binarizationWanted=0;
@@ -1945,7 +1945,7 @@ class Mission
 					name="Objects";
 					class Entities
 					{
-						items=24;
+						items=23;
 						class Item0
 						{
 							dataType="Object";
@@ -2375,22 +2375,6 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3280.5027,230.01712,2950.1895};
-								angles[]={0.0050033992,3.8989825,0};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=2313;
-							type="TargetP_Inf_F";
-						};
-						class Item20
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={3277.7004,230.61203,2949.7925};
 								angles[]={0,2.0975578,6.282495};
 							};
@@ -2402,7 +2386,7 @@ class Mission
 							id=2324;
 							type="TargetP_Inf2_F";
 						};
-						class Item21
+						class Item20
 						{
 							dataType="Object";
 							class PositionInfo
@@ -2418,7 +2402,7 @@ class Mission
 							id=2326;
 							type="TargetP_Inf2_F";
 						};
-						class Item22
+						class Item21
 						{
 							dataType="Object";
 							class PositionInfo
@@ -2434,7 +2418,7 @@ class Mission
 							type="TargetP_Inf4_F";
 							atlOffset=0.58953857;
 						};
-						class Item23
+						class Item22
 						{
 							dataType="Object";
 							class PositionInfo
@@ -30315,7 +30299,7 @@ class Mission
 				};
 			};
 			id=405;
-			atlOffset=2.191555;
+			atlOffset=2.4770837;
 		};
 		class Item7
 		{
