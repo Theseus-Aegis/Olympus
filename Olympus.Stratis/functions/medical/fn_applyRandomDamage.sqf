@@ -20,7 +20,7 @@ params ["_controller", "_stretcher"];
 private _severity = [
     //[[min, medium, max], "fancyName"]
     [[0.1, 0.5,1], "Lightly wounded"],
-    [[1, 1.5, 2], "Moderatly wounded"],
+    [[1, 1.5, 2], "Moderately wounded"],
     [[2, 2.5, 3], "Heavily Wounded"]
 ];
 
