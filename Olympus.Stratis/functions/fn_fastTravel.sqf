@@ -19,6 +19,7 @@ private _teleportLocations = [
     ["Hubs", tpPosAirport, "Airport"],
     ["Hubs", tpPosBase, "Base"],
     ["Hubs", tpPosMOUT, "MOUT"],
+    ["Hubs", tpPosShootingRange, "Shooting Range"],
     ["Core", tpPosWeaponsHandling, "Weapons Handling Base"],
     ["Core", tpPosWeaponsHandlingRifle, "Weapons Handling Rifle"],
     ["Core", tpPosWeaponsHandlingPistol, "Weapons Handling Pistol"],

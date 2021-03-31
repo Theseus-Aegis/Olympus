@@ -1,14 +1,14 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=1;
 	angleGridStep=0.2617994;
 	scaleGridStep=100;
 	autoGroupingDist=10;
-	toggles=577;
+	toggles=578;
 	class ItemIDProvider
 	{
-		nextID=2351;
+		nextID=2451;
 	};
 	class MarkerIDProvider
 	{
@@ -16,17 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8822;
+		nextID=9325;
 	};
 	class Camera
 	{
-		pos[]={1938.6355,19.285294,3530.9868};
-		dir[]={0.86777818,-0.4181076,-0.26863369};
-		up[]={0.39941239,0.90839452,-0.12364484};
-		aside[]={-0.2957207,7.5262506e-008,-0.95528036};
+		pos[]={1973.3519,10.656175,5178.6367};
+		dir[]={-0.14901084,-0.44447619,-0.88333946};
+		up[]={-0.073935889,0.89577585,-0.43829116};
+		aside[]={-0.98609418,2.9802322e-008,0.16634555};
 	};
 };
 binarizationWanted=0;
+sourceName="Olympus";
 addons[]=
 {
 	"A3_Ui_F",
@@ -100,6 +101,9 @@ addons[]=
 	"CUP_CAMisc_ACR_Targets",
 	"A3_Structures_F_Exp_Walls_Wired",
 	"A3_Props_F_Enoch_Military_Supplies",
+	"A3_Structures_F_Households_Addons",
+	"A3_Structures_F_Naval_Piers",
+	"A3_Structures_F_Heli_Ind_Airport",
 	"tacs_units",
 	"tacs_weapons_apex",
 	"A3_Modules_F_Curator_Curator",
@@ -325,7 +329,7 @@ class AddonsMetaData
 			className="tac_shootingrange";
 			name="TAC - Shooting Range";
 			author="TAC Mod Team";
-			url="http://www.theseus-aegis.com/";
+			url="https://www.theseus-aegis.com/";
 		};
 		class Item25
 		{
@@ -419,7 +423,7 @@ class AddonsMetaData
 			className="tac_heavylifter";
 			name="TAC - Heavy Lifter";
 			author="TAC Mod Team";
-			url="http://www.theseus-aegis.com/";
+			url="https://www.theseus-aegis.com/";
 		};
 		class Item39
 		{
@@ -482,146 +486,146 @@ class AddonsMetaData
 		};
 		class Item48
 		{
+			className="A3_Structures_F_Households";
+			name="Arma 3 - Houses";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item49
+		{
 			className="tacs_units";
 			name="Theseus Services - Units";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item49
+		class Item50
 		{
 			className="tacs_weapons_apex";
 			name="Theseus Services - Apex Weapons Replacement";
 			author="Theseus Services Team";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item50
+		class Item51
 		{
 			className="A3_Boat_F";
 			name="Arma 3 Alpha - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item51
+		class Item52
 		{
 			className="CUP_Wheeledvehicles_VWGolf";
 			name="CUP_Wheeledvehicles_VWGolf";
 		};
-		class Item52
+		class Item53
 		{
 			className="tac_compat_cup_vehicles";
 			name="tac_compat_cup_vehicles";
 			author="TAC Mod Team";
-			url="http://www.theseus-aegis.com/";
+			url="https://www.theseus-aegis.com/";
 		};
-		class Item53
+		class Item54
 		{
 			className="A3_Structures_F_Enoch_Infrastructure";
 			name="Arma 3 Contact Platform - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item54
+		class Item55
 		{
 			className="A3_Structures_F_Enoch_Industrial";
 			name="Arma 3 Contact Platform - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item55
+		class Item56
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item56
+		class Item57
 		{
 			className="CUP_Weapons_AmmoBoxes";
 			name="CUP_Weapons_AmmoBoxes";
 		};
-		class Item57
+		class Item58
 		{
 			className="CUP_Editor_Plants_Config";
 			name="CUP_Editor_Plants_Config";
 		};
-		class Item58
+		class Item59
 		{
 			className="A3_Structures_F_Enoch_Civilian";
 			name="Arma 3 Contact Platform - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item59
+		class Item60
 		{
 			className="A3_Structures_F_Exp_Cultural";
 			name="Arma 3 Apex - Cultural Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item60
+		class Item61
 		{
 			className="A3_Structures_F_Oldman";
 			name="Arma 3 Oldman - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item61
+		class Item62
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Interier";
 			name="CUP_CAStructures_E_Misc_Misc_Interier";
 		};
-		class Item62
+		class Item63
 		{
 			className="CUP_Editor_Structures_Config";
 			name="CUP_Editor_Structures_Config";
 		};
-		class Item63
+		class Item64
 		{
 			className="acex_field_rations";
 			name="ACEX - Field Rations";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item64
+		class Item65
 		{
 			className="CUP_CAMisc_ACR_Shooting_range";
 			name="CUP_CAMisc_ACR_Shooting_range";
 		};
-		class Item65
+		class Item66
 		{
 			className="CUP_CAStructures_E_Wall_Wall_L";
 			name="CUP_CAStructures_E_Wall_Wall_L";
 		};
-		class Item66
+		class Item67
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item68
 		{
 			className="A3_Structures_F_Exp_Civilian";
 			name="Arma 3 Apex - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item68
+		class Item69
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item69
+		class Item70
 		{
 			className="A3_Boat_F_Gamma";
 			name="Arma 3 - Boats and Submersibles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item70
-		{
-			className="A3_Structures_F_Households";
-			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -696,7 +700,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			dataType="Layer";
@@ -2436,7 +2440,7 @@ class Mission
 						};
 					};
 					id=944;
-					atlOffset=0.018295288;
+					atlOffset=0.0012817383;
 				};
 				class Item3
 				{
@@ -3988,7 +3992,7 @@ class Mission
 				};
 			};
 			id=941;
-			atlOffset=152.92249;
+			atlOffset=152.92224;
 		};
 		class Item2
 		{
@@ -4799,7 +4803,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_isMedicalFacility";
-									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+									expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 									class Value
 									{
 										class data
@@ -13592,6 +13596,1527 @@ class Mission
 		class Item5
 		{
 			dataType="Layer";
+			name="Hub - Shooting";
+			state=1;
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Layer";
+					name="Markers";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Marker";
+							position[]={1977.3719,2.9723942,5168.6929};
+							name="markerShootingRange";
+							text="Shooting Range";
+							type="mil_marker";
+							colorName="ColorWEST";
+							id=2449;
+						};
+					};
+					id=2354;
+				};
+				class Item1
+				{
+					dataType="Layer";
+					name="Objects";
+					class Entities
+					{
+						items=7;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1973.766,4.2037048,5155.7651};
+								angles[]={0,3.3790305,0};
+							};
+							side="Empty";
+							flags=1;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=2384;
+							type="Land_i_Addon_03mid_V1_F";
+							atlOffset=0.32360482;
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1975.4775,4.2518425,5162.917};
+								angles[]={0,3.3729305,0};
+							};
+							side="Empty";
+							flags=1;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=2385;
+							type="Land_i_Addon_03_V1_F";
+							atlOffset=0.34403968;
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1976.325,4.2123942,5152.8359};
+								angles[]={0,3.3800917,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=2444;
+							type="ShootingMat_01_Olive_F";
+							atlOffset=0.00024557114;
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1973.2673,4.2121487,5153.5532};
+								angles[]={0,3.3800917,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=2445;
+							type="ShootingMat_01_Olive_F";
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1970.196,4.2121487,5154.2969};
+								angles[]={0,3.3800917,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=2446;
+							type="ShootingMat_01_Olive_F";
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1978.2179,4.5763597,5156.0386};
+								angles[]={0,0.25959659,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="call{[this, ""personal""] call TAC_Olympus_fnc_initArsenalCrate;}";
+								disableSimulation=1;
+							};
+							id=2447;
+							type="Land_PlasticCase_01_large_gray_F";
+							atlOffset=1.2332981;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1970.0148,4.5763597,5157.9536};
+								angles[]={0,3.3750362,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="call{[this, ""personal""] call TAC_Olympus_fnc_initArsenalCrate;}";
+								disableSimulation=1;
+							};
+							id=2448;
+							type="Land_PlasticCase_01_large_gray_F";
+							atlOffset=1.1996963;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+					};
+					id=2356;
+					atlOffset=1.1786168;
+				};
+				class Item2
+				{
+					dataType="Layer";
+					name="Teleport";
+					class Entities
+					{
+						items=6;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1987.1593,3.93168,5171.1729};
+								angles[]={0,2.9980903,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=2443;
+							type="Land_Camping_Light_F";
+							atlOffset=4.7683716e-007;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1987.0599,3.4052012,5170.8218};
+								angles[]={0,1.8303946,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=2438;
+							type="Land_CampingTable_small_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1987.1445,6.9768038,5171.1382};
+								angles[]={0,3.4011893,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=2439;
+							type="Flag_FD_Blue_F";
+							atlOffset=-9.5367432e-007;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1987.031,3.9690721,5170.7578};
+								angles[]={0,4.9719892,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="call{[this] call TAC_Olympus_fnc_fastTravel}";
+								name="tpLaptopShootingRange";
+								disableSimulation=1;
+							};
+							id=2440;
+							type="Land_Laptop_unfolded_F";
+							atlOffset=0.81299996;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="x\tacr\addons\images\olympus\laptop\fastTravel.paa";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={1986.7611,3.3815286,5169.7168};
+								angles[]={0,0.25959659,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="call{[this, ""personal""] call TAC_Olympus_fnc_initArsenalCrate;}";
+								disableSimulation=1;
+							};
+							id=2441;
+							type="Land_PlasticCase_01_large_gray_F";
+							atlOffset=-2.3841858e-007;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item5
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={1985.127,3,5171.3359};
+								angles[]={0,1.8303967,0};
+							};
+							name="tpPosShootingRange";
+							id=2442;
+							type="Logic";
+						};
+					};
+					id=2357;
+					atlOffset=0.12703133;
+				};
+				class Item3
+				{
+					dataType="Layer";
+					name="Range";
+					class Entities
+					{
+						items=5;
+						class Item0
+						{
+							dataType="Layer";
+							name="1000m";
+							class Entities
+							{
+								items=2;
+								class Item0
+								{
+									dataType="Layer";
+									name="Objects";
+									state=1;
+									class Entities
+									{
+										items=5;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1687.9164,-11.659727,4197.4526};
+												angles[]={0,0.2617994,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2352;
+											type="Land_nav_pier_m_F";
+											atlOffset=37.853203;
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1689.968,13.220114,4199.814};
+												angles[]={0,3.6651917,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												name="Sign_1000m";
+											};
+											id=2363;
+											type="SignAd_Sponsor_F";
+											atlOffset=43.952;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="ObjectTextureCustom0";
+													expression="_this setObjectTextureGlobal [0,_value]";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="x\tacr\addons\images\olympus\shootingrange\1000m.paa";
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1702.3765,13.389373,4190.6865};
+												angles[]={0,3.4304986,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2387;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1694.4486,13.389373,4192.7808};
+												angles[]={0,0.26875925,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2388;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item4
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1671.6316,13.454372,4201.8105};
+											};
+											side="Empty";
+											flags=5;
+											class Attributes
+											{
+											};
+											id=2437;
+											type="Windsock_01_F";
+										};
+									};
+									id=2364;
+									atlOffset=42.486858;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="Targets";
+									state=1;
+									class Entities
+									{
+										items=5;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1706.8505,13.037444,4192.7056};
+												angles[]={0,3.4033921,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2374;
+											type="TargetP_Inf_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1705.0787,13.037444,4196.5269};
+												angles[]={0,3.4033921,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2375;
+											type="TargetP_Inf_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1700.9271,13.037444,4194.3022};
+												angles[]={0,3.4033921,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2376;
+											type="TargetP_Inf_F";
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1698.9838,13.037444,4198.1587};
+												angles[]={0,3.4033921,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2377;
+											type="TargetP_Inf_F";
+										};
+										class Item4
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1695.0425,13.037444,4195.8433};
+												angles[]={0,3.4033921,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2378;
+											type="TargetP_Inf_F";
+										};
+									};
+									id=2365;
+								};
+							};
+							id=2358;
+							atlOffset=44.159302;
+						};
+						class Item1
+						{
+							dataType="Layer";
+							name="800m";
+							class Entities
+							{
+								items=2;
+								class Item0
+								{
+									dataType="Layer";
+									name="Objects";
+									state=1;
+									class Entities
+									{
+										items=4;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1778.6599,8.3010759,4377.2051};
+												angles[]={0,3.4304986,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2394;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1770.7321,8.3010759,4379.2988};
+												angles[]={0,0.26875925,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2395;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1764.1998,-16.748024,4383.9707};
+												angles[]={0,0.2617994,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2392;
+											type="Land_nav_pier_m_F";
+											atlOffset=18.27891;
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1766.251,8.132225,4386.332};
+												angles[]={0,3.6651917,0};
+											};
+											side="Empty";
+											flags=5;
+											class Attributes
+											{
+												name="Sign_800m";
+											};
+											id=2393;
+											type="SignAd_Sponsor_F";
+											atlOffset=9.5367432e-005;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="ObjectTextureCustom0";
+													expression="_this setObjectTextureGlobal [0,_value]";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="x\tacr\addons\images\olympus\shootingrange\800m.paa";
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+									};
+									id=2372;
+									atlOffset=22.426319;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="Targets";
+									state=1;
+									class Entities
+									{
+										items=5;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1783.8879,7.9491472,4382.3545};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2398;
+											type="TargetP_Inf2_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1779.9799,7.9491472,4379.46};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2399;
+											type="TargetP_Inf2_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1778.4264,7.9491472,4383.8135};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2400;
+											type="TargetP_Inf2_F";
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1774.9642,7.9491472,4380.8232};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2401;
+											type="TargetP_Inf2_F";
+										};
+										class Item4
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1773.6836,7.9491472,4385.0977};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2402;
+											type="TargetP_Inf2_F";
+										};
+									};
+									id=2373;
+								};
+							};
+							id=2359;
+							atlOffset=22.862711;
+						};
+						class Item2
+						{
+							dataType="Layer";
+							name="600m";
+							class Entities
+							{
+								items=2;
+								class Item0
+								{
+									dataType="Layer";
+									name="Objects";
+									state=1;
+									class Entities
+									{
+										items=4;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1807.4418,5.8076334,4576.8652};
+												angles[]={0,0.26875925,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2404;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1815.3696,5.8076334,4574.771};
+												angles[]={0,3.4304986,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2403;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1800.9095,-19.241467,4581.5371};
+												angles[]={0,0.2617994,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2405;
+											type="Land_nav_pier_m_F";
+											atlOffset=14.585867;
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1802.9611,5.6384063,4583.8979};
+												angles[]={0,3.6651917,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												name="Sign_600m";
+											};
+											id=2406;
+											type="SignAd_Sponsor_F";
+											atlOffset=20.572001;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="ObjectTextureCustom0";
+													expression="_this setObjectTextureGlobal [0,_value]";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="x\tacr\addons\images\olympus\shootingrange\600m.paa";
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+									};
+									id=2370;
+									atlOffset=18.532169;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="Targets";
+									state=1;
+									class Entities
+									{
+										items=5;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1816.708,5.4557047,4577.0376};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2408;
+											type="TargetP_Inf2_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1815.1066,5.4557047,4581.3848};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2409;
+											type="TargetP_Inf2_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1811.2925,5.4557047,4578.4761};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2410;
+											type="TargetP_Inf2_F";
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1810.3003,5.4557047,4582.6694};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2411;
+											type="TargetP_Inf2_F";
+										};
+										class Item4
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1820.5814,5.4557047,4579.9185};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2407;
+											type="TargetP_Inf2_F";
+										};
+									};
+									id=2371;
+								};
+							};
+							id=2360;
+							atlOffset=18.393963;
+						};
+						class Item3
+						{
+							dataType="Layer";
+							name="400m";
+							class Entities
+							{
+								items=2;
+								class Item0
+								{
+									dataType="Layer";
+									name="Objects";
+									state=1;
+									class Entities
+									{
+										items=4;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1843.2847,5.4338541,4774.2251};
+												angles[]={0,3.4304986,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2413;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1835.3568,5.4338541,4776.3193};
+												angles[]={0,0.26875925,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2412;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1828.8246,-19.615246,4780.9912};
+												angles[]={0,0.2617994,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2414;
+											type="Land_nav_pier_m_F";
+											atlOffset=19.5317;
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1830.876,5.2646956,4783.3521};
+												angles[]={0,3.6651917,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												name="Sign_400m";
+											};
+											id=2415;
+											type="SignAd_Sponsor_F";
+											atlOffset=25.243998;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="ObjectTextureCustom0";
+													expression="_this setObjectTextureGlobal [0,_value]";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="x\tacr\addons\images\olympus\shootingrange\400m.paa";
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+									};
+									id=2368;
+									atlOffset=23.414793;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="Targets";
+									state=1;
+									class Entities
+									{
+										items=5;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1843.1506,5.0819254,4780.8125};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2417;
+											type="TargetP_Inf2_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1839.3365,5.0819254,4777.9033};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2418;
+											type="TargetP_Inf2_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1838.3444,5.0819254,4782.0967};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2419;
+											type="TargetP_Inf2_F";
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1848.6255,5.0819254,4779.3457};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2420;
+											type="TargetP_Inf2_F";
+										};
+										class Item4
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1844.7521,5.0819254,4776.4648};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2416;
+											type="TargetP_Inf2_F";
+										};
+									};
+									id=2369;
+								};
+							};
+							id=2361;
+							atlOffset=23.062061;
+						};
+						class Item4
+						{
+							dataType="Layer";
+							name="200m";
+							class Entities
+							{
+								items=2;
+								class Item0
+								{
+									dataType="Layer";
+									name="Objects";
+									state=1;
+									class Entities
+									{
+										items=4;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1915.0992,3.6721392,4961.9009};
+												angles[]={0,0.26875925,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2422;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1923.0271,3.6721392,4959.8066};
+												angles[]={0,3.4304986,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2421;
+											type="Land_HBarrier_Big_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1908.567,-21.376961,4966.5728};
+												angles[]={0,0.2617994,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=2423;
+											type="Land_nav_pier_m_F";
+											atlOffset=9.6257658;
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1910.619,3.5018935,4968.9341};
+												angles[]={0,3.6651917,0};
+											};
+											side="Empty";
+											flags=1;
+											class Attributes
+											{
+												name="Sign_200m";
+											};
+											id=2424;
+											type="SignAd_Sponsor_F";
+											atlOffset=15.506;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="ObjectTextureCustom0";
+													expression="_this setObjectTextureGlobal [0,_value]";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="x\tacr\addons\images\olympus\shootingrange\200m.paa";
+														};
+													};
+												};
+												nAttributes=1;
+											};
+										};
+									};
+									id=2366;
+									atlOffset=13.880087;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="Targets";
+									state=1;
+									class Entities
+									{
+										items=5;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1919.0966,3.3202107,4963.4644};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2426;
+											type="TargetP_Inf2_F";
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1918.1044,3.3202107,4967.6577};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2427;
+											type="TargetP_Inf2_F";
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1928.3855,3.3202107,4964.9067};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2428;
+											type="TargetP_Inf2_F";
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1924.5121,3.3202107,4962.0259};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2429;
+											type="TargetP_Inf2_F";
+										};
+										class Item4
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={1922.9106,3.3202107,4966.3735};
+												angles[]={0,3.4174931,0};
+											};
+											side="Empty";
+											flags=4;
+											class Attributes
+											{
+											};
+											id=2425;
+											type="TargetP_Inf2_F";
+										};
+									};
+									id=2367;
+								};
+							};
+							id=2362;
+							atlOffset=15.335876;
+						};
+					};
+					id=2355;
+					atlOffset=19.816608;
+				};
+			};
+			id=2353;
+			atlOffset=15.903421;
+		};
+		class Item6
+		{
+			dataType="Layer";
 			name="Hub - Spawn";
 			state=1;
 			class Entities
@@ -13653,7 +15178,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -13752,7 +15277,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -13850,7 +15375,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -13948,7 +15473,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14046,7 +15571,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14144,7 +15669,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14242,7 +15767,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14340,7 +15865,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14439,7 +15964,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14537,7 +16062,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14636,7 +16161,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14734,7 +16259,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14832,7 +16357,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -14930,7 +16455,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15028,7 +16553,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15126,7 +16651,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15224,7 +16749,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15322,7 +16847,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15420,7 +16945,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15518,7 +17043,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15616,7 +17141,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15714,7 +17239,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15812,7 +17337,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -15910,7 +17435,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -16008,7 +17533,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -16106,7 +17631,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -16204,7 +17729,7 @@ class Mission
 										class Attribute1
 										{
 											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 											class Value
 											{
 												class data
@@ -17695,7 +19220,7 @@ class Mission
 			id=947;
 			atlOffset=-72.819763;
 		};
-		class Item6
+		class Item7
 		{
 			dataType="Layer";
 			name="Hub - Weapons Handling";
@@ -30301,7 +31826,7 @@ class Mission
 			id=405;
 			atlOffset=2.4770837;
 		};
-		class Item7
+		class Item8
 		{
 			dataType="Layer";
 			name="Range - Machine Gun";
@@ -32291,7 +33816,7 @@ class Mission
 			id=1772;
 			atlOffset=15.650146;
 		};
-		class Item8
+		class Item9
 		{
 			dataType="Layer";
 			name="Range - Marksman";
@@ -33187,7 +34712,7 @@ class Mission
 			id=1815;
 			atlOffset=6.5917015;
 		};
-		class Item9
+		class Item10
 		{
 			dataType="Layer";
 			name="Range - UGL";
