@@ -30,6 +30,7 @@ class CfgFunctions {
             class specific_projectileTypeActions;
             class specific_severityActions;
             class applyRandomDamage;
+            class instructorDisplay;
         };
     };
 };
