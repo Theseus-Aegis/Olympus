@@ -1,7 +1,7 @@
 #include "..\..\script_component.hpp"
 /*
  * Author: alganthe, JoramD
- * Handles instructor info display.
+ * Shows instructor info display with subject medical information.
  *
  * Arguments:
  * 0: Stretchers <ARRAY>
