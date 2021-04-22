@@ -116,14 +116,30 @@ private _randomDamageMainAction = [
 } forEach _stretchers;
 
 // Instructor display
-private _instructorDisplayMainAction = [
-    QGVAR(instructorDisplayMainAction),
-    "Instructor display",
+private _instructorDisplayOpen = [
+    QGVAR(instructorDisplayOpen),
+    "Open instructor display",
     "",
     {(_this select 2) call TAC_Olympus_Medical_fnc_instructorDisplay},
-    {true},
+    {isNil GVAR(instructorDisplayToggle)},
     {},
     [_stretchers]
 ] call ACEFUNC(interact_menu,createAction);
 
-[_controller, 0, ["ACE_MainActions"], _instructorDisplayMainAction] call ACEFUNC(interact_menu,addActionToObject);
+[_controller, 0, ["ACE_MainActions"], _instructorDisplayOpen] call ACEFUNC(interact_menu,addActionToObject);
+
+private _instructorDisplayClose = [
+    QGVAR(instructorDisplayClose),
+    "Close instructor display",
+    "",
+    {
+        GVAR(instructorDisplayToggle) = false;
+        (_this select 2) call TAC_Olympus_Medical_fnc_instructorDisplay;
+    },
+    {GVAR(instructorDisplayToggle)},
+    {},
+    [_stretchers]
+] call ACEFUNC(interact_menu,createAction);
+
+[_controller, 0, ["ACE_MainActions"], _instructorDisplayClose] call ACEFUNC(interact_menu,addActionToObject);
+
