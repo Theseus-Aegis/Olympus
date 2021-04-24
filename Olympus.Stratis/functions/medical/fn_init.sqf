@@ -121,7 +121,7 @@ private _instructorDisplayOpen = [
     "Open instructor display",
     "",
     {(_this select 2) call TAC_Olympus_Medical_fnc_instructorDisplay},
-    {isNil GVAR(instructorDisplayToggle)},
+    {isNil QGVAR(instructorDisplayToggle)},
     {},
     [_stretchers]
 ] call ACEFUNC(interact_menu,createAction);
@@ -134,9 +134,8 @@ private _instructorDisplayClose = [
     "",
     {
         GVAR(instructorDisplayToggle) = false;
-        (_this select 2) call TAC_Olympus_Medical_fnc_instructorDisplay;
     },
-    {GVAR(instructorDisplayToggle)},
+    {!isNil QGVAR(instructorDisplayToggle)},
     {},
     [_stretchers]
 ] call ACEFUNC(interact_menu,createAction);

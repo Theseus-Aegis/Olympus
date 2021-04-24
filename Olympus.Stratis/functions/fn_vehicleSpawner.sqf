@@ -39,7 +39,7 @@ private _airVehicles = [
     "CUP_B_UH60M_US",
     "B_Heli_Transport_03_F",
     "C_Plane_Civil_01_racing_F",
-    "B_T_VTOL_01_infantry_F"
+    "B_T_VTOL_01_vehicle_F"
 ];
 
 private _allowedVehicles = [];
