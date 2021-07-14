@@ -31,7 +31,6 @@ sourceName="Olympus";
 addons[]=
 {
 	"A3_Ui_F",
-	"Arcadian",
 	"A3_Soft_F_Exp_LSV_01",
 	"ace_repair",
 	"ace_dragging",
@@ -157,7 +156,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=74;
+		items=73;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -167,10 +166,10 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="Arcadian";
-			name="Theseus Services - Arcadian GT";
-			author="Theseus Services Team";
-			url="https://github.com/Theseus-Aegis/TheseusServices";
+			className="A3_Props_F_Tank";
+			name="Arma 3 Tank - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
@@ -640,13 +639,6 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item73
-		{
-			className="A3_Props_F_Tank";
-			name="Arma 3 Tank - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
