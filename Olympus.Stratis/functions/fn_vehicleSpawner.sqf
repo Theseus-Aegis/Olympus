@@ -22,7 +22,7 @@ private _groundVehicles = [
     "tacs_Arcadian_B_Black",
     "tacs_Arcadian_B_Green",
     "tacs_Arcadian_B_Tan",
-    "B_LSV_01_unarmed_F",
+    "tacs_Polaris_B_Black",
     "C_SUV_01_F",
     "C_Offroad_01_F",
     "C_Offroad_01_covered_F",
