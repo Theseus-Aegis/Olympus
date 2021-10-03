@@ -22,10 +22,11 @@ _player createDiaryRecord ["features", ["Environment Controller", "
     <br/>The main base and some courses have an additional laptop to control the environment.
 "]];
 
-_player createDiaryRecord ["features", ["Vehicle Spawner", "
+_player createDiaryRecord ["features", ["Vehicle Spawners", "
     <br/><img image='x\tacr\addons\images\olympus\feature\vehicleSpawn.jpg' width='300' height='350'/>
-    <br/>The main base has a <marker name = 'TAC_Olympus_vehicleSpawnerMarker'>vehicle spawner</marker> that allows you to spawn and delete various vehicles.
-    <br/>The airfield also has 2 spawners for aircraft, they are functionally the same.
+    <br/>The main base has a <marker name = 'TAC_Olympus_vehicleSpawnerMarker'>vehicle spawner</marker> that allows you to spawn and delete various ground vehicles.
+    <br/>Additionally there is a maritime vehicle spawner on the dock.
+    <br/>The airfield also has 2 spawners for aircraft; they are functionally the same.
 "]];
 
 _player createDiaryRecord ["features", ["Chat Commands", "

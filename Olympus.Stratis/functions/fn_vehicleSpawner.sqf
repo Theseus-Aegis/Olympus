@@ -42,10 +42,18 @@ private _airVehicles = [
     "B_T_VTOL_01_vehicle_F"
 ];
 
+private _seaVehicles = [
+    // "classname"
+    "CUP_B_RHIB_HIL",
+    "I_MU_mercs_rhib",
+    "C_Scooter_Transport_01_F"
+];
+
 private _allowedVehicles = [];
 switch (_type) do {
     case "ground": { _allowedVehicles = _groundVehicles; };
     case "air": { _allowedVehicles = _airVehicles; };
+    case "sea" : { _allowedVehicles = _seaVehicles; };
     default { _allowedVehicles = _groundVehicles; };
 };
 
