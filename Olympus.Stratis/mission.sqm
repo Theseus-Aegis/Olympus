@@ -5967,7 +5967,7 @@ class Mission
 							name="medicalSpawnPos";
 							id=1871;
 							type="Logic";
-							atlOffset=0.27328134;
+							atlOffset=0.78700018;
 						};
 					};
 					id=921;
@@ -18769,11 +18769,9 @@ class Mission
 							{
 							};
 							id=949;
-							atlOffset=142.91;
 						};
 					};
 					id=948;
-					atlOffset=142.91;
 				};
 				class Item1
 				{
