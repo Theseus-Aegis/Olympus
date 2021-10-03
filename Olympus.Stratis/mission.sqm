@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=9950;
+		nextID=10200;
 	};
 	class Camera
 	{
@@ -5946,7 +5946,7 @@ class Mission
 							name="medicalSpawnPos";
 							id=1871;
 							type="Logic";
-							atlOffset=0.27328134;
+							atlOffset=0.78700018;
 						};
 					};
 					id=921;
@@ -20067,7 +20067,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="[this, baseMaritimeVehicleSpawnPos, ""maritime""] call TAC_Olympus_fnc_vehicleSpawner";
+								init="[this, baseMaritimeVehicleSpawnPos, ""sea""] call TAC_Olympus_fnc_vehicleSpawner";
 							};
 							id=2512;
 							type="Land_Laptop_unfolded_F";
@@ -20131,15 +20131,15 @@ class Mission
 							};
 							id=2514;
 							type="Land_CampingTable_small_F";
-							atlOffset=0.00031471252;
+							atlOffset=0.00031483173;
 						};
 					};
 					id=1973;
-					atlOffset=2.9572585;
+					atlOffset=2.9036553;
 				};
 			};
 			id=947;
-			atlOffset=-68.72802;
+			atlOffset=-69.016983;
 		};
 		class Item7
 		{
