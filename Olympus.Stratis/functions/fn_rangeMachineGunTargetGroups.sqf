@@ -15,16 +15,17 @@
 
 #define TARGET_GROUP_1 rangeMachineGunTarget01, rangeMachineGunTarget02
 #define TARGET_GROUP_2 rangeMachineGunTarget03, rangeMachineGunTarget04
-#define TARGET_GROUP_3 rangeMachineGunTarget05, rangeMachineGunTarget06, rangeMachineGunTarget07, rangeMachineGunTarget08
-#define TARGET_GROUP_4 rangeMachineGunTarget09, rangeMachineGunTarget10, rangeMachineGunTarget11 
-#define TARGET_GROUP_5 rangeMachineGunTarget12, rangeMachineGunTarget13, rangeMachineGunTarget14, rangeMachineGunTarget15
-#define TARGET_GROUP_6 rangeMachineGunTarget16, rangeMachineGunTarget17, rangeMachineGunTarget18, rangeMachineGunTarget19, rangeMachineGunTarget20, rangeMachineGunTarget21, rangeMachineGunTarget22, rangeMachineGunTarget23, rangeMachineGunTarget24
-#define TARGET_GROUP_7 rangeMachineGunTarget25, rangeMachineGunTarget26, rangeMachineGunTarget27, rangeMachineGunTarget28, rangeMachineGunTarget29, rangeMachineGunTarget30
-#define TARGET_GROUP_8 rangeMachineGunTarget31, rangeMachineGunTarget32, rangeMachineGunTarget33, rangeMachineGunTarget34, rangeMachineGunTarget35
-#define TARGET_GROUP_9 rangeMachineGunTarget36, rangeMachineGunTarget37, rangeMachineGunTarget38, rangeMachineGunTarget39, rangeMachineGunTarget40
+#define TARGET_GROUP_3 rangeMachineGunTarget12, rangeMachineGunTarget13, rangeMachineGunTarget14, rangeMachineGunTarget15
+#define TARGET_GROUP_4 rangeMachineGunTarget41, rangeMachineGunTarget42
+#define TARGET_GROUP_5 rangeMachineGunTarget09, rangeMachineGunTarget10, rangeMachineGunTarget11
+#define TARGET_GROUP_6 rangeMachineGunTarget05, rangeMachineGunTarget06, rangeMachineGunTarget07, rangeMachineGunTarget08
+#define TARGET_GROUP_7 rangeMachineGunTarget16, rangeMachineGunTarget17, rangeMachineGunTarget18, rangeMachineGunTarget19, rangeMachineGunTarget20, rangeMachineGunTarget21, rangeMachineGunTarget22, rangeMachineGunTarget23, rangeMachineGunTarget24
+#define TARGET_GROUP_8 rangeMachineGunTarget25, rangeMachineGunTarget26, rangeMachineGunTarget27, rangeMachineGunTarget28, rangeMachineGunTarget29, rangeMachineGunTarget30
+#define TARGET_GROUP_9 rangeMachineGunTarget31, rangeMachineGunTarget32, rangeMachineGunTarget33, rangeMachineGunTarget34, rangeMachineGunTarget35
+#define TARGET_GROUP_10 rangeMachineGunTarget36, rangeMachineGunTarget37, rangeMachineGunTarget38, rangeMachineGunTarget39, rangeMachineGunTarget40
 
-#define ALL_TARGETS TARGET_GROUP_1, TARGET_GROUP_2, TARGET_GROUP_3, TARGET_GROUP_4, TARGET_GROUP_5, TARGET_GROUP_6, TARGET_GROUP_7, TARGET_GROUP_8, TARGET_GROUP_9
-#define ALL_TARGET_GROUPS [[ALL_TARGETS], [ALL_TARGETS], [TARGET_GROUP_1], [TARGET_GROUP_2], [TARGET_GROUP_3], [TARGET_GROUP_4], [TARGET_GROUP_5], [TARGET_GROUP_6], [TARGET_GROUP_7], [TARGET_GROUP_8], [TARGET_GROUP_9]]
+#define ALL_TARGETS TARGET_GROUP_1, TARGET_GROUP_2, TARGET_GROUP_3, TARGET_GROUP_4, TARGET_GROUP_5, TARGET_GROUP_6, TARGET_GROUP_7, TARGET_GROUP_8, TARGET_GROUP_9, TARGET_GROUP_10
+#define ALL_TARGET_GROUPS [[ALL_TARGETS], [ALL_TARGETS], [TARGET_GROUP_1], [TARGET_GROUP_2], [TARGET_GROUP_3], [TARGET_GROUP_4], [TARGET_GROUP_5], [TARGET_GROUP_6], [TARGET_GROUP_7], [TARGET_GROUP_8], [TARGET_GROUP_9], [TARGET_GROUP_10]]
 
 // Default targets down
 {
@@ -62,8 +63,9 @@ params ["_controller"];
     [QGVAR(group3up), "Right 1", 0],
     [QGVAR(group4up), "Right 2", 0],
     [QGVAR(group5up), "Right 3", 0],
-    [QGVAR(group6up), "Vehicles", 0],
-    [QGVAR(group7up), "Beach", 0],
-    [QGVAR(group8up), "Flanking Fire", 0],
-    [QGVAR(group9up), "Enfilading Fire", 0]
+    [QGVAR(group6up), "Right 4", 0],
+    [QGVAR(group7up), "Vehicles", 0],
+    [QGVAR(group8up), "Beach", 0],
+    [QGVAR(group9up), "Flanking Fire", 0],
+    [QGVAR(group10up), "Enfilading Fire", 0]
 ];
