@@ -20,7 +20,7 @@ params ["_player", "_crate"];
 private _action = [
     QGVAR(personalArsenal),
     "Personal Arsenal",
-    "",
+    "a3\ui_f\data\gui\rsc\rscdisplayarsenal\primaryweapon_ca.paa",
     {
         params ["_target", "_player"];
 

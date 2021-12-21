@@ -33,7 +33,7 @@ params ["_controller"];
     private _action = [
         _interactionVariable,
         _interactionName,
-        "",
+        "x\cba\addons\ai\iconinvisibletarget.paa",
         {
             (_this select 2) params ["_allTargetGroups", "_state"];
             {

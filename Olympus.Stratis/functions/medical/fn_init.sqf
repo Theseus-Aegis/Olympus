@@ -26,7 +26,7 @@ private _stretchers = [
 private _spawnMainAction = [
     QGVAR(spawnMainAction),
     "Spawn subjects",
-    "",
+    "z\ace\addons\medical_gui\data\categories\toggle_self.paa",
     {},
     {true}
 ] call ACEFUNC(interact_menu,createAction);
@@ -42,7 +42,7 @@ private _spawnMainAction = [
 private _removeMainAction = [
     QGVAR(removeMainAction),
     "Remove subjects",
-    "",
+    "z\ace\addons\arsenal\data\iconclearcontainer.paa",
     {},
     {true}
 ] call ACEFUNC(interact_menu,createAction);
@@ -58,7 +58,7 @@ private _removeMainAction = [
 private _specificDamageMainAction = [
     QGVAR(specificDamageMainAction),
     "Apply specific damage",
-    "",
+    "z\ace\addons\medical_feedback\data\fracture.paa",
     {},
     {true}
 ] call ACEFUNC(interact_menu,createAction);
@@ -88,7 +88,7 @@ private _specificDamageMainAction = [
 private _randomDamageMainAction = [
     QGVAR(randomDamageMainAction),
     "Apply random damage",
-    "",
+    "z\ace\addons\medical_feedback\data\fracture.paa",
     {},
     {true}
 ] call ACEFUNC(interact_menu,createAction);
@@ -119,7 +119,7 @@ private _randomDamageMainAction = [
 private _instructorDisplayOpen = [
     QGVAR(instructorDisplayOpen),
     "Open instructor display",
-    "",
+    "z\ace\addons\medical_gui\data\categories\advanced_treatment.paa",
     {(_this select 2) call TAC_Olympus_Medical_fnc_instructorDisplay},
     {isNil QGVAR(instructorDisplayToggle)},
     {},
@@ -131,7 +131,7 @@ private _instructorDisplayOpen = [
 private _instructorDisplayClose = [
     QGVAR(instructorDisplayClose),
     "Close instructor display",
-    "",
+    "z\ace\addons\medical_gui\data\categories\advanced_treatment.paa",
     {
         GVAR(instructorDisplayToggle) = false;
     },

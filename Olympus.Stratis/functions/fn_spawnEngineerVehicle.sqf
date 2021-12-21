@@ -19,7 +19,7 @@ params ["_controller", "_spawnPos"];
 private _spawnAction = [
     QGVAR(SpawnVehicle),
     "Spawn Vehicle",
-    "",
+    "a3\ui_f\data\gui\rsc\rscdisplayarsenal\spacegarage_ca.paa",
     {},
     {
         (_this select 2) params ["_controller", "_spawnPos"];
@@ -76,7 +76,7 @@ private _spawnAction = [
 private _removeAction = [
     QGVAR(RemoveVehicle),
     "Remove Vehicle",
-    "",
+    "z\ace\addons\arsenal\data\iconclearcontainer.paa",
     {
         (_this select 2) params ["_controller"];
 
