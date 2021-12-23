@@ -44,7 +44,7 @@ for "_i" from 0 to (_markerCount - 1) do {
 private _createAction = [
     format [QGVAR(%1_Create), _controller],
     format ["Create %1", _name],
-    "",
+    "a3\ui_f_curator\data\displays\rscdisplaycurator\modegroups_ca.paa",
     {
         params ["_controller", "", "_args"];
         _args params ["_markers", "_unitClasses", "_unitChance", "_specialUnits"];
@@ -95,7 +95,7 @@ private _createAction = [
 private _clearAction = [
     format [QGVAR(%1_Clear), _controller],
     format ["Clear %1", _name],
-    "",
+    "z\ace\addons\arsenal\data\iconclearcontainer.paa",
     {
         params ["_controller"];
 

@@ -33,7 +33,7 @@ if (isServer) exitWith {
 private _action = [
     QGVAR(resetDamageAction),
     "Reset targets",
-    "",
+    "a3\missions_f_exp\data\img\lobby\ui_campaign_lobby_background_tablet_button_respawn02_ca.paa",
     {
         (_this select 2) params ["_targetPads", "_targetClasses"];
         {

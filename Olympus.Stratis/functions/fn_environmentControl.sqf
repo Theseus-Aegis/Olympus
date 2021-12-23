@@ -19,7 +19,7 @@ params ["_controller"];
 private _timeAction = [
     QGVAR(timeAction),
     "Set Time",
-    "",
+    "a3\missions_f_oldman\data\img\weathermanager\weather_day_0_ca.paa",
     {},
     {true},
     {
@@ -56,7 +56,7 @@ private _timeAction = [
 private _dateAction = [
     QGVAR(dateAction),
     "Set Date",
-    "",
+    "a3\missions_f_oldman\data\img\weathermanager\weather_night_0_ca.paa",
     {},
     {true},
     {
@@ -107,7 +107,7 @@ private _dateAction = [
 private _fogAction = [
     QGVAR(fogAction),
     "Set Fog",
-    "",
+    "a3\missions_f_oldman\data\img\weathermanager\weather_night_3_ca.paa",
     {},
     {true},
     {
@@ -144,7 +144,7 @@ private _fogAction = [
 private _overcastAction = [
     QGVAR(overcastAction),
     "Set Overcast",
-    "",
+    "a3\missions_f_oldman\data\img\weathermanager\weather_day_4_ca.paa",
     {},
     {true},
     {
@@ -181,7 +181,7 @@ private _overcastAction = [
 private _rainAction = [
     QGVAR(rainAction),
     "Set Rain",
-    "",
+    "a3\missions_f_oldman\data\img\weathermanager\weather_rain_ca.paa",
     {},
     {true},
     {

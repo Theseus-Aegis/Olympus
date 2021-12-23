@@ -59,7 +59,7 @@ GVAR(instructorDisplayToggle) = true;
                     <t align='left' size='1.4'>Blood pressure:</t><t align='right' size='1.4'>%3 / %4</t><br/>
                     <t align='left' size='1.4'>Blood volume:</t><t align='right' size='1.4'>%5</t><br/>
                     <t align='left' size='1.4'>Pain level:</t><t align='right' size='1.4'>%6</t><br/>
-                    <t align='left' size='1.4'>Unconsious:</t><t align='right' size='1.4'>%7</t><br/>
+                    <t align='left' size='1.4'>Unconscious:</t><t align='right' size='1.4'>%7</t><br/>
                     <t align='left' size='1.4'>IV fluids:</t><t align='right' size='1.4'>%8ml</t><br/>
                     <t align='left' size='1.4'>Dead:</t><t align='right' size='1.4'>%9</t><br/>",
 

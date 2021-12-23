@@ -19,7 +19,7 @@ params ["_controller", "_stretcher"];
 
 private _severity = [
     //[[min, medium, max], "fancyName"]
-    [[0.1, 0.5,1], "Lightly wounded"],
+    [[0.1, 0.5, 1], "Lightly wounded"],
     [[1, 1.5, 2], "Moderately wounded"],
     [[2, 2.5, 3], "Heavily Wounded"]
 ];
@@ -31,7 +31,7 @@ private _actions = [];
     private _severityAction = [
         QGVAR(severityAction),
         _fancyName,
-        "",
+        "z\ace\addons\medical_gui\data\categories\bandage_fracture.paa",
         {
             (_this select 2) params ["_controller", "_stretcher", "_randomNumbers"];
 

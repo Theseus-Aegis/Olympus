@@ -20,7 +20,7 @@ params ["_controller", "_stretcher", "_subjectName"];
 private _removeSubjectAction = [
     QGVAR(removeSubjectAction),
     format ["Remove subject %1", _subjectName],
-    "",
+    "z\ace\addons\arsenal\data\iconclearcontainer.paa",
     {
         (_this select 2) params ["_stretcher"];
         private _medSubject = _stretcher getVariable [format [QGVAR(medSubject_%1), _stretcher], []];
