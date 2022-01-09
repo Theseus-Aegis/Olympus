@@ -97,6 +97,7 @@ private _launcher = [
     "CUP_PG7VR_M",
     "CUP_PG7VM_M",
     "launch_MRAWS_green_rail_F",
+    "launch_MRAWS_green_F",
     "launch_NLAW_F",
     "launch_RPG32_green_F",
     "MRAWS_HEAT_F",
