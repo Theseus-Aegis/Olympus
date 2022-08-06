@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Rory, Tyrone, JoramD
+ * Author: Rory, Mike, JoramD
  * Spawns objects in predefined positions and allows resetting of those objects.
  *
  * Arguments:

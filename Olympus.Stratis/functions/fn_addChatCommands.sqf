@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Tyrone, JoramD
+ * Author: Mike, JoramD
  * Adds various chat commands.
  *
  * Arguments:

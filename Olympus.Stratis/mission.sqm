@@ -691,7 +691,7 @@ dlcs[]=
 randomSeed=11275516;
 class ScenarioData
 {
-	author="Tyrone";
+	author="Mike";
 };
 class CustomAttributes
 {
