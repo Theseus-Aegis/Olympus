@@ -39,6 +39,7 @@ _player createDiaryRecord ["features", ["Chat Commands", "
     <br/>
     <br/><font color='#E3D310'>#tac-cleanup:</font color>
     <br/>Type `#tac-cleanup` in chat to delete any items on the ground in a 10m range.
+    <br/>To extend the cleanup range type `#tac-cleanup <NUMBER>` in chat (number in meters between 1 and 100 meters).
 "]];
 
 _player createDiaryRecord ["features", ["Arsenals", "
