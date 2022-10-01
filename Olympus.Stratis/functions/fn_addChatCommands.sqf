@@ -59,9 +59,9 @@
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["tac-grenade-reset", {
-    _x setDamage 0;
+    grenade_area_building setDamage 0;
     {
-        _x animateSource [_x, 0, true];
-    } forEach animationNames ["Door_1_sound_source", "Door_2_sound_source", "Door_3_sound_source", "Door_4_sound_source"];
+        grenade_area_building animateSource [_x, 0, true];
+    } forEach ["Door_1_sound_source", "Door_2_sound_source", "Door_3_sound_source", "Door_4_sound_source"];
     systemChat "[TAC] Reset the grenade building";
 }, "all"] call CBA_fnc_registerChatCommand;
