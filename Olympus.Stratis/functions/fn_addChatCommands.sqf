@@ -49,14 +49,9 @@
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["tac-cleanup", {
-    private _parsedInput = parseNumber (_this select 0);
-    private _distance = 0;
-
-    if ((_this select 0) isEqualTo "") then {
-        _distance = 10;
-    } else {
-        _distance = _parsedInput;
-    };
+    params ["_distanceStr"];
+    private _parsedInput = parseNumber _distanceStr;
+    private _distance = [_parsedInput, 10] select (_distanceStr == 0);
 
     if (_distance > 0 && _distance <= 100) then {
         private _weaponHolders = nearestObjects [ace_player, ["GroundWeaponHolder", "WeaponHolderSimulated"], _distance];
