@@ -57,3 +57,11 @@
         systemChat "[TAC] Could not find items in range to remove";
     };
 }, "all"] call CBA_fnc_registerChatCommand;
+
+["tac-grenade-reset", {
+    grenade_area_building setDamage 0;
+    {
+        grenade_area_building animateSource [_x, 0, true];
+    } forEach ["Door_1_sound_source", "Door_2_sound_source", "Door_3_sound_source", "Door_4_sound_source"];
+    systemChat "[TAC] Reset the grenade building";
+}, "all"] call CBA_fnc_registerChatCommand;
