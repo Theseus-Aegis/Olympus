@@ -49,12 +49,20 @@
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["tac-cleanup", {
-    private _weaponHolders = nearestObjects [ace_player, ["GroundWeaponHolder", "WeaponHolderSimulated"], 10];
-    if (!(_weaponHolders isEqualTo [])) then {
-        {deleteVehicle _x} forEach _weaponHolders;
-        systemChat "[TAC] Removed all items in range";
+    params ["_distanceStr"];
+    private _parsedInput = parseNumber _distanceStr;
+    private _distance = [_parsedInput, 10] select (_parsedInput == 0);
+
+    if (_distance > 0 && _distance <= 100) then {
+        private _weaponHolders = nearestObjects [ace_player, ["GroundWeaponHolder", "WeaponHolderSimulated"], _distance];
+        if (!(_weaponHolders isEqualTo [])) then {
+            {deleteVehicle _x} forEach _weaponHolders;
+            systemChat format ["[TAC] Removed all items within %1m", _distance];
+        } else {
+            systemChat format ["[TAC] Could not find items within %1m to remove", _distance];
+        };
     } else {
-        systemChat "[TAC] Could not find items in range to remove";
+        systemChat format ["[TAC] Invalid input, input must be between 1 and 100 meters (input was %1)", _parsedInput];
     };
 }, "all"] call CBA_fnc_registerChatCommand;
 
