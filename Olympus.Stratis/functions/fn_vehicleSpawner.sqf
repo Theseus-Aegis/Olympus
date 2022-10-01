@@ -24,10 +24,10 @@ private _groundVehicles = [
     "tacs_Arcadian_B_Tan",
     "tacs_Polaris_B_Black",
     "C_SUV_01_F",
-    "C_Offroad_01_F",
-    "C_Offroad_01_covered_F",
+    "tacs_Offroad_B_Black",
+    "C_Offroad_01_covered_F", // Replace with Theseus variant when it releases
     "C_Offroad_02_unarmed_F",
-    "C_Van_02_transport_F"
+    "tacs_Van_Transport_B_Black"
 ];
 
 private _airVehicles = [
@@ -36,6 +36,8 @@ private _airVehicles = [
     "tacs_MELB_B_AH6M_L_Theseus_Black",
     "tacs_MELB_B_AH6M_M_Theseus_Black",
     "tacs_MELB_B_AH6M_H_Theseus_Black",
+    "tacs_Heli_B_Wildcat_Theseus_Unarmed",
+    "tacs_Heli_B_Wildcat_Theseus",
     "CUP_B_UH60M_US",
     "B_Heli_Transport_03_F",
     "C_Plane_Civil_01_racing_F",
@@ -45,7 +47,8 @@ private _airVehicles = [
 private _seaVehicles = [
     // "classname"
     "CUP_B_RHIB_HIL",
-    "I_MU_mercs_rhib",
+    "tacs_RHIB_B_Theseus_Black",
+    "B_Boat_Transport_01_F",
     "C_Scooter_Transport_01_F"
 ];
 
