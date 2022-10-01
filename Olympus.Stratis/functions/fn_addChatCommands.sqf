@@ -51,7 +51,7 @@
 ["tac-cleanup", {
     params ["_distanceStr"];
     private _parsedInput = parseNumber _distanceStr;
-    private _distance = [_parsedInput, 10] select (_distanceStr == 0);
+    private _distance = [_parsedInput, 10] select (_parsedInput == 0);
 
     if (_distance > 0 && _distance <= 100) then {
         private _weaponHolders = nearestObjects [ace_player, ["GroundWeaponHolder", "WeaponHolderSimulated"], _distance];
