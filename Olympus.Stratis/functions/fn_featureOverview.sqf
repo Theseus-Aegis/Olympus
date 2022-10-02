@@ -38,7 +38,7 @@ _player createDiaryRecord ["features", ["Chat Commands", "
     <br/>Type `#tac-fix` in chat to repair, refuel and rearm the vehicle you are looking at.
     <br/>
     <br/><font color='#E3D310'>#tac-cleanup:</font color>
-    <br/>Type `#tac-cleanup` in chat to delete any items on the ground in a 10m range.
+    <br/>Type `#tac-cleanup` in chat to delete any items on the ground in a 10m range by default. Or you can use `#tac-cleanup X` for distances between 1-100
     <br/>
     <br/><font color='#E3D310'>#tac-grenade-reset:</font color>
     <br/>Type `#tac-grenade-reset` in chat to reset the grenade building.
