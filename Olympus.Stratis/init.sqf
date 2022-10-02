@@ -1,8 +1,5 @@
 #include "script_component.hpp"
 [{
-    // Disable Ambient Animals
-    [{time > 0}, {enableEnvironment [false, false];}] call CBA_fnc_waitUntilAndExecute;
-
     // Sets ACRE2 channel names
     {
         [_x, "default", "theseus"] call acre_api_fnc_copyPreset;
@@ -22,32 +19,47 @@
     // Environment Control Event Handlers
     [QGVAR(setTime), {
         ["Environment changing..."] call CBA_fnc_notify;
-        skipTime skipTime ((_this select 0) - daytime); // Skip forward to a specific time
+
+        if (isServer) then {
+            skipTime ((_this select 0) - daytime); // Skip time (Server Execution)
+        };
         forceWeatherChange;
     }] call CBA_fnc_addEventHandler;
 
     [QGVAR(setDate), {
         ["Environment changing..."] call CBA_fnc_notify;
-        setDate (_this select 0); // Set date
-        forceWeatherChange;
+        setDate (_this select 0); // Set date (Local Execution)
+
+        if (isServer) then {
+            forceWeatherChange;
+        };
     }] call CBA_fnc_addEventHandler;
 
     [QGVAR(setFog), {
         ["Environment changing..."] call CBA_fnc_notify;
-        0 setFog (_this select 0); // Set fog
-        forceWeatherChange;
+
+        if (isServer) then {
+            0 setFog (_this select 0); // Set fog (Server Execution)
+            forceWeatherChange;
+        };
     }] call CBA_fnc_addEventHandler;
 
     [QGVAR(setOvercast), {
         ["Environment changing..."] call CBA_fnc_notify;
-        0 setOvercast (_this select 0); // Set overcast
-        forceWeatherChange;
+        0 setOvercast (_this select 0); // Set overcast (Local Execution)
+
+        if (isServer) then {
+            forceWeatherChange;
+        };
     }] call CBA_fnc_addEventHandler;
 
     [QGVAR(setRain), {
         ["Environment changing..."] call CBA_fnc_notify;
-        0 setRain (_this select 0); // Set rain
-        forceWeatherChange;
+
+        if (isServer) then {
+            0 setRain (_this select 0); // Set rain (Server Execution)
+            forceWeatherChange;
+        };
     }] call CBA_fnc_addEventHandler;
 
     // Medical Event Handlers
