@@ -49,7 +49,7 @@ private _rangePistol = [
     "ACE_EarPlugs",
     "V_Rangemaster_belt",
     "tacs_Walther_P99",
-    "16Rnd_9x21_Mag"
+    "tacgt_17Rnd_9x19mm_Walther_Ball"
 ];
 
 private _rangeRifle = [
@@ -57,7 +57,7 @@ private _rangeRifle = [
     "ACE_EarPlugs",
     "V_Rangemaster_belt",
     "CUP_arifle_M4A1_black",
-    "30Rnd_556x45_Stanag_green"
+    "tacgt_30Rnd_556x45_Ball_EMAG"
 ];
 
 private _engineer = [
@@ -145,10 +145,9 @@ private _machineGun = [
     "ACE_EarPlugs",
     "V_Rangemaster_belt",
     "hlc_m249_pip1",
-    "hlc_200rnd_556x45_M_SAW",
-    "bwa3_optic_compm2",
+    "tacgt_200Rnd_556x45_Ball_Belt",
+    "tacgt_200Rnd_556x45_Ball_Tracer_Belt",
     "cup_optic_elcanm145",
-    "bwa3_optic_zo4x30_microt2",
     "tacs_Backpack_Carryall_DarkBlack"
 ];
 
@@ -156,10 +155,10 @@ private _marksman = [
     "ACE_fieldDressing",
     "ACE_EarPlugs",
     "arifle_MXM_Black_F",
-    "30Rnd_65x39_caseless_black_mag",
+    "tacgt_30Rnd_65x39_Ball_MX_Black",
     "optic_hamr",
     "srifle_DMR_03_F",
-    "20Rnd_762x51_Mag",
+    "tacgt_20Rnd_762x51_Ball",
     "optic_mrco",
     "ace_optic_mrco_2d",
     "tacs_EBR_Black_F",
@@ -174,9 +173,9 @@ private _weaponsHandling = [
     "ACE_EarPlugs",
     "V_Rangemaster_belt",
     "CUP_arifle_M4A1_black",
-    "30Rnd_556x45_Stanag_green",
+    "tacgt_30Rnd_556x45_Ball_EMAG",
     "tacs_Walther_P99",
-    "16Rnd_9x21_Mag"
+    "tacgt_17Rnd_9x19mm_Walther_Ball"
 ];
 
 // Init stuff
