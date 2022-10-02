@@ -21,6 +21,9 @@
 
     call FUNC(addChatCommands);
 
+    // Disable Ambient Animals
+    [{time > 0}, {enableEnvironment [false, true];}] call CBA_fnc_waitUntilAndExecute;
+
     // Types "OLYMPUS" text on the screen, letter by letter, cursor blinking.
     [
         [
