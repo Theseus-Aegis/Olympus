@@ -29,8 +29,13 @@ respawnDialog = 0;
 
 // AI & debug
 disabledAI = 1;  // Disables AI for Playable Units
-enableDebugConsole[] = {"76561198048995566", "76561198085500182", "76561198040879834"};  // Enables Debug Console for players with specified UIDs (Jonpas, Mike and Joram) and Host/Admin
+enableDebugConsole[] = {DEBUG_ADMINS};
 enableTargetDebug = 1;
 
 // Other settings
 cba_settings_hasSettingsFile = 1;  // Enables use of "cba_settings.sqf", remove if file is not present (will crash)
+
+// Disable unused Chat Channels
+disableChannels[] = {
+    {2, true, true} // Command
+};

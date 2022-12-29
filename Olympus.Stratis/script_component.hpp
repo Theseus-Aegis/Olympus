@@ -4,7 +4,7 @@
 // Version
 #define MAJOR 3
 #define MINOR 7
-#define PATCHLVL 2
+#define PATCHLVL 3
 
 // Map
 #define MAP Stratis
@@ -24,3 +24,12 @@
 
 // ACE3
 #define ACEFUNC(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
+
+// Enable Debug Console and similar tools for given admins
+// Primarily used in description.ext (debug console) which gets resolved locally on clients where
+// userconfig is not available, so must have it hardcoded to take effect
+#define DEBUG_ADMINS \
+    "76561198048995566", /* Jonpas */ \
+    "76561198085500182", /* Mike */ \
+    "76561198040879834", /* JoramD */ \
+    "76561197993041837"  /* Phil */
