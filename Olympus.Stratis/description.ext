@@ -34,7 +34,6 @@ enableTargetDebug = 1;
 
 // Other settings
 cba_settings_hasSettingsFile = 1;  // Enables use of "cba_settings.sqf", remove if file is not present (will crash)
-{2, true, true} // Command
 
 // Disable unused Chat Channels
 disableChannels[] = {
