@@ -1,10 +1,5 @@
 #include "script_component.hpp"
 [{
-    // Verify staff userconfig was loaded
-    if (!is3DENPreview && {GVAR(admins) isEqualTo [] || {GVAR(debug_admins) isEqualTo []}}) then {
-        ERROR_MSG("Empty ADMINS or DEBUG_ADMINS! Userconfig missing or failed to load!");
-    };
-
     // Sets ACRE2 channel names
     {
         [_x, "default", "theseus"] call acre_api_fnc_copyPreset;
