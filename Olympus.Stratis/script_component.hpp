@@ -3,8 +3,8 @@
 
 // Version
 #define MAJOR 3
-#define MINOR 7
-#define PATCHLVL 2
+#define MINOR 8
+#define PATCHLVL 0
 
 // Map
 #define MAP Stratis
@@ -24,3 +24,22 @@
 
 // ACE3
 #define ACEFUNC(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
+
+// Userconfig
+// __has_include requires -filePatching (which also prevents clients to load their local userconfig as they can't join with file patching)
+// __has_include is not supported by HEMTT so we do it in the template for now
+#if __has_include("\userconfig\tac\staff.hpp")
+    #include "\userconfig\tac\staff.hpp"
+#endif
+#ifndef ADMINS
+    #define ADMINS
+#endif
+
+// Enable Debug Console and similar tools for given admins
+// Primarily used in description.ext (debug console) which gets resolved locally on clients where
+// userconfig is not available, so must have it hardcoded to take effect
+#define DEBUG_ADMINS \
+    "76561198048995566", /* Jonpas */ \
+    "76561198085500182", /* Mike */ \
+    "76561198040879834", /* JoramD */ \
+    "76561197993041837"  /* Phil */
