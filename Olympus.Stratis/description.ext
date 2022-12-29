@@ -8,6 +8,7 @@
 OnLoadName = "Olympus";
 OnLoadMission = "Olympus Training Facilities";
 author = "Theseus Incorporated";
+tac_type = 2; // Training, Required even if OCAP isn't loaded from Functions Library.
 loadScreen = QPATHTOTACRF(images,olympus\OlympusLoading.paa);
 overviewPicture = QPATHTOTACRF(images,olympus\OlympusLoading.paa);
 onLoadIntroTime = 1;
