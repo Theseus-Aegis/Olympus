@@ -1,0 +1,42 @@
+name: Package
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout the source code
+      uses: actions/checkout@v2
+    - name: Package
+      run: |
+        # Version
+        MAJOR=$(grep -oP "#define MAJOR \K(\d+)" Olympus.Stratis/script_component.hpp)
+        MINOR=$(grep -oP "#define MINOR \K(\d+)" Olympus.Stratis/script_component.hpp)
+        PATCH=$(grep -oP "#define PATCHLVL \K(\d+)" Olympus.Stratis/script_component.hpp)
+        VERSION=$MAJOR.$MINOR.$PATCH
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
+        echo "Version: $VERSION"
+        # Archive for GitHub Release
+        zip -r TAC_Olympus_$VERSION.zip Olympus.Stratis LICENSE README.md
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: TAC_Olympus
+        path: |
+          compositions
+          template
+          LICENSE
+          README.md
+    - name: Upload to GitHub
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        draft: true
+        files: "*.zip"
+        name: "TAC Olympus"
+        tag_name: ${{ github.ref_name }}
