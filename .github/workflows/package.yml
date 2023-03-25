@@ -28,8 +28,7 @@ jobs:
       with:
         name: TAC_Olympus
         path: |
-          compositions
-          template
+          Olympus.Stratis
           LICENSE
           README.md
     - name: Upload to GitHub
