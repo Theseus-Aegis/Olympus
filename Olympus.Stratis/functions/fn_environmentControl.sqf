@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: JoramD
+ * Author: JoramD, Jonpas
  * Allows changing environment settings (date, time and fog)
  * and server (restart and switch missions).
  *
