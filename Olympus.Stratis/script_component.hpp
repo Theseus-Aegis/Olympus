@@ -33,3 +33,6 @@
     "76561198085500182", /* Mike */ \
     "76561198040879834", /* JoramD */ \
     "76561197993041837"  /* Phil */
+
+
+#define ALLOWED_MISSIONS [["icarus.altis", "Icarus"]] // Folder lower-cased
