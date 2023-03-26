@@ -22,7 +22,7 @@ private _restartAction = [
     "a3\missions_f_oldman\data\img\weathermanager\weather_day_0_ca.paa", // TODO
     {
         params ["", "_player"]
-        [QGVAR(restartServer), [_player]] call CBA_fnc_serverEvent;
+        [QGVAR(restartMission), [_player]] call CBA_fnc_serverEvent;
     },
     {true}
 ] call ACEFUNC(interact_menu,createAction);
