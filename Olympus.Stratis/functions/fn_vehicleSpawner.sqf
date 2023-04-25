@@ -25,7 +25,7 @@ private _groundVehicles = [
     ["tacs_Polaris_B_Black"],
     ["C_SUV_01_F"],
     ["tacs_Offroad_B_Black"],
-    ["C_Offroad_01_covered_F"], // TODO: Replace with Theseus variant when it releases
+    ["tacs_Offroad_B_Covered_Black"],
     ["C_Offroad_02_unarmed_F"],
     ["tacs_Van_Transport_B_Black"]
 ];
