@@ -108,7 +108,7 @@ private _spawnAction = [
                             ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
                             ["ACE_Wheel", _spawnedVehicle] call ACEFUNC(cargo,loadItem);
                         };
-                        if (_spawnedVehicle isKindOf "AirVehicle") then {
+                        if (_spawnedVehicle isKindOf "Air") then {
                             ["tacgt_supplies_CanisterFuel_Theseus", _spawnedVehicle] call ACEFUNC(cargo,loadItem); // TODO: REVERT IF GTArmory is not updated.
                         };
 
