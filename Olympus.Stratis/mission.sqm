@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11858;
+		nextID=11986;
 	};
 	class Camera
 	{
-		pos[]={1891.4573,28.344307,3516.5256};
-		dir[]={0.92581606,-0.34725052,0.14930835};
-		up[]={0.34282199,0.93777192,0.055287555};
-		aside[]={0.15921631,-4.8079528e-008,-0.98724771};
+		pos[]={1870.4105,29.443773,3496.5864};
+		dir[]={0.89737326,-0.33900547,0.28250158};
+		up[]={0.32336271,0.94078296,0.10179763};
+		aside[]={0.30028296,-1.9092113e-008,-0.95385373};
 	};
 };
 binarizationWanted=0;
@@ -789,16 +789,16 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={4353.5923,227.6423,3817.2607};
+								position[]={4353.5923,226.69412,3817.2607};
 								angles[]={6.265697,1.5165689,0.0024958209};
 							};
 							side="Empty";
+							flags=4;
 							class Attributes
 							{
 							};
 							id=1105;
 							type="tacs_Arcadian_B_Black";
-							atlOffset=0.94818115;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -964,7 +964,7 @@ class Mission
 						};
 					};
 					id=1096;
-					atlOffset=0.48953247;
+					atlOffset=0.015441895;
 				};
 				class Item2
 				{
@@ -1478,7 +1478,7 @@ class Mission
 				};
 			};
 			id=1094;
-			atlOffset=40.274231;
+			atlOffset=40.214966;
 		};
 		class Item1
 		{
