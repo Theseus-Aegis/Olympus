@@ -15,7 +15,6 @@ class CfgFunctions {
             class rangeMarksmanTargetGroups;
             class resetDamagedObjects;
             class setBasicLoadout;
-            class spawnEngineerVehicle;
             class vehicleSpawner;
         };
     };
