@@ -31,6 +31,9 @@
 #if __has_include("\userconfig\tac\auth.hpp")
     #include "\userconfig\tac\auth.hpp" // Contents available in Tools repository
 #endif
+#ifndef SERVER_COMMAND_PASSWORD
+    #define SERVER_COMMAND_PASSWORD ""
+#endif
 
 // Enable Debug Console and similar tools for given admins
 // Primarily used in description.ext (debug console) which gets resolved locally on clients where
