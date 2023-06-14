@@ -19,7 +19,7 @@
 
         if (_alone) then {
             INFO_2("Restarting mission (requested by: %1 - %2)!",name _player,getPlayerUID _player);
-            private _success = SERVER_COMMAND_PASSWORD serverCommand "#restart";
+            private _success = #SERVER_COMMAND_PASSWORD serverCommand "#restart";
             if (!_success) then {
                 ERROR_2("Failed to restart mission (requested by: %1 - %2)!",name _player,getPlayerUID _player);
                 [QGVAR(notify), ["Failed to restart mission!"], _player] call CBA_fnc_targetEvent;
@@ -40,7 +40,7 @@
 
         if (_alone && {_allowedMission}) then {
             INFO_3("Switching mission to '%3' (requested by: %1 - %2)!",name _player,getPlayerUID _player,_mission);
-            private _success = SERVER_COMMAND_PASSWORD serverCommand (format ["#mission %1", _mission]);
+            private _success = #SERVER_COMMAND_PASSWORD serverCommand (format ["#mission %1", _mission]);
             if (!_success) then {
                 ERROR_2("Failed to switch mission (requested by: %1 - %2)!",name _player,getPlayerUID _player);
                 [QGVAR(notify), ["Failed to switch mission!"], _player] call CBA_fnc_targetEvent;
