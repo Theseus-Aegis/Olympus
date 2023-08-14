@@ -13,4 +13,4 @@
 // Prevent Targets being destroyed
 {
     _x allowDamage false;
-} forEach (allMissionObjects "all") select {_x isKindOf "TargetBase"};
+} forEach allMissionObjects "TargetBase"
