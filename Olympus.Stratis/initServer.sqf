@@ -13,4 +13,4 @@
 // Prevent Targets being destroyed
 {
     _x allowDamage false;
-} forEach allMissionObjects "TargetBase";
+} forEach (allMissionObjects "TargetBase");
