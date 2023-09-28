@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12246;
+		nextID=12376;
 	};
 	class Camera
 	{
@@ -89,7 +89,6 @@ addons[]=
 	"tacs_variants_melb",
 	"A3_Air_F_Heli_Heli_Transport_03",
 	"ace_realisticnames",
-	"tac_heavylifter",
 	"A3_Air_F_Exp_Plane_Civil_01",
 	"A3_Structures_F_Heli_Items_Airport",
 	"A3_Structures_F_Heli_Ind_Airport",
@@ -105,7 +104,6 @@ addons[]=
 	"A3_Structures_F_Enoch_Military_Camps",
 	"A3_Structures_F_Exp_Naval_Piers",
 	"tacs_units",
-	"tacs_weapons_apex",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Bootcamp_Civ_Camping",
 	"A3_Boat_F_Boat_Transport_01",
@@ -159,7 +157,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=77;
+		items=75;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -171,14 +169,14 @@ class AddonsMetaData
 		{
 			className="tacs_arcadian";
 			name="Theseus Services - Arcadian GT";
-			author="Theseus Services Team";
+			author="Theseus Incorporated";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
 		class Item2
 		{
 			className="tacs_vehicles";
 			name="Theseus Services - Vehicles";
-			author="Theseus Services Team";
+			author="Theseus Incorporated";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
 		class Item3
@@ -323,8 +321,8 @@ class AddonsMetaData
 		{
 			className="tac_shootingrange";
 			name="TAC - Shooting Range";
-			author="TAC Mod Team";
-			url="https://www.theseus-aegis.com/";
+			author="Theseus Incorporated";
+			url="https://github.com/Theseus-Aegis/Mods";
 		};
 		class Item24
 		{
@@ -422,7 +420,7 @@ class AddonsMetaData
 		{
 			className="tacs_variants_melb";
 			name="Theseus Services - MELB Variants";
-			author="Theseus Services Team";
+			author="Theseus Incorporated";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
 		class Item39
@@ -434,235 +432,221 @@ class AddonsMetaData
 		};
 		class Item40
 		{
-			className="tac_heavylifter";
-			name="TAC - Heavy Lifter";
-			author="TAC Mod Team";
-			url="https://www.theseus-aegis.com/";
-		};
-		class Item41
-		{
 			className="A3_Air_F_Exp";
 			name="Arma 3 Apex - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item42
+		class Item41
 		{
 			className="A3_Props_F_Jets";
 			name="Arma 3 Jets - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item42
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item44
+		class Item43
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item45
+		class Item44
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item46
+		class Item45
 		{
 			className="A3_Structures_F_Exp_Civilian";
 			name="Arma 3 Apex - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item46
 		{
 			className="sah_bunker_concrete";
 			name="sah_bunker_concrete";
 		};
-		class Item48
+		class Item47
 		{
 			className="mbg_killhouses_a3";
 			name="mbg_killhouses_a3";
 		};
-		class Item49
+		class Item48
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item50
+		class Item49
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item51
+		class Item50
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item52
+		class Item51
 		{
 			className="tacs_units";
 			name="Theseus Services - Units";
-			author="Theseus Services Team";
+			author="Theseus Incorporated";
 			url="https://github.com/Theseus-Aegis/TheseusServices";
 		};
-		class Item53
-		{
-			className="tacs_weapons_apex";
-			name="Theseus Services - Apex Weapons Replacement";
-			author="Theseus Services Team";
-			url="https://github.com/Theseus-Aegis/TheseusServices";
-		};
-		class Item54
+		class Item52
 		{
 			className="A3_Boat_F";
 			name="Arma 3 Alpha - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item55
+		class Item53
 		{
 			className="tacgt_vehicles";
 			name="GT Armory - Vehicles";
 			author="Theseus Incorporated";
 			url="https://github.com/Theseus-Aegis/GTArmory";
 		};
-		class Item56
+		class Item54
 		{
 			className="A3_Structures_F_Enoch_Infrastructure";
 			name="Arma 3 Contact Platform - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item57
+		class Item55
 		{
 			className="A3_Structures_F_Enoch_Industrial";
 			name="Arma 3 Contact Platform - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item58
+		class Item56
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item59
+		class Item57
 		{
 			className="CUP_Weapons_AmmoBoxes";
 			name="CUP_Weapons_AmmoBoxes";
 		};
-		class Item60
+		class Item58
 		{
 			className="CUP_Editor_Plants_Config";
 			name="CUP_Editor_Plants_Config";
 		};
-		class Item61
+		class Item59
 		{
 			className="A3_Structures_F_Enoch_Civilian";
 			name="Arma 3 Contact Platform - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item60
 		{
 			className="A3_Structures_F_Exp_Cultural";
 			name="Arma 3 Apex - Cultural Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item63
+		class Item61
 		{
 			className="A3_Structures_F_Oldman";
 			name="Arma 3 Old Man - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item64
+		class Item62
 		{
 			className="CUP_CAStructures_E_Misc_Misc_Interier";
 			name="CUP_CAStructures_E_Misc_Misc_Interier";
 		};
-		class Item65
+		class Item63
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item66
+		class Item64
 		{
 			className="grad_trenches_assets";
 			name="grad_trenches_assets";
 		};
-		class Item67
+		class Item65
 		{
 			className="grad_trenches_functions";
 			name="grad_trenches_functions";
 		};
-		class Item68
+		class Item66
 		{
 			className="CUP_Editor_Structures_Config";
 			name="CUP_Editor_Structures_Config";
 		};
-		class Item69
+		class Item67
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item70
+		class Item68
 		{
 			className="CUP_CAMisc_ACR_Shooting_range";
 			name="CUP_CAMisc_ACR_Shooting_range";
 		};
-		class Item71
+		class Item69
 		{
 			className="CUP_CAStructures_E_Wall_Wall_L";
 			name="CUP_CAStructures_E_Wall_Wall_L";
 		};
-		class Item72
+		class Item70
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item73
+		class Item71
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item74
+		class Item72
 		{
 			className="A3_Boat_F_Gamma";
 			name="Arma 3 - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item75
+		class Item73
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item76
+		class Item74
 		{
 			className="A3_Props_F_Tank";
 			name="Arma 3 Tank - Decorative and Mission Objects";
