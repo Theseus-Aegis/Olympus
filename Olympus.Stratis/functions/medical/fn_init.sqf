@@ -26,7 +26,7 @@ private _stretchers = [
 private _spawnMainAction = [
     QGVAR(spawnMainAction),
     "Spawn subjects",
-    "z\ace\addons\medical_gui\data\categories\toggle_self.paa",
+    "z\ace\addons\medical_gui\data\categories\toggle_to_self.paa",
     {},
     {true}
 ] call ACEFUNC(interact_menu,createAction);

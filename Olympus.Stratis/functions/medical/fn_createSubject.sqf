@@ -23,7 +23,7 @@ params ["_controller", "_spawnPos", "_stretcher", "_subjectName"];
 private _spawnSubjectAction = [
     QGVAR(spawnSubjectAction),
     format ["Spawn subject %1", _subjectName],
-    "z\ace\addons\medical_gui\data\categories\toggle_self.paa",
+    "z\ace\addons\medical_gui\data\categories\toggle_to_self.paa",
     {
         (_this select 2) params ["_stretcher", "_spawnPos"];
 
