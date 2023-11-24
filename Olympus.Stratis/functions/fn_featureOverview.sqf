@@ -19,7 +19,7 @@ params ["_player"];
 _player createDiarySubject ["features", "Features"];
 
 _player createDiaryRecord ["features", ["Environment Controller", "
-    <br/>The main base and some courses have an additional laptop to control the environment.
+    <br/>The main base and some courses have an additional laptop to control the environment and server.
 "]];
 
 _player createDiaryRecord ["features", ["Vehicle Spawners", "

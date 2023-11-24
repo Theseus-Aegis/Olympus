@@ -16,6 +16,11 @@
         [_x, "theseus"] call acre_api_fnc_setPreset;
     } forEach ["ACRE_PRC152", "ACRE_PRC117F"];
 
+    [QGVAR(notify), {
+        params ["_message"];
+        [_message] call CBA_fnc_notify;
+    }] call CBA_fnc_addEventHandler;
+
     // Environment Control Event Handlers
     [QGVAR(setTime), {
         ["Environment changing..."] call CBA_fnc_notify;
