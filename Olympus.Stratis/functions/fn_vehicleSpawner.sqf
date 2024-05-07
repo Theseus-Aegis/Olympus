@@ -38,7 +38,8 @@ private _airVehicles = [
     ["tacs_MELB_B_AH6M_H_Theseus_Black"],
     ["tacs_Heli_B_Wildcat_Theseus_Unarmed"],
     ["tacs_Heli_B_Wildcat_Theseus"],
-    ["CUP_B_UH60M_US"],
+    ["tacs_Heli_B_Wildcat_Theseus_Unarmed"],
+    ["tacs_Heli_B_Merlin_Theseus"],
     ["B_Heli_Transport_03_F"],
     ["C_Plane_Civil_01_racing_F"],
     ["B_T_VTOL_01_vehicle_F"]
@@ -46,7 +47,6 @@ private _airVehicles = [
 
 private _seaVehicles = [
     // ["classname", "specialType"]
-    ["CUP_B_RHIB_HIL"],
     ["tacs_RHIB_B_Theseus_Black"],
     ["B_Boat_Transport_01_F"],
     ["C_Scooter_Transport_01_F"]
