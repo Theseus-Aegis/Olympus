@@ -71,6 +71,7 @@ private _engineer = [
     "AMP_Breaching_Charge_Mag",
     "DemoCharge_Remote_Mag",
     "H_HelmetSpecB",
+    "iedd_item_notebook",
     "I_UavTerminal",
     "I_UGV_02_Demining_backpack_F",
     "SatchelCharge_Remote_Mag",
