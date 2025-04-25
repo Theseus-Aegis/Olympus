@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Kresky, Jonpas, JoramD
+ * Author: Emythiel, Jonpas, JoramD
  * Adds feature overview.
  * Call from initPlayerLocal.sqf.
  *

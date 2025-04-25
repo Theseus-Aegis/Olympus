@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: JoramD, Jonpas, Kresky
+ * Author: JoramD, Jonpas, Emythiel
  * Initializes 2 ACE Arsenals on an object (1 full, 1 partial) and selects an item array.
  * AVAILABLE OPTIONS: 40mm, demolitions, grenade, launcher, machineGun, marksman, medical, rangePistol, rangeRifle, weaponsHandling, full, personal.
  *
