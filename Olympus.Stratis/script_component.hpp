@@ -25,6 +25,16 @@
 // ACE3
 #define ACEFUNC(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
 
+// Userconfig
+// __has_include requires -filePatching (which also prevents clients to load their local userconfig as they can't join with file patching)
+// __has_include is not supported by HEMTT preprocessing so we do it in the template
+#if __has_include("\userconfig\tac\auth.hpp")
+    #include "\userconfig\tac\auth.hpp" // Contents available in Tools repository
+#endif
+#ifndef SERVER_COMMAND_PASSWORD
+    #define SERVER_COMMAND_PASSWORD ""
+#endif
+
 // Enable Debug Console and similar tools for given admins
 // Primarily used in description.ext (debug console) which gets resolved locally on clients where
 // userconfig is not available, so must have it hardcoded to take effect
@@ -33,3 +43,6 @@
     "76561198085500182", /* Mike */ \
     "76561198040879834", /* JoramD */ \
     "76561197993041837"  /* Phil */
+
+
+#define ALLOWED_MISSIONS [["icarus.altis", "Icarus"]] // Folder lower-cased
